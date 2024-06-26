@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0046FF" />
+    <title>신한EZ손해보험 API포털관리자</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon.ico" />
+    <link rel="stylesheet" href="../../../../css/com/content.css" />
+    <link rel="stylesheet" href="../../../../css/mng/page.css" />
+  </head>
+  <body>
+    <!-- #wrap -->
+    <div id="wrap">
+      <!-- #skip -->
+      <div id="skip">
+        <div class="skip-menu">
+          <a href="#content">본문으로 건너뛰기</a>
+        </div>
+      </div>
+      <!--// #skip -->
+      <!-- #page -->
+      <div id="page" data-page-main="false">
+        <!-- [D]페이지 유형이 메인일 경우 data-page-main="true" -->
+
+        <!-- #header -->
+        <header id="header">
+          <h1 class="header-title">
+            <span class="logo">
+              <a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험 API포털관리자</span></a>
+            </span>
+            <!-- [D]2023-12-14 - 로고 옆 텍스트 추가 -->
+            <span class="head-serve">개발</span>
+          </h1>
+          <!-- #nav -->
+          <nav id="gnb"></nav>
+          <!--// #nav -->
+        </header>
+        <!--// #header -->
+
+        <!-- .main -->
+        <main class="main">
+          <!-- #content -->
+          <article id="content">
+            <!-- [D]개발영역 시작 -->
+
+            <!-- .section -->
+            <section class="section option-bg type2">
+              <!-- .title* -->
+              <h2 class="title-main option-api admin-bg"><span class="txt">API 상세</span></h2>
+              <!--// .title* -->
+
+              <!-- .group -->
+              <div class="group">
+                <!-- .tab* -->
+                <div class="tab">
+                  <ul class="tab-head option-box" role="tablist">
+                    <li class="tab-menu" role="tab" id="tabDMenu1" aria-controls="tabDPanel1" aria-selected="false"><a href="javascript:;" tabindex="-1">기본정보</a></li>
+                    <li class="tab-menu is-active" role="tab" id="tabDMenu2" aria-controls="tabDPanel2" aria-selected="true"><a href="javascript:;" tabindex="0">Document</a></li>
+                  </ul>
+                  <div class="tab-list">
+                    <div class="tab-item" id="tabDPanel1" role="tabpanel" aria-labelledby="tabDMenu1" aria-hidden="true" tabindex="-1">
+                      <!-- .group -->
+                      <div class="group">
+                        <!-- .form -->
+                        <div class="form option-regist">
+                          <!-- .list-head -->
+                          <div class="list-head">
+                            <h3 class="list-title">
+                              <span class="txt">기본정보</span>
+                            </h3>
+                          </div>
+                          <!--// .list-head -->
+
+                          <div class="form-wrap">
+                            <!-- .form-list -->
+                            <ul class="form-list">
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong><label for="textfield1-1">API ID</label></strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .input -->
+                                    <div class="input w-100">
+                                      <input type="text" name="" id="textfield1-1" class="input-data" placeholder="입력해 주세요" value="abc000" readonly />
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong><label for="textfield1-2">API 이름</label></strong>
+                                    <strong class="must"><span class="sr-only">필수입력</span></strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .input -->
+                                    <div class="input w-100">
+                                      <input type="text" name="" id="textfield1-2" class="input-data" placeholder="입력해 주세요" value="API 이름 입니다" />
+                                    </div>
+                                    <!--// .input -->
+                                    <!-- 에러옵션 경고 알림 -->
+                                    <div class="data-helper option-error" role="alert">
+                                      <span class="helper-txt">API 이름을 입력해 주세요</span>
+                                    </div>
+                                    <!--// 에러옵션 경고 알림 -->
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong><label for="textfield1-3">API 설명</label></strong>
+                                    <strong class="must"><span class="sr-only">필수입력</span></strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .textarea -->
+                                    <div class="textarea w-100">
+                                      <textarea name="" id="textfield1-3" class="textarea-data" rows="6" maxlength="500" placeholder="입력해 주세요(500자 이내)">API 설명글 입니다 API 설명글 입니다 API 설명글 입니다 API 설명글 입니다</textarea>
+                                    </div>
+                                    <!--// .textarea -->
+                                    <!-- 에러옵션 경고 알림 -->
+                                    <div class="data-helper option-error" role="alert">
+                                      <span class="helper-txt">API 설명을 입력해 주세요</span>
+                                    </div>
+                                    <!--// 에러옵션 경고 알림 -->
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong><label for="textfield1-4">Gateway URL</label></strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .input -->
+                                    <div class="input w-100">
+                                      <input type="text" name="" id="textfield1-4" class="input-data" placeholder="입력해 주세요" value="abcd/api" readonly />
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong><label for="textfield1-5">API 라우팅 URL</label></strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .input -->
+                                    <div class="input w-100">
+                                      <input type="text" name="" id="textfield1-5" class="input-data" placeholder="입력해 주세요" value="url" readonly />
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong>API 상태</strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .input -->
+                                    <div class="input w-100">
+                                      <input type="text" name="" id="textfield1-6" class="input-data" placeholder="입력해 주세요" value="ON" readonly />
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong>등록일</strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .input -->
+                                    <div class="input w-100">
+                                      <input type="text" name="" id="textfield1-7" class="input-data" placeholder="입력해 주세요" value="2023.11.06 14:57" readonly />
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                            <!--// .form-list -->
+                          </div>
+                        </div>
+                        <!--// .form -->
+                      </div>
+                      <!--// .group -->
+
+                      <!-- .group -->
+                      <div class="group">
+                        <!-- .form -->
+                        <div class="form option-regist">
+                          <!-- .list-head -->
+                          <div class="list-head">
+                            <h3 class="list-title">
+                              <span class="txt">횟수 제한</span>
+                            </h3>
+                          </div>
+                          <!--// .list-head -->
+
+                          <div class="form-wrap">
+                            <!-- .form-list -->
+                            <ul class="form-list">
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong>사용여부</strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .input -->
+                                    <div class="input w-100">
+                                      <input type="text" name="" id="textfield2-1" class="input-data" placeholder="입력해 주세요" value="사용" readonly />
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong>설정값</strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .input -->
+                                    <div class="input w-100">
+                                      <input type="text" name="" id="textfield2-2" class="input-data" placeholder="입력해 주세요" value="월 10,000회, 일 1,000회, 시 100회, 분 10회, 초 5회" readonly />
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                            <!--// .form-list -->
+                          </div>
+                        </div>
+                        <!--// .form -->
+                      </div>
+                      <!--// .group -->
+
+                      <!-- .group -->
+                      <div class="group">
+                        <!-- .form -->
+                        <div class="form option-regist">
+                          <!-- .list-head -->
+                          <div class="list-head">
+                            <h3 class="list-title">
+                              <span class="txt">시간 제한</span>
+                            </h3>
+                          </div>
+                          <!--// .list-head -->
+
+                          <div class="form-wrap">
+                            <!-- .form-list -->
+                            <ul class="form-list">
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong>사용여부</strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .input -->
+                                    <div class="input w-100">
+                                      <input type="text" name="" id="textfield3-1" class="input-data" placeholder="입력해 주세요" value="사용" readonly />
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong>설정값</strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .input -->
+                                    <div class="input w-100">
+                                      <input type="text" name="" id="textfield3-2" class="input-data" placeholder="입력해 주세요" value="18:00~08:59" readonly />
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                            <!--// .form-list -->
+                          </div>
+                        </div>
+                        <!--// .form -->
+                      </div>
+                      <!--// .group -->
+
+                      <!-- .group -->
+                      <div class="group">
+                        <!-- .form -->
+                        <div class="form option-regist">
+                          <!-- .list-head -->
+                          <div class="list-head">
+                            <h3 class="list-title">
+                              <span class="txt">요일 제한</span>
+                            </h3>
+                          </div>
+                          <!--// .list-head -->
+
+                          <div class="form-wrap">
+                            <!-- .form-list -->
+                            <ul class="form-list">
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong>사용여부</strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .input -->
+                                    <div class="input w-100">
+                                      <input type="text" name="" id="textfield4-1" class="input-data" placeholder="입력해 주세요" value="사용" readonly />
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="form-item">
+                                <div class="unit">
+                                  <div class="form-name">
+                                    <strong>설정값</strong>
+                                  </div>
+                                  <div class="form-value">
+                                    <!-- .input -->
+                                    <div class="input w-100">
+                                      <input type="text" name="" id="textfield4-2" class="input-data" placeholder="입력해 주세요" value="토, 일" readonly />
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                            <!--// .form-list -->
+                          </div>
+                        </div>
+                        <!--// .form -->
+                      </div>
+                      <!--// .group -->
+
+                      <!-- .group -->
+                      <div class="group">
+                        <!-- .data -->
+                        <div class="data">
+                          <!-- .list-head -->
+                          <div class="list-head">
+                            <h3 class="list-title">
+                              <span class="txt">사용 APP</span>
+                            </h3>
+                          </div>
+                          <!--// .list-head -->
+                          <div class="data-body">
+                            <table class="data-list">
+                              <caption class="sr-only">
+                                <!-- 표제목 -->
+                                <strong>사용 APP 목록</strong>
+                                <!-- 표내용순서 -->
+                                <span>이용기관, APP 이름, APP 설명</span>
+                              </caption>
+                              <colgroup>
+                                <col style="width: 25%" />
+                                <col style="width: 30%" />
+                                <col style="width: 45%" />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th scope="col">이용기관</th>
+                                  <th scope="col">APP 이름</th>
+                                  <th scope="col">APP 설명</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>이용기관명</td>
+                                  <td>APP이름입니다</td>
+                                  <td class="align-left">앱 설명글 입니다</td>
+                                </tr>
+                                <tr>
+                                  <td>이용기관명</td>
+                                  <td>APP이름입니다</td>
+                                  <td class="align-left">앱 설명글 입니다</td>
+                                </tr>
+                                <tr>
+                                  <td>이용기관명</td>
+                                  <td>APP이름입니다</td>
+                                  <td class="align-left">앱 설명글 입니다</td>
+                                </tr>
+                                <tr>
+                                  <td>이용기관명</td>
+                                  <td>APP이름입니다</td>
+                                  <td class="align-left">앱 설명글 입니다</td>
+                                </tr>
+                                <tr>
+                                  <td>이용기관명</td>
+                                  <td>APP이름입니다</td>
+                                  <td class="align-left">앱 설명글 입니다</td>
+                                </tr>
+                                <tr>
+                                  <td>이용기관명</td>
+                                  <td>APP이름입니다</td>
+                                  <td class="align-left">앱 설명글 입니다</td>
+                                </tr>
+                                <tr>
+                                  <td>이용기관명</td>
+                                  <td>APP이름입니다</td>
+                                  <td class="align-left">앱 설명글 입니다</td>
+                                </tr>
+                                <tr>
+                                  <td>이용기관명</td>
+                                  <td>APP이름입니다</td>
+                                  <td class="align-left">앱 설명글 입니다</td>
+                                </tr>
+                                <tr>
+                                  <td>이용기관명</td>
+                                  <td>APP이름입니다</td>
+                                  <td class="align-left">앱 설명글 입니다</td>
+                                </tr>
+                                <tr>
+                                  <td>이용기관명</td>
+                                  <td>APP이름입니다</td>
+                                  <td class="align-left">앱 설명글 입니다</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <!--// .data -->
+                      </div>
+                      <!--// .group -->
+
+                      <!-- .group -->
+                      <div class="group">
+                        <!-- .btn-group* -->
+                        <div class="btn-group">
+                          <div class="comment">최종수정 : 홍*동 2023.09.21 23:32</div>
+                          <button type="button" class="btn filled"><span>취소</span></button>
+                          <button type="button" class="btn primary"><span>저장</span></button>
+                        </div>
+                        <!--// .btn-group* -->
+                      </div>
+                      <!--// .group -->
+                    </div>
+                    <div class="tab-item is-active" id="tabDPanel2" role="tabpanel" aria-labelledby="tabDMenu2" aria-hidden="false" tabindex="0">
+                      <!-- .group -->
+                      <div class="group">
+                        <ul class="accordion-wrap">
+                          <!-- .accordion -->
+                          <li class="accordion2">
+                            <div class="accordion-head2">
+                              <div class="inner">
+                                <!-- .title* -->
+                                <button type="button" class="title-h4" id="accordionTitleB1" aria-labelledby="accordionBodyB1"><span class="txt">API Information</span></button>
+                                <!--// .title* -->
+                              </div>
+                            </div>
+                            <div class="accordion-body2" id="accordionBodyB1" role="region" aria-labelledby="accordionTitleB1">
+                              <div class="inner">
+                                <!-- .group* -->
+                                <div class="group-s">
+                                  <div class="data">
+                                    <div class="data-body option-row">
+                                      <table class="data-list">
+                                        <caption class="sr-only">
+                                          <!-- 표내용순서 -->
+                                          <span>Name, Type, Required, Example, Description 설명</span>
+                                        </caption>
+                                        <colgroup>
+                                          <col style="width: 20%" />
+                                          <col style="width: 30%" />
+                                          <col style="width: 50%" />
+                                        </colgroup>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="rowgroup" rowspan="4" class="align-center">Header</th>
+                                            <th scope="row" class="align-center">Method</th>
+                                            <td>POST</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="align-center">Content-Type</th>
+                                            <td>application/json: charset=UTF-8</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="align-center">Header Key Name</th>
+                                            <td>x-api-key</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="align-center">Header Key Data</th>
+                                            <td>*발급된 APP 승인키 사용</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="rowgroup" rowspan="5" class="align-center">Infomation</th>
+                                            <th scope="row" class="align-center">Protocol</th>
+                                            <td>HTTP(s)</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="align-center">Text Encoding</th>
+                                            <td>UTF-8</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="align-center">Interface Standard</th>
+                                            <td>REST</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="align-center">Data Standard</th>
+                                            <td>JSON</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="align-center">Message Exchange Type</th>
+                                            <td>Request-Response</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--// .group* -->
+                              </div>
+                            </div>
+                          </li>
+                          <!--// .accordion -->
+                          <!-- .accordion -->
+                          <li class="accordion2">
+                            <div class="accordion-head2">
+                              <div class="inner">
+                                <!-- .title* -->
+                                <button type="button" class="title-h4" id="accordionTitle2" aria-labelledby="accordionBody2"><span class="txt">API Parameters</span></button>
+                                <!--// .title* -->
+                              </div>
+                            </div>
+                            <div class="accordion-body2" id="accordionBody2" role="region" aria-labelledby="accordionTitle2">
+                              <div class="inner">
+                                <!-- .group* -->
+                                <div class="group-s">
+                                  <div class="data">
+                                    <!-- .list-head -->
+                                    <div class="list-head space-mb-xs">
+                                      <h3 class="list-title">
+                                        <span class="txt2 xs">Content Type : [“application/json”]</span>
+                                      </h3>
+                                    </div>
+                                    <!--// .list-head -->
+                                    <div class="data-body">
+                                      <table class="data-list">
+                                        <caption class="sr-only">
+                                          <!-- 표내용순서 -->
+                                          <span>Name, Type, Required, Example, Description 설명</span>
+                                        </caption>
+                                        <colgroup>
+                                          <col style="width: 15%" />
+                                          <col style="width: 12%" />
+                                          <col style="width: 15%" />
+                                          <col style="width: 12%" />
+                                          <col style="width: auto" />
+                                        </colgroup>
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Required</th>
+                                            <th scope="col">Example</th>
+                                            <th scope="col">Description</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>가나다 (body)</td>
+                                            <td>integer</td>
+                                            <td>True</td>
+                                            <td>123</td>
+                                            <td class="align-left"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>라마바 (body)</td>
+                                            <td>integer</td>
+                                            <td>True</td>
+                                            <td>20230922</td>
+                                            <td class="align-left"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>사아차 (body)</td>
+                                            <td>integer</td>
+                                            <td>True</td>
+                                            <td>20230922</td>
+                                            <td class="align-left"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--// .group* -->
+
+                                <!-- .group* -->
+                                <div class="group-s">
+                                  <div class="api-textarea">
+                                    <textarea readonly="" rows="8">
+{
+    "계좌번호": "123",
+    "조회시작일": "20201231",
+    "조회종료일": "20210101"
+}</textarea
+                                    >
+                                  </div>
+                                </div>
+                                <!--// .group* -->
+                              </div>
+                            </div>
+                          </li>
+                          <!--// .accordion -->
+                          <!-- .accordion -->
+                          <li class="accordion2">
+                            <div class="accordion-head2">
+                              <div class="inner">
+                                <!-- .title* -->
+                                <button type="button" class="title-h4" id="accordionTitle3" aria-labelledby="accordionBody3"><span class="txt">API Response</span></button>
+                                <!--// .title* -->
+                              </div>
+                            </div>
+                            <div class="accordion-body2" id="accordionBody3" role="region" aria-labelledby="accordionTitle3">
+                              <div class="inner">
+                                <!-- .group* -->
+                                <div class="group-s">
+                                  <div class="data">
+                                    <!-- .list-head -->
+                                    <div class="list-head space-mb-xs">
+                                      <h3 class="list-title">
+                                        <span class="txt2 xs">200, OK</span>
+                                      </h3>
+                                    </div>
+                                    <!--// .list-head -->
+                                    <div class="data-body">
+                                      <table class="data-list">
+                                        <caption class="sr-only">
+                                          <!-- 표내용순서 -->
+                                          <span>Name, Type, Example, Required, Description 설명</span>
+                                        </caption>
+                                        <colgroup>
+                                          <col style="width: 15%" />
+                                          <col style="width: 12%" />
+                                          <col style="width: 15%" />
+                                          <col style="width: 12%" />
+                                          <col style="width: auto" />
+                                        </colgroup>
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Example</th>
+                                            <th scope="col">Required</th>
+                                            <th scope="col">Description</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>계좌번호</td>
+                                            <td>integer</td>
+                                            <td>123</td>
+                                            <td>True</td>
+                                            <td class="align-left"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>조회시작일</td>
+                                            <td>integer</td>
+                                            <td></td>
+                                            <td>True</td>
+                                            <td class="align-left"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>조회종료일</td>
+                                            <td>integer</td>
+                                            <td></td>
+                                            <td>True</td>
+                                            <td class="align-left"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>상품부기명</td>
+                                            <td>string</td>
+                                            <td></td>
+                                            <td>True</td>
+                                            <td class="align-left"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>계좌잔액</td>
+                                            <td>integer</td>
+                                            <td></td>
+                                            <td>True</td>
+                                            <td class="align-left"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>고객명</td>
+                                            <td>string</td>
+                                            <td></td>
+                                            <td>True</td>
+                                            <td class="align-left"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>거래내역반복횟수</td>
+                                            <td>integer</td>
+                                            <td></td>
+                                            <td>True</td>
+                                            <td class="align-left"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>거래내역</td>
+                                            <td>array</td>
+                                            <td></td>
+                                            <td>True</td>
+                                            <td class="align-left">
+                                              <ul class="note-list depth-root">
+                                                <li>배열 데이터 : undefined</li>
+                                              </ul>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>거래내역2</td>
+                                            <td>object</td>
+                                            <td></td>
+                                            <td>True</td>
+                                            <td class="align-left">
+                                              <ul class="note-list depth-root">
+                                                <li>거래일자 : integer, [필수항목]</li>
+                                                <li>거래시간 : integer, [필수항목]</li>
+                                                <li>출금금액 : integer, [필수항목]</li>
+                                                <li>입금금액 : integer, [필수항목]</li>
+                                                <li>거래메모 : string, [필수항목]</li>
+                                                <li>잔액 : integer, [필수항목]</li>
+                                                <li>입지구분 : integer, [필수항목]</li>
+                                                <li>거래점명 : string, [필수항목]</li>
+                                              </ul>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--// .group* -->
+
+                                <!-- .group* -->
+                                <div class="group-s">
+                                  <div class="api-textarea">
+                                    <textarea readonly="" rows="10">
+{
+  "계좌번호": "11012312345",
+  "조회시작일": "20201231",
+  "조회종료일": "20210101",
+  "상품부기명": "상품",
+  "계좌잔액": "33000",
+  "고객명": "김신한",
+  "거래내역반복횟수": "1"
+}</textarea
+                                    >
+                                  </div>
+                                </div>
+                                <!--// .group* -->
+                              </div>
+                            </div>
+                          </li>
+                          <!--// .accordion -->
+                          <!-- .accordion -->
+                          <li class="accordion2">
+                            <div class="accordion-head2">
+                              <div class="inner">
+                                <!-- .title* -->
+                                <button type="button" class="title-h4" id="accordionTitle4" aria-labelledby="accordionBody4"><span class="txt">Response Code</span></button>
+                                <!--// .title* -->
+                              </div>
+                            </div>
+                            <div class="accordion-body2" id="accordionBody4" role="region" aria-labelledby="accordionTitle4">
+                              <div class="inner">
+                                <div class="data">
+                                  <div class="data-body">
+                                    <table class="data-list">
+                                      <caption class="sr-only">
+                                        <!-- 표내용순서 -->
+                                        <span>Code, Type, Description 설명</span>
+                                      </caption>
+                                      <colgroup>
+                                        <col style="width: 15%" />
+                                        <col style="width: 15%" />
+                                        <col style="width: auto" />
+                                      </colgroup>
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Code</th>
+                                          <th scope="col">Type</th>
+                                          <th scope="col">Description</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>0</td>
+                                          <td>string</td>
+                                          <td class="align-left">Success</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <!--// .accordion -->
+                        </ul>
+                      </div>
+                      <!--// .group -->
+                    </div>
+                  </div>
+                </div>
+                <!--// .tab* -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section -->
+
+            <!--// [D]개발영역 끝 -->
+          </article>
+          <!--// #content -->
+        </main>
+        <!--// .main -->
+
+        <!-- #footer -->
+        <footer id="footer"></footer>
+        <!--// #footer -->
+      </div>
+      <!--// #page -->
+
+      <!-- #popup -->
+      <div id="popup"></div>
+      <!--// #popup -->
+
+      <!-- #loading -->
+      <div id="loading" class="">
+        <!-- [D]활성화 .is-active 클래스 추가 -->
+        <div class="loading-bar"><span></span></div>
+      </div>
+      <!--// #loading -->
+    </div>
+    <!--// #wrap -->
+
+    <script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+    <script src="../../../../js/com/lottie_light.min.js"></script>
+    <script src="../../../../js/com/local_pub.js"></script>
+    <!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+    <script src="../../../../js/com/common_pub.js"></script>
+  </body>
+</html>

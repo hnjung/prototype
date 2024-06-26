@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-08-18
+	- 파일명 : page.css
+	- 포함내용 : 컴포넌트 청약확인
+*/
+/* 
+	수정정보
+	- 수정일 : 2023-04-01
+	- 수정내용 : XXX(홍길동)
+*/
+
+.my-page .avatar-area {position: relative;}
+.my-page .avatar-area .btn-area {max-width: 17rem;}
+.my-page .avatar-area .btn-area .ico-edit {position: absolute; right: 0.4rem; bottom: 0.4rem; width: 3.2rem; height: 3.2rem; border-radius: 50%; border: none; background: transparent;}
+.my-page .avatar-area .btn-area .ico-edit::before {content: ''; display: block; position: absolute; top: 0; left: 0; width: 3.2rem; height: 3.2rem; background: url('../../image/com/ico-edit.svg') no-repeat center; background-size: 3.2rem auto;}
+.my-page .btn-group + .btn-group {margin-top: 0.9rem;}
+
+#popup .my-page.section {padding-top: var(--space-lg);}
+.set-avatar {margin: -24px -20px; align-items: stretch; justify-content: center;}
+.set-avatar .radio-item {position: relative; width: 130px; margin: 24px 20px; padding-top: 146px; padding-right: 0; justify-content: center;}
+.set-avatar .radio-item .label:before {content: ''; position: absolute; top: 0; left: 0; width: 130px; height: 130px; border: 2px solid var(--color-light); border-radius: 100%;}
+.set-avatar .radio-item .avatar {position: absolute; top: 5px; left: 5px;}
+.set-avatar .radio-item .control[type='radio']:checked ~ .label:before {border-color: var(--color-primary);}
+
+.login-title {display: none;}
+
+/* 마이페이지 - (태블릿+PC) */
+@media screen and (min-width: 768px) {
+	#content .my-page .btn-group.option-full {flex-direction: row;}
+	#content .my-page .btn-group.option-full .btn {min-width: 263px;}
+	#content .my-page .btn-group.option-full > .btn + .btn {margin-top: 0; margin-left: var(--space-xxs);}
+	#popup .my-page .radio-group {max-width: 680px; margin-left: auto; margin-right: auto; justify-content: space-between;}
+	.set-avatar {margin-top: 0;}
+	.login-title {display: block; margin-bottom: var(--space-xl); text-align: center;}
+}
+
+/* 기본 로그인 방식 선택 */
+.login-way {}
+.login-way:before {content: ''; display: inline-block; width: var(--icon-lg); height: var(--icon-lg); margin-right: 1.2rem; background-image: var(--bg-url-lg); background-repeat: no-repeat; background-size: var(--bg-size-lg); vertical-align: middle;}
+.login-way > em {display: inline-block; vertical-align: middle; font-weight: var(--font-medium); color: var(--color-dark);}
+
+.login-way.face:before {background-position: calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -2);}
+.login-way.fingerprint:before {background-position: calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -2);}
+.login-way.face-id:before {background-position: calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -2);}
+.login-way.pattern:before {background-position: calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -2);}
+.login-way.easy-password:before {background-position: calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -2);}
+.login-way.id-password:before {background-position: calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -2);}
+
+.login-way-content {padding-top: 6.0rem; text-align: center;}
+.login-way-content:before {content: ''; display: block; width: var(--icon-max); height: var(--icon-max); margin: 0 auto 1.6rem; background-image: var(--bg-url-max); background-repeat: no-repeat; background-size: var(--bg-size-max);}
+.login-way-content.fingerprint:before {background-position: calc(var(--icon-max) * -5)  calc(var(--icon-max) * -1);}
+.login-way-content.face-id:before {background-position: calc(var(--icon-max) * -8) calc(var(--icon-max) * -1);}
+.login-way-content.face.ing {padding-top: 0;}
+.login-way-content.face:before {background-position: calc(var(--icon-max) * -4) calc(var(--icon-max) * -1);}
+.login-way-content.pattern {padding-top: 0;}
+.login-way-content.pattern:before {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -1);}
+.login-way-content.easy-password {padding-top: 0;}
+.login-way-content.easy-password:before {display: none;}
+.login-way-content .btn.outlined.option-sm {padding-left: 1.1rem; padding-right: 1.1rem;}
+
+/* 간편비밀번호 등록 */
+.process-pattern {height: 268px; background-color: #000;}
+.process-easy-password {display: flex; justify-content: center; align-items: center; margin: 1.6rem 0 4.0rem;}
+.process-easy-password .number {display: block; width: 1.6rem; height: 1.6rem; margin: 0 12px; background-color: var(--color-bg-dark); border-radius: 100%;}
+.process-easy-password .number.is-active {background-color: var(--color-primary);}
+.process-keypad {position: absolute; bottom: 0; width: 100%; height: 300px; margin-left: -2.0rem; background-color: #000;}

@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-08-18
+	- 파일명 : page.css
+	- 포함내용 : 상품보기 콘텐츠 스타일
+*/
+
+/* 간편계산 고객 정보 입력 */ 
+.section.product .card-list .key-normal{color:var(--color-txt-body); font-size:var(--font-sm); font-weight:var(--font-regular)}
+ 
+/* 다른 사람의 보험 가입 시 안내 사항 */ 
+.card.option-step.for-someone .card-item[class*="step-type"] {align-items: flex-start;}
+.card.option-step.for-someone .card-item.step-type1:before {background-position: calc(var(--icon-xl) * -9) calc(var(--icon-xl) * -7);}
+.card.option-step.for-someone .card-item.step-type2:before {background-position: calc(var(--icon-xl) * -8) calc(var(--icon-xl) * -7);}
+.card.option-step.for-someone .card-item.step-type3:before {background-position: calc(var(--icon-xl) * -7) calc(var(--icon-xl) * -7);}
+.card.option-step.for-someone .card-main {margin-top: var(--space-min); font-size: var(--font-xs);}
+
+/* 운전자보험 간편설계 */  
+.section.option-visual{padding:0; background-size: auto 100%; background-repeat: no-repeat; background-position: 50% 100%;}
+.section.option-visual .inner {display: flex; justify-content: center; align-items: center;}
+.section.option-visual .inner .image {max-width: none; height: 470px;}
+.section.option-visual .inner .image.ta {display: none;}
+
+.section.option-full {padding:0;}
+.section.option-full .tab-scroll {position:relative; padding:1.6rem 2rem; border-bottom: var(--line-sm) solid var(--color-bg-dark); box-shadow: 0px 2px 8px 0px rgba(18, 25, 43, 0.08); z-index:2;}
+.section.option-full .tab-list {position: relative;}
+.section.option-full .tab-item  {padding:0;}
+.section.option-full .btn-group.option-main>a {text-align: center;}
+.section.option-full .btn-group.option-main>a::before {display:block; content:""; position: absolute; bottom:-.1rem; left:50%;  z-index: 2; width:11.1rem; height:6.7rem; margin-left:-9.7rem; background:url('../../image/prd/btn-avatar-mo.png'); background-size:100% 100%; background-repeat: no-repeat;transform: translateX(-50%);}
+.section.option-full .pc-only {display:none}
+
+.note.plan {position: relative; padding:var(--space-lg)}
+.note.plan .note-head {padding:0 0 var(--space-xs);  border-bottom:var(--line-sm) solid var(--color-bg-base)} 
+.note.plan .note-title {font-size:var(--font-sm); font-weight:var(--font-medium); color:var(--color-dark);}
+.note.plan .note-list {padding:var(--space-sm) 0;}
+.note.plan .note-list li+li {margin:0;}
+.note.plan + .txt-info {margin-top:var(--space-md); font-size:var(--font-xxs); color:var(--color-line-base)}
+
+/* 보험상품 보기 */  
+/* .section.product .product-select a{color: inherit;} */
+.section.product .product-select .unit+.unit{margin-top:var(--space-sm)}
+.product-select .product-image .image {width: 100%;}
+.product-select .product-image .image.ta {display: none;}
+.section.product .box {padding:0; box-shadow: 0 .2rem 1.2rem 0 rgba(18, 25, 43, 0.12); overflow: hidden; border:none}
+.section.product .products-foot {padding:var(--space-sm);}
+ 
+/* 상품URL 발송 */ 
+.product-select .item-row {align-items: stretch;}
+.product-select .item-row .card-select .label {display:flex; position: relative; justify-content:center; align-items: flex-start; width:100%; height: 100%; padding: 2.0rem 1.6rem; font-size:var(--font-xs); color:var(--color-txt-body); text-align:center;}
+.product-select .item-row .card-select .label .txt {word-break: keep-all;}
+.product-select .item-row .card-select .label .txt::before{display:block; content:""; width:11.2rem; height:9.6rem; margin:0 auto .4rem; background-position:center center; background-size:11.2rem auto; background-repeat: no-repeat;}
+.product-select .item-row .card-select.type1 .label .txt::before {background-image: url('../../image/prd/prd-select-img1.png');}
+.product-select .item-row .card-select.type2 .label .txt::before {background-image: url('../../image/prd/prd-select-img2.png');}
+.product-select .item-row .card-select .control[type='radio'] ~ .label::before {top: 0; left: 0; right: 0; bottom: 0; border-color:var(--color-bg-dark);}
+.product-select .item-row .card-select .control[type='radio']:checked ~ .label:before {border-color:var(--color-primary);  box-shadow:var(--shadow-primary-md);}
+.product-select .item-row .card-select .control[type='radio']:checked ~ .label {color:var(--color-primary); font-weight:var(--font-medium);}  
+
+/* 간편계산 결과 상세 */ 
+.data-body.rounded .data-list > thead .data-radio {vertical-align:top;}
+.data-body.rounded .data-list > thead .data-radio .radio-item {min-width:12.8rem;}
+.data-body.rounded .data-list > thead .data-radio .radio-item .btn {display:block; margin-inline:auto;}
+.data-body.rounded .data-list > thead .data-radio .radio-item .btn,
+.data-body.rounded .data-list > thead .data-radio .radio-item .txt>strong {margin-top: var(--space-min)}
+
+
+/* 상품보기 - (태블릿+PC) */
+@media screen and (min-width: 768px) { 
+	/* 운전자보험 간편설계 */  
+	#content > .section.option-visual{min-height: auto; width:100%; padding-top:0; padding-left: 0; padding-right: 0; background-position:center center; background-size: auto 36.0rem; background-repeat: no-repeat;}
+	.section.option-visual .inner .image.ta {display: flex; width: 100%; max-width: 1024px; height: auto;}
+	.section.option-visual .inner .image.mo {display: none;}
+
+	#content > .section.option-full {width:100%; margin:0; padding:0;}
+	.section.option-full .tab-scroll{display:flex;justify-content: center;}  
+	.section.option-full .mo-only {display:none}
+	.section.option-full .pc-only {display:block}
+	.section.option-full .btn-group.option-main::before {display: none;}
+	.section.option-full .btn-group.option-main {display:inline-flex; width:20.4rem; padding:0; position:absolute; top:21%; bottom:auto; left:auto; right:9%;}
+	.section.option-full .btn-group.option-main>a::before {left:50%; bottom:5.5rem; width:14.6rem; height:6.4rem; margin-left:0; background-image:url('../../image/prd/btn-avatar.png'); background-size:100% 9.7rem; transform: translateX(-50%);}
+	.note.plan .note-title {padding: 0.4rem 0;}
+	.note.plan .btn {position: absolute; top:var(--space-lg); right:var(--space-lg);}
+
+	/* 보험상품 보기 */  
+	.section.product .product-select .item-half {flex-wrap: wrap;}
+	.section.product .product-select .item-half > .unit {width: calc(50% - (var(--space-sm) / 2));}
+	.section.product .product-select .item-half > .unit:nth-child(2n + 1) {margin-left: 0;}
+	.section.product .product-select .item-half > .unit:nth-child(2) {margin-top: 0;}
+	#content .section.product .products-foot .btn-group:not(.option-main) > .btn{flex-grow: 1; flex-basis: min-content; min-width: auto;}
+}
+
+/* 상품선택 - (태블릿-가로+PC) */
+@media screen and (min-width: 1024px) {
+	.product-select .product-image .image.mo {display: none;}
+	.product-select .product-image .image.ta {display: block;}
+}
+
+/* 전체레이아웃 - (PC) */
+@media screen and (min-width: 1025px) {
+	.section.option-full .tab-list{width:928px; margin: 0 auto; padding:0;}
+	.section.option-full .plan-img {margin:0 -4.8rem}
+	.section.option-full .btn-group.option-main {top:14.4rem; right:4.8rem;}
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+	<title>결제실패 &gt; 신한EZ손해보험</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon-css.ico">
+	<link rel="stylesheet" href="../../../../css/com/content.css">
+	<link rel="stylesheet" href="../../../../css/qtn/page.css">
+</head>
+<body>
+<!-- #wrap -->
+<div id="wrap">
+
+	<!-- #page -->
+	<div id="page">
+		
+		<!-- #main -->
+		<main id="main">
+
+			<!-- #content -->
+			<article id="content">
+
+				<!-- [D]개발영역 시작 -->
+
+				<!-- .section -->
+				<section class="section option-result">
+					<!-- .title* -->
+					<h2 class="title-h2 result-title">
+						<span class="result-icon fn-ani-set" data-ani-item="result-warning"></span>
+						<span class="txt">보험료 결제에<br>실패했어요.</span>
+					</h2>
+					<!--// .title* -->
+
+					<!-- .group --> <!-- 카드결제 실패 노출 -->
+					<div class="group">
+						<!-- .note* -->
+						<ul class="note-list depth-root">
+							<li>카드 상태 확인 후 [카드 재결제] 버튼을 눌러주세요.</li>
+							<li>해당 화면을 닫으면 청약을 다시 진행해야 하니 화면을 유지해주세요.</li>
+							<li>1회 보험료 결제 정보 변경을 원하시면 결제정보 변경을 클릭해주세요.</li>
+						</ul>
+						<!--// .note* -->
+
+						<!-- .btn -->
+						<button type="button" class="btn texted space-mt-sm"><span>결제정보변경</span></button>
+						<!--// .btn -->
+
+						<!-- .data -->
+						<div class="data space-mt-xl">
+							<!-- .list-head -->
+							<div class="list-head">
+								<h3 class="list-title">결제정보</h3>
+							</div>
+							<!--// .list-head -->
+							<div class="data-body option-row">
+								<table class="data-list">
+									<caption class="sr-only">
+										<!-- 표제목 -->
+										<strong>결제정보 표</strong>
+										<!-- 표내용순서 -->
+										<span>보험료, 카드 정보</span>
+									</caption>
+									<colgroup>
+										<col style="width: 120px;">
+										<col style="width: auto;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>보험료</th>
+											<td><span>12,456</span>원</td>
+										</tr>
+										<tr>
+											<th>카드</th>
+											<td>삼성</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--// .data -->
+					</div>
+					<!--// .group -->
+
+					<!-- .group --> <!-- 계좌 결제 실패 - 잔액부족 -->
+					<div class="group" style="display: none;">
+						<!-- .note* -->
+						<ul class="note-list depth-root">
+							<li>계좌 상태 확인 후 [계좌 재출금]을 선택해주세요.</li>
+							<li>해당 화면을 닫으면 청약을 다시 진행해야 하니 화면을 유지해주세요.</li>
+							<li>1회 보험료 결제 정보 변경을 원하시면 결제정보 변경을 클릭해주세요.</li>
+						</ul>
+						<!--// .note* -->
+
+						<!-- .btn -->
+						<button type="button" class="btn texted space-mt-sm"><span>결제정보변경</span></button>
+						<!--// .btn -->
+
+						<!-- .data -->
+						<div class="data space-mt-xl">
+							<!-- .list-head -->
+							<div class="list-head">
+								<h3 class="list-title">결제정보</h3>
+							</div>
+							<!--// .list-head -->
+							<div class="data-body option-row">
+								<table class="data-list">
+									<caption class="sr-only">
+										<!-- 표제목 -->
+										<strong>결제정보 표</strong>
+										<!-- 표내용순서 -->
+										<span>보험료, 은행, 계좌번호 정보</span>
+									</caption>
+									<colgroup>
+										<col style="width: 120px;">
+										<col style="width: auto;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>보험료</th>
+											<td><span>12,456</span>원</td>
+										</tr>
+										<tr>
+											<th>은행</th>
+											<td>신한</td>
+										</tr>
+										<tr>
+											<th>계좌번호</th>
+											<td>123-45678-45678</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--// .data -->
+					</div>
+					<!--// .group -->
+
+					<!-- .group --> <!-- 간편 결제 실패 -->
+					<div class="group" style="display: none;">
+						<!-- .note* -->
+						<ul class="note-list depth-root">
+							<li>결제가 실패하였거나 취소되었습니다.</li><!-- 2024-03-26 : 문구 수정 및 삭제 -->
+						</ul>
+						<!--// .note* -->
+
+						<!-- .btn -->
+						<button type="button" class="btn texted space-mt-sm"><span>결제정보변경</span></button>
+						<!--// .btn -->
+					</div>
+					<!--// .group -->
+				</section>
+				<!--// .section -->
+				
+				<!-- .btn -->
+				<div class="btn-group option-main">
+					<button type="button" class="btn primary"><span>카드 재결제</span></button>
+					<!-- [D] 2024-03-26 : 청약 결제 실패 케이스 중 계좌 이체 실패 케이스 시 '계좌 재출금' 버튼 출력
+						<button type="button" class="btn primary"><span>계좌 재출금</span></button> 
+					-->
+				</div>
+				<!--// .btn -->
+				<!--// [D]개발영역 끝 -->
+				
+			</article>
+			<!--// #content -->
+			
+		</main>
+		<!--// #main -->
+	</div>
+	<!--// #page -->
+
+	<!-- #popup -->
+	<div id="popup">
+	</div>
+	<!--// #popup -->
+
+</div>
+<!--// #wrap -->
+<script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+<script src="../../../../js/com/lottie_light.min.js"></script>
+<script src="../../../../js/com/local_pub.js"></script><!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+<script src="../../../../js/com/common_pub.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-10-11
+	- 파일명 : page.css
+	- 포함내용 : 공통 화면 관련 스타일
+*/
+/* 
+	수정정보
+	- 수정일 : 2023-04-01
+	- 수정내용 : XXX(홍길동)
+*/  
+
+
+/* 	간편비밀번호 입력/확인 */
+.easy-password {padding:var(--space-max) 0; text-align: center;}
+.easy-password+.easy-password{border-top:var(--line-sm) solid var(--color-bg-base)}
+.process-easy-password {display: flex; justify-content: center; align-items: center; margin-top:var(--space-xl)}
+.process-easy-password .number {display: block; width: 1.6rem; height: 1.6rem; margin: 0 8px; background-color: var(--color-bg-dark); border-radius: 100%;}
+.process-easy-password .number.is-active {background-color: var(--color-primary);}

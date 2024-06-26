@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0046FF" />
+    <title>신한EZ손해보험 API포털관리자</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon.ico" />
+    <link rel="stylesheet" href="../../../../css/com/content.css" />
+    <link rel="stylesheet" href="../../../../css/mng/page.css" />
+  </head>
+  <body>
+    <!-- #wrap -->
+    <div id="wrap">
+      <!-- #skip -->
+      <div id="skip">
+        <div class="skip-menu">
+          <a href="#content">본문으로 건너뛰기</a>
+        </div>
+      </div>
+      <!--// #skip -->
+      <!-- #page -->
+      <div id="page" data-page-main="false">
+        <!-- [D]페이지 유형이 메인일 경우 data-page-main="true" -->
+
+        <!-- #header -->
+        <header id="header">
+          <h1 class="header-title">
+            <span class="logo">
+              <a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험 API포털관리자</span></a>
+            </span>
+            <!-- [D]2023-12-14 - 로고 옆 텍스트 추가 -->
+            <span class="head-serve">개발</span>
+          </h1>
+          <!-- #nav -->
+          <nav id="gnb"></nav>
+          <!--// #nav -->
+        </header>
+        <!--// #header -->
+
+        <!-- .main -->
+        <main class="main">
+          <!-- #content -->
+          <article id="content">
+            <!-- [D]개발영역 시작 -->
+
+            <!-- .section -->
+            <section class="section option-bg type2">
+              <!-- .title* -->
+              <h2 class="title-main option-api admin-bg"><span class="txt">API 제공통계</span></h2>
+              <!--// .title* -->
+
+              <!-- .group -->
+              <div class="group">
+                <!-- .box -->
+                <div class="box item-row option-line">
+                  <!-- .form -->
+                  <div class="form option-graph">
+                    <div class="form-wrap">
+                      <!-- .form-list -->
+                      <ul class="form-list">
+                        <li class="form-item">
+                          <div class="unit label-row">
+                            <div class="form-name">
+                              <strong>API 선택</strong>
+                              <strong class="must"><span class="sr-only">필수입력</span></strong>
+                            </div>
+                            <div class="form-value item-row">
+                              <fieldset class="checkbox-group">
+                                <label for="checkA1" class="checkbox-item">
+                                  <input type="checkbox" name="" id="checkA1" class="control" checked />
+                                  <span class="label">API 이름 입니다. 다중 선택합니다.</span>
+                                </label>
+                                <label for="checkA2" class="checkbox-item">
+                                  <input type="checkbox" name="" id="checkA2" class="control" checked />
+                                  <span class="label">API 이름 입니다. 선택한 앱에 등록된 전체를 나열합니다.</span>
+                                </label>
+                                <label for="checkA3" class="checkbox-item">
+                                  <input type="checkbox" name="" id="checkA3" class="control" checked />
+                                  <span class="label">insure-api-v0.2</span>
+                                </label>
+                                <label for="checkA4" class="checkbox-item">
+                                  <input type="checkbox" name="" id="checkA4" class="control" checked />
+                                  <span class="label">insure-api-v0.2</span>
+                                </label>
+                                <label for="checkA5" class="checkbox-item">
+                                  <input type="checkbox" name="" id="checkA5" class="control" checked />
+                                  <span class="label">insure-api-v0.2</span>
+                                </label>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="form-item">
+                          <div class="unit label-row">
+                            <div class="form-name">
+                              <strong>조회기간</strong>
+                            </div>
+                            <div class="form-value">
+                              <div class="unit item-row">
+                                <div class="unit">
+                                  <fieldset class="radio-group">
+                                    <label for="radioA1" class="radio-item">
+                                      <input type="radio" name="radioA" id="radioA1" class="control" checked />
+                                      <span class="label">시간별(전일)</span>
+                                    </label>
+                                    <label for="radioA2" class="radio-item">
+                                      <input type="radio" name="radioA" id="radioA2" class="control" />
+                                      <span class="label">일별(90일 이내)</span>
+                                    </label>
+                                    <label for="radioA3" class="radio-item">
+                                      <input type="radio" name="radioA" id="radioA3" class="control" />
+                                      <span class="label">월별(12개월 이내)</span>
+                                    </label>
+                                  </fieldset>
+                                </div>
+                              </div>
+
+                              <!-- 디폴트 년/월/일 타입 -->
+                              <div class="unit">
+                                <div class="unit item-row">
+                                  <div class="unit">
+                                    <!-- .input -->
+                                    <div class="input option-date w-px-210">
+                                      <input type="text" name="" id="textfield1-1" class="input-data" placeholder="YYYY.MM.DD" />
+                                      <button type="button" class="btn-calendar" aria-label="기간 시작일" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                  <div class="unit">
+                                    <span class="fix-data">~</span>
+                                  </div>
+                                  <div class="unit">
+                                    <!-- .input -->
+                                    <div class="input option-date w-px-210">
+                                      <input type="text" name="" id="textfield1-2" class="input-data" placeholder="YYYY.MM.DD" />
+                                      <button type="button" class="btn-calendar" aria-label="기간 종료일" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+                                    </div>
+                                    <!--// .input -->
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- 년/월 타입 -->
+                              <div class="unit item-row">
+                                <div class="unit item-row">
+                                  <div class="unit">
+                                    <!-- .select -->
+                                    <div class="select w-px-160">
+                                      <select name="" id="textfield1-3" class="select-data" title="API 검색구분 선택">
+                                        <option value="" selected>yyyy</option>
+                                        <option value="">2023</option>
+                                      </select>
+                                    </div>
+                                    <!--// .select -->
+                                  </div>
+                                  <div class="unit fixed space-mr-xxs">년</div>
+                                  <div class="unit">
+                                    <!-- .select -->
+                                    <div class="select w-px-160">
+                                      <select name="" id="textfield1-4" class="select-data" title="API 검색구분 선택">
+                                        <option value="" selected>mm</option>
+                                        <option value="">12</option>
+                                      </select>
+                                    </div>
+                                    <!--// .select -->
+                                  </div>
+                                  <div class="unit fixed">월</div>
+                                </div>
+                                <div class="unit">
+                                  <span class="fix-data">~</span>
+                                </div>
+                                <div class="unit item-row">
+                                  <div class="unit">
+                                    <!-- .select -->
+                                    <div class="select w-px-160">
+                                      <select name="" id="textfield1-5" class="select-data" title="API 검색구분 선택">
+                                        <option value="" selected>yyyy</option>
+                                        <option value="">2023</option>
+                                      </select>
+                                    </div>
+                                    <!--// .select -->
+                                  </div>
+                                  <div class="unit fixed space-mr-xxs">년</div>
+                                  <div class="unit">
+                                    <!-- .select -->
+                                    <div class="select w-px-160">
+                                      <select name="" id="textfield1-6" class="select-data" title="API 검색구분 선택">
+                                        <option value="" selected>mm</option>
+                                        <option value="">12</option>
+                                      </select>
+                                    </div>
+                                    <!--// .select -->
+                                  </div>
+                                  <div class="unit fixed">월</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="form-item">
+                          <div class="unit">
+                            <!-- .btn-group* -->
+                            <div class="btn-group">
+                              <button type="button" class="btn primary option-cta fn-popup-open" data-popup-id="#popupExample"><span>조회</span></button>
+                            </div>
+                            <!--// .btn-group* -->
+                          </div>
+                        </li>
+                      </ul>
+                      <!--// .form-list -->
+                    </div>
+                  </div>
+                  <!--// .form -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section -->
+
+            <!-- .section -->
+            <section class="section">
+              <!-- .group -->
+              <div class="group">
+                <!-- .tab* -->
+                <div class="tab">
+                  <ul class="tab-head option-box" role="tablist">
+                    <li class="tab-menu" role="tab" id="tabDMenu1" aria-controls="tabDPanel1" aria-selected="true"><a href="javascript:;" tabindex="0">그래프 보기</a></li>
+                    <li class="tab-menu is-active" role="tab" id="tabDMenu2" aria-controls="tabDPanel2" aria-selected="false"><a href="javascript:;" tabindex="-1">표 보기</a></li>
+                  </ul>
+                  <div class="tab-list">
+                    <div class="tab-item" id="tabDPanel1" role="tabpanel" aria-labelledby="tabDMenu1" aria-hidden="false" tabindex="0">
+                      <!-- .group -->
+                      <div class="group">
+                        <fieldset class="radio-group">
+                          <label for="radioB1" class="radio-item">
+                            <input type="radio" name="radioB" id="radioB1" class="control" checked />
+                            <span class="label">전체건수</span>
+                          </label>
+                          <label for="radioB2" class="radio-item">
+                            <input type="radio" name="radioB" id="radioB2" class="control" />
+                            <span class="label">실패건수</span>
+                          </label>
+                          <label for="radioB3" class="radio-item">
+                            <input type="radio" name="radioB" id="radioB3" class="control" />
+                            <span class="label">성공건수</span>
+                          </label>
+                          <label for="radioB4" class="radio-item">
+                            <input type="radio" name="radioB" id="radioB4" class="control" />
+                            <span class="label">응답처리시간(초)</span>
+                          </label>
+                        </fieldset>
+
+                        <!-- 통계 영역입니다. -->
+                        <div class="graph-wrap">
+                          <img src="../../../../image/temp/temp-graph.png" alt="임시" />
+                        </div>
+                      </div>
+                      <!--// .group -->
+                    </div>
+                    <div class="tab-item is-active" id="tabDPanel2" role="tabpanel" aria-labelledby="tabDMenu2" aria-hidden="true" tabindex="-1">
+                      <!-- .group -->
+                      <div class="group">
+                        <!-- .data -->
+                        <div class="data">
+                          <!-- .list-head -->
+                          <div class="list-head">
+                            <div class="list-btn">
+                              <button type="button" class="btn contained option-md icon download-primary"><span>엑셀 다운로드</span></button>
+                            </div>
+                          </div>
+                          <!--// .list-head -->
+                          <div class="data-body">
+                            <table class="data-list">
+                              <caption class="sr-only">
+                                <!-- 표제목 -->
+                                <strong>API 사용통계</strong>
+                                <!-- 표내용순서 -->
+                                <span>날짜, APP, API, 전체건수, 실패건수, 성공건수, 응답처리시간</span>
+                              </caption>
+                              <colgroup>
+                                <col style="width: 12%" />
+                                <col style="width: auto" />
+                                <col style="width: auto" />
+                                <col style="width: 10%" />
+                                <col style="width: 10%" />
+                                <col style="width: 10%" />
+                                <col style="width: 12%" />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th scope="col">날짜</th>
+                                  <th scope="col">APP</th>
+                                  <th scope="col">API</th>
+                                  <th scope="col">전체건수</th>
+                                  <th scope="col">실패건수</th>
+                                  <th scope="col">성공건수</th>
+                                  <th scope="col">응답처리시간</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>yyyy.mm.dd</td>
+                                  <td>APP 이름 입니다</td>
+                                  <td>API 이름 입니다</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>00초</td>
+                                </tr>
+                                <tr>
+                                  <td>yyyy.mm.dd</td>
+                                  <td>APP 이름 입니다</td>
+                                  <td>API 이름 입니다</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>00초</td>
+                                </tr>
+                                <tr>
+                                  <td>yyyy.mm.dd</td>
+                                  <td>APP 이름 입니다</td>
+                                  <td>API 이름 입니다</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>00초</td>
+                                </tr>
+                                <tr>
+                                  <td>yyyy.mm.dd</td>
+                                  <td>APP 이름 입니다</td>
+                                  <td>API 이름 입니다</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>00초</td>
+                                </tr>
+                                <tr>
+                                  <td>yyyy.mm.dd</td>
+                                  <td>APP 이름 입니다</td>
+                                  <td>API 이름 입니다</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>00초</td>
+                                </tr>
+                                <tr>
+                                  <td>yyyy.mm.dd</td>
+                                  <td>APP 이름 입니다</td>
+                                  <td>API 이름 입니다</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>00초</td>
+                                </tr>
+                                <tr>
+                                  <td>yyyy.mm.dd</td>
+                                  <td>APP 이름 입니다</td>
+                                  <td>API 이름 입니다</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>00초</td>
+                                </tr>
+                                <tr>
+                                  <td>yyyy.mm.dd</td>
+                                  <td>APP 이름 입니다</td>
+                                  <td>API 이름 입니다</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>00초</td>
+                                </tr>
+                                <tr>
+                                  <td>yyyy.mm.dd</td>
+                                  <td>APP 이름 입니다</td>
+                                  <td>API 이름 입니다</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>00초</td>
+                                </tr>
+                                <tr>
+                                  <td>yyyy.mm.dd</td>
+                                  <td>APP 이름 입니다</td>
+                                  <td>API 이름 입니다</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>0,000</td>
+                                  <td>00초</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <!--// .data -->
+                      </div>
+                      <!--// .group -->
+                    </div>
+                  </div>
+                </div>
+                <!--// .tab* -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section -->
+
+            <!--// [D]개발영역 끝 -->
+          </article>
+          <!--// #content -->
+        </main>
+        <!--// .main -->
+
+        <!-- #footer -->
+        <footer id="footer"></footer>
+        <!--// #footer -->
+      </div>
+      <!--// #page -->
+
+      <!-- #popup -->
+      <div id="popup">
+        <!-- .calendar-popup -->
+        <div class="calendar-popup" id="calendarPopup" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="calendarTitle">
+          <!-- .calendar-content -->
+          <div class="calendar-content">
+            <!-- .calendar-title -->
+            <h2 class="calendar-title" id="calendarTitle"><span></span></h2>
+            <!--// .calendar-title -->
+            <!-- .calendar -->
+            <div class="calendar">
+              <div class="calendar-wrap-day">
+                <button class="btn-prev"><span class="sr-only">이전달</span></button>
+                <button class="btn-next"><span class="sr-only">다음달</span></button>
+                <div class="calendar-group">
+                  <div class="calendar-head">
+                    <div class="select in-calendar">
+                      <select name="" id="calendar1" class="select-data fn-year" aria-label="년">
+                        <option value="2023" selected>2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                      </select>
+                    </div>
+                    <div class="select in-calendar">
+                      <select name="" id="calendar2" class="select-data fn-month" aria-label="월">
+                        <option value="04" selected>04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="calendar-body">
+                    <div class="week">
+                      <span class="day">일</span>
+                      <span class="day">월</span>
+                      <span class="day">화</span>
+                      <span class="day">수</span>
+                      <span class="day">목</span>
+                      <span class="day">금</span>
+                      <span class="day">토</span>
+                    </div>
+                    <div class="day-group">
+                      <button class="day prev">26</button>
+                      <button class="day prev">27</button>
+                      <button class="day prev">28</button>
+                      <button class="day prev">29</button>
+                      <button class="day prev">30</button>
+                      <button class="day prev">31</button>
+                      <button class="day">1</button>
+                      <button class="day">2</button>
+                      <button class="day">3</button>
+                      <button class="day">4</button>
+                      <button class="day today">5</button>
+                      <button class="day">6</button>
+                      <button class="day is-active">7</button>
+                      <button class="day">8</button>
+                      <button class="day">9</button>
+                      <button class="day">10</button>
+                      <button class="day holiday">11</button>
+                      <button class="day">12</button>
+                      <button class="day">13</button>
+                      <button class="day">14</button>
+                      <button class="day">15</button>
+                      <button class="day">16</button>
+                      <button class="day">17</button>
+                      <button class="day is-start">18</button>
+                      <button class="day">19</button>
+                      <button class="day">20</button>
+                      <button class="day">21</button>
+                      <button class="day">22</button>
+                      <button class="day is-end">23</button>
+                      <button class="day">24</button>
+                      <button class="day">25</button>
+                      <button class="day">26</button>
+                      <button class="day">27</button>
+                      <button class="day">28</button>
+                      <button class="day">29</button>
+                      <button class="day">30</button>
+                      <button class="day next">1</button>
+                      <button class="day next">2</button>
+                      <button class="day next">3</button>
+                      <button class="day next">4</button>
+                      <button class="day next">5</button>
+                      <button class="day next">6</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--// .calendar -->
+            <!-- .btn-popup-close -->
+            <button type="button" class="btn-popup-close">
+              <span class="sr-only">팝업 닫기</span>
+            </button>
+            <!--// .btn-popup-close -->
+          </div>
+          <!--// .calendar-content -->
+        </div>
+        <!--// .calendar-popup -->
+
+        <!-- .popup-wrap -->
+        <div class="popup-wrap option-custom" id="popupExample" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popupExampleTitle">
+          <!-- @set: option-custom -->
+          <!-- .popup-inner -->
+          <div class="popup-inner" tabindex="0" data-focus-on="true">
+            <!-- .popup-head -->
+            <div class="popup-head">
+              <h2 class="popup-title" id="popupExampleTitle"><span>알림</span></h2>
+            </div>
+            <!--// .popup-head -->
+            <!-- .popup-content -->
+            <div class="popup-content">
+              <!-- .section -->
+              <section class="section">
+                <!-- .group -->
+                <div class="group">
+                  <p class="popup-custom-txt">조회 조건을 선택해 주세요</p>
+                </div>
+                <!--// .group -->
+              </section>
+              <!--// .section -->
+            </div>
+            <!--// .popup-content -->
+            <!-- .popup-foot -->
+            <div class="popup-foot">
+              <!-- .btn-group* -->
+              <div class="btn-group">
+                <button type="button" class="btn primary fn-popup-close" data-popup-id="#popupExample"><span>확인</span></button>
+              </div>
+              <!--// .btn-group* -->
+            </div>
+            <!--// .popup-foot -->
+          </div>
+          <!--// .popup-inner -->
+        </div>
+        <!--// .popup-wrap -->
+      </div>
+      <!--// #popup -->
+
+      <!-- #loading -->
+      <div id="loading" class="">
+        <!-- [D]활성화 .is-active 클래스 추가 -->
+        <div class="loading-bar"><span></span></div>
+      </div>
+      <!--// #loading -->
+    </div>
+    <!--// #wrap -->
+
+    <script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+    <script src="../../../../js/com/lottie_light.min.js"></script>
+    <script src="../../../../js/com/local_pub.js"></script>
+    <!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+    <script src="../../../../js/com/common_pub.js"></script>
+  </body>
+</html>

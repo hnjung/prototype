@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-09-14
+	- 파일명 : page.css
+	- 포함내용 : 디바이스 안내 관련 스타일
+*/
+
+/* 디바이스 안내 */
+.device-title {padding-left: 236px; line-height: 1.35; letter-spacing: -.3px; font-weight: var(--font-bold); font-size: 30px;}
+.device-copy {padding-left: 236px; padding-top: 16px; font-size: 15px; color: var(--color-txt-sub);}
+.device-img {margin: 0 auto;}

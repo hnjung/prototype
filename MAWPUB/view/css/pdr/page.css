@@ -1,0 +1,551 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-08-18
+	- 파일명 : page.css
+	- 포함내용 : 상품가입 메뉴 관련 스타일
+*/
+/* 
+	수정정보
+	- 수정일 : 2023-04-01
+	- 수정내용 : XXX(홍길동)
+*/
+
+/* item-col > unit 사이 간격 40px */
+.grid-area .item-col > .unit + .unit {margin-top: var(--space-xxl);}
+
+/* 모바일청약 안내문구 아이콘 삭제 */
+.data-helper.option-note.non-ico {padding-left: 0; text-indent: 0;}
+.data-helper.option-note.non-ico::before {display: none;}
+
+/* 모바일청약 고지사항 확인 바텀시트 */
+.list.depth-u1 > li .text {padding-left: 3px; text-indent: 0;}
+
+/* 모바일청약 가입전 안내사항 */
+.reward-step {margin-top: var(--space-sm);}
+.reward-step .item-row {align-items: flex-start;}
+.reward-step .item-row + .item-row {margin-top: 0; padding-top: var(--space-xl);}
+.reward-step .item-row > .unit + .unit {margin-left: var(--space-sm);}
+.reward-step .item-row .unit .box {position: relative; padding: var(--space-md) var(--space-sm); font-weight: var(--font-medium); text-align: center;}
+.reward-step .item-row .unit .box::after {content: ''; display: block; position: absolute; bottom: -2.8rem; left: 50%; width: var(--icon-md); height: var(--icon-md); background: var(--bg-url-md) no-repeat left top; background-size: var(--bg-size-md);  background-position: calc(var(--icon-md) * 0) calc(var(--icon-md) * -5); transform: translateX(-50%);}
+.reward-step .item-row:last-of-type .unit .box::after {display: none;}
+
+/* 모바일청약 정보 요약 */
+.summary.option-data {padding: 2.3rem; background-color: var(--color-light); border: var(--line-sm) solid var(--color-disable); border-radius: var(--radius-lg); box-shadow: var(--shadow-md);}
+.summary.option-data .summary-item {padding: var(--space-sm) 0; background-color: transparent; border: none; border-radius: 0; box-shadow: none;}
+.summary.option-data .summary-item + .summary-item {margin-top: 0; border-top: var(--line-sm) solid var(--color-bg-base);}
+.summary.option-data .summary-item:first-child {padding-top: 0;}
+.summary.option-data .summary-item:last-child {padding-bottom: 0;}
+
+/* 주택화재보험 보험료설계 가입정보입력 */
+.build-item-img {width: 88px;}
+
+/* 보험료 계산결과 */
+.plan-filter {margin-bottom: var(--space-lg);}
+.plan-filter-list {display: flex; flex-direction: row; align-items: center; font-size: var(--font-xs); color: var(--color-dark);}
+.plan-filter-list > li > .txt {display: inline-block; color: var(--color-base); vertical-align: middle;}
+.plan-filter-list > li::after {content: ''; display: inline-block; width: .1rem; height: 1.2rem; background-color:var(--color-disable); margin: 0 .8rem; vertical-align: middle;}
+.plan-filter-list > li:last-child::after {display: none;}
+.plan-filter-list > li::before {content: ''; display: inline-block; width: var(--icon-sm); height: var(--icon-sm); margin-right: .4rem; background-image: var(--bg-url-sm); background-repeat: no-repeat; background-size: var(--bg-size-sm); vertical-align: middle;}
+.plan-filter-list > li.none::before {display: none;}
+.plan-filter-list > li.date::before {background-position: 0 calc(var(--icon-sm) * -5);}
+.plan-filter-list > li.person::before {background-position: calc(var(--icon-sm) * -1) calc(var(--icon-sm) * -5);}
+.plan-filter-list > li.location::before {background-position: calc(var(--icon-sm) * -2) calc(var(--icon-sm) * -5);}
+.plan-filter-list > li.payment::before {background-position: calc(var(--icon-sm) * -4) calc(var(--icon-sm) * -5);}
+.plan-filter-list > li > .txt ~ .btn.ico-filter {margin-left: var(--space-min);}
+.plan-filter-list > li > .key {padding-left: var(--space-min); font-weight: var(--font-medium); color: var(--color-dark); vertical-align: middle;}
+
+.plan-chip {margin-top: calc(var(--space-xxs) * -1); margin-bottom: var(--space-lg);}
+.plan-chip .chip-group {margin-top: 0; margin-bottom: 0;}
+.plan-chip .chip-group.option-full .chip-item {margin-top: 0; margin-bottom: 0;}
+
+.plan-self-price {display: block; line-height: 1.35; font-size: var(--font-xxs); color: var(--color-txt-sub);}
+.plan-range-price {display: block; margin-top: var(--space-xxs); padding-top: var(--space-xxs); border-top: var(--line-sm) solid var(--color-bg-base);}
+.plan-range-price > .input.option-range {display: block; width: 100%;}
+.plan-range-price > .input.option-range ~ .item-row {padding-top: 0; padding-bottom: 0; font-size: 0;}
+.plan-range-price > .input.option-range ~ .item-row > .unit .txt {font-size: var(--font-min);}
+
+.plan-best-price {margin-top: var(--space-sm); margin-bottom: var(--space-min); border-radius: var(--radius-md); background-color: var(--color-bg-light); text-align: center;}
+.plan-range-price ~ .plan-best-price {margin-top: var(--space-xxs);}
+.plan-best-price > .txt {vertical-align: middle; font-size: var(--font-xxs); color: var(--color-base);}
+.plan-best-price > .txt > em {color: var(--color-dark);}
+.plan-best-price::before {content: ''; display: inline-block; width: 3.2rem; height: 3.2rem; background-repeat: no-repeat; background-position: 0 0; background-size: 3.2rem auto; vertical-align: middle;}
+
+.card.type-plan .card-item:nth-child(12n + 1) .plan-best-price::before {background-image: url('../../image/pdr/plan-avatar2.png');}
+.card.type-plan .card-item:nth-child(12n + 2) .plan-best-price::before {background-image: url('../../image/pdr/plan-avatar7.png');}
+.card.type-plan .card-item:nth-child(12n + 3) .plan-best-price::before {background-image: url('../../image/pdr/plan-avatar8.png');}
+.card.type-plan .card-item:nth-child(12n + 4) .plan-best-price::before {width: 4.0rem; background-image: url('../../image/pdr/plan-avatar1.png'); background-size: 4.0rem auto;}
+.card.type-plan .card-item:nth-child(12n + 5) .plan-best-price::before {background-image: url('../../image/pdr/plan-avatar2-1.png');}
+.card.type-plan .card-item:nth-child(12n + 6) .plan-best-price::before {background-image: url('../../image/pdr/plan-avatar7-1.png');}
+.card.type-plan .card-item:nth-child(12n + 7) .plan-best-price::before {background-image: url('../../image/pdr/plan-avatar8-1.png');}
+.card.type-plan .card-item:nth-child(12n + 8) .plan-best-price::before {width: 4.0rem; background-image: url('../../image/pdr/plan-avatar1-1.png'); background-size: 4.0rem auto;}
+.card.type-plan .card-item:nth-child(12n + 9) .plan-best-price::before {background-image: url('../../image/pdr/plan-avatar2-2.png');}
+.card.type-plan .card-item:nth-child(12n + 10) .plan-best-price::before {background-image: url('../../image/pdr/plan-avatar7-2.png');}
+.card.type-plan .card-item:nth-child(12n + 11) .plan-best-price::before {background-image: url('../../image/pdr/plan-avatar8-2.png');}
+.card.type-plan .card-item:nth-child(12n) .plan-best-price::before {width: 3.6rem; background-image: url('../../image/pdr/plan-avatar1-2.png'); background-size: 3.6rem auto;}
+
+.plan-badge {position: relative; min-height: 1.8rem; margin-bottom: var(--space-min); font-size: 0;}
+.plan-badge > .unit {position: absolute; top: 0;}
+.plan-badge .badge {display: inline-block; padding: .15rem .6rem; border-radius: .9rem; vertical-align: middle; font-weight: var(--font-regular); font-size: var(--font-tiny); color: var(--color-light); letter-spacing: -0.05rem;}
+.plan-badge .badge.type1 {background-color: var(--color-info);}
+.plan-badge .badge.type2 {background-color: var(--color-primary);}
+.plan-badge .badge ~ .badge {margin-left: .2rem;}
+
+.plan-badge > .unit.value1 {left: 0;}
+.plan-range-price.range-step2 .plan-badge > .unit.value2 {right: 0;}
+.plan-range-price.range-step3 .plan-badge > .unit.value3 {right: 0;}
+.plan-range-price.range-step3 .plan-badge > .unit.word2.value2 {left: 50%; margin-left: calc(-2.83rem / 2);}
+.plan-range-price.range-step3 .plan-badge > .unit.word4-5.value2 {left: 50%; margin-left: calc(-5.859rem / 2);}
+
+.plan-range-price.range-step4 .plan-badge > .unit.value4 {right: 0;}
+.plan-range-price.range-step4 .plan-badge > .unit.word2.value2 {left: 50%; margin-left: calc((-33.33% / 2) - (2.83rem / 2));}
+.plan-range-price.range-step4 .plan-badge > .unit.word2.value3 {left: 50%; margin-left: calc((33.33% / 2) - (2.83rem / 2));}
+.plan-range-price.range-step4 .plan-badge > .unit.word4-5.value2 {left: 50%; margin-left: calc((-33.33% / 2) - (5.859rem / 2));}
+.plan-range-price.range-step4 .plan-badge > .unit.word4-5.value3 {left: 50%; margin-left: calc((33.33% / 2) - (5.859rem / 2));}
+
+.plan-price-step {display: flex; justify-content: space-between; margin-top: var(--space-min); font-size: 0;}
+.plan-price-step .txt {vertical-align: middle; font-size: var(--font-min); color: var(--color-txt-body);}
+
+.card.type-plan .card-item {padding-top: 1.9rem; padding-bottom: 1.9rem;}
+.card.type-plan .card-item.fn-accordion-wrap {padding-bottom: .7rem;}
+.card.type-plan .card-title .key {line-height: 1.5; font-size: var(--font-xs);}
+.card.type-plan .card-title .key > em {font-weight: var(--font-medium);}
+.card.type-plan .card-title .key .badge ~ em::before {content: ' ';}
+.card.type-plan .card-title .key > em::after {content: ' ';}
+.card.type-plan .card-title .price {flex-shrink: 0; display: inline-block; margin-left: var(--space-xxs); line-height: 1.35; vertical-align: middle; color: var(--color-dark);}
+.card.type-plan .card-title .price > em {vertical-align: middle; font-weight: var(--font-semibold);}
+.card.type-plan .card-copy {margin-top: .2rem; line-height: 1;}
+.card.type-plan .card-copy > .txt {font-size: var(--font-min); color: var(--color-base);}
+.card.type-plan .card-info {border-top: none; margin-top: 0; padding-top: 0;}
+.card.type-plan .card-info.detail {max-height: 0; transition: max-height var(--animation-speed) var(--animation-timing-base);}
+.card.type-plan .is-open .card-info.detail {max-height: inherit;}
+.card.type-plan .btn-card-more {padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0; border-top: 0;}
+.card.type-plan .btn-card-more > span {display: none;}
+.card.type-plan .btn-card-more::after {background-position: calc(var(--icon-sm) * -6) calc(var(--icon-sm) * -3);}
+
+.card.type-plan .card-price {display: flex; justify-content: space-between; align-items: center; margin-top: var(--space-min); color: var(--color-dark);}
+.card.type-plan .join-price {font-size: var(--font-md);}
+.card.type-plan .join-price > em {font-weight: var(--font-semibold);}
+.card.type-plan .pay-price {line-height: 1.35; font-size: var(--font-xs);}
+.card.type-plan .pay-price > em {font-weight: var(--font-medium);}
+.card.type-plan .pay-price > em > strong {font-weight: var(--font-medium);}
+
+/* 중요사항 확인 */
+.join-check-list {margin-top: var(--space-lg);}
+.join-check-list .card-title ~ .note-list {margin-top: var(--space-xxs);}
+
+/* 주택 소유 유형 & 주택 유형 선택 */
+.product-bulid-type {display: flex; flex-direction: row-reverse; align-items: flex-start;}
+.product-bulid-type::after {content: ''; flex-shrink: 0; display: block; width: var(--icon-max); height: var(--icon-max); background-image: var(--bg-url-max); background-repeat: no-repeat; background-size: var(--bg-size-max);}
+.product-bulid-type .card-inner {width: 100%; padding-left: 1.6rem;}
+.product-bulid-type .card-title .key {line-height: 1.5; font-size: var(--font-md);}
+
+.product-bulid-type.type1::after {background-position: 0 calc(var(--icon-max) * -4);}
+.product-bulid-type.type2::after {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -4);}
+.product-bulid-type.type3::after {background-position: calc(var(--icon-max) * -2) calc(var(--icon-max) * -4);}
+
+.product-bulid-type.type11::after {background-position: calc(var(--icon-max) * -3) calc(var(--icon-max) * -4);}
+.product-bulid-type.type12::after {background-position: calc(var(--icon-max) * -4) calc(var(--icon-max) * -4);}
+.product-bulid-type.type13::after {background-position: calc(var(--icon-max) * -5) calc(var(--icon-max) * -4);}
+.product-bulid-type.type14::after {background-position: calc(var(--icon-max) * -6) calc(var(--icon-max) * -4);}
+
+/* 최근 계산 기록 보기 */
+.pdr-history .card-main > span {display: block; color: var(--color-dark);}
+.pdr-history .card-main .text-price > em {color: var(--color-dark);}
+.pdr-history .card-main .product {padding-top: var(--space-xxs); line-height: 1.5; font-weight: var(--font-medium); font-size: var(--font-xs);}
+.pdr-history .card-main .date {line-height: 1.35; font-size: var(--font-xxs); color: var(--color-txt-sub);}
+.pdr-history .card-main ~ .card-info {margin-top: var(--space-sm);}
+
+/* 레저보험 */
+.pet-wrap {height: 100%;}
+.pet-wrap .group {display: flex; flex-direction: column; height: 100%;}
+.pet-wrap .main-copy {flex-shrink: 0;}
+.pet-wrap .form-list {flex-shrink: 0; margin-bottom: var(--space-sm);}
+.pet-wrap .data-helper.option-caption {padding-top: var(--space-sm); margin-bottom: var(--space-lg);}
+.pet-wrap .pet-word-wrap {position: relative;}
+.pet-wrap .pet-word-inner {position: absolute;}
+.pet-wrap .search-word {position: relative; z-index: 1; background-color: var(--color-light);}
+
+.search-word {flex-shrink: 1; overflow-y: auto; height: 100%; min-height: 194px; border:var(--line-sm) solid var(--color-bg-dark); border-radius: var(--radius-md);}
+.search-word .segment-group {display:block; background-color: var(--color-light);}
+.search-word .segment-item .label {justify-content: flex-start; padding: var(--space-xs) var(--space-lg); min-height: 4.8rem; text-align: left; color: var(--color-dark); font-size: var(--font-md);}
+.search-word .segment-item .label .txt {text-align: left; color: var(--color-dark);}
+.search-word .segment-item .label strong {color:var(--color-primary); font-weight: var(--font-regular);}
+.search-word .segment-item .control {inset: 0; width: 100%; height: 100%; border-radius: 0;}
+.search-word .segment-item .control:checked {background-color: var(--color-primary-bg-base); border-color: transparent; box-shadow: none;}
+.search-word .segment-item .control:checked ~ .label {color: var(--color-dark); font-weight: var(--font-medium);}
+.search-word .segment-item .control:checked ~ .label strong {font-weight: var(--font-medium);}
+.search-word .segment-item + .segment-item::before {display:none}
+
+.card .card-list.ico-type .label {padding-left: 8rem;}
+.card .card-list.ico-type .label::after {content: ''; position: absolute; top: 2.3rem; left: 2.3rem; width: var(--icon-max); height: var(--icon-max); background-image: url('../../image/pdr/ico-pdr-max.svg'); background-repeat: no-repeat; background-size: var(--bg-size-max);}
+.card .card-list.ico-type .label.type1::after {background-position: calc(var(--icon-max) * 0) calc(var(--icon-max) * 0);}
+.card .card-list.ico-type .label.type2::after {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * 0);}
+.card .card-list.ico-type .label.type3::after {background-position: calc(var(--icon-max) * -2) calc(var(--icon-max) * 0);}
+.card .card-list.ico-type .label.type4::after {background-position: calc(var(--icon-max) * -3) calc(var(--icon-max) * 0);}
+.card .card-list.ico-type .label.type5::after {background-position: calc(var(--icon-max) * -4) calc(var(--icon-max) * 0);}
+.card .card-list.ico-type .label.type6::after {background-position: calc(var(--icon-max) * -5) calc(var(--icon-max) * 0);}
+
+/* Auto 케어보험 */
+.card-list.care-cover {display: flex; flex-direction: row; flex-wrap: wrap; align-items: stretch;}
+.care-cover .card-item {padding: 1.9rem; width: calc(50% - var(--space-xxs)); text-align: center;}
+.care-cover .card-item:nth-child(2) {margin-top: 0;}
+.care-cover .card-item:nth-child(2n) {margin-left: var(--space-sm);}
+
+.card-list.care-cover .label {display: flex; flex-direction: column; height: 100%;}
+.care-cover .btn-select {flex-shrink: 0; width: 100%; margin-top: var(--space-sm);}
+.care-cover .btn-select > span {pointer-events: none;}
+
+.care-cover .card-link {margin: 0; padding: 0;}
+.care-cover .card-link .card-title {padding-right: 0;}
+.care-cover .card-link .card-title::before {content: ''; position: relative; bottom: auto; display: block; width: var(--icon-max); height: var(--icon-max); margin: 0 auto; background-image: url('../../image/pdr/ico-pdr-max.svg'); background-repeat: no-repeat; background-size: var(--bg-size-max);}
+.care-cover .card-item.type1 .card-title::before {background-position: 0 calc(var(--icon-max) * -1);}
+.care-cover .card-item.type2 .card-title::before {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -1);}
+.care-cover .card-item.type3 .card-title::before {background-position: calc(var(--icon-max) * -2) calc(var(--icon-max) * -1);}
+.care-cover .card-item.type4 .card-title::before {background-position: calc(var(--icon-max) * -3) calc(var(--icon-max) * -1);}
+
+.care-cover .card-link .card-title::after {content: ''; display: inline-block; width: var(--icon-sm); height: var(--icon-sm); background: var(--bg-url-sm) no-repeat calc(var(--icon-sm) * -1) calc(var(--icon-sm) * -1); background-size: var(--bg-size-sm); vertical-align: middle;}
+
+.care-cover .card-item .price {display: block; flex-shrink: 1; height: 100%; margin-top: var(--space-min); line-height: 1.35; font-weight: var(--font-semibold);}
+.care-cover .card-item .price > em {color: var(--color-primary);}
+
+.care-cover .card-item .control:checked ~ .label .btn-select,
+.care-cover .btn-select.is-active {background-color: var(--color-primary); border-color: var(--color-primary); color: var(--color-light);}
+.care-cover .card-item .control:checked ~ .label .btn-select:hover {background-color: var(--color-primary-dark); border-color: var(--color-primary-dark);}
+.care-cover .card-item .control:checked ~ .label .btn-select:active {background-color: var(--color-primary-active); border-color: var(--color-primary-active);}
+
+.care-cover .card-select .control[type='checkbox']:focus ~ .label::before {border-color: transparent;}
+.care-cover .card-select .control[type='checkbox']:checked ~ .label::before {border-color: #1A57FF;}
+
+/* Auto 케어보험 - 상세보기 */
+.care-cover-img {padding-bottom: 144px; background-repeat: no-repeat; background-position: 100% 100%; background-size: auto 144px;}
+
+.care-detail {margin-top: var(--space-sm);}
+.care-detail .card-title {display: flex; align-items: flex-start;}
+.care-detail .card-title::before {position: relative; flex-shrink: 0; bottom: auto; right: auto; display: block; width: 3.2rem; height: 3.2rem; margin-right: var(--space-xxs); background-image: url('../../image/pdr/ico-pdr-lg.svg'); background-repeat: no-repeat; background-size: 32.0rem auto;}
+.care-detail .card-title .key {padding-top: .5rem; line-height: 1.375; font-size: var(--font-md);}
+
+.care-detail .limit {margin-top: var(--space-xxs); line-height: 1; text-align: right;}
+.care-detail .limit > .txt {display: inline-block; line-height: 1.5; vertical-align: middle; font-weight: var(--font-medium); color: var(--color-dark);}
+.care-detail .limit::after {content: ''; display: inline-block; width: var(--icon-sm); height: var(--icon-sm); margin-left: var(--space-xxs); background: var(--bg-url-sm) no-repeat calc(var(--icon-sm) * -1) calc(var(--icon-sm) * -1); background-size: var(--bg-size-sm); vertical-align: middle;}
+
+/* Auto 케어보험 - 운전케어 상세보기 */
+.care-cover-img.type1 {background-image: url('../../image/pdr/care-img1.png');}
+.care-detail.type1 .card-item.type1 .card-title::before {background-position: 0 0;}
+.care-detail.type1 .card-item.type2 .card-title::before {background-position: calc(3.2rem * -1) 0;}
+.care-detail.type1 .card-item.type3 .card-title::before {background-position: calc(3.2rem * -2) 0;}
+.care-detail.type1 .card-item.type4 .card-title::before {background-position: calc(3.2rem * -3) 0;}
+.care-detail.type1 .card-item.type5 .card-title::before {background-position: calc(3.2rem * -4) 0;}
+.care-detail.type1 .card-item.type6 .card-title::before {background-position: calc(3.2rem * -5) 0;}
+.care-detail.type1 .card-item.type7 .card-title::before {background-position: calc(3.2rem * -6) 0;}
+.care-detail.type1 .card-item.type8 .card-title::before {background-position: calc(3.2rem * -7) 0;}
+
+/* Auto 케어보험 - 운전케어 상세보기 */
+.care-cover-img.type2 {background-image: url('../../image/pdr/care-img2.png');}
+.care-detail.type2 .card-item.type1 .card-title::before {background-position: 0 calc(3.2rem * -1);}
+.care-detail.type2 .card-item.type2 .card-title::before {background-position: calc(3.2rem * -1) calc(3.2rem * -1);}
+
+/* Auto 케어보험 - 자차케어 상세보기 */
+.care-cover-img.type3 {background-image: url('../../image/pdr/care-img3.png');}
+.care-detail.type3 .card-item.type1 .card-title::before {background-position: 0 calc(3.2rem * -2);}
+.care-detail.type3 .card-item.type2 .card-title::before {background-position: calc(3.2rem * -1) calc(3.2rem * -2);}
+
+/* Auto 케어보험 - 파츠케어 상세보기 */
+.care-cover-img.type4 {background-image: url('../../image/pdr/care-img4.png');}
+.care-detail.type4 .card-item.type1 .card-title::before {background-position: 0 calc(3.2rem * -3);}
+.care-detail.type4 .card-item.type2 .card-title::before {background-position: calc(3.2rem * -1) calc(3.2rem * -3);}
+
+/* Auto 케어보험 - 담보 상세보기 */
+.card-detail-price {padding: 1.9rem; border: var(--line-sm) solid var(--color-bg-dark); border-radius: var(--radius-lg); line-height: 1;}
+.card-detail-price .txt {line-height: 1.313; font-weight: var(--font-semibold); color: var(--color-dark);}
+.card-detail-price .txt > em {color: var(--color-primary);}
+
+/* 상품소개 - 공통 */
+.pdr-visual {position: relative; overflow: hidden; min-height: 55.0rem; margin: calc(var(--space-lg) * -1) calc(var(--space-md) * -1) 0; padding: var(--space-xl) var(--space-md) 0; font-weight: var(--font-regular); font-size: 0;}
+.pdr-visual .sub {position: relative; display: block; padding: 0 0 var(--space-xs); line-height: 1.35; font-weight: var(--font-semibold); font-size: var(--space-sm);}
+.pdr-visual .main-title {position: relative; display: block; line-height: 1.35; font-weight: var(--font-semibold); font-size: var(--font-headline-md);}
+.pdr-visual .copy {position: relative; display: block; padding-top: var(--space-xs); line-height: 1.5; font-size: var(--font-xs);}
+.pdr-visual .refer {position: relative; display: block; padding-top: var(--space-xs); line-height: 1.5; font-size: var(--font-xs);}
+.pdr-visual .bg {position: absolute; z-index: -1; top: 0; left: 50%; width: 60.0rem; height: 55.0rem; margin-left: -30.0rem;}
+
+.pdr-visual.type1 > .sub {color: #EE473E;} /* 주택화재 */
+.pdr-visual.type2 > .sub {color: #558B0A;} /* 레저종합 */
+.pdr-visual.type3 > .sub {color: #8C711C;} /* 국내여행 */
+.pdr-visual.type4 > .sub {color: #007CD7;} /* 해외여행 */
+.pdr-visual.type5 > .sub {color: #802BC3;} /* 해외장기 */
+.pdr-visual.type6 > .sub {color: #002A9F;} /* Auto케어 */
+
+.pdr-benefit.card.option-data {overflow: hidden; position: relative; margin-top: -8.0rem; padding: var(--space-lg); border: none; box-shadow: var(--shadow-md);}
+.pdr-benefit.card.option-data .card-item {display: flex; flex-direction: row; justify-content: space-between; padding-top: var(--space-lg); padding-bottom: var(--space-xxs);}
+.pdr-benefit.card.option-data .card-item:first-child {padding-top: 0;}
+.pdr-benefit.card.option-data .card-item:last-child {padding-bottom: 0;}
+
+.pdr-benefit.card.option-data .card-title .txt {font-size: var(--font-sm); color: var(--color-txt-sub);}
+.pdr-benefit.card.option-data .card-title .key {font-size: var(--font-lg); word-break: keep-all;}
+.pdr-benefit .refer {display: block; padding-top: var(--space-min); line-height: 1.35; font-size: var(--font-sm); color: var(--color-base);}
+
+.pdr-benefit .card-item::after {content: ''; flex-shrink: 0; display: block; width: var(--icon-max); height: var(--icon-max); margin-top: 2.8rem; background-image: url('../../image/pdr/ico-pdr-max.svg'); background-repeat: no-repeat; background-size: 64.0rem auto;}
+
+.pdr-benefit .card-item.type1-ico1::after {background-position: 0 calc(var(--icon-max) * -2);} /* 주택화재 */
+.pdr-benefit .card-item.type1-ico2::after {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -2);}
+.pdr-benefit .card-item.type1-ico3::after {background-position: calc(var(--icon-max) * -2) calc(var(--icon-max) * -2);}
+
+.pdr-benefit .card-item.type3-ico1::after {background-position: 0 calc(var(--icon-max) * -3);} /* 국내여행 */
+.pdr-benefit .card-item.type3-ico2::after {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -3);}
+
+.pdr-benefit .card-item.type4-ico1::after {background-position: 0 calc(var(--icon-max) * -4);} /* 해외여행 */
+.pdr-benefit .card-item.type4-ico2::after {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -4);}
+.pdr-benefit .card-item.type4-ico3::after {background-position: calc(var(--icon-max) * -2) calc(var(--icon-max) * -4);}
+
+.pdr-benefit .card-item.type5-ico1::after {background-position: 0 calc(var(--icon-max) * -5);} /* 해외장기 */
+.pdr-benefit .card-item.type5-ico2::after {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -5);}
+.pdr-benefit .card-item.type5-ico3::after {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -4);}
+
+.pdr-benefit .card-item.type6-ico1::after {background-position: 0 calc(var(--icon-max) * -6);} /* Auto케어 */
+.pdr-benefit .card-item.type6-ico2::after {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -6);}
+.pdr-benefit .card-item.type6-ico3::after {background-position: calc(var(--icon-max) * -2) calc(var(--icon-max) * -6);}
+
+.pdr-benefit .card-item.type6-ico2 .card-title .txt {position: relative; margin-right: calc(var(--icon-max) * -1);}
+
+.pdr-benefit .card-banner {margin-top: calc(var(--space-lg) * -1); margin-left: calc(var(--space-lg) * -1); margin-right: calc(var(--space-lg) * -1); padding: var(--space-sm) var(--space-lg) var(--space-xs); background-color: var(--color-primary-bg-light); font-size: var(--font-xs);}
+.pdr-benefit .card-banner > .txt {color: var(--color-primary);}
+.pdr-benefit .card-banner ~ .card-list {margin-top: var(--space-md);}
+
+.pdr-content {padding-top: 8.0rem; text-align: center;}
+.pdr-content:first-child {padding-top: var(--space-lg);}
+.pdr-title {line-height: 1;}
+.pdr-title > .txt {line-height: 1.35; font-weight: var(--font-semibold); font-size: 2.6rem; color: var(--color-dark);}
+.pdr-body {padding-top: var(--space-xs); line-height: 1.5; font-size: var(--font-sm); color: var(--color-txt-sub); word-break: keep-all;}
+.pdr-body .refer {display: block; padding-top: var(--space-xs); font-size: var(--font-sm); color: var(--color-base);}
+.pdr-body .refer.fs-tiny {font-size: var(--font-sm) !important;}
+.pdr-img {display: inline-block; width: min(32.0rem, 100%); margin-top: var(--space-lg);}
+
+/* 상품소개 - 레저보험 */
+.leisure-plan {position: relative; margin-top: -8.0rem; padding: var(--space-lg) var(--space-lg) var(--space-xl); border-radius: var(--radius-lg); background-color: var(--color-light); box-shadow: var(--shadow-md);}
+.leisure-plan-title {line-height: 1;}
+.leisure-plan-title > .txt {line-height: 1.35; font-weight: var(--font-semibold); font-size: var(--font-lg); color: var(--color-dark);}
+.leisure-plan-copy {padding-top: var(--space-min); font-size: var(--font-sm); color: var(--color-txt-sub);}
+
+.leisure-plan-list {display: grid; grid-template-columns: repeat(4, minmax(6.4rem, auto)); justify-content: space-between;}
+.leisure-plan-item {margin-top: 2.4rem; text-align: center;}
+.leisure-plan-item > .link {display: block;}
+.leisure-plan-item > .link::before {content: ''; display: block; width: var(--icon-max); height: var(--icon-max); margin: 0 auto; background-image: url('../../image/pdr/ico-pdr-max.svg'); background-repeat: no-repeat; background-size: var(--bg-size-max);}
+.leisure-plan-item.type1 > .link::before {background-position: 0 calc(var(--icon-max) * -7);}
+.leisure-plan-item.type2 > .link::before {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -7);}
+.leisure-plan-item.type3 > .link::before {background-position: calc(var(--icon-max) * -2) calc(var(--icon-max) * -7);}
+.leisure-plan-item.type4 > .link::before {background-position: calc(var(--icon-max) * -3) calc(var(--icon-max) * -7);}
+.leisure-plan-item.type5 > .link::before {background-position: calc(var(--icon-max) * -4) calc(var(--icon-max) * -7);}
+.leisure-plan-item.type6 > .link::before {background-position: calc(var(--icon-max) * -5) calc(var(--icon-max) * -7);}
+.leisure-plan-item.type7 > .link::before {background-position: calc(var(--icon-max) * -6) calc(var(--icon-max) * -7);}
+.leisure-plan-item.type8 > .link::before {background-position: calc(var(--icon-max) * -7) calc(var(--icon-max) * -7);}
+.leisure-plan-item .txt {display: block; padding-top: var(--space-xxs); font-weight: var(--font-medium); font-size: var(--font-sm); color: var(--color-dark);}
+
+/* 상품소개 - 레저보험 - 팝업 */
+.leisure-popup {padding-bottom: var(--space-lg); text-align: center;}
+.leisure-popup::before {content: ''; display: block; width: 100%; height: 20.0rem; background-repeat: no-repeat; background-position: 50% 0; background-size: 32.0rem auto;}
+.leisure-popup.type1::before {background-image: url('../../image/pdr/type6-sub1.png');} /* 골프 */
+.leisure-popup.type2::before {background-image: url('../../image/pdr/type6-sub2.png');} /* 아웃도어 */
+.leisure-popup.type3::before {background-image: url('../../image/pdr/type6-sub3.png');} /* 자전거 */
+.leisure-popup.type4::before {background-image: url('../../image/pdr/type6-sub4.png');} /* 국내여행 */
+.leisure-popup.type5::before {background-image: url('../../image/pdr/type6-sub5.png');} /* 패밀리 */
+.leisure-popup.type6::before {background-image: url('../../image/pdr/type6-sub6.png');} /* 펫 */
+.leisure-popup.type7::before {background-image: url('../../image/pdr/type6-sub7.png');} /* 운전자 */
+.leisure-popup.type8::before {background-image: url('../../image/pdr/type6-sub8.png');} /* 금융 */
+
+.leisure-popup-title {padding-top: var(--space-sm); line-height: 1;}
+.leisure-popup-title > .txt {line-height: 1.35; font-size: var(--font-title-lg); color: var(--color-dark);}
+.leisure-popup-txt {padding-top: var(--space-xxs); color: var(--color-txt-sub); word-break: keep-all;}
+.leisure-popup-txt .refer {display: block; padding-top: var(--space-xs); font-size: var(--font-sm); color: var(--color-base);}
+
+/* 상품소개 - 국내여행보험 */
+.prd-travel-banner {margin-top: var(--space-sm); margin-left: calc(var(--space-body) * -1); margin-right: calc(var(--space-body) * -1);}
+.prd-travel-banner .swiper {padding-left: var(--space-body); padding-right: var(--space-body);}
+.prd-travel-banner .prd-travel-item {width: 23.6rem;}
+.prd-travel-banner .prd-travel-item.item1 .box {background-color: #FDF5ED;}
+.prd-travel-banner .prd-travel-item.item2 .box {background-color: #EDF5FF;}
+.prd-travel-banner .prd-travel-item .box {display: block; width: 100%; height: 24rem; padding: 4.8rem 2.3rem 4rem; text-align: center;}
+.prd-travel-banner .prd-travel-item .box > p {padding-top: 11.7rem; font-weight: var(--font-regula); font-size: var(--font-xs); color: var(--color-txt-body); line-height: 1.5;}
+.prd-travel-banner .prd-travel-item.item1 .box > p {background: url('../../image/pdr/type2-banner1.png') no-repeat top center; background-size: 9.6rem auto;}
+.prd-travel-banner .prd-travel-item.item2 .box > p {background: url('../../image/pdr/type2-banner2.png') no-repeat top center; background-size: 9.6rem auto;} 
+.prd-travel-banner .prd-travel-item .box > em {font-weight: var(--font-semibold); font-size: var(--font-md); color: var(--color-dark); line-height: 1.35;}
+
+/* 상품소개 - Auto 케어보험 */
+.plan-care {margin-top: var(--space-sm);}
+.plan-care .accordion .accordion-head .inner {flex: 1 1 0; padding-left: var(--space-sm);}
+.plan-care .accordion .accordion-head::before {content: ''; display: block; width: var(--icon-xl); height: var(--icon-xl); background: url('../../image/pdr/ico-pdr-xl.svg') no-repeat; background-size: var(--bg-size-xl);}
+.plan-care .accordion .accordion-head.item-care1::before {background-position: calc(var(--icon-xl) * 0) calc(var(--icon-xl) * 0);}
+.plan-care .accordion .accordion-head.item-care2::before {background-position: calc(var(--icon-xl) * -1) calc(var(--icon-xl) * 0);}
+.plan-care .accordion .accordion-head.item-care3::before {background-position: calc(var(--icon-xl) * -2) calc(var(--icon-xl) * 0);}
+.plan-care .accordion .accordion-head.item-care4::before {background-position: calc(var(--icon-xl) * -3) calc(var(--icon-xl) * 0);}
+
+.pdr-info .option-step .card-item.step-type-auto1::before {background-position: calc(3.2rem * 0) calc(3.2rem * -1);}
+.pdr-info .option-step .card-item.step-type-auto2::before {background-position: calc(3.2rem * -1) calc(3.2rem * -1);}
+.pdr-info .option-step .card-item.step-type-auto3::before {background-position: calc(3.2rem * -2) calc(3.2rem * -1);}
+.pdr-info .option-step .card-item.step-type-auto4::before {background-position: calc(3.2rem * -3) calc(3.2rem * -1);}
+.pdr-info .option-step .card-item.step-type-auto5::before {background-position: calc(3.2rem * -4) calc(3.2rem * -1);}
+.pdr-info .option-step .card-item.step-type-auto6::before {background-position: calc(3.2rem * -5) calc(3.2rem * -1);}
+.pdr-info .option-step .card-item.step-type-auto7::before {background-position: calc(3.2rem * -6) calc(3.2rem * -1);}
+.pdr-info .option-step .card-item.step-type-auto8::before {background-position: calc(3.2rem * -7) calc(3.2rem * -1);}
+.pdr-info .option-step .card-item.step-type-auto9::before {background-position: calc(3.2rem * -8) calc(3.2rem * -1);}
+.pdr-info .option-step .card-item.step-type-auto10::before {background-position: calc(3.2rem * -9) calc(3.2rem * -1);}
+.pdr-info .option-step .card-item.step-type-auto11::before {background-position: calc(3.2rem * 0) calc(3.2rem * -2);}
+.pdr-info .option-step .card-item.step-type-auto12::before {background-position: calc(3.2rem * -1) calc(3.2rem * -2);}
+.pdr-info .option-step .card-item.step-type-auto13::before {background-position: calc(3.2rem * -2) calc(3.2rem * -2);}
+
+.note-sub2 {padding-top: var(--space-sm); line-height: 1.35; font-size: var(--font-min); color: var(--color-base);}
+
+/* 상품소개 - 해외장기체류보험 */
+.pdr-info {margin-top: var(--space-md);}
+.pdr-info .option-step .card-item[class*="step-type"]::after {display: none;}
+.pdr-info .option-step .card-item[class*="step-type"]::before {width: 3.2rem; height: 3.2rem; margin-right: var(--space-xxs); background-image: url('../../image/pdr/ico-pdr-lg.svg'); background-repeat: no-repeat; background-size: 32rem auto;}
+.pdr-info .option-step .card-title .key {font-size: var(--font-xs); color: var(--color-txt-sub); line-height: 1.5; text-align: left;}
+.pdr-info .option-step .card-item[class*="step-type"] {align-items: flex-start; padding: var(--space-sm) 0;}
+.pdr-info .option-step .card-item:first-child {padding-bottom: var(--space-sm);}
+.pdr-info .option-step .card-item:last-child {padding-top: var(--space-sm);}
+.pdr-info .option-step .card-item .card-title {min-height: 3.2rem; display: flex; align-items: center;}
+.pdr-info .option-step .card-item.step-type1::before {background-position: calc(3.2rem * 0) calc(3.2rem * 0);}
+.pdr-info .option-step .card-item.step-type2::before {background-position: calc(3.2rem * -1) calc(3.2rem * 0);}
+.pdr-info .option-step .card-item.step-type3::before {background-position: calc(3.2rem * -2) calc(3.2rem * 0);}
+
+.pdr-info.type-auto .option-step .card-title .key {font-size: var(--font-md); color: var(--color-dark);}
+
+/* 펫보험 */
+.pet-photo .copy {font-size: 0;}
+.pet-photo .copy > .txt {display: inline-block; margin-left: var(--space-xxs); line-height: 1.5; vertical-align: middle; font-size: var(--font-xs); color: var(--color-txt-body);}
+.pet-photo .ex {display: flex; margin-top: var(--space-xxs);}
+.pet-photo .ex > .photo {background-color: #FFECDB; border-radius: var(--radius-lg);}
+.pet-photo .ex > .photo > img {width: min(15.6rem, 100%); margin: 0 auto;}
+.pet-photo .ex > .photo:nth-child(2) {margin-left: var(--space-xxs); background-color: #FFF3D3;}
+
+.file.option-image {margin-top: var(--space-sm);}
+.file.option-image .file-btn {display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 240px; background-color: var(--color-light); border: var(--line-sm) dashed var(--color-disable); border-radius: var(--radius-lg);}
+.file.option-image .file-btn::before {width: var(--icon-lg); height: var(--icon-lg); margin: 0 auto var(--space-min); background: var(--bg-url-lg) no-repeat calc(var(--icon-lg) * -2) 0; background-size: var(--bg-size-lg);}
+
+.file.option-image .file-name {padding: 0; border-radius: var(--radius-lg);}
+.file.option-image .file-name::before {display: none;}
+.file.option-image .file-name > .img {max-width: 100%; max-height: 240px; margin: 0 auto;}
+.file.option-image .btn-attach {position: absolute; z-index: 1; bottom: 1.6rem; right: 1.6rem; width: 4.0rem; height: 4.0rem; background-color: rgba(0, 0, 0, .5); border-radius: 50%;}
+.file.option-image .btn-attach::before {content: ''; position: absolute; top: 50%; left: 50%; width: var(--icon-md); height: var(--icon-md); margin-top: calc((var(--icon-md) / 2) * -1); margin-left: calc((var(--icon-md) / 2) * -1); background: var(--bg-url-md) no-repeat calc(var(--icon-md) * -9) calc(var(--icon-md) * -5);}
+
+/* 주택화재보험 - 기간 및 납입방법 */
+.chip-group.option-fixed .label {min-width: 6.4rem;}
+
+/* 추가 버튼 */
+.btn-group > .file-btn > span {display: inline-block; padding-left: var(--space-min); vertical-align: middle;}
+
+/* 담보 상세설명 */
+.coverage-copy {font-size: var(--font-sm); color: var(--color-txt-sub);}
+.coverage-copy ~ .form {margin-top: var(--space-xl);}
+
+.form-name > .coverage-title {display: flex; justify-content: space-between; padding: 0 var(--space-sm);}
+.coverage-price.radio-group.option-boxed .radio-item {padding-right: var(--space-md); padding-left: var(--space-md);}
+.coverage-price .radio-item .label {display: flex; width: 100%; justify-content: space-between;}
+.coverage-price .radio-item .label > .txt {font-weight: var(--font-semibold);}
+.coverage-price .radio-item .control[type='radio']:checked ~ .label > .txt:nth-child(2) {color: var(--color-primary);}
+
+.coverage-price .flag {position: absolute; top: -.4rem; right: 2.0rem; padding: .35rem .4rem .85rem; background: url('../../image/pdr/coverage-bg.png') repeat-x 0 0; background-size: .4rem auto; line-height: 1; font-weight: var(--font-semibold); font-size: var(--font-min); color: var(--color-highlight);}
+.coverage-price .flag::before {content: ''; position: absolute; top: 0; left: 0; width: .4rem; height: 100%; background: var(--color-light) url('../../image/pdr/coverage-bg-left.png') no-repeat 0 0; background-size: 100% auto;}
+.coverage-price .flag::after {content: ''; position: absolute; top: 0; right: 0; width: 1.2rem; height: 100%; background: var(--color-light) url('../../image/pdr/coverage-bg-right.png') no-repeat 0 0; background-size: 100% auto;}
+.coverage-price .flag > em {position: relative; z-index: 1;}
+
+/* 가입 전 확인사항 */
+.join-guide-wrap {position: relative;}
+.join-guide-wrap .title-h3 {margin-top: var(--space-xxl);}
+.join-guide-wrap .title-h3:first-child {margin-top: 0;}
+.join-guide-wrap .title-h3 ~ .title-h4 {margin-top: var(--space-sm);}
+.join-guide-wrap .list ~ .card {margin-top: var(--space-sm);}
+.join-guide-wrap .list ~ .title-h4 {margin-top: var(--space-xxl);}
+
+.join-guide-wrap .card.option-step .card-item[class*="step-type"] {align-items: flex-start;}
+.join-guide-wrap .card.option-step .card-item.step-type1::before {background-position: 0 calc(var(--icon-xl) * -3);}
+.join-guide-wrap .card.option-step .card-item.step-type2::before {background-position: calc(var(--icon-xl) * -2) calc(var(--icon-xl) * -3);}
+.join-guide-wrap .card.option-step .card-item.step-type3::before {background-position: calc(var(--icon-xl) * -3) calc(var(--icon-xl) * -3);}
+.join-guide-wrap .card.option-step .card-item.step-type4::before {background-position: calc(var(--icon-xl) * -3) calc(var(--icon-xl) * -5);}
+.join-guide-wrap .card.option-step .card-item.step-type5::before {background-position: calc(var(--icon-xl) * -6) calc(var(--icon-xl) * -7);}
+.join-guide-wrap .card.option-step .card-main {margin-top: var(--space-min); font-size: var(--font-xs);}
+
+#popup > .popup-wrap.option-full .popup-foot .btn-group > .btn-confirm.is-disabled,
+#popup > .popup-wrap.option-full .popup-foot .btn-group > .btn-confirm.is-disabled:hover {background-color: var(--color-primary-bg-dark); border-color: var(--color-primary-bg-dark); box-shadow: none;}
+
+/* 제휴페이지 */
+#page.main-option-partner .section:first-child {padding-top: calc(var(--header-height) + var(--space-lg));}
+#page.main-option-partner .pdr-visual {margin-top: calc((var(--space-lg) + var(--header-height)) * -1); padding-top: calc(var(--header-height) + var(--space-xl));}
+#page.main-option-partner .pdr-visual[class*="kia-type"] .sub {font-size: var(--font-min);}
+#page.main-option-partner .pdr-visual[class*="kia-type"] .sub > em {}
+#page.main-option-partner .pdr-visual[class*="kia-type"] .main-title {font-size: var(--font-title-lg); color: var(--color-dark);}
+#page.main-option-partner .pdr-visual[class*="kia-type"] .main-title > strong {display: block; font-size: var(--font-headline-lg);}
+
+.pdr-benefit-kia.card.option-data {position: relative; margin-top: -8.0rem; padding: var(--space-lg); padding-bottom: var(--space-xl); border: none; box-shadow: var(--shadow-md);}
+.pdr-benefit-kia.card.option-data .card-title .key {font-size: var(--font-title-sm);}
+.pdr-benefit-kia.card.option-data .card-title .key::before {content: ''; display: inline-block; width: var(--icon-md); height: var(--icon-md); margin-right: var(--space-xxs); background-image: url('../../image/pdr/ico-prd-md.svg'); background-repeat: no-repeat; background-size: var(--bg-size-md); vertical-align: middle;}
+.card-item.kia-type1 .card-title .key::before {background-position: 0 0;}
+.card-item.kia-type2 .card-title .key::before {background-position: calc(var(--icon-md) * -1) 0;}
+.card-item.kia-type3 .card-title .key::before {background-position: calc(var(--icon-md) * -2) 0;}
+.card-item.kia-type4 .card-title .key::before {background-position: calc(var(--icon-md) * -3) 0;}
+.card-item.kia-type5 .card-title .key::before {background-position: calc(var(--icon-md) * -4) 0;}
+.card-item.kia-type6 .card-title .key::before {background-position: calc(var(--icon-md) * -5) 0;}
+.card-item.kia-type7 .card-title .key::before {background-position: calc(var(--icon-md) * -6) 0;}
+.card-item.kia-type8 .card-title .key::before {background-position: calc(var(--icon-md) * -7) 0;}
+.pdr-benefit-kia.card.option-data .card-main {font-size: var(--font-sm);}
+.pdr-benefit-kia.card.option-data .card-main .refer {display: block; padding-top: var(--space-min); font-size: var(--font-sm); color: var(--color-base);}
+
+.payment-kia {align-items: flex-start;}
+.payment-kia > .unit:first-child {flex-shrink: 0;}
+.payment-kia > .unit:last-child {flex-shrink: 1; width: 100%; text-align: right; word-break: break-all; color: var(--color-dark);}
+.payment-kia .card-image {overflow: hidden; width: 8.8rem; border-radius: var(--radius-sm); box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.25);}
+.payment-kia .subject {display: block; font-size: var(--font-sm);}
+.payment-kia .point {display: block; font-weight: var(--font-semibold); font-size: var(--font-title-lg);}
+
+/* 제휴페이지 - 현대캐피탈/기아멤버스 메인비쥬얼, 로고 */
+#page.main-option-partner .pdr-visual.partnership {padding-top: calc(var(--header-height) + var(--space-lg));}
+#page.main-option-partner .pdr-visual.partnership.kia-type {height: 55rem;}
+#page.main-option-partner .pdr-visual.partnership.kia-type .bg {height: 55rem;}
+
+.pdr-visual .partner-logo {position: relative; display: block; height: 2rem; background-repeat: no-repeat; background-position: left top;}
+.pdr-visual .partner-logo.hyundai {width: 22.7rem; margin-bottom: var(--space-md); background-image: url('../../image/pdr/hyundai-logo.png'); background-size: 22.7rem auto;}
+.pdr-visual .partner-logo.kia {width: 27.2rem; margin-bottom: 1.4rem; background-image: url('../../image/pdr/kia-logo.png'); background-size: 27.2rem auto;}
+
+/* 결제 수단 선택 */
+.summary.payment .summary-item [class*="card-"] ~ .card-info {padding-top: 0; border-top: 0;}
+
+/* 스티키 버튼 안내 문구 */
+.tooltip.option-show {position: absolute; top: 0; left: 0; width: 100%; height: 0; margin-top: 0; justify-content: center;}
+.tooltip.option-show .tooltip-body {margin-top: -2.0rem; background-color: var(--color-txt-body); animation: animation-tooltip var(--animation-speed) var(--animation-timing-outback) forwards;}
+.tooltip.option-show .tooltip-body::before {bottom: -.5rem; left: 50%; margin-left: -.4rem; background-position: -2.0rem 0; transform: rotate3d(0, 0, 1, 270deg);}
+.tooltip.option-show.is-open .tooltip-body {display: block;}
+
+.kia-price {position: relative; margin-top: var(--space-sm); padding-top: var(--space-sm); border-top: var(--line-sm) solid var(--color-bg-base);}
+.kia-price .box {padding: 1.5rem 1.9rem;}
+.kia-price .box .title {font-size: var(--font-xs); color: var(--color-dark);}
+.kia-price .box .title .sub {font-size: var(--font-min); color: var(--color-base);}
+.kia-price .box .price {flex-shrink: 0; font-size: var(--font-title-md); font-weight: var(--font-semibold); letter-spacing: -.02rem; color: var(--color-dark);}
+.kia-price .box .price > strong {color: var(--color-primary);}
+.kia-price-sub {padding-top: var(--space-min); font-size: var(--font-min); color: var(--color-base);}
+
+.tooltip.kia-members {position: absolute; top: -.8rem; right: 0; width: 100%; height: 0; margin-top: 0;}
+.tooltip.kia-members .tooltip-body {right: .8rem; padding-right: 3.2rem; background-color: var(--color-primary); box-shadow: var(--shadow-md);}
+.tooltip.kia-members .tooltip-body::before {bottom: -.5rem; right: 1.6rem; top: auto; left: auto; background-position: -1.0rem 0; transform: rotate3d(0, 0, 1, 270deg);}
+
+.tooltip.kia-members .btn-close {position: absolute; top: 50%; right: .8rem; width: calc(var(--icon-sm) + var(--space-xxs)); height: calc(var(--icon-sm) + var(--space-xxs)); margin-top: calc((var(--icon-sm) + var(--space-xxs)) / 2 * -1); padding: var(--space-min);}
+.tooltip.kia-members .btn-close::before {content: ''; display: block; width: 100%; height: 100%; background: var(--bg-url-sm) no-repeat calc(var(--icon-sm) * -5) calc(var(--icon-sm) * -4); background-size: var(--bg-size-sm);}
+
+.pdr-info.type-kia {margin-top: 0;}
+.pdr-info.type-kia .option-step .card-title .key {font-size: var(--font-md); color: var(--color-dark);}
+.pdr-info .option-step .card-item.step-type-kia1::before {background-position: 0 calc(3.2rem * -3);}
+
+/* 신한 레저보험 - 기아멤버십 */
+.list > li > .kia-depth-o3 {margin-top: 0;}
+.list.depth-u1 > li .kia-depth-o2 {padding-bottom: 0;}
+.list.depth-u1 > li .kia-depth-o3 {padding-bottom: 0;}
+.kia-depth-o3 > li + li {margin-top: 0;}
+
+/* 여행목적 */
+.radio-group.option-icon .radio-item {align-items: center;}
+.radio-group.option-icon .radio-item::before {content: ''; position: relative; z-index: 1; display: inline-block; width: var(--icon-lg); height: var(--icon-lg); margin-right: var(--space-min); background-image: var(--bg-url-lg); background-repeat: no-repeat; background-size: var(--bg-size-lg);}
+.radio-group.option-icon .radio-item.type1::before {background-position: 0 calc(var(--icon-lg) * -4);}
+.radio-group.option-icon .radio-item.type2::before {background-position: calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -4);}
+.radio-group.option-icon .radio-item.type3::before {background-position: calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -4);}
+.radio-group.option-icon .radio-item.type4::before {background-position: calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -4);}
+.radio-group.option-icon .radio-item.type5::before {background-position: calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -4);}
+.radio-group.option-icon .radio-item.type6::before {background-position: calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -4);}
+.radio-group.option-icon .radio-item .label::before {box-shadow: var(--shadow-sm);}

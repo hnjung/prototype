@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+	<title>사고정보 입력 &gt; 신한EZ손해보험</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon-maw.ico">
+	<link rel="stylesheet" href="../../../../css/com/content.css">
+</head>
+<body>
+<!-- #wrap -->
+<div id="wrap">
+
+	<!-- #skip -->
+	<div id="skip">
+		<div class="skip-menu">
+			<a href="#main">본문으로 건너뛰기</a>
+		</div>
+	</div>
+	<!--// #skip -->
+	<!-- #page -->
+	<div id="page" data-page-main="false" data-main-copy="false">
+		<!-- [D]
+			페이지 유형이 메인(HMEHMEHME_M01)일 경우 data-page-main="true"
+			메인 카피가 있는 경우(헤더 타이틀 숨김) data-main-copy="true"
+		-->
+		<!-- #header-->
+		<header id="header">
+			<h1 class="header-title">
+				<span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험</span></a></span>
+				<span class="txt sr-only">사고정보 입력</span>
+			</h1>
+			<a href="javascript:;" class="btn-page-back" role="button">
+				<span class="sr-only">이전 페이지</span>
+			</a>
+			<button type="button" class="btn-menu">
+				<span class="ico-menu-bar"></span>
+				<span class="sr-only">전체 메뉴 열기</span>
+			</button>
+			<!-- #nav -->
+			<nav id="gnb">
+			</nav>
+			<!--// #nav -->
+		</header>
+		<!--// #header-->
+
+		<!-- #main -->
+		<main id="main" role="main">
+
+			<!-- #content -->
+			<article id="content">
+				<!-- [D]개발영역 시작 -->
+
+				<!-- .section -->
+				<section class="section">
+					<!-- .title* -->
+					<h2 class="main-copy">
+						<div class="step">
+							<span class="sr-only">총 7 단계로 구성되어 있습니다.</span>
+							<strong><span class="sr-only">현재 단계</span>1</strong><span aria-hidden="true">/7</span>
+						</div>
+						<strong class="sub fc-primary">재물/배상책임 보험금청구</strong>
+						<span class="txt">사고정보를 알려주세요</span><!-- 2023-11-21 : 띄어쓰기 수정 -->
+					</h2>
+					<!--// .title* -->
+
+					<!-- .group -->
+					<div class="group">
+						<div class="form">
+							<div class="form-wrap">
+								<!-- .form-list -->
+								<ul class="form-list">
+									<li class="form-item">
+										<div class="form-name"><strong><label for="formItem1" id="formItem1Title">사고일</label></strong></div>
+										<!-- [D] 2023-10-16 사고시간 삭제 : 마크업 수정 -->
+										<div class="form-value">
+											<!-- <div class="item-row">
+												<div class="unit filled">
+													<!-- .input 
+													<div class="input option-date w-100">
+														<input type="text" name="" id="formItem1" class="input-data" placeholder="선택해 주세요">
+														<button type="button" class="btn-calendar" aria-labelledby="formItem1Title" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+													</div>
+													<!--// .input -
+												</div>
+												<div class="unit filled">
+													<!-- .select ">
+														<select name="" id="formItem2" class="select-data" aria-labelledby="formItem2Title" title="사고일 시간 선택" aria-hidden="true" tabindex="-1">
+															<option value="" disabled selected>선택해 주세요</option>
+															<option value="">옵션1</option>
+															<option value="">옵션2</option>
+														</select>
+													</div>
+													<!--// .select 
+												</div>
+											</div> -->
+											<!-- .input -->
+											<div class="input option-date w-100">
+												<input type="text" name="" id="formItem1" class="input-data" placeholder="YYYYMMDD 8자리 입력" title="YYYYMMDD 8자리 입력"> <!-- 2024-02-27 : input title 추가 - 2024-04-25 : placeholder 문구 수정 -->
+												<button type="button" class="btn-calendar" aria-labelledby="formItem1Title" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="formItem2">사고유형</label></strong></div>
+										<div class="form-value">
+											<!-- .segment* -->
+											<fieldset class="segment-group">
+												<label for="formItem1a" class="segment-item">
+													<input type="radio" name="formItem1" id="formItem1a" class="control" checked>
+													<span class="label"><em class="txt">배상책임</em></span>
+												</label>
+												<label for="formItem1b" class="segment-item">
+													<input type="radio" name="formItem1" id="formItem1b" class="control">
+													<span class="label"><em class="txt">재물</em></span>
+												</label>
+											</fieldset>
+											<!--// .segment* -->
+
+											<!-- [D] 2023-10-16 배상책임 & 재물선택시 하위 노출 추가 -->
+											<!-- [D]배상책임 선택시 -->
+											<div class="box option-bg space-mt-xxs">
+												<!-- .radio* -->
+												<fieldset class="radio-group option-segment">
+													<label for="formItem2a" class="radio-item">
+														<input type="radio" name="formItem2" id="formItem2a" class="control" checked>
+														<span class="label">대인</span>
+													</label>
+													<label for="formItem2b" class="radio-item">
+														<input type="radio" name="formItem2" id="formItem2b" class="control">
+														<span class="label">대물</span>
+													</label>
+												</fieldset>
+												<!--// .radio* -->
+											</div>
+											<!--// [D]배상책임 선택시 -->
+
+											<!-- [D]재물 선택시 -->
+											<div class="box option-bg space-mt-xxs" style="display:none;">
+												<!-- .radio* -->
+												<fieldset class="radio-group option-segment">
+													<label for="formItem3a" class="radio-item">
+														<input type="radio" name="formItem3" id="formItem3a" class="control" checked>
+														<span class="label">여행불편</span>
+													</label>
+													<label for="formItem3b" class="radio-item">
+														<input type="radio" name="formItem3" id="formItem3b" class="control">
+														<span class="label">휴대폰손해</span>
+													</label>
+													<label for="formItem3c" class="radio-item">
+														<input type="radio" name="formItem3" id="formItem3c" class="control">
+														<span class="label">홀인원/알바트로스</span>
+													</label>
+													<label for="formItem3d" class="radio-item">
+														<input type="radio" name="formItem3" id="formItem3d" class="control">
+														<span class="label">가전제품손해</span>
+													</label>
+													<label for="formItem3e" class="radio-item">
+														<input type="radio" name="formItem3" id="formItem3e" class="control">
+														<span class="label">화재</span>
+													</label>
+													<label for="formItem3f" class="radio-item">
+														<input type="radio" name="formItem3" id="formItem3f" class="control">
+														<span class="label">도난</span>
+													</label>
+													<label for="formItem3g" class="radio-item">
+														<input type="radio" name="formItem3" id="formItem3g" class="control">
+														<span class="label">파손</span>
+													</label>
+													<label for="formItem3h" class="radio-item">
+														<input type="radio" name="formItem3" id="formItem3h" class="control">
+														<span class="label">기타</span>
+													</label>
+												</fieldset>
+											</div>
+											<!--// [D]재물 선택시 -->
+											<!--// [D] 2023-10-16 배상책임 & 재물선택시 하위 노출 추가 -->
+										</div>
+									</li>
+
+									<!-- [D] 2023-10-16 사고장소 추가 -->
+									<!-- [D]사고유형(재물)선택시에만 노출 -->
+									<li class="form-item">
+										<div class="form-name"><strong><label for="formItem5">사고장소</label></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="text" name="" id="formItem5" class="input-data" placeholder="입력해 주세요">
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<!--// [D] 2023-10-16 사고장소 추가 -->
+									<li class="form-item">
+										<div class="form-name"><strong><label for="formItem4">사고내용</label></strong></div>
+										<div class="form-value">
+											<!-- .textarea -->
+											<div class="textarea w-100">
+												<div class="textarea-count">
+													<span><em class="count-char">0</em> / <span class="count-max">1000</span>Byte</span>
+												</div>
+												<textarea name="" id="formItem4" class="textarea-data" maxlength="1000" placeholder="입력해 주세요"></textarea>
+											</div>
+											<!--// .textarea -->
+										</div>
+									</li>
+								</ul>
+								<!--// .form-list -->
+							</div>
+						</div>
+					</div>
+					<!--// .group -->
+				</section>
+				<!--// .section -->
+
+				<!-- .btn -->
+				<div class="btn-group option-main">
+					<button type="button" class="btn primary"><span>다음</span></button>
+				</div>
+				<!--// .btn -->
+
+				<!--// [D]개발영역 끝 -->
+			</article>
+			<!--// #content -->
+
+		</main>
+		<!--// #main -->
+
+		<!-- #footer -->
+		<footer id="footer"></footer>
+		<!--// #footer -->
+	</div>
+	<!--// #page -->
+
+	<!-- #popup -->
+	<div id="popup">
+		<!-- .calendar-popup -->
+		<div class="calendar-popup" id="calendarPopup" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="calendarTitle">
+			<!-- .calendar-content -->
+			<div class="calendar-content">
+				<!-- .calendar-title -->
+				<h2 class="calendar-title" id="calendarTitle"><span></span></h2>
+				<!--// .calendar-title -->
+				<!-- .calendar -->
+				<div class="calendar">
+					<button class="btn-prev"><span class="sr-only">이전달</span></button>
+					<button class="btn-next"><span class="sr-only">다음달</span></button>
+					<div class="calendar-group">
+						<div class="calendar-head">
+							<div class="select in-calendar">
+								<select name="" id="calendar1" class="select-data fn-year" aria-label="년" title="년도 선택" aria-hidden="true" tabindex="-1">
+									<option value="2023" selected>2023</option>
+									<option value="2024">2024</option>
+									<option value="2025">2025</option>
+								</select>
+							</div>
+							<div class="select in-calendar">
+								<select name="" id="calendar2" class="select-data fn-month" aria-label="월" title="월 선택" aria-hidden="true" tabindex="-1">
+									<option value="04" selected>04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+								</select>
+							</div>
+						</div>
+						<div class="calendar-body">
+							<div class="week">
+								<span class="day">일</span>
+								<span class="day">월</span>
+								<span class="day">화</span>
+								<span class="day">수</span>
+								<span class="day">목</span>
+								<span class="day">금</span>
+								<span class="day">토</span>
+							</div>
+							<div class="day-group">
+								<button class="day prev">26</button>
+								<button class="day prev">27</button>
+								<button class="day prev">28</button>
+								<button class="day prev">29</button>
+								<button class="day prev">30</button>
+								<button class="day prev">31</button>
+								<button class="day">1</button>
+								<button class="day">2</button>
+								<button class="day">3</button>
+								<button class="day">4</button>
+								<button class="day today">5</button>
+								<button class="day">6</button>
+								<button class="day is-active">7</button>
+								<button class="day">8</button>
+								<button class="day">9</button>
+								<button class="day">10</button>
+								<button class="day holiday">11</button>
+								<button class="day">12</button>
+								<button class="day">13</button>
+								<button class="day">14</button>
+								<button class="day">15</button>
+								<button class="day">16</button>
+								<button class="day">17</button>
+								<button class="day is-start">18</button>
+								<button class="day ing">19</button>
+								<button class="day ing">20</button>
+								<button class="day ing">21</button>
+								<button class="day ing">22</button>
+								<button class="day is-end">23</button>
+								<button class="day">24</button>
+								<button class="day">25</button>
+								<button class="day">26</button>
+								<button class="day">27</button>
+								<button class="day">28</button>
+								<button class="day">29</button>
+								<button class="day">30</button>
+								<button class="day next">1</button>
+								<button class="day next">2</button>
+								<button class="day next">3</button>
+								<button class="day next">4</button>
+								<button class="day next">5</button>
+								<button class="day next">6</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--// .calendar -->
+				<!-- .btn-popup-close -->
+				<button type="button" class="btn-popup-close">
+					<span class="sr-only">닫기</span>
+				</button>
+				<!--// .btn-popup-close -->
+			</div>
+			<!--// .calendar-content -->
+		</div>
+		<!--// .calendar-popup -->
+	</div>
+	<!--// #popup -->
+
+</div>
+<!--// #wrap -->
+<script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+<script src="../../../../js/com/lottie_light.min.js"></script>
+<script src="../../../../js/com/local_pub.js"></script><!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+<script src="../../../../js/com/common_pub.js"></script>
+</body>
+</html>

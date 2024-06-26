@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-08-18
+	- 파일명 : page.css
+	- 포함내용 : 메뉴 계약관리
+*/
+/* 
+	수정정보
+	- 수정일 : 2023-04-01
+	- 수정내용 : XXX(홍길동)
+*/
+
+/* 공지사항 */
+.notice .board-list .board-item .board-link:before {width: var(--icon-sm); height: var(--icon-sm); margin-top: -0.8rem; border: 0; background: var(--bg-url-sm) no-repeat; background-size: var(--bg-size-sm); background-position: calc(var(--icon-sm) * -1) calc(var(--icon-sm) * -1); transform: rotate(0deg);}
+.notice .board-list .board-item .board-option-post {padding-right: 3.6rem;}
+.notice .board-list .board-item .cell-title {display: block; font-weight: var(--font-semibold); font-size: var(--font-md); color: var(--color-dark); line-height: 1.35;}
+.notice .board-list .board-item .cell-date {display: block; padding-top: var(--space-xxs); font-size: var(--font-xs); color: var(--color-txt-sub); line-height: 1.5;}
+.notice .board-view .view-head {padding: 2.5rem 0; border-top: var(--line-sm) solid var(--color-dark); border-bottom: var(--line-sm) solid var(--color-bg-light);}
+.notice .board-view .view-head .title {display: block; font-weight: var(--font-semibold); font-size: var(--font-title-md); color: var(--color-dark); line-height: 1.35;}
+.notice .board-view .view-head .date {display: block; padding-top: var(--space-xxs); font-size: var(--font-xs); color: var(--color-txt-sub); line-height: 1.35;}
+.notice .board-view .view-body {padding-top: var(--space-lg);}
+.notice .board-view .view-body .view-content .img-object {position: relative; margin-bottom: var(--space-xl);}
+.notice .board-view .view-body .view-content .img-object .figure-area {display:flex; width:100%; height: 100%; /*height: 18.6rem;*/ border-radius: var(--radius-lg); background-color: var(--color-base); overflow: hidden;}
+.notice .board-view .view-body .view-content .img-object .figure-area > img {object-fit: cover; width: 100%; height: 100%;}
+.notice .board-view .view-body .view-content .text-area {position: relative;}
+
+/* 자주하는 질문 */
+.faq .accordion .icon .bullet {display: block; position: absolute; top: .3rem; left: 0; width: 1.8rem; height: 1.8rem; border-radius: 50%; font-size: var(--font-min); color: var(--color-light); text-align: center;}
+.faq .accordion .icon .txt {overflow: hidden; position: absolute; top: -999em; left: -999em; z-index: 0; width: 1px; height: 1px;}
+
+.faq .accordion .accordion-head .inner {position: relative; padding-left: 2.6rem;}
+.faq .accordion .accordion-head .inner > span {font-weight: var(--font-medium); font-size: var(--font-md);}
+.faq .accordion .accordion-head .icon .bullet {background-color: var(--color-base);}
+
+.faq .accordion .accordion-body .inner {position: relative; padding-left: 4.5rem; font-size: var(--font-sm); color: var(--color-txt-sub); line-height: 1.5;}
+.faq .accordion .accordion-body .icon .bullet {top: 1.9rem; left: 2rem; background-color: var(--color-primary);}
+
+/* 고객센터 안내 */
+.cs-center-wrap {border: var(--line-sm) solid var(--color-bg-dark); border-top: 0; border-radius: var(--radius-lg);}
+.cs-center-banner {position: relative; margin: calc(var(--line-sm) * -1) calc(var(--line-sm) * -1) 0; background: linear-gradient(97deg, #558DFF 0%, #1C67FF 100%); border-top-left-radius: var(--radius-lg); border-top-right-radius: var(--radius-lg);}
+.cs-center-tel {display: block; padding: 3.0rem 0 var(--space-lg) 143px; background: url('../../image/csc/center-banner-img1.png') no-repeat 0 100%; background-size: 12.6rem auto; color: var(--color-light);}
+.cs-center-tel .title-h4 {color: var(--color-light);}
+.cs-center-tel .title-h4 .sub {font-weight: var(--font-regular); font-size: var(--font-xs);}
+.cs-center-tel .tel {display: block; line-height: 1.35;}
+.cs-center-tel .tel::before {content: ''; display: inline-block; width: var(--icon-md); height: var(--icon-md); margin-right: var(--space-min); background: var(--bg-url-md) no-repeat 0 calc(var(--icon-md) * -6); background-size: var(--bg-size-md); vertical-align: middle;}
+.cs-center-tel .tel > .txt {display: inline-block; vertical-align: middle; font-size: var(--font-title-lg);}
+
+.cs-center-num {display: flex; flex-wrap: wrap; justify-content: center; max-width: 320px; margin: 0 auto; padding: 1.7rem .8rem 3.1rem 2.2rem;}
+.cs-center-num > .item {width: 82px; margin: 1.5rem 1.4rem 0 0; text-align: center;}
+.cs-center-num > .item > .num {padding: 1.4rem 1.2rem 1.3rem; border: var(--line-sm) solid var(--color-bg-base); border-radius: 2.0rem; background-color: var(--color-bg-light); box-shadow: 0 .15rem 0 0 var(--color-bg-base); line-height: 1.35; font-weight: var(--font-medium); font-size: 3.2rem; color: var(--color-txt-sub);}
+.cs-center-num > .item > .txt {padding-top: .7rem; font-weight: var(--font-medium); font-size: var(--font-xs); color: var(--color-dark);}
+.cs-center-num > .item.is-disabled > .num {background-color: var(--color-light); color: var(--color-disable);}
+.cs-center-num > .item .asterisk {display: inline-block; vertical-align: middle; font-size: 0;}
+.cs-center-num > .item .asterisk::before {content: ''; display: inline-block; width: var(--icon-md); height: var(--icon-md); margin-right: var(--space-min); background: var(--bg-url-md) no-repeat calc(var(--icon-md) * -1) calc(var(--icon-md) * -6); background-size: var(--bg-size-md); vertical-align: middle;}
+
+.cs-center-info {margin-top: var(--space-lg); padding: var(--space-lg) var(--space-md); background-color: var(--color-primary-bg-base); border-radius: var(--radius-lg);}
+.cs-center-info .title-h4 {position: relative; z-index: 1;}
+.cs-center-info .copy {position: relative; z-index: 1; padding-top: var(--space-min); font-size: var(--font-xs); color: var(--color-txt-sub);}
+.cs-center-info .time {position: relative; margin-top: var(--space-sm); padding: 1.2rem 0; background-color: var(--color-light); border-radius: var(--radius-md); text-align: center; font-weight: var(--font-semibold); font-size: var(--font-lg); color: var(--color-primary);}
+.cs-center-info .time::before {content: ''; position: absolute; top: -8.9rem; right: 0; width: 12.8rem; height: 8.9rem; background: url('../../image/csc/center-banner-img2.png') no-repeat 100% 0; background-size: 100% auto;}
+
+/* 고객상담요청 */
+.option-result .ex-desc {text-align: center;}
+.option-result .ex-desc > p {font-size: var(--font-md); color: var(--color-base); line-height: 1.5;}
+.call-request .accordion-head .btn-fold,
+.complaint-apply .accordion-head .btn-fold {top: calc(1.9rem + 2.4rem);}
+
+/* 전자민원신청 아코디언 파일명 */
+.complaint-apply .accordion .accordion-body .file-name {display: block; border: none; margin-top: var(--space-min); margin-bottom: var(--space-md); padding: 0;}
+.complaint-apply .accordion .accordion-body .btn-group {justify-content: center; margin-top: var(--space-md);}
+.complaint-apply .accordion .accordion-body .btn-group .btn {flex: 0 0 auto; width: 4.9rem;}
+
+/* 상품보기 - (태블릿+PC) */
+@media screen and (min-width: 768px) {
+}

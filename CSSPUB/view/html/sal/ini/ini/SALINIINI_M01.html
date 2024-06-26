@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+	<title>소득조회 및 결과 &gt; 신한EZ손해보험</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon-css.ico">
+	<link rel="stylesheet" href="../../../../css/com/content.css">
+</head>
+<body>
+<!-- #wrap -->
+<div id="wrap">
+
+	<!-- #skip -->
+	<div id="skip">
+		<div class="skip-menu">
+			<a href="#main">본문으로 건너뛰기</a>
+		</div>
+	</div>
+	<!--// #skip -->
+
+	<!-- #page -->
+	<div id="page">
+		<!-- #header-->
+		<header id="header">
+			<h1 class="header-title">
+				<span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험</span></a></span>
+				<span class="txt">소득상세내역</span>
+			</h1>
+			<a href="javascript:;" class="btn-page-back">
+				<span class="sr-only">이전 페이지</span>
+			</a>
+			<button type="button" class="btn-menu">
+				<span class="ico-menu-bar"></span>
+				<span class="sr-only">전체 메뉴 열기</span>
+			</button>
+			<!-- #nav -->
+			<nav id="gnb">
+			</nav>
+			<!--// #nav -->
+		</header>
+		<!--// #header-->
+
+		<!-- #main -->
+		<main id="main">
+
+			<!-- #content -->
+			<article id="content">
+				<!-- [D]개발영역 시작 -->
+
+				<!-- .section -->
+				<section class="section">
+					<!-- .group -->
+					<div class="group">
+						<!-- .title* -->
+						<h2 class="title-main option-noline"><span class="txt">소득조회</span></h2>
+						<!--// .title* -->
+						<!-- .tab* -->
+						<div class="tab">
+							<ul class="tab-head option-full" role="tablist">
+								<li class="tab-menu is-active" role="tab" id="tabAMenu1" aria-controls="tabAPanel1" aria-selected="true"><a href="javascript:;" tabindex="0">소득조회</a></li>
+								<li class="tab-menu" role="tab" id="tabAMenu2" aria-controls="tabAPanel2" aria-selected="false"><a href="javascript:;" tabindex="-1">소득상세내역</a></li>
+								<li class="tab-menu" role="tab" id="tabAMenu3" aria-controls="tabAPanel3" aria-selected="false"><a href="javascript:;" tabindex="-1">환수상세내역</a></li>
+							</ul>
+							<div class="tab-list">
+								<!-- 소득조회 -->
+								<div class="tab-item is-active" id="tabAPanel1" role="tabpanel" aria-labelledby="tabAMenu1" aria-hidden="false" tabindex="0">
+									<!-- 2023-11-14 : 검색필드 수정 -->
+									<div class="form-wrap">
+										<ul class="form-list">
+											<li class="form-item">
+												<div class="form-name"><strong><label for="textfield1">조회기간</label></strong></div>
+												<div class="form-value item-half">
+													<!-- .item* -->
+													<div class="unit item-row">
+														<!-- 2023-11-29 : 클래스 및 텍스트 수정 -->
+														<div class="unit filled">
+															<!-- .input -->
+															<div class="input option-date w-100">
+																<input type="text" name="" id="textfield1" class="input-data" placeholder="YYYY.MM" title="기간 시작월 선택">
+																<button type="button" class="btn-calendar" aria-label="기간 시작월" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+															</div>
+															<!--// .input -->
+														</div>
+														<div class="unit filled">
+															<!-- .input -->
+															<div class="input option-date w-100">
+																<input type="text" name="" id="" class="input-data" placeholder="YYYY.MM" title="기간 종료월 선택">
+																<button type="button" class="btn-calendar" aria-label="기간 종료월" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+															</div>
+															<!--// .input -->
+														</div>
+														<!--// 2023-11-29 : 클래스 및 텍스트 수정 -->
+													</div>
+													<!--// .item* -->
+													<div class="unit">
+														<!-- .chip* -->
+														<fieldset class="chip-group option-full">
+															<label for="chipDate1" class="chip-item">
+																<input type="radio" name="chipDate" id="chipDate1" class="control" checked>
+																<span class="label">1개월</span>
+															</label>
+															<label for="chipDate2" class="chip-item">
+																<input type="radio" name="chipDate" id="chipDate2" class="control">
+																<span class="label">3개월</span>
+															</label>
+															<label for="chipDate3" class="chip-item">
+																<input type="radio" name="chipDate" id="chipDate3" class="control">
+																<span class="label">6개월</span>
+															</label>
+															<label for="chipDate4" class="chip-item">
+																<input type="radio" name="chipDate" id="chipDate4" class="control">
+																<span class="label">9개월</span>
+															</label> 
+															<label for="chipDate5" class="chip-item">
+																<input type="radio" name="chipDate" id="chipDate5" class="control">
+																<span class="label">1년</span>
+															</label>
+															<!-- 2024-01-30 : radio '직접입력' 항목 추가 -->
+															<label for="chipDate6" class="chip-item">
+																<input type="radio" name="chipDate" id="chipDate6" class="control">
+																<span class="label">직접입력</span><!-- [D]직접입력 선택 시 날짜 입력필드 활성화 -->
+															</label>
+															<!--// 2024-01-30 : radio '직접입력' 항목 추가 -->
+														</fieldset>
+														<!--// .chip* -->
+													</div>
+												</div>
+											</li>
+											<li class="form-item">
+												<div class="form-name"><strong><label for="textfield2">설계사코드</label></strong></div>
+												<div class="form-value item-half">
+													<!-- .item* -->
+													<div class="unit">
+														<!-- 2023-12-11 : <div class="form-value"></div>태그 삭제 -->
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="textfield2" class="input-data" placeholder="설계사코드" >
+														</div>
+														<!--// .input -->
+														<!--// 2023-12-11 : <div class="form-value"></div>태그 삭제 -->
+													</div>
+													<!--// .item* -->
+													<div class="unit">
+														<!-- 2023-12-11 : <div class="form-value"></div>태그 삭제 -->
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="" class="input-data" placeholder="입력해 주세요" value="성명" title="성명 입력" disabled>
+														</div>
+														<!--// .input -->
+														<!--// 2023-12-11 : <div class="form-value"></div>태그 삭제 -->
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!--// 2023-11-14 : 검색필드 수정 -->
+
+									<!-- .btn-group* -->
+									<div class="btn-group">
+										<button type="button" class="btn filled fixed"><span>초기화</span></button>
+										<button type="button" class="btn primary"><span>검색</span></button>
+									</div>
+									<!--// .btn-group* -->
+								</div>
+								<!--// 소득조회 -->
+							
+								<div class="tab-item" id="tabAPanel2" role="tabpanel" aria-labelledby="tabAMenu2" aria-hidden="true" tabindex="-1"></div>
+								<div class="tab-item" id="tabAPanel3" role="tabpanel" aria-labelledby="tabAMenu3" aria-hidden="true" tabindex="-1"></div>
+							</div>
+						</div>
+						<!--// .tab* -->
+					</div>
+					<!--// .group -->
+				</section>
+				<!--// .section -->
+
+				<!-- 검색결과 -->
+				<section class="section">
+					<!-- 2023-11-14 : 검색결과 전체수정 -->
+					<!-- 기간별소득 -->
+					<div class="group">
+						<!-- .data -->
+						<div class="data">
+							
+							<!-- .list-head -->
+							<div class="list-head option-row">
+								<h3 class="list-title">기간별소득</h3>
+								<div class="item-row">
+									<div class="list-info">
+										<span>지급일자를 누르면, 소득 및 공제 내역을 조회합니다.</span><!-- 2024-02-29 : '지급년월' -> '지급일자' 변경 -->
+									</div>
+									<div class="list-btn space-ml-sm">
+										<button type="button" class="btn contained option-sm"><span>기간별 소득내역 출력</span></button>
+									</div>
+								</div>
+							</div>
+							<!--// .list-head -->
+							<div class="data-body option-fixed-head" tabindex="0">
+								<table class="data-list">
+									<caption class="sr-only">
+										<!-- 표제목 -->
+										<strong>기간별소득 표</strong>
+										<!-- 표내용순서 -->
+										<span>NO, 지급일자, 총발생액(시책포함), 공제계, 지급총액, 지급명세서 출력 정보</span><!-- 2024-02-29 : '지급년월' -> '지급일자' 변경 -->
+									</caption>
+									<colgroup>
+										<col style="width:44px">
+										<col>
+										<col>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">NO</th>
+											<th scope="col">지급일자</th><!-- 2024-02-29 : '지급년월' -> '지급일자' 변경 -->
+											<th scope="col">총발생액(시책포함)</th>
+											<th scope="col">공제계</th>
+											<th scope="col">지급총액</th>
+											<th scope="col">지급명세서 출력</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td><a href="javascript:;" class="btn-txt-link"><span>2023.04</span></a></td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td><button type="button" class="btn contained option-sm"><span>출력</span></button></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td><a href="javascript:;" class="btn-txt-link"><span>2023.04</span></a></td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td><button type="button" class="btn contained option-sm"><span>출력</span></button></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td><a href="javascript:;" class="btn-txt-link"><span>2023.04</span></a></td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td><button type="button" class="btn contained option-sm"><span>출력</span></button></td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td><a href="javascript:;" class="btn-txt-link"><span>2023.04</span></a></td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td><button type="button" class="btn contained option-sm"><span>출력</span></button></td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td><a href="javascript:;" class="btn-txt-link"><span>2023.04</span></a></td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td><button type="button" class="btn contained option-sm"><span>출력</span></button></td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td><a href="javascript:;" class="btn-txt-link"><span>2023.04</span></a></td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td><button type="button" class="btn contained option-sm"><span>출력</span></button></td>
+										</tr>
+										<tr>
+											<td>7</td>
+											<td><a href="javascript:;" class="btn-txt-link"><span>2023.04</span></a></td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td><button type="button" class="btn contained option-sm"><span>출력</span></button></td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td><a href="javascript:;" class="btn-txt-link"><span>2023.04</span></a></td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td><button type="button" class="btn contained option-sm"><span>출력</span></button></td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td><a href="javascript:;" class="btn-txt-link"><span>2023.04</span></a></td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td><button type="button" class="btn contained option-sm"><span>출력</span></button></td>
+										</tr>
+										<tr>
+											<td>10</td>
+											<td><a href="javascript:;" class="btn-txt-link"><span>2023.04</span></a></td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td class="align-right">123,456원</td>
+											<td><button type="button" class="btn contained option-sm"><span>출력</span></button></td>
+										</tr>
+										
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--// .data -->
+					</div>
+					<!--// 기간별소득 -->
+
+					<!-- 소득내역 -->
+					<div class="group">
+						<!-- .data -->
+						<div class="data">
+							<!-- .list-head -->
+							<div class="list-head">
+								<h3 class="list-title">소득내역</h3>
+								<div class="list-info">
+									<span>금액을 누르면, 소득상세내역으로 이동합니다.</span>
+								</div>
+							</div>
+							<!--// .list-head -->
+							<div class="data-body" tabindex="0">
+								<table class="data-list">
+									<caption class="sr-only">
+										<!-- 표제목 -->
+										<strong>소득내역 표</strong>
+										<!-- 표내용순서 -->
+										<span>항목, 소득 정보</span>
+									</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">항목</th>
+											<th scope="col">소득</th>
+											<th scope="col">항목</th>
+											<th scope="col">소득</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="align-left"><span class="fs-sm fc-body fw-medium">장기 신계약</span></td>
+											<td class="align-right"><a href="javascript:;" class="btn-txt-link"><span>123,456원</span></a></td>
+											<td class="align-left"><span class="fs-sm fc-body fw-medium">장기 성과</span></td>
+											<td class="align-right"><a href="javascript:;" class="btn-txt-link"><span>123,456원</span></a></td>
+										</tr>
+										<tr>
+											<td class="align-left"><span class="fs-sm fc-body fw-medium">장기 매출 프로모션</span></td>
+											<td class="align-right"><a href="javascript:;" class="btn-txt-link"><span>123,456원</span></a></td>
+											<td class="align-left"><span class="fs-sm fc-body fw-medium">오버라이딩</span></td>
+											<td class="align-right"><a href="javascript:;" class="btn-txt-link"><span>123,456원</span></a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--// .data -->
+					</div>
+					<!--// 소득내역 -->
+
+					<!-- 공제내역 -->
+					<div class="group">
+						<!-- .data -->
+						<div class="data">
+							<!-- .list-head -->
+							<div class="list-head">
+								<h3 class="list-title">공제내역</h3>
+								<div class="list-info">
+									<span>금액을 누르면, 환수상세내역으로 이동합니다.</span>
+								</div>
+							</div>
+							<!--// .list-head -->
+							<div class="data-body" tabindex="0">
+								<table class="data-list">
+									<caption class="sr-only">
+										<!-- 표제목 -->
+										<strong>공제내역 표</strong>
+										<!-- 표내용순서 -->
+										<span>항목, 소득 정보</span>
+									</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">항목</th>
+											<th scope="col">소득</th>
+											<th scope="col">항목</th>
+											<th scope="col">소득</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="align-left"><span class="fs-sm fc-body fw-medium">수수료 환수</span></td>
+											<td class="align-right"><a href="javascript:;" class="btn-txt-link"><span>123,456원</span></a></td>
+											<td class="align-left"><span class="fs-sm fc-body fw-medium">세금</span></td>
+											<td class="align-right"><a href="javascript:;" class="btn-txt-link"><span>123,456원</span></a></td>
+										</tr>
+										<tr>
+											<td class="align-left"><span class="fs-sm fc-body fw-medium">산재보험료</span></td>
+											<td class="align-right"><a href="javascript:;" class="btn-txt-link"><span>123,456원</span></a></td>
+											<td class="align-left"><span class="fs-sm fc-body fw-medium">이행보증보험료</span></td>
+											<td class="align-right"><a href="javascript:;" class="btn-txt-link"><span>123,456원</span></a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--// .data -->
+					</div>
+					<!--// 공제내역 -->
+					<!--// 2023-11-14 : 검색결과 전체수정 -->
+
+					
+				</section>	
+				<!--// 검색결과 -->
+
+				<!--// [D]개발영역 끝 -->
+			</article>
+			<!--// #content -->
+			
+		</main>
+		<!--// #main -->
+
+		<!-- #footer -->
+		<footer id="footer"></footer>
+		<!--// #footer -->
+	</div>
+	<!--// #page -->
+
+	<!-- #popup -->
+	<div id="popup">
+		<!-- .calendar-popup -->
+		<div class="calendar-popup" id="calendarPopup" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="calendarTitle">
+			<!-- .calendar-content -->
+			<div class="calendar-content">
+				<!-- .calendar-title -->
+				<h2 class="calendar-title" id="calendarTitle"><span></span></h2>
+				<!--// .calendar-title -->
+				<!-- .calendar -->
+				<div class="calendar">
+					<!-- 월 달력 - 2023-11-29 : 기능 추가 -->
+					<button class="btn-prev"><span class="sr-only">이전년도</span></button>
+					<button class="btn-next"><span class="sr-only">다음년도</span></button>
+					<div class="calendar-group">
+						<div class="calendar-head">
+							<span class="year">2023</span>
+						</div>
+						<div class="calendar-body">
+							<div class="month-group">
+								<button class="month"><em>1</em>월</button>
+								<button class="month"><em>2</em>월</button>
+								<button class="month is-active"><em>3</em>월</button>
+								<button class="month"><em>4</em>월</button>
+								<button class="month"><em>5</em>월</button>
+								<button class="month"><em>6</em>월</button>
+								<button class="month"><em>7</em>월</button>
+								<button class="month"><em>8</em>월</button>
+								<button class="month"><em>9</em>월</button>
+								<button class="month"><em>10</em>월</button>
+								<button class="month"><em>11</em>월</button>
+								<button class="month"><em>12</em>월</button>
+							</div>
+						</div>
+					</div>
+					<!--// 월 달력 - 2023-11-29 : 기능 추가 -->
+				</div>
+				<!--// .calendar -->
+				<!-- .btn-popup-close -->
+				<button type="button" class="btn-popup-close">
+					<span class="sr-only">팝업 닫기</span>
+				</button>
+				<!--// .btn-popup-close -->
+			</div>
+			<!--// .calendar-content -->
+		</div>
+		<!--// .calendar-popup -->
+	</div>
+	<!--// #popup -->
+
+
+</div>
+<!--// #wrap -->
+<script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+<script src="../../../../js/com/lottie_light.min.js"></script>
+<script src="../../../../js/com/local_pub.js"></script><!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+<script src="../../../../js/com/common_pub.js"></script>
+</body>
+</html>

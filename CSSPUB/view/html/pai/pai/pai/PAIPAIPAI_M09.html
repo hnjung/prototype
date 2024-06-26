@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+	<title>보험가입설계 동의 및 고객 정보 입력 &gt; 신한EZ손해보험</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon-css.ico">
+	<link rel="stylesheet" href="../../../../css/com/content.css">
+	<link rel="stylesheet" href="../../../../css/qtn/page.css">
+</head>
+<body>
+<!-- #wrap -->
+<div id="wrap">
+
+	<!-- #page -->
+	<div id="page" data-page-main="true"><!-- [D]페이지 유형이 메인(MANMANMAN_M01) 또는 고객화면(교차판매 화면구분 컴포넌트)일 경우 data-page-main="true" - 2023-11-13 : 설명 추가 -->
+		<!-- #header-->
+		<header id="header">
+			<h1 class="header-title">
+				<span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험</span></a></span>
+				<span class="txt">보험가입설계 동의 및 고객 정보 입력</span>
+			</h1>
+			<!-- 2024-01-19: 이전 버튼 삭제 <a href="javascript:;" class="btn-page-back">
+				<span class="sr-only">이전 페이지</span>
+			</a> -->
+		</header>
+		<!--// #header--> 
+
+		<!-- #main -->
+		<main id="main">
+
+			<!-- #content -->
+			<article id="content">    
+
+				<!-- [D]개발영역 시작 -->
+				
+				<!-- .section -->
+				<section class="section">
+					<!-- 2024-01-15 : 미성년자 부분 페이지 분리로 인한 마크업 수정 -->
+					<!-- .group -->
+					<div class="group">
+						<!-- .title* -->
+						<h2 class="main-copy">
+							<span class="txt"><span class="fc-primary">김신한</span>님의 정보를 알려주세요</span><!-- 2024-03-27 : 한줄처리로 인한 br 태그 삭제 -->
+						</h2>
+						<!--// .title* -->
+
+						<!-- .title* -->
+						<h3 class="title-h4"><span class="txt">기본정보</span></h3>
+						<!--// .title* -->
+
+						<!-- .form -->
+						<div class="form">
+							<div class="form-wrap">
+								<!-- .form-list -->
+								<ul class="form-list">
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield1">이름</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="text" name="" id="textfield1" class="input-data" placeholder="입력해 주세요" maxlength="20" value="김신한" aria-required="true" readonly>
+											</div>
+											<!--// .input -->
+										</div>
+										<div class="data-helper option-error" role="alert">
+											<span class="helper-txt">오류 메시지 (.option-error)</span>
+										</div>
+									</li>
+									<!-- 2024-01-22 : 주민등록번호 추가 -->
+									<li class="form-item">
+										<div class="form-name"><strong><label for="personID">주민등록번호</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<!-- [D] 2024-03-22 : 휴대폰 인증, 신용카드 인증시 -->
+											<!-- .input-mixed -->
+											<div class="input-mixed type-id">
+												<div class="unit filled">
+													<!-- .input -->
+													<div class="input w-100">
+														<input type="text" name="" id="personID1" class="input-data" placeholder="앞자리" value="901231" readonly>
+													</div>
+													<!--// .input -->
+												</div>
+												<div class="unit fixed">
+													<span class="dash"><span class="sr-only">-</span></span>
+												</div>
+												<div class="unit filled code-back">
+													<div class="code-back1">
+														<!-- .input -->
+														<div class="input">
+															<input type="text" name="" id="personID2" class="input-data" placeholder="뒷 1자리" value="1" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="code-back2">
+														<!-- .input -->
+														<div class="input">
+															<input type="text" name="" id="personID3" class="input-data" placeholder="뒷 6자리" value="●●●●●●">
+														</div>
+														<!--// .input -->
+													</div>
+												</div>
+											</div>
+											<!--// .input-mixed -->
+											<!--// [D] 2024-03-22 : 휴대폰 인증, 신용카드 인증시 -->
+
+											<!-- [D] 2024-03-22 : 간편 인증시 -->
+											<!-- .input-mixed -->
+											<div class="input-mixed w-100 is-readonly" style="display: none">
+												<div class="unit filled">
+													<!-- .input -->
+													<div class="input w-100">
+														<input type="text" name="" id="personID1" maxlength="6" class="input-data" placeholder="앞자리" title="주민등록번호 앞자리" value="901231"  readonly>
+													</div>
+													<!--// .input -->
+												</div>
+												<div class="unit fixed">
+													<span class="dash"><span class="sr-only">-</span></span>
+												</div>
+												<div class="unit filled">
+													<!-- .input -->
+													<div class="input w-100">
+														<input type="password" name="" id="personID2" maxlength="7" class="input-data" placeholder="뒷 7자리" title="주민등록번호 뒷자리" readonly>
+													</div>
+													<!--// .input -->
+												</div>
+											</div>
+											<!--// .input-mixed -->
+											<!--// [D] 2024-03-22 : 간편 인증시 -->
+										</div>
+
+										
+									</li>
+									<!--// 2024-01-22 : 주민등록번호 추가 -->
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield2">직업</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input option-popup w-100">
+												<input type="text" name="" id="textfield2" class="input-data" placeholder="검색해 주세요">
+												<button type="button" class="btn-search"><span class="sr-only">검색</span></button>
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<!-- 2024-01-16 : 운전여부, 운행용도 필드 삭제
+									<li class="form-item">
+										<div class="form-name"><strong>운전여부</strong></div>
+										<div class="form-value">
+											<fieldset class="segment-group">
+												<label for="radioT6" class="segment-item">
+													<input type="radio" name="radioT6" id="radioT6" class="control" checked>
+													<span class="label"><em class="txt">예</em></span>
+												</label>
+												<label for="radioT6-1" class="segment-item">
+													<input type="radio" name="radioT6" id="radioT6-1" class="control">
+													<span class="label"><em class="txt">아니요</em></span>
+												</label>
+											</fieldset>
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong>운행용도</strong></div>
+										<div class="form-value">
+											<fieldset class="segment-group">
+												<label for="radioT7" class="segment-item">
+													<input type="radio" name="radioT7" id="radioT7" class="control" checked>
+													<span class="label"><em class="txt">자가용</em></span>
+												</label>
+												<label for="radioT7-1" class="segment-item">
+													<input type="radio" name="radioT7" id="radioT7-1" class="control">
+													<span class="label"><em class="txt">영업용</em></span>
+												</label>
+												<label for="radioT7-2" class="segment-item">
+													<input type="radio" name="radioT7" id="radioT7-2" class="control">
+													<span class="label"><em class="txt">비운전자</em></span>
+												</label>
+											</fieldset>
+										</div>
+									</li>--> 
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield3">이메일</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<div class="input option-search option-email w-100">
+												<input type="text" name="" id="textfield3" class="input-data" placeholder="입력해 주세요">
+												<ul class="words">
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@naver.com</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@nate.com</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@kakao.com</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@daum.net</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@hanmail.net</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@gmail.com</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@hotmail.com</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@korea.com</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@outlook.com</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield4">자택 주소</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div><!-- 2024-01-22 : '주소' -> '자택 주소' 항목명 변경 -->
+										<!-- 2023-11-21 : 주소검색 수정 -->
+										<div class="form-value item-col">
+											<!-- .item* -->
+											<div class="unit">
+												<!-- .input-button -->
+												<div class="input-button option-read w-100">
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<div class="read-data">
+																<!-- [D]입력 전 --><!-- <span class="is-placeholder">검색해 주세요</span> -->
+																서울시 중구 남대문로 113 (다동 103) DB다동빌딩 5층
+															</div>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<!-- .btn -->
+														<button type="button" class="btn contained option-md"><span>주소검색</span></button>
+														<!--// .btn -->
+													</div>
+												</div>
+												<!--// .input-button -->
+											</div>
+											<!--// .item* -->
+										</div>
+										<!--// 2023-11-21 : 주소검색 수정 -->
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield5">국적</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<div class="item-col">
+												<div class="unit">
+													<!-- .segment* -->
+													<fieldset class="segment-group">
+														<label for="radioT2-1" class="segment-item">
+															<input type="radio" name="radioT2" id="radioT2-1" class="control" checked="">
+															<span class="label"><em class="txt">내국인</em></span>
+														</label>
+														<label for="radioT2-2" class="segment-item">
+															<input type="radio" name="radioT2" id="radioT2-2" class="control">
+															<span class="label"><em class="txt">외국인</em></span>
+														</label>
+													</fieldset>
+													<!--// .segment* -->
+												</div>
+												<div class="unit">
+													<!-- .input -->
+													<div class="input w-100 option-popup">
+														<input type="text" name="" id="checkP1-2" class="input-data" value="대한민국" title="국적선택" placeholder="검색해 주세요" readonly><!-- 내국인일 경우 : 대한민국 디폴트, 비활성화-->
+														<button type="button" class="btn-search"><span class="sr-only">검색</span></button>
+													</div>
+													<!--// .input -->
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield6">영문명</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="text" name="" id="textfield6" class="input-data" placeholder="입력해 주세요" maxlength="20" value="KINSHINHAN" aria-required="true">
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield7">계약관리 매체 동의</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<div class="item-col">
+												<div class="unit">
+													<!-- .note* -->
+													<div class="note">
+														<ul class="note-list depth-root">
+															<li>문자, 알림톡, 이메일은 필수 수신이 필요합니다.</li>
+															<li>필수 수신 매체 미체크 시 계약이 불가능합니다.</li>
+														</ul>
+													</div>
+													<!--// .note* -->
+												</div>						
+												
+												<div class="unit space-mt-sm">
+													<!-- .checkbox* -->
+													<fieldset class="checkbox-group">
+														<label for="checkA1" class="checkbox-item">
+															<input type="checkbox" name="" id="checkA1" class="control" checked="">
+															<span class="label">문자</span>
+														</label>
+														<label for="checkA2" class="checkbox-item">
+															<input type="checkbox" name="" id="checkA2" class="control" checked="">
+															<span class="label">알림톡</span>
+														</label>
+														<label for="checkA3" class="checkbox-item">
+															<input type="checkbox" name="" id="checkA3" class="control" checked="">
+															<span class="label">이메일</span>
+														</label>
+													</fieldset>
+													<!--// .checkbox* -->
+												</div>
+											</div>
+										</div>
+									</li>
+									<!-- 2024-01-19 : 연락금지(두낫콜) 해제 삭제<li class="form-item">
+										<div class="form-name"><strong>연락금지(두낫콜) 해제</strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<div class="item-col">
+												<div class="unit">
+													<div class="note">
+														<ul class="note-list">
+															<li>금융소비자보호법 제21조의 2의 ②에 근거하여 신한EZ손해보험과 담당FC가 상품소개 또는 계약체결 권유 목적으로 연락 드리는 것을 금지 신청할 수 있습니다. 연락금지(두낫콜) 신청시에는 신한EZ손해보험에서 제공해드리는 다양한 서비스와 이벤트 등에 대한 안내도 불가하니 참고해주시기 바랍니다. (단, 마케팅 목적 외 계약관리 목적 연락은 가능) 연락금지 두낫콜을 해제하시거나 당사 마케팅동의시에는 마케팅 연락이 갈 수 있습니다.</li>
+														</ul>
+													</div>
+												</div>
+												<div class="unit space-mt-sm">
+													<fieldset class="radio-group">
+														<label for="radioA3" class="radio-item">
+															<input type="radio" name="radioA3" id="radioA3" class="control" checked>
+															<span class="label">해제 신청</span>
+														</label>
+														<label for="radioA3-1" class="radio-item">
+															<input type="radio" name="radioA3" id="radioA3-1" class="control">
+															<span class="label">해제 미신청</span>
+														</label>
+													</fieldset>
+												</div>
+											</div>
+										</div>
+									</li>-->
+									<!-- 2024-01-19 : 야간영업금지 해제 신청 컨텐츠 수정 -->
+									<li class="form-item">
+										<div class="form-name"><strong>야간영업금지 해제 신청</strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<div class="item-col">
+												<div class="unit">
+													<div class="note">
+														<ul class="note-list">
+															<li>금융소비자보호법 제 21조 2의 ③에 근거하여 금융상품판매업자 등은 금융상품을 소개하거나 계약 체결을 권유할 목적으로 야간(오후 9시 이후부터 다음날 오전 8시 까지)에 고객님을 방문하거나 연락하여서는 아니 됩니다.</li>
+															<li>다만, 고객님께서 <strong class="fc-primary">신청</strong>하시는 경우 당사 및 담당자가 야간에 방문하거나 연락 드릴 수 있습니다.</li><!-- 2024-01-25 : 문구, 컬러 수정 -->
+														</ul>
+													</div>
+												</div>
+												<div class="unit space-mt-sm">
+													<fieldset class="radio-group">
+														<label for="radioA3-3" class="radio-item">
+															<input type="radio" name="radioA3-4" id="radioA3-3" class="control" checked>
+															<span class="label">신청</span>
+														</label>
+														<label for="radioA3-4" class="radio-item">
+															<input type="radio" name="radioA3-4" id="radioA3-4" class="control">
+															<span class="label">미신청</span>
+														</label>
+													</fieldset>
+												</div>
+											</div>
+										</div>
+									</li>
+									<!--/ 2024-01-19 : 야간영업금지 해제 신청 컨텐츠 수정 -->
+									<!--// .form-list -->
+								</ul>
+							</div>
+						</div>
+						<!--// .form -->
+					</div>
+					<!--// .group -->
+					
+					<!-- .group -->
+					<div class="group">
+						<!-- .form -->
+						<div class="form option-fold fn-fold-wrap is-open" data-fold-slide="true">
+							<h3 class="form-title fn-fold-link" id="formTitle1">추가 입력 정보</h3>
+							<button type="button" class="btn-fold fn-fold-btn" aria-expanded="true" aria-controls="formBody1" aria-labelledby="formTitle1"><span class="sr-only">닫기</span></button>
+							<div class="form-wrap fn-fold-item" id="formBody1" role="region" aria-labelledby="formTitle1" aria-hidden="false">
+								<!-- .form-list -->
+								<ul class="form-list">
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield22">직장명</label></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="text" name="" id="textfield22" class="input-data" placeholder="입력해 주세요" tabindex="0"> 
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield4-1">회사주소</label></strong></div>
+										<!-- 2023-11-21 : 주소검색 수정 -->
+										<div class="form-value item-col">
+											<!-- .item* -->
+											<div class="unit">
+												<!-- .input-button -->
+												<div class="input-button option-read w-100">
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<div class="read-data">
+																<span class="is-placeholder">검색해 주세요</span>
+															</div>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<!-- .btn -->
+														<button type="button" class="btn contained option-md"><span>주소검색</span></button>
+														<!--// .btn -->
+													</div>
+												</div>
+												<!--// .input-button -->
+											</div>
+											<!--// .item* -->
+										</div>
+										<!--// 2023-11-21 : 주소검색 수정 -->
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield33">부서명</label></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="text" name="" id="textfield33" class="input-data" placeholder="입력해 주세요" tabindex="0"> 
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield44">직위</label></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="text" name="" id="textfield44" class="input-data" placeholder="입력해 주세요" tabindex="0"> 
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield55">직장 전화번호</label></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="text" name="" id="textfield55" class="input-data" placeholder="-없이 숫자만 입력" tabindex="0"> 
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield66">자택 전화번호</label></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="text" name="" id="textfield66" class="input-data" placeholder="-없이 숫자만 입력" tabindex="0"> 
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield77">기타 전화번호</label></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="text" name="" id="textfield77" class="input-data" placeholder="-없이 숫자만 입력" tabindex="0"> 
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield88">실생년월일</label></strong></div><!-- 2024-01-22 : '생년월일' -> '실생년월일' 항목명 변경 -->
+										<div class="form-value">
+											<div class="item-col">
+												<div class="unit">
+													<!-- .segment* -->
+													<fieldset class="segment-group">
+														<label for="radioT3-1" class="segment-item">
+															<input type="radio" name="radioT3" id="radioT3-1" class="control" checked="">
+															<span class="label"><em class="txt">양력</em></span>
+														</label>
+														<label for="radioT3-2" class="segment-item">
+															<input type="radio" name="radioT3" id="radioT3-2" class="control">
+															<span class="label"><em class="txt">음력</em></span>
+														</label>
+													</fieldset>
+													<!--// .segment* -->
+												</div>
+	
+												<div class="unit">
+													<!-- .input -->
+													<div class="input w-100 option-date">
+														<input type="text" name="" id="textfield88" class="input-data" placeholder="YYYY.MM.DD">
+														<button type="button" class="btn-calendar" aria-label="기간 시작일" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+													</div>
+													<!--// .input -->
+												</div>
+											</div class="item-col">
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield99">결혼유무/결혼기념일</label></strong></div>
+										<div class="form-value">
+											<div class="item-col">
+												<div class="unit">
+													<!-- .segment* -->
+													<fieldset class="segment-group">
+														<label for="radioT4-1" class="segment-item">
+															<input type="radio" name="radioT4" id="radioT4-1" class="control" checked="">
+															<span class="label"><em class="txt">미혼</em></span>
+														</label>
+														<label for="radioT4-2" class="segment-item">
+															<input type="radio" name="radioT4" id="radioT4-2" class="control">
+															<span class="label"><em class="txt">기혼</em></span>
+														</label>
+													</fieldset>
+													<!--// .segment* -->
+												</div>
+	
+												<div class="unit">
+													<!-- .input -->
+													<div class="input w-100 option-date">
+														<input type="text" name="" id="textfield99" class="input-data" placeholder="" readonly><!-- 미혼 선택 시 날짜 입풋 박스 비활성화 -->
+														<button type="button" class="btn-calendar" aria-label="기간 시작일" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+													</div>
+													<!--// .input -->
+												</div>
+											</div class="item-col">
+										</div>
+									</li>
+								</ul>
+								<!--// .form-list -->
+							</div>
+						</div>
+						<!--// .form -->
+					</div>
+					<!--// .group -->
+					<!--// 2024-01-15 : 미성년자 부분 페이지 분리로 인한 마크업 수정 -->
+				</section>
+				<!--// .section -->
+				
+				<!-- .btn -->
+				<div class="btn-group option-main">
+					<button type="button" class="btn primary"><span>다음</span></button>
+				</div>
+				<!--// .btn -->
+				<!--// [D]개발영역 끝 -->
+				
+			</article>
+			<!--// #content -->
+			
+		</main>
+		<!--// #main -->
+	</div>
+	<!--// #page -->
+
+	<!-- #popup -->
+	<div id="popup">
+	</div>
+	<!--// #popup -->
+
+</div>
+<!--// #wrap -->
+<script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+<script src="../../../../js/com/lottie_light.min.js"></script>
+<script src="../../../../js/com/local_pub.js"></script><!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+<script src="../../../../js/com/common_pub.js"></script>
+</body>
+</html>

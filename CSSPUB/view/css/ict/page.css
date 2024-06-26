@@ -1,0 +1,4 @@
+/* 청약서 다운로드 안내 */
+.doc-download {position: relative;}
+.doc-download .card-item {display: flex; align-items: center; justify-content: space-between; min-height: 7.2rem;}
+.visual .title-h5 {padding-top: var(--space-sm); font-weight:var(--font-regular); color:var(--color-txt-body); text-align: center;}

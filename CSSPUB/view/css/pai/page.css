@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-08-18
+	- 파일명 : page.css
+	- 포함내용 : 컴포넌트 청약확인
+*/
+/* 
+	수정정보
+	- 수정일 : 2023-04-01
+	- 수정내용 : XXX(홍길동)
+*/
+.note-subject {display: block; padding: var(--space-md) var(--space-md) 0; font-size: 0;}
+.note-subject::before {content: ''; display: inline-block; width: var(--icon-sm); height: var(--icon-sm); margin-right: var(--space-xxs); background: var(--bg-url-sm) no-repeat calc(var(--icon-sm) * -2) 0; background-size: var(--bg-size-sm); vertical-align: middle;}
+.note-subject .txt {display: inline-block; vertical-align: middle; line-height: 1.5; font-weight: var(--font-medium); font-size: var(--font-xs); color: var(--color-txt-sub);}
+.note-subject ~ .note-txt {padding-top: var(--space-min);}

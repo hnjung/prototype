@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+	<title>메인 팝업 &gt; 신한EZ손해보험</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon-css.ico">
+	<link rel="stylesheet" href="../../../../css/com/content.css">
+	<link rel="stylesheet" href="../../../../css/man/page.css">
+</head>
+<body>
+<!-- #wrap -->
+<div id="wrap">
+
+	<!-- #skip -->
+	<div id="skip">
+		<div class="skip-menu">
+			<a href="#main">본문으로 건너뛰기</a>
+		</div>
+	</div>
+	<!--// #skip -->
+
+	<!-- #page -->
+	<div id="page">
+		<!-- #header-->
+		<header id="header"></header>
+		<!--// #header-->
+
+		<!-- #main -->
+		<main id="main">
+
+			<!-- #content -->
+			<article id="content">
+
+				<!-- [D]개발영역 시작 -->
+
+				<!-- .section -->
+				<section class="section">
+					기본 내용
+					<a href="javascript:;" class="btn-menu-link fn-popup-open space-mt-xxs" id="sampleA" data-popup-id="#popupBasicNoTitleExample" aria-haspopup="dialog" aria-controls="popupBasicNoTitleExample"><span>메인 팝업</span></a>
+				
+				</section>
+				<!--// .section -->
+
+				
+				<!--// [D]개발영역 끝 -->
+
+			</article>
+			<!--// #content -->
+			
+		</main>
+		<!--// #main -->
+ 
+		<!-- #footer -->
+		<footer id="footer"></footer>
+		<!--// #footer -->
+	</div>
+	<!--// #page -->
+
+	<!-- #popup -->
+	<div id="popup">
+		<!-- [D]개발영역 분기점 확인 필요 : 시작 -->
+		<!-- .popup-wrap -->
+		<div class="popup-wrap option-modal" id="popupBasicNoTitleExample" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popupBasicNoTitleExampleTitle"><!-- @set: option-modal -->
+			<!-- .popup-inner -->
+			<div class="popup-inner" tabindex="0" data-focus-on="true">
+				<!-- .popup-head -->
+				<div class="popup-head is-hide">
+					<h2 class="popup-title" id="popupBasicNoTitleExampleTitle"><span>팝업 타이틀</span></h2>
+				</div>
+				<!--// .popup-head -->
+				<!-- .popup-content -->
+				<div class="popup-content">
+					<!-- .section -->
+					<section class="section">
+						<!-- .group -->
+						<div class="group">
+							팝업내용 출력
+						</div>
+						<!--// .group -->
+					</section>
+					<!--// .section -->
+				</div>
+				<!--// .popup-content -->
+				<!-- .popup-foot -->
+				<div class="popup-foot">
+					<!-- .btn-group* -->
+					<div class="btn-group">
+						<button type="button" class="btn filled space-reset-pr space-reset-pl"><span>오늘하루 보지 않기</span></button>
+						<button type="button" class="btn primary space-reset-pr space-reset-pl fn-popup-close" data-popup-id="#popupBasicNoTitleExample"><span>확인</span></button>
+					</div>
+					<!--// .btn-group* -->
+				</div>
+				<!--// .popup-foot -->
+
+			</div>
+			<!--// .popup-inner -->
+		</div>
+		<!--// .popup-wrap -->
+		<!--// [D]개발영역 분기점 확인 필요 : 끝 -->
+	</div>
+
+
+</div>
+<!--// #wrap -->
+<script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+<script src="../../../../js/com/lottie_light.min.js"></script>
+<script src="../../../../js/com/local_pub.js"></script><!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+<script src="../../../../js/com/common_pub.js"></script>
+<script>
+	document.getElementById('sampleA').click();
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-08-18
+	- 파일명 : page.css
+	- 포함내용 : 메뉴 계약관리
+*/
+/* 
+	수정정보
+	- 수정일 : 2023-04-01
+	- 수정내용 : XXX(홍길동)
+*/
+
+/* 인덱스 */
+.main-copy.option-bg {background-repeat: no-repeat; background-position: right -2.0rem bottom 0rem; background-size: min(36.0rem, 360px) auto;}
+.main-copy.option-bg.type1 {background-image: url('../../image/cnm/bg-index1.png');}
+.main-copy.option-bg.type2 {background-image: url('../../image/cnm/bg-index2.png');}
+.main-copy.option-bg.type3 {background-image: url('../../image/cnm/bg-index3.png');}
+.main-copy.option-bg.type4 {background-image: url('../../image/cnm/bg-index4.png');}
+.main-copy.option-bg.type5 {background-image: url('../../image/cnm/bg-index5.png');}
+.main-copy.option-bg.type6 {background-image: url('../../image/cnm/bg-index6.png');}
+
+/** 카드형목록 - 제목 아이콘형 */
+.card-list.option-icon .card-title .key.type1:before {background-position: 0 calc(var(--icon-xl) * -6);} /* 보험증권 */
+.card-list.option-icon .card-title .key.type2:before {background-position: calc(var(--icon-xl) * -1) calc(var(--icon-xl) * -6);} /* 가입증명서 */
+.card-list.option-icon .card-title .key.type3:before {background-position: calc(var(--icon-xl) * -2) calc(var(--icon-xl) * -6);} /* 납입증명서 */
+.card-list.option-icon .card-title .key.type4:before {background-position: calc(var(--icon-xl) * -3) calc(var(--icon-xl) * -6);} /* 잔액재산 증명서 */
+.card-list.option-icon .card-title .key.type5:before {background-position: calc(var(--icon-xl) * -4) calc(var(--icon-xl) * -6);} /* 예상해지환급금 증명서 */
+.card-list.option-icon .card-title .key.type6:before {background-position: calc(var(--icon-xl) * -5) calc(var(--icon-xl) * -6);} /* 보험금지급 내역서 */
+.card-list.option-icon .card-title .key.type7:before {background-position: calc(var(--icon-xl) * -6) calc(var(--icon-xl) * -6);} /* 해지 영수증 */
+.card-list.option-icon .card-title .key.type8:before {background-position: calc(var(--icon-xl) * -7) calc(var(--icon-xl) * -6);} /* 보험계약자 변경 */
+.card-list.option-icon .card-title .key.type9:before {background-position: calc(var(--icon-xl) * -3) calc(var(--icon-xl) * -3);} /* 수익자 변경 */
+.card-list.option-icon .card-title .key.type10:before {background-position: 0 calc(var(--icon-xl) * -3);} /* 지정대리청구인 변경 */
+.card-list.option-icon .card-title .key.type11:before {background-position: calc(var(--icon-xl) * -8) calc(var(--icon-xl) * -6);} /* 피보험자 직업 변경 */
+.card-list.option-icon .card-title .key.type12:before {background-position: calc(var(--icon-xl) * -9) calc(var(--icon-xl) * -6);} /* 보험 소재지 변경 */
+.card-list.option-icon .card-title .key.type13:before {background-position: 0 calc(var(--icon-xl) * -7);} /* 주택 소재지 변경 */
+.card-list.option-icon .card-title .key.type14:before {background-position: calc(var(--icon-xl) * -4) calc(var(--icon-xl) * -7);} /* 결제방법 변경 */
+.card-list.option-icon .card-title .key.type15:before {background-position: calc(var(--icon-xl) * -5) calc(var(--icon-xl) * -7);} /* 환급금 지급 계좌 등록/변경 */
+.card-list.option-icon .card-title .key.type16:before {background-position: calc(var(--icon-xl) * -1) calc(var(--icon-xl) * -7);} /* 장애인 전용보험 전환 */
+.card-list.option-icon .card-title .key.type17:before {background-position: calc(var(--icon-xl) * -2) calc(var(--icon-xl) * -7);} /* 여행보험 기간 변경 */
+.card-list.option-icon .card-title .key.type18:before {background-position: calc(var(--icon-xl) * -3) calc(var(--icon-xl) * -7);} /* 계약자/동반인 영문명 변경 */
+.card-list.option-icon .card-title .key.type19:before {background-position: calc(var(--icon-xl) * -6) calc(var(--icon-xl) * -5);} /* 질병/상해 */
+.card-list.option-icon .card-title .key.type20:before {background-position: calc(var(--icon-xl) * -5) calc(var(--icon-xl) * -5);} /* 재물/배상 */
+.card-list.option-icon .card-title .key.type21:before {background-position: calc(var(--icon-xl) * -4) calc(var(--icon-xl) * -5);} /* Auto청구 */
+
+/** 카드형목록 - 출력용 - 스텝 */
+.card-item.step-type8:before {background-position: calc(var(--icon-xl) * -7) calc(var(--icon-xl) * -3);} /* 본인인증 */
+.card-item.step-type9:before {background-position: calc(var(--icon-xl) * -8) calc(var(--icon-xl) * -3);} /* 계약자 정보 입력 */
+.card-item.step-type10:before {background-position: calc(var(--icon-xl) * -9) calc(var(--icon-xl) * -3);} /* 개인정보 동의 */
+.card-item.step-type12:before {background-position: calc(var(--icon-xl) * -1) calc(var(--icon-xl) * -4);} /* 전자서명 */
+.card-item.step-type13:before {background-position: 0 calc(var(--icon-xl) * -4);} /* 계약 선택 */
+.card-item.step-type14:before {background-position: calc(var(--icon-xl) * -4) calc(var(--icon-xl) * -4);} /* 모니터링 진행 */
+
+/* item-col > unit 사이 간격 40px */
+.grid-area .item-col > .unit + .unit {margin-top: var(--space-xxl);}
+
+/* form list head info 필수입력 */
+.list-head .must::before {content: ' *'; display: inline-block; margin-top: 0.3rem; margin-right: 0.3rem; font-weight: var(--font-semibold); color: var(--color-primary); vertical-align: middle;}
+
+.list-head {flex-direction: row; align-items: center;}
+.list-head .list-btn {padding-top: 0;}
+.list-head > div:last-child:not(.unit) {width: auto;}
+.list-head.item-row.option-right .list-info {margin-top: 0; margin-right: var(--space-xxs);}
+
+/* 계약상세조회 */
+.call-num {position: relative; display: inline-block; vertical-align: top; font-size: var(--font-xs); color: var(--color-base); line-height: 1.5;}
+.call-num:after {content: ''; position: absolute; bottom: 0.3rem; left: 0; width: 100%; height: var(--line-sm); background-color: var(--color-base);}
+
+/* 주요서류 및 기능 보기 */
+.doc-func .card-item {padding: 1.5rem 1.9rem;}
+.doc-func .card-info .item-row {padding-top: 0; padding-bottom: 0;}
+.doc-func .card-info .item-row .unit > .btn {margin-top: .8rem; margin-bottom: 0;}
+.doc-func .card-title ~ .card-info {padding-top: .8rem; border-top: var(--line-sm) solid var(--color-bg-base);}
+.func-link-item {display: inline-block; width: 100%; padding: 1.6rem 0; text-align: center;}
+.func-link-item > .txt {font-size: var(--font-xs); color: var(--color-dark);}
+.func-link-item:before {content: ''; display: block; width: var(--icon-xl); height: var(--icon-xl); margin: 0 auto .4rem; background-image: var(--bg-url-xl); background-repeat: no-repeat; background-size: var(--bg-size-xl);}
+.func-link-item.menu1:before {background-position: 0 calc(var(--icon-xl) * -2);}
+.func-link-item.menu2:before {background-position: calc(var(--icon-xl) * -1) calc(var(--icon-xl) * -2);}
+.func-link-item.menu3:before {background-position: calc(var(--icon-xl) * -2) calc(var(--icon-xl) * -2);}
+.func-link-item.menu4:before {background-position: calc(var(--icon-xl) * -3) calc(var(--icon-xl) * -2);}
+.func-link-item.menu5:before {background-position: calc(var(--icon-xl) * -4) calc(var(--icon-xl) * -2);}
+
+/* 여행보험 기간 변경 */  
+.summary.option-total .summary-info>li{justify-content: space-between;}
+.summary.option-total .summary-toal{padding-top:var(--space-xs); margin-top:var(--space-sm); border-top:var(--line-sm) solid var(--color-bg-base)}
+.summary.option-total .summary-toal .tit {font-size:var(--font-title-xs); font-weight: var(--font-medium); color:var(--color-dark)}
+.summary.option-total .summary-toal .text-price {font-size:var(--font-title-xs);}
+
+/* 완전판매모니터링 */
+.step-info .step-wrap {padding-top: var(--space-sm);}
+.step-info .step-wrap .list > li {display: flex; flex-direction: column; justify-content: center; position: relative; min-height: 4.8rem; padding-left: 6rem;}
+.step-info .step-wrap .list > li::before {content: ''; display: block; position: absolute; top: 50%; left: 0; width: 4.8rem; height: 4.8rem; border-radius: 50%; background-color: #EEF2FD; background-repeat: no-repeat; background-position: center; transform: translateY(-50%);}
+.step-info .step-wrap .list > li.item1::before {background-image:url(); background-size: 100% auto;}
+.step-info .step-wrap .list > li.item2::before {background-image:url(); background-size: 100% auto;}
+.step-info .step-wrap .list > li.item3::before {background-image:url(); background-size: 100% auto;}
+.step-info .step-wrap .list > li.item4::before {background-image:url(); background-size: 100% auto;}
+.step-info .step-wrap .list > li.item5::before {background-image:url(); background-size: 100% auto;}
+.step-info .step-wrap .list > li.item6::before {background-image:url(); background-size: 100% auto;}
+.step-info .step-wrap .list > li + li {margin-top: var(--space-xl);}
+.step-info .step-wrap .list > li > p {font-weight: var(--font-medium); font-size: var(--font-sm); line-height: 1.5;}
+
+/* 해피콜 오답 제출 */
+.wrong-answer {margin-top: var(--space-sm);}
+.wrong-answer .answer-title {display: block; margin-bottom: var(--space-sm); font-weight: var(--font-semibold); font-size: var(--font-lg); line-height: 1.35;}
+.wrong-answer .list {display: flex; flex-wrap: wrap; margin: -0.4rem;}
+.wrong-answer .list > li {width: calc(100% / 3); margin: 0; padding: var(--space-min);}
+.wrong-answer .btn-prev-link {display: flex; align-items: center; justify-content: center; width: 100%; height: 4rem; border-radius: 0.6rem; border: 1px solid var(--color-disable); background-color: var(--color-light); font-weight: var(--font-regular); font-size: var(--font-xs); color: var(--color-dark); line-height: 1.35;}
+
+/* 주택 추가정보 */
+.build-item-img {width: 88px;}
+
+/* 증명서발행 > 발행방법 */
+.h-fixed-email {height: 23.2rem;}
+
+/* 보험료 그래프 */
+.join-status {width: 100%; padding: var(--space-xxs) 0 var(--space-xxl);}
+.card-info .item-row.detail .join-status {padding-bottom: 0;}
+.join-status > .graph {position: relative; height: 1.2rem; background-color: var(--color-bg-light); border-radius: 1.0rem;}
+.join-status > .graph .bar {position: absolute; top: 0; left: 0; width: 33.33%; height: 100%; background: linear-gradient(90deg, #0AF 0%, var(--color-primary) 100%); border-radius: 1.0rem;}
+.join-status > .graph .bar.date {background: var(--color-bg-dark); box-shadow: none;}
+
+.join-status > .info {display: flex; justify-content: space-between;}
+.join-status > .info > li {width: 100%; padding-top: var(--space-xxs); line-height: 1.35; font-size: var(--font-min);}
+.join-status > .info > li:nth-child(2) {text-align: center;}
+.join-status > .info > li:last-child {text-align: right;}
+.join-status > .info .subject {position: relative; font-weight: var(--font-medium); color: var(--color-base);}
+.join-status > .info .txt {display: block; font-weight: var(--font-medium); font-size: var(--font-min); color: var(--color-dark);}
+
+.car-type > .item-row > .unit:first-child {width: 32%;}
+
+/* 연락금지 조회 */
+.self-certify.card-list.option-icon .card-item {padding: 2.3rem;}
+.self-certify.card-list.option-icon .card-title .key > em {font-size: var(--font-lg);}
+.self-certify.card-list.option-icon .card-title .key > em .sub {font-size: var(--font-md); color: var(--color-txt-body);}
+.self-certify.card-list.option-icon .card-title .key.type20:before {margin-right: var(--space-sm); background-position: calc(var(--icon-xl) * -6) calc(var(--icon-xl) * -1);} /* 인증필요 */
+
+/* 고객확인제도안내 */
+.card-list.option-icon.target-list .card-title ~ .btn.primary {margin-top: var(--space-sm);}
+.card-list.option-icon.target-list .card-list .card-title .key:before {margin-right: var(--space-sm);}
+.card-list.option-icon.target-list .card-list .card-title .key .sub {font-size: var(--font-md); color: var(--color-txt-body); word-break: keep-all;}
+.card-list.option-icon.target-list .card-title .key.type4:before {background-position: calc(var(--icon-xl) * -5) calc(var(--icon-xl) * -1);}
+
+/* 안내장 내용보기 */
+.card-list .card-item .card-title .txt.option-icon {padding-bottom: var(--space-xxs); font-size: var(--font-xs);}
+.card-list .card-item .card-title .txt.option-icon::before {content: ''; display: inline-block; width: var(--icon-md); height: var(--icon-md); margin-right: var(--space-min); background: var(--bg-url-md) no-repeat calc(var(--icon-md) * -8) calc(var(--icon-md) * -5); background-size: var(--bg-size-md); vertical-align: middle;}
+
+.option-result .ex-desc {text-align: center;}
+.option-result .ex-desc > p {font-size: var(--font-md); color: var(--color-base); line-height: 1.5;}
+
+/* 주소검색/결과 확인 */
+.list-address button {display:block; width: 100%; padding:var(--space-md) 0; text-align:left;}
+.list-address .item{border-bottom:var(--line-sm) solid var(--color-bg-base)}  
+.list-address .item:first-child {border-top:var(--line-sm) solid var(--color-bg-base)}
+.list-address .address {font-size:var(--font-sm);}
+.list-address .old-address {margin-top:var(--space-min); font-size:var(--font-xs); color:var(--color-base)}
+.form-value .note.list-address{padding:var(--space-lg)}
+
+/* 보안문자 확인 */
+.security-code-img {display: flex; justify-content: center; align-items: center; overflow: hidden; height: 5.6rem; background-color: var(--color-bg-base); border-radius: var(--radius-md) 0 0 var(--radius-md); border: var(--line-sm) solid var(--color-bg-dark); border-right: 0;}
+.security-code-img img {max-height: 100%; mix-blend-mode: multiply;}
+.security-code .unit + .unit {overflow: hidden; margin-left: 0; border-radius: 0 var(--radius-md) var(--radius-md) 0; border: var(--line-sm) solid var(--color-bg-dark);}
+.security-code .btn {padding: 1.5rem; border: 0;}
+.security-code .btn::before {content: ''; display: inline-block; width: var(--icon-sm); height: var(--icon-sm); background: var(--bg-url-sm) no-repeat calc(var(--icon-sm) * -9) calc(var(--icon-sm) * -7); background-size: var(--bg-size-sm); vertical-align: middle;}
+.security-code .btn > span {color: var(--color-base);}

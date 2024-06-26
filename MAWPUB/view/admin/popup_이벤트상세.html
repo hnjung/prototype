@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>모바일앱웹 어드민 - 신한EZ손해보험</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../image/com/favicon.ico">
+	<link rel="stylesheet" href="../admin/css/com/content.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- #admin-wrap -->
+<div id="admin-wrap">
+
+	<!-- #admin-header-->
+	<header id="admin-header" class="item-row">
+		<div class="unit fixed">
+			<span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험</span></a></span>
+		</div>
+		<div class="unit fixed">
+			<button type="button" class="btn ico-gnb-control" id="gnbFoldControl"><span class="sr-only">접기</span></button>
+		</div>
+		<div class="unit fixed">
+			<select name="" id="">
+				<option value="">바로가기</option>
+				<option value="">상품설명컨텐츠관리</option>
+				<option value="">판매플랜관리</option>
+			</select>
+		</div>
+		<div class="unit fixed">
+			<ul class="list depth-u4">
+				<li class="primary">현재 접속중인 서버는 Development입니다.</li>
+			</ul>
+		</div>
+		<div class="unit filled align-right">
+			<button type="button" class="btn outlined option-sm"><span>Code Reload</span></button>
+			<button type="button" class="btn outlined option-sm"><span>Logout</span></button>
+		</div>
+	</header>
+	<!--// #admin-header-->
+
+	<!-- #admin-main -->
+	<main id="admin-main">
+
+		<!-- #admin-aside -->
+		<aside id="admin-aside">
+			<!-- .box -->
+			<div class="box option-bg">
+				<div class="space-mb-xxs">
+					<!-- .checkbox* -->
+					<label for="checkSideControl" class="checkbox-item option-single">
+						<input type="checkbox" name="" id="checkSideControl" class="control">
+						<span class="label fs-caption">메뉴 전체 열기</span>
+					</label>
+					<!--// .checkbox* -->
+				</div>
+				<div class="scrollbar">
+					<!-- .link* -->
+					<a href="javascript:;" class="btn-menu-link"><span>Document</span></a>
+					<a href="javascript:;" class="btn-menu-link space-mb-xs"><span>Dashboard</span></a>
+					<!--// .link* -->
+					<!-- .accordion -->
+					<div class="accordion fn-fold-wrap" data-fold-slide="true">
+						<div class="accordion-head">
+							<div class="inner fn-fold-link">
+								<span>상품관리</span>
+							</div>
+							<button type="button" class="btn-fold fn-fold-btn"><span class="sr-only">열기</span></button>
+						</div>
+						<div class="accordion-body fn-fold-item">
+							<div class="inner">
+								<!-- .note* -->
+								<ul class="note-list">
+									<li><a class="fn-guide-link" href="javascript:;">상품설명컨텐츠관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">판매플랜관리</a></li>
+								</ul>
+								<!--// .note* -->
+							</div>
+						</div>
+					</div>
+					<!--// .accordion -->
+					<!-- .accordion -->
+					<div class="accordion fn-fold-wrap" data-fold-slide="true">
+						<div class="accordion-head">
+							<div class="inner fn-fold-link">
+								<span>영업관리</span>
+							</div>
+							<button type="button" class="btn-fold fn-fold-btn"><span class="sr-only">열기</span></button>
+						</div>
+						<div class="accordion-body fn-fold-item">
+							<div class="inner">
+								<!-- .note* -->
+								<ul class="note-list">
+									<li><a class="fn-guide-link" href="javascript:;">공지사항관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">설계사도움관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">설계사매핑관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">배정관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">사용자관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">이벤트관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">발송이력조회</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">상품DataLoad</a></li>
+								</ul>
+								<!--// .note* -->
+							</div>
+						</div>
+					</div>
+					<!--// .accordion -->
+					<!-- .accordion -->
+					<div class="accordion fn-fold-wrap" data-fold-slide="true">
+						<div class="accordion-head">
+							<div class="inner fn-fold-link">
+								<span>통계</span>
+							</div>
+							<button type="button" class="btn-fold fn-fold-btn"><span class="sr-only">열기</span></button>
+						</div>
+						<div class="accordion-body fn-fold-item">
+							<div class="inner">
+								<!-- .note* -->
+								<ul class="note-list">
+									<li><a class="fn-guide-link" href="javascript:;">일별Sales레포트</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">(구)교차채널운전자보험효율지표</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">(신)교차채널효율지표</a></li>
+								</ul>
+								<!--// .note* -->
+							</div>
+						</div>
+					</div>
+					<!--// .accordion -->
+					<!-- .accordion -->
+					<div class="accordion fn-fold-wrap" data-fold-slide="true">
+						<div class="accordion-head">
+							<div class="inner fn-fold-link">
+								<span>시스템관리</span>
+							</div>
+							<button type="button" class="btn-fold fn-fold-btn"><span class="sr-only">열기</span></button>
+						</div>
+						<div class="accordion-body fn-fold-item">
+							<div class="inner">
+								<!-- .note* -->
+								<ul class="note-list">
+									<li><a class="fn-guide-link" href="javascript:;">공통코드</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">메뉴관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">메뉴권한관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">기준값관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">마스킹관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">템플릿관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">인터페이스관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">거래이력조회</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">조직관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">영업일관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">배치정보관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">배치이력관리</a></li>
+									<li><a class="fn-guide-link" href="javascript:;">전자문서보완</a></li>
+								</ul>
+								<!--// .note* -->
+							</div>
+						</div>
+					</div>
+					<!--// .accordion -->
+				</div>
+			</div>
+			<!--// .box -->
+		</aside>
+		<!--// #admin-aside -->
+
+		<!-- #admin-content -->
+		<article id="admin-content">
+
+			<!-- .admin-tab -->
+			<div id="admin-tab" class="admin-tab">
+				<button type="button" id="tab-move-prev" class="tab-move-prev is-hide"><span class="sr-only">왼쪽탭보기</span></button>
+				<div class="admin-tab-scroll" tabindex="0">
+					<ul class="admin-tab-list">
+						<li class="admin-tab-item">
+							<span>Document</span>
+						</li>
+						<li class="admin-tab-item">
+							<span>Dashboard</span>
+						</li>
+						<li class="admin-tab-item">
+							<span>탭이름탭이름1</span>
+							<button type="button" class="tab-close">탭삭제</button>
+						</li>
+						<li class="admin-tab-item is-active">
+							<span>탭이름탭이름2</span>
+							<button type="button" class="tab-close">탭삭제</button>
+						</li>
+						<li class="admin-tab-item">
+							<span>탭이름탭이름3</span>
+							<button type="button" class="tab-close">탭삭제</button>
+						</li>
+						<li class="admin-tab-item">
+							<span>탭이름탭이름4</span>
+							<button type="button" class="tab-close">탭삭제</button>
+						</li>
+						<li class="admin-tab-item">
+							<span>탭이름탭이름5</span>
+							<button type="button" class="tab-close">탭삭제</button>
+						</li>
+						<li class="admin-tab-item">
+							<span>탭이름탭이름6</span>
+							<button type="button" class="tab-close">탭삭제</button>
+						</li>
+						<li class="admin-tab-item">
+							<span>탭이름탭이름7</span>
+							<button type="button" class="tab-close">탭삭제</button>
+						</li>
+						<li class="admin-tab-item">
+							<span>탭이름탭이름8</span>
+							<button type="button" class="tab-close">탭삭제</button>
+						</li>
+						<li class="admin-tab-item">
+							<span>탭이름탭이름9</span>
+							<button type="button" class="tab-close">탭삭제</button>
+						</li>
+						<li class="admin-tab-item">
+							<span>탭이름탭이름10</span>
+							<button type="button" class="tab-close">탭삭제</button>
+						</li>
+						<li class="admin-tab-item">
+							<span>탭이름탭이름11</span>
+							<button type="button" class="tab-close">탭삭제</button>
+						</li>
+						<li class="admin-tab-item">
+							<span>탭이름탭이름12</span>
+							<button type="button" class="tab-close">탭삭제</button>
+						</li>
+					</ul>
+				</div>
+				<button type="button" id="tab-move-next" class="tab-move-next is-hide"><span class="sr-only">오른쪽탭보기</span></button>
+				<button type="button" class="tab-all-close"><span class="sr-only">탭전체삭제</span></button>
+			</div>
+			<!--// .admin-tab -->
+
+			<!-- .section -->
+			<section id="admin-section" class="section">
+				<!-- .group -->
+				<div class="group">
+					<!-- [D]콘텐츠 영역 시작 -->
+
+          <div class="form-wrap"></div>
+					<!-- .btn-group* -->
+          <div class="btn-group">
+            <button type="button" class="btn primary fn-popup-open" data-popup-id="#popupAppDetail" id="sampleA"><span>조회</span></button>
+          </div>
+          <!--// .btn-group* -->
+
+					<!--// [D]콘텐츠 영역 시작 -->
+				</div>
+				<!--// .group -->
+			</section>
+			<!--// .section -->
+
+		</article>
+		<!--// #admin-content -->
+
+		<!-- #admin-footer -->
+		<footer id="admin-footer">
+			<div class="item-row">
+				<div class="unit fs-caption">[XX012345] : 메뉴관리</div>
+				<div class="unit fs-caption">2023-09-07 23:59:00</div>
+			</div>
+		</footer>
+		<!--// #admin-footer -->
+
+	</main>
+	<!--// #admin-main -->
+
+  <div id="popup">
+    <!-- [D]개발영역 분기점 확인 필요 : 시작 -->
+    <!-- .popup-wrap -->
+    <div class="popup-wrap option-modal" id="popupAppDetail" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popupAppDetailTitle">
+      <!-- @set: option-modal -->
+      <!-- .popup-inner -->
+      <div class="popup-inner" tabindex="0" data-focus-on="true">
+        <!-- .popup-head -->
+        <div class="popup-head">
+          <h2 class="popup-title" id="popupAppDetailTitle"><span>이벤트 상세</span></h2>
+        </div>
+        <!--// .popup-head -->
+        <!-- .popup-content -->
+        <div class="popup-content">
+          <!-- .section -->
+          <section class="section">
+            <!-- .group -->
+          <div class="group">
+            <!-- .form -->
+            <div class="form option-regist">
+              <div class="form-wrap">
+                <!-- .form-list -->
+                <ul class="form-list">
+                  <li class="form-item">
+                    <div class="unit">
+                      <div class="form-name">
+                        <strong>제목</strong>
+                      </div>
+                      <div class="form-value">
+                        <!-- .input -->
+                        <div class="input w-100">
+                          <input type="text" name="" id="textfield1-1" class="input-data" placeholder="입력해 주세요" value="공지사항 등록 테스트" readonly>
+                        </div>
+                        <!--// .input -->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="form-item">
+                    <div class="unit">
+                      <div class="form-name">
+                        <strong>등록일자</strong>
+                      </div>
+                      <div class="form-value">
+                        <!-- .input -->
+                        <div class="input w-100">
+                          <input type="text" name="" id="textfield1-2" class="input-data" placeholder="입력해 주세요" value="L009_202212015" readonly>
+                        </div>
+                        <!--// .input -->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="form-item">
+                    <div class="unit">
+                      <img src="../image/temp/img-temp.png" alt="">
+                    </div>
+                  </li>
+                  <li class="form-item">
+                    <div class="unit">
+                      <img src="../image/temp/img-temp.png" alt="">
+                    </div>
+                  </li>
+                </ul>
+                <!--// .form-list -->
+              </div>
+            </div>
+            <!--// .form -->
+          </div>
+          <!--// .group -->
+          </section>
+          <!--// .section -->
+        </div>
+        <!--// .popup-content -->
+        <!-- .popup-foot -->
+        <div class="popup-foot">
+          <!-- .btn-group* -->
+          <div class="btn-group">
+            <button type="button" class="btn primary fn-popup-close" data-popup-id="#popupAppDetail"><span>확인</span></button>
+          </div>
+          <!--// .btn-group* -->
+        </div>
+        <!--// .popup-foot -->
+        <!-- .btn-popup-close -->
+        <button type="button" class="btn-popup-close fn-popup-close" data-popup-id="#popupAppDetail">
+          <span class="sr-only">팝업 닫기</span>
+        </button>
+        <!--// .btn-popup-close -->
+      </div>
+      <!--// .popup-inner -->
+    </div>
+    <!--// .popup-wrap -->
+    <!--// [D]개발영역 분기점 확인 필요 : 끝 -->
+  </div>
+
+</div>
+<!--// #admin-wrap -->
+<script src="../admin/js/com/jquery-3.7.0.min.js"></script>
+<script src="../admin/js/com/common_pub.js"></script>
+<script src="./script.js"></script>
+
+<script>
+  document.getElementById('sampleA').click();
+</script>
+</body>
+</html>

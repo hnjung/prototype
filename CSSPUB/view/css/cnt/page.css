@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-08-18
+	- 파일명 : page.css
+	- 포함내용 : 계약관리 콘텐츠 스타일
+*/
+
+/* 상품선택 */
+.product-select {padding-top: var(--space-xxs);}
+.product-select .unit {position: relative; box-shadow: var(--shadow-md); border-radius: var(--radius-lg);}
+.product-select .unit + .unit {margin-top: var(--space-sm);}
+.product-select .product-image {overflow: hidden; border-top-left-radius: var(--radius-lg); border-top-right-radius: var(--radius-lg);}
+.product-select .product-image .image {width: 100%;}
+.product-select .product-image .image.ta {display: none;}
+
+.product-select .btn-card-more {width: 100%; margin: 0; border-top: 0;}
+.product-detail {overflow: hidden; max-height: 0; padding-top: 0; padding-bottom: 0; padding-left: 3.2rem; padding-right: 3.2rem; border-bottom: 0;}
+.product-detail .title-h5 {margin-bottom: var(--space-xxs);}
+.product-detail ul > li {font-size: var(--font-xs); color: var(--color-base);}
+.product-detail ul > li + li {padding-top: var(--space-min);}
+.product-detail ul + ul {padding-top: var(--space-sm);}
+.unit.is-open .product-detail {max-height: inherit; padding-top: 2.0rem; padding-bottom: 2.0rem; border-bottom: var(--line-sm) solid var(--color-bg-light);}
+.unit.is-open .btn-card-more::after {transform: rotate3d(0, 0, 1, 0deg);}
+.unit.is-open .btn-card-more > .txt::before {content: '닫기';}
+
+.product-detail .note-list.depth-root {margin-top: var(--space-xxs);}
+.product-detail .note-list.depth-root > li + li {padding-top: var(--space-min);}
+.product-detail .note {margin-top: var(--space-xxs);}
+.product-detail .note .note-list.list.depth-u4 {padding-top: var(--space-sm); padding-bottom: var(--space-sm);}
+.product-detail .note .note-list.list.depth-u4 > li + li {margin-top: 0; padding-top: var(--space-min);}
+
+/* 간편계산 결과 상세 */ 
+.data-body.rounded .data-list > thead .data-radio {vertical-align:top;}
+.data-body.rounded .data-list > thead .data-radio .radio-item {min-width:12.8rem;}
+.data-body.rounded .data-list > thead .data-radio .radio-item .btn {display:block; margin-inline:auto;}
+.data-body.rounded .data-list > thead .data-radio .radio-item .btn,
+.data-body.rounded .data-list > thead .data-radio .radio-item .txt>strong {margin-top: var(--space-min)}
+
+/* 계약관계자 등록 */
+.card-radio.card-list .card-item {padding:var(--space-md); box-shadow:none}
+.card-radio.card-list .card-item+.card-item{margin-top:0}  
+.card-radio.card-list .card-item .label{text-align: center; font-size:var(--font-xs); color:var(--color-txt-body)}
+.card-radio.card-list .card-item .label .txt{display:block;}
+.card-radio.card-list .card-item .label .txt:before{display:flex; justify-content: center; content:""; width:var(--icon-lg); height:var(--icon-lg); margin:0 auto var(--space-min); background:var(--bg-url-lg) no-repeat calc(var(--icon-lg) * -1)  calc(var(--icon-lg) * -5); background-size: var(--bg-size-lg);}
+.card-radio.card-list .card-select .control[type='radio']:focus ~ .label::before,
+.card-radio.card-list .card-select .control[type='radio']:checked ~ .label::before {box-shadow: none;}
+.card-radio.card-list .card-select .control[type='radio']:focus ~ .label .txt,
+.card-radio.card-list .card-select .control[type='radio']:checked ~ .label .txt {color:var(--color-primary); font-weight:var(--font-medium);}
+.card-radio.card-list .card-item .ico2 .label .txt:before {background-position-x: calc(var(--icon-lg) * -3);}
+.card-radio.card-list .card-item .ico3 .label .txt:before {background-position-x: calc(var(--icon-lg) * -5);}
+.card-radio.card-list .card-item .ico1 .control[type='radio']:focus ~ .label .txt:before,
+.card-radio.card-list .card-item .ico1 .control[type='radio']:checked ~ .label .txt:before {background-position-x:calc(var(--icon-lg) * 0);}
+.card-radio.card-list .card-item .ico2 .control[type='radio']:focus ~ .label .txt:before,
+.card-radio.card-list .card-item .ico2 .control[type='radio']:checked ~ .label .txt:before {background-position-x: calc(var(--icon-lg) * -2);}
+.card-radio.card-list .card-item .ico3 .control[type='radio']:focus ~ .label .txt:before,
+.card-radio.card-list .card-item .ico3 .control[type='radio']:checked ~ .label .txt:before {background-position-x: calc(var(--icon-lg) * -4);}
+.item-half .unit.filled.segment .select {width: 100%;}
+
+/* 상품선택 - (태블릿+PC) */
+@media screen and (min-width: 768px) {
+	.product-select .item-half {align-items: flex-start; flex-wrap: wrap;}
+	.product-select .item-half > .unit {width: calc(50% - (var(--space-sm) / 2));}
+	.product-select .item-half > .unit:nth-child(2n + 1) {margin-left: 0;}
+	.product-select .item-half > .unit:nth-child(2) {margin-top: 0;}
+}
+
+/* 상품선택 - (태블릿-가로+PC) */
+@media screen and (min-width: 1024px) {
+	.product-select .product-image .image.mo {display: none;}
+	.product-select .product-image .image.ta {display: block;}
+}
+
+/* 설계상태 조회 */
+.form-list .form-item.detail {position: relative;}
+.form-list .form-item .ex-desc {position: absolute; top: .4rem; right: 0;}
+.form-list .form-item .ex-desc > p {font-size: var(--font-min); color: var(--color-txt-sub); line-height: 1.35;}
+.form-list .form-item .unit.space-mt-lg {margin-top: 0 !important; padding-top: 0;}
+
+.insurant-detail {margin-top: var(--space-xxl);}
+.insurant-detail .chip-area {display: block; margin-bottom: var(--space-xl);}  
+.insurant-detail .chip-area .text {padding: var(--space-sm) 0; font-size: var(--font-sm); line-height: 1.35;}
+.insurant-detail .chip-area .text > em {font-weight: var(--font-semibold);}
+
+/* 설계상태 조회 - (태블릿+PC) */
+@media screen and (min-width: 768px) {
+	.form-list .form-item .ex-desc {position: absolute; top: .5rem; right: calc(100% / 2 - 14.0rem);}
+	.form-list .form-item .unit.space-mt-lg {margin-top: var(--space-lg) !important;}
+	.insurant-detail .chip-area {display: flex; flex-direction: column; align-items: center; margin: var(--space-xl) auto;}
+}
+
+/* 전산심사 결과-한도제한 */
+.section.contract .box.option-line {padding: var(--space-lg);}
+.section.contract .box.option-line .box-head {padding-bottom: var(--space-xs); margin-bottom: var(--space-sm); border-bottom: var(--line-sm) solid var(--color-bg-base);}
+.section.contract .box.option-line .box-text .title {margin-bottom: var(--space-xxs); font-size: var(--font-title-sm); line-height: 1.3; color: var(--color-dark);}
+.section.contract .box.option-line .box-text .text {font-size: var(--font-sm); color: var(--color-dark);}
+.section.contract .box.option-line .box-text .list {margin-top: var(--space-xxs);}
+
+/* 추가 고지정보 입력 */
+.section.contract .data-list .data-btn {min-width: 10.2rem;}
+.section.contract .data-list .data-btn > .btn,
+.section.contract .card-info .item-row .unit.data-btn > .btn {min-width: 4.9rem; max-width: 10.2rem;}  
+
+/* 알릴의무사항 입력 */
+.section.contract .question .question-result {margin-top: var(--space-sm);}
+.section.contract .question .question-group > li + li {margin-top: var(--space-xl);}
+.section.contract .question .question-item + .question-item {margin-top: var(--space-sm);}
+.section.contract .question .question-item.line-top {padding-top:var(--space-sm); border-top:var(--line-sm) solid var(--color-bg-base)}
+.section.contract .question .list.depth-u4 .fc-dark {color: var(--color-dark);}
+.section.contract .question .card-item.check-boxed {padding: 0 var(--space-sm); border: var(--line-sm) solid var(--color-bg-dark); border-radius: var(--radius-lg);}
+.section.contract .question .card-item.check-boxed > .item-row > .unit + .unit.filled {margin: 0; margin-left: var(--space-sm); padding: var(--space-lg) 0 var(--space-lg) var(--space-sm); border-left: var(--line-sm) solid var(--color-bg-base);}
+.form-item.item-split{flex-direction: column; align-items: center; }
+.form-item.item-split>.unit {flex-shrink: 1; width: 100%;}
+.form-item.item-split>.unit+.unit {padding-top: var(--space-xl); margin-left:0}
+.form-item.item-split>.unit+.unit .form-value {display:block}
+.form-item.item-split>.unit+.unit .form-value .item-row+.item-row{margin-left:0}
+.item-row.split-input{flex-direction:column; align-items:start;}
+.item-row.split-input>.unit+.unit {margin: var(--space-xxs) 0 0 0;}
+
+.item-half.split-term>.unit:first-child {width:100%}  
+
+
+@media screen and (min-width: 768px) {	
+	.form-item.item-split>.unit+.unit .form-value {display:flex}
+	.form-item.item-split>.unit+.unit .form-value .item-row+.item-row{margin:0 0 0 var(--space-xxs)}
+	.item-row.split-input{ flex-direction:row; align-items: center;}
+	.item-row.split-input .unit+.unit{margin:0 0 0 var(--space-sm)}
+	.item-half.split-term>.unit:first-child {width:65%}
+}
+
+@media screen and (min-width: 1024px) {
+	.form-item.item-split{flex-direction: row;}
+	.form-item.item-split > .unit + .unit {padding-top:0; margin-left:var(--space-sm)} 
+}
+
+
+
+/* 계약자/피보험자 정보입력 */ 
+.section.contract .group.option-line:first-child {padding-bottom: var(--space-max);}
+.section.contract .group.option-line + .group.option-line {padding: var(--space-max) 0; border-top: var(--line-sm) solid var(--color-bg-base);}
+.section.contract .group.option-line + .group.option-line:last-child {padding-bottom: 0;}
+
+/* 고객확인 전자문서 목록 */
+.electronic .electronic-head{position:relative;}
+.electronic .electronic-head>.unit{display:inline-flex;}
+.electronic .electronic-body {position: relative; overflow: hidden; max-height: 0;transition: max-height var(--animation-speed) var(--animation-timing-base);}
+.electronic .electronic-body .inner { padding:var(--space-md) 0 var(--space-xs); margin-top:var(--space-md); }
+.electronic .electronic-body::before {content: ''; position: absolute; top: 2rem; left: 0; width:100%; height: var(--line-sm); background-color: var(--color-bg-base);}
+.electronic .electronic-body .tit {font-weight: var(--font-medium)}
+.electronic .electronic-body .tit::before {content: ''; display:inline-block; width:var(--icon-xs); height:var(--icon-xs); margin-right:var(--space-min); background: var(--bg-url-etc) no-repeat -7.9rem -0.7rem /*calc(var(--icon-xs) * -1) calc(var(--icon-xs) * -1)*/; background-size:var(--bg-size-etc);}
+.electronic .electronic-body .item-row + .item-row {margin-top:var(--space-sm)}
+.electronic .btn-fold{width: var(--icon-sm); height: var(--icon-sm); background: var(--bg-url-sm) no-repeat calc(var(--icon-sm) * -2) calc(var(--icon-sm) * -6); background-size: var(--bg-size-sm);}
+.electronic.is-open .btn-fold {background-position-x:calc(var(--icon-sm) * -3)}
+.electronic.is-open .fn-fold-link .key,
+.electronic .card-item.is-active .card-title .key,
+.electronic .electronic-body .is-active .tit {color:var(--color-primary);}
+.electronic .electronic-body .is-active .tit::before {background-position-x:-9.1rem}
+.electronic .card-item.is-active{border-color:var(--color-bg-dark);}    
+
+@media screen and (min-width: 768px) {
+	.section.contract .electronic-wrap {height: calc(100% - var(--space-xs)); margin-top: var(--space-sm); border-top: var(--line-sm) solid var(--color-bg-dark); border-bottom: var(--line-sm) solid var(--color-bg-dark);}
+	.section.contract .electronic-wrap .electronic-list {flex: none; width: 30rem; height: 100%; overflow-y: auto;}
+	.section.contract .electronic-wrap>.unit + .unit {height: 100%; margin: 0; background-color: var(--color-bg-light); border-left: var(--line-sm) solid var(--color-bg-dark);}
+	.section.contract .electronic-list>ul>li {padding:var(--space-sm);} 
+	.section.contract .electronic-list>ul>li+li {margin-top:0; border-top:var(--line-sm) solid var(--color-bg-base)}
+	.section.contract .electronic-list .tit {font-weight:var(--font-regular); font-size:var(--font-md); color:var(--color-txt-sub);}
+	.section.contract .electronic.is-open .electronic-head::before{content: ''; position: absolute; bottom: -1.6rem; left: -1.6rem; width:calc(100% + 3.2rem); height: var(--line-sm); background-color: var(--color-bg-base)}
+	.section.contract .electronic-list .electronic-body .tit {font-weight:var(--font-medium); color:var(--color-txt-body)}
+	.section.contract .electronic-list .electronic-body .inner {margin-top:var(--space-sm); padding:var(--space-xxs) 0 0}
+	.section.contract .electronic-list .electronic-body::before {display:none}
+	.section.contract .electronic.is-open .electronic-head .fn-fold-link,
+	.section.contract .electronic-list>ul>li.is-active .tit {font-weight:var(--font-semibold); color:var(--color-primary);}
+	.section.contract .electronic-list .is-active .tit {color:var(--color-primary);}
+}
+
+/* 병명검색 */
+.sick-wrap {height: 100%;}
+.sick-wrap .group {display: flex; flex-direction: column; height: 100%;}
+.sick-wrap .input.option-search {flex-shrink: 0; margin-top: var(--space-lg); margin-bottom: var(--space-sm);}
+.sick-wrap .chip-group {margin-bottom: var(--space-lg);}
+.search-word {overflow-y: auto; height: 100%; min-height: 242px; border: var(--line-sm) solid var(--color-bg-dark); border-radius: var(--radius-md);}
+.search-word .segment-group {display: block; background-color: var(--color-light);}
+.search-word .segment-item .label {justify-content: flex-start; padding: var(--space-xs) var(--space-lg); min-height: 4.8rem; text-align: left; color: var(--color-dark); font-size: var(--font-md);}
+.search-word .segment-item .label .txt {text-align: left; color: var(--color-dark);}
+.search-word .segment-item .label strong {color: var(--color-primary); font-weight: var(--font-regular);}
+.search-word .segment-item .control {top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; border-radius: 0;}
+.search-word .segment-item .control:checked {background-color: var(--color-primary-bg-base); border-color: transparent; box-shadow: none;}
+.search-word .segment-item .control:checked ~ .label {color: var(--color-dark); font-weight: var(--font-medium);}
+.search-word .segment-item .control:checked ~ .label strong {font-weight: var(--font-medium);}
+.search-word .segment-item + .segment-item::before {display: none;}
+
+/* FC 성명 및 서명 등록 */
+.section.contract .h-100 {height: 100%;}
+.section.contract.option-max,
+.section.contract .option-max {display: flex; flex-direction: column; height: 100%;}
+.section.contract .sign .box.option-bg {min-height: 24.8rem; height: calc(100vh - 55.0rem); margin: var(--space-sm) 0 var(--space-xxs); border: var(--line-sm) solid var(--color-bg-base);}
+.section.contract .sign .title-h5 {overflow: visible;}
+
+/* 금융상품 판매대리·중개업자의 고지의무 */
+.section.contract .unit .box.option-bg > ol > li {font-size: var(--font-sm); color: var(--color-dark);}
+.section.contract .unit .box.option-bg > ol > li + li {margin-top: var(--space-xxs);}
+
+/* FC전자문서 작성 및 고지의무확인 */
+.section.contract .option-step2 .card-item .type1::before {background-position:calc(var(--icon-xl) * 0) calc(var(--icon-xl) * -8);}
+.section.contract .option-step2 .card-item .type2::before {background-position:calc(var(--icon-xl) * -1) calc(var(--icon-xl) * -8);}
+.section.contract .option-step2 .card-item .type3::before {background-position:calc(var(--icon-xl) * -2) calc(var(--icon-xl) * -8);}
+
+/* 추가정보 입력(팝업) */
+.popup-content .section.contract .group.option-line {margin-top:var(--space-max); padding-top:var(--space-max); border-top: var(--line-sm) solid var(--color-bg-base);}
+
+
+/* 계약관계자 등록 - (태블릿+PC) */
+@media screen and (min-width: 768px) {
+	.item-half .unit.segment {display: flex; justify-content: end;}
+	.item-half .unit.segment .segment-group,
+	.item-half .unit.filled.segment .select {width: 32.0rem;}
+
+	.popup-content .section.contract .group.option-line {margin-top:var(--space-xxl); padding-top:var(--space-xxl);}
+}
+
+.data-list > tbody > tr.is-highlight {background-color: #FFEFEE;}

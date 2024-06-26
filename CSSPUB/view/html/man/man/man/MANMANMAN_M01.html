@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+	<meta name="theme-color" content="#0046FF">
+	<title>신한EZ손해보험</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon-css.ico">
+	<link rel="stylesheet" href="../../../../css/com/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../../css/com/content.css">
+	<link rel="stylesheet" href="../../../../css/man/page.css">
+</head>
+<body>
+<!-- #wrap -->
+<div id="wrap">
+
+	<!-- #skip -->
+	<div id="skip">
+		<div class="skip-menu">
+			<a href="#main">본문으로 건너뛰기</a>
+		</div>
+	</div>
+	<!--// #skip -->
+	<!-- #page -->
+	<div id="page" class="option-main" data-page-main="true">
+		<!-- 
+			[D]
+			페이지 유형이 메인(MANMANMAN_M01) 또는 고객화면(교차판매 화면구분 컴포넌트)일 경우 data-page-main="true"
+			페이지 유형이 메인(MANMANMAN_M01)일 경우 class="option-main"
+		-->
+		<!-- #header-->
+		<header id="header">
+			<h1 class="header-title">
+				<span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험</span></a></span>
+				<span class="txt">타이틀 영역</span>
+			</h1>
+			<button type="button" class="btn-menu">
+				<span class="sr-only">메뉴 열기</span>
+			</button>
+			<!-- #nav -->
+			<nav id="gnb" class="option-manager"><!-- [D]매니저 로그인 시 .option-manager 클래스 추가 - 2023-11-29 -->
+				<div class="gnb-inner">
+					<!-- .util -->
+					<div class="util">
+						<ul class="util-list">
+							<li class="util-item main"><a href="../../../man/man/man/MANMANMAN_M01.html"><span class="sr-only">메인</span></a></li>
+							<li class="util-item logout"><a href="javascript:;"><span class="sr-only">로그아웃</span></a></li>
+							<li class="util-mypage">
+								<a href="javascript:;">
+									<span class="avatar type8"><span class="sr-only">캐릭터 레이</span></span>
+									<!-- [D]캐릭터 종류별
+										<span class="avatar type1"><span class="sr-only">캐릭터 쏠</span></span>
+										<span class="avatar type2"><span class="sr-only">캐릭터 몰리</span></span>
+										<span class="avatar type3"><span class="sr-only">캐릭터 리노</span></span>
+										<span class="avatar type4"><span class="sr-only">캐릭터 슈</span></span>
+										<span class="avatar type5"><span class="sr-only">캐릭터 도레미</span></span>
+										<span class="avatar type6"><span class="sr-only">캐릭터 루루라라</span></span>
+										<span class="avatar type7"><span class="sr-only">캐릭터 폴리</span></span>
+										<span class="avatar type8"><span class="sr-only">캐릭터 레이</span></span>
+									-->
+									<span class="txt"><em>김신한</em> 매니저님</span>
+									<button type="button" class="btn-set-member"><span class="sr-only">사원검색 열기</span></button><!-- 2023-11-29 : 추가 -->
+								</a>
+							</li>
+							<li class="util-item close"><button type="button" class="btn-menu-close"><span class="sr-only">메뉴 닫기</span></button></li>
+						</ul>
+					</div>
+					<!--// .util -->
+					<!-- .manager - 2023-11-29 : 추가 -->
+					<div class="manager">
+						<div class="manager-info">
+							<span class="txt"><em>김신한</em>설계사<span class="id">(1234567)</span></span>
+							<!-- <span class="txt">매칭된 설계사가 없습니다.</span> -->
+							<button type="button" class="btn-delete"><span class="sr-only">설계사 삭제</span></button>
+						</div>
+						<div class="manager-btn"><button type="button" class="btn-member"><span class="txt">사원검색</span></button></div>
+					</div>
+					<!--// .manager - 2023-11-29 : 추가 -->
+					<!-- .bookmark -->
+					<div class="bookmark">
+						<div class="bookmark-wrap fn-fold-wrap is-open" data-fold-slide="true">
+							<div class="bookmark-head">
+								<h2 class="bookmark-title fn-fold-link"><span class="txt">즐겨찾기 메뉴</span></h2>
+								<button type="button" class="btn-fold fn-fold-btn" aria-expanded="false"><span class="sr-only">열기</span></button>
+							</div>
+							<div class="bookmark-inner fn-fold-item">
+								<ul class="bookmark-list">
+									<!-- [D]기본출력 -->
+									<li class="bookmark-item">
+										<a href="../../../cst/csi/csi/CSTCSICSI_M04.html" class="link">고객등록</a>
+									</li>
+									<!-- [D]순서변경 버튼 클릭 시 메뉴 이동 버튼 활성화 -->
+									<li class="bookmark-item">
+										<a href="../../../cnt/inp/inp/CNTINPINP_M04.html" class="link">보험료설계</a>
+										<button type="button" class="btn ico-move"><span class="sr-only">메뉴 이동</span></button>
+									</li>
+									<li class="bookmark-item">
+										<a href="../../../sal/sci/sci/SALSCISCI_M01.html" class="link">추천고객리스트</a>
+										<button type="button" class="btn ico-move"><span class="sr-only">메뉴 이동</span></button>
+									</li>
+								</ul>
+								<button type="button" class="btn texted gnb-order"><span>순서변경</span></button>
+								<!-- [D]순서변경 버튼 클릭 시 .primary 클래스 추가 -->
+								<!-- <button type="button" class="btn texted primary gnb-order"><span>저장</span></button> -->
+							</div>
+						</div>
+						<button type="button" class="btn-bookmark"><span class="txt">즐겨찾기 <em></em></span></button>
+					</div>
+					<!--// .bookmark -->
+					<!-- .gnb* -->
+					<div class="gnb-wrap">
+						<ul class="gnb-list">
+							<li class="gnb-item fn-fold-wrap" data-fold-slide="true"><!-- 2024-02-21 : .is-open 삭제 -->
+								<span class="txt fn-fold-link" tabindex="0">상품보기</span><!-- 2024-02-21 : tabindex 추가 -->
+								<button type="button" class="btn-fold fn-fold-btn" aria-expanded="false"><span class="sr-only">열기</span></button>
+								<ul class="snb-list fn-fold-item">
+									<li class="snb-item">
+										<label for="bookmark1a" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark1a" class="control" checked>
+										</label>
+										<a href="../../../prd/pus/pus/PRDPUSPUS_M01.html" class="link">상품URL발송</a>
+									</li>
+									<li class="snb-item is-active"><!-- [D]메뉴 활성화 .is-active 클래스 추가 -->
+										<label for="bookmark1b" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark1b" class="control">
+										</label>
+										<a href="javascript:;" class="link">운전자보험 간편설계</a>
+									</li>
+									<li class="snb-item">
+										<label for="bookmark1c" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark1c" class="control">
+										</label>
+										<a href="javascript:;" class="link">건강보험 간편설계</a>
+									</li>
+									<li class="snb-item">
+										<label for="bookmark1d" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark1d" class="control">
+										</label>
+										<a href="javascript:;" class="link">보험상품보기</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnb-item fn-fold-wrap" data-fold-slide="true"><!-- 2024-02-21 : .is-open 삭제 -->
+								<span class="txt fn-fold-link" tabindex="0">고객관리</span><!-- 2024-02-21 : tabindex 추가 -->
+								<button type="button" class="btn-fold fn-fold-btn" aria-expanded="false"><span class="sr-only">열기</span></button>
+								<ul class="snb-list fn-fold-item">
+									<li class="snb-item">
+										<label for="bookmark2a" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark2a" class="control">
+										</label>
+										<a href="../../html/cst/csi/csi/CSTCSICSI_M04.html" class="link">고객등록</a>
+									</li>
+									<li class="snb-item">
+										<label for="bookmark2b" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark2b" class="control">
+										</label>
+										<a href="javascript:;" class="link">고객정보조회</a>
+									</li>
+									<li class="snb-item">
+										<label for="bookmark2c" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark2c" class="control">
+										</label>
+										<a href="javascript:;" class="link">고객기념일</a>
+									</li>
+								</ul>
+							</li>
+							<!-- 2024-02-08 : 메뉴 추가 및 이동 -->
+							<li class="gnb-item fn-fold-wrap" data-fold-slide="true"><!-- 2024-02-21 : .is-open 삭제 -->
+								<span class="txt fn-fold-link" tabindex="0">청약관리</span><!-- 2024-02-21 : tabindex 추가 -->
+								<button type="button" class="btn-fold fn-fold-btn" aria-expanded="false"><span class="sr-only">열기</span></button>
+								<ul class="snb-list fn-fold-item">
+									<li class="snb-item">
+										<label for="bookmark3a" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark3a" class="control">
+										</label>
+										<a href="javascript:;" class="link">설계상태조회</a>
+									</li>
+									<li class="snb-item">
+										<label for="bookmark3b" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark3b" class="control">
+										</label>
+										<a href="javascript:;" class="link">보험료설계</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnb-item fn-fold-wrap" data-fold-slide="true"><!-- 2024-02-21 : .is-open 삭제 -->
+								<span class="txt fn-fold-link" tabindex="0">계약관리</span><!-- 2024-02-21 : tabindex 추가 -->
+								<button type="button" class="btn-fold fn-fold-btn" aria-expanded="false"><span class="sr-only">열기</span></button>
+								<ul class="snb-list fn-fold-item">
+									<li class="snb-item">
+										<label for="bookmark5a" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark5a" class="control">
+										</label>
+										<a href="javascript:;" class="link">보유계약관리</a>
+									</li>
+									<li class="snb-item">
+										<label for="bookmark5b" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark5b" class="control">
+										</label>
+										<a href="javascript:;" class="link">해피콜완료</a>
+									</li>
+								</ul>
+							</li>
+							<!--// 2024-02-08 : 메뉴 추가 및 이동 -->
+							<li class="gnb-item fn-fold-wrap" data-fold-slide="true"><!-- 2024-02-21 : .is-open 삭제 -->
+								<span class="txt fn-fold-link" tabindex="0">영업지원</span><!-- 2024-02-21 : tabindex 추가 -->
+								<button type="button" class="btn-fold fn-fold-btn" aria-expanded="false"><span class="sr-only">열기</span></button>
+								<ul class="snb-list fn-fold-item">
+									<li class="snb-item">
+										<label for="bookmark4a" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark4a" class="control">
+										</label>
+										<a href="javascript:;" class="link">추천고객리스트</a>
+									</li>
+									<li class="snb-item">
+										<label for="bookmark4b" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark4b" class="control">
+										</label>
+										<a href="javascript:;" class="link">보장분석</a>
+									</li>
+									<li class="snb-item">
+										<label for="bookmark4c" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark4c" class="control">
+										</label>
+										<a href="javascript:;" class="link">매니저도움관리</a>
+									</li>
+									<li class="snb-item">
+										<label for="bookmark4d" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark4d" class="control">
+										</label>
+										<a href="javascript:;" class="link">이벤트</a>
+									</li>
+									<li class="snb-item">
+										<label for="bookmark4e" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark4e" class="control">
+										</label>
+										<a href="javascript:;" class="link">새소식알림</a>
+									</li>
+									<li class="snb-item">
+										<label for="bookmark4f" class="checkbox-item option-bookmark">
+											<input type="checkbox" name="" id="bookmark4f" class="control">
+										</label>
+										<a href="javascript:;" class="link">소득조회</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="gnb-btn-wrap">
+							<button type="button" class="btn primary gnb-save" tabindex="-1"><span>즐겨찾기 저장</span></button><!-- 2024-02-21 : tabindex 추가 -->
+						</div>
+					</div>
+					<!-- .gnb* -->
+				</div>
+			</nav>
+			<!--// #nav -->
+		</header>
+		<!--// #header-->
+
+		<!-- #main -->
+		<main id="main">
+
+			<!-- #aside -->
+			<aside id="aside">
+				<!-- .lnb* -->
+				<div class="lnb-wrap">
+					<ul class="lnb-list">
+						<li class="lnb-item"><span class="txt">고객</span>
+							<ul class="lnb-sub-list">
+								<li class="lnb-sub-item"><a href="javascript:;" class="link">고객등록</a></li>
+								<li class="lnb-sub-item"><a href="javascript:;" class="link">고객정보조회</a></li>
+							</ul>
+						</li>
+						<li class="lnb-item"><span class="txt">가입설계</span>
+							<ul class="lnb-sub-list">
+								<li class="lnb-sub-item"><a href="javascript:;" class="link">보험료설계</a></li>
+								<li class="lnb-sub-item"><a href="javascript:;" class="link">설계상태조회</a></li>
+							</ul>
+						</li>
+						<li class="lnb-item"><span class="txt">장기계약</span>
+							<ul class="lnb-sub-list">
+								<li class="lnb-sub-item"><a href="javascript:;" class="link">보유계약관리</a></li>
+								<li class="lnb-sub-item"><a href="javascript:;" class="link">보장분석</a></li>
+								<li class="lnb-sub-item"><a href="javascript:;" class="link">해피콜상태조회</a></li>
+							</ul>
+						</li>
+						<li class="lnb-item"><span class="txt">상품</span>
+							<ul class="lnb-sub-list">
+								<li class="lnb-sub-item"><a href="javascript:;" class="link">보험상품보기</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!--// .lnb* -->
+				<!-- .cs -->
+				<div class="cs-wrap">
+					<ul class="cs-list">
+						<li class="cs-item">
+							<span class="txt">영업지원센터</span>
+							<a href="tel:02-2178-8146" class="tel">02-2178-8146(7)</a>
+						</li>
+						<li class="cs-item">
+							<span class="txt">고객센터, 해피콜</span><!-- 2024-03-07 : '콜센터' -> '고객센터' 텍스트 수정 -->
+							<a href="tel:1544-2580" class="tel">1544-2580</a>
+						</li>
+						<li class="cs-item">
+							<span class="txt">보상문의</span>
+							<a href="tel:1544-2580" class="tel">1544-2580</a>
+						</li>
+					</ul>
+					<div class="qr-code"><span class="code"></span></div>
+				</div>
+				<!--// .cs -->
+			</aside>
+			<!--// #aside -->
+
+			<!-- #content -->
+			<article id="content">
+
+				<!-- [D]개발영역 시작 -->
+
+				<!-- .section -->
+				<section class="section">
+					<!-- .group -->
+					<div class="group">
+						<!-- .*visual -->
+						<div class="main-visual">
+							<div class="swiper visual-wrap">
+								<ul class="swiper-wrapper visual-list">
+									<li class="swiper-slide visual-item">
+										<div class="image">
+											<div class="tablet"><img src="../../../../image/man/visual-img1.png" alt=""></div>
+											<div class="mo"><img src="../../../../image/man/visual-img1-mo.png" alt=""></div>
+										</div>
+										<div class="visual-btn">
+											<a href="javascript:;" class="btn-easy"><span class="txt">간편설계</span></a>
+											<a href="javascript:;" class="btn-price"><span class="txt">보험료설계</span></a>
+										</div>
+									</li>
+									<li class="swiper-slide visual-item">
+										<div class="image">
+											<div class="tablet"><img src="../../../../image/man/visual-img2.png" alt=""></div>
+											<div class="mo"><img src="../../../../image/man/visual-img2-mo.png" alt=""></div>
+										</div>
+										<div class="visual-btn">
+											<a href="javascript:;" class="btn-easy"><span class="txt">간편설계</span></a>
+											<a href="javascript:;" class="btn-price"><span class="txt">보험료설계</span></a>
+										</div>
+									</li>
+									<!-- 2024-03-31 : 이벤트 없는 경우 배너 추가 -->
+									<li class="swiper-slide visual-item">
+										<div class="image">
+											<div class="tablet"><img src="../../../../image/man/visual-img5.png" alt=""></div>
+											<div class="mo"><img src="../../../../image/man/visual-img5-mo.png" alt=""></div>
+										</div>
+										<div class="visual-btn">
+											<a href="javascript:;" class="btn-detail"><span class="txt">자세히 보기</span></a>
+										</div>
+									</li>
+									<!--// 2024-03-31 : 이벤트 없는 경우 배너 추가 -->
+									<li class="swiper-slide visual-item">
+										<div class="image">
+											<div class="tablet"><img src="../../../../image/man/visual-img3.png" alt=""></div>
+											<div class="mo"><img src="../../../../image/man/visual-img3-mo.png" alt=""></div>
+										</div>
+										<div class="visual-btn">
+											<a href="javascript:;" class="btn-detail"><span class="txt">자세히 보기</span></a>
+										</div>
+									</li>
+									<li class="swiper-slide visual-item">
+										<div class="image">
+											<div class="tablet"><img src="../../../../image/man/visual-img4.png" alt=""></div>
+											<div class="mo"><img src="../../../../image/man/visual-img4-mo.png" alt=""></div>
+										</div>
+										<div class="visual-btn">
+											<a href="javascript:;" class="btn-detail"><span class="txt">자세히 보기</span></a>
+										</div>
+									</li>
+								</ul>
+								<div class="visual-control">
+									<div class="swiper-button-next visual-control-next"></div>
+									<div class="swiper-button-prev visual-control-prev"></div>
+									<div class="swiper-pagination visual-page"></div>
+								</div>
+							</div>
+						</div>
+						<!--// .*visual -->
+
+						<!-- .*content -->
+						<div class="main-content">
+							<!-- .*menu -->
+							<div class="main-menu">
+								<ul class="main-menu-list">
+									<li class="main-menu-item customer"><a href="javascript:;"><span class="txt">고객등록</span></a></li>
+									<li class="main-menu-item plan"><a href="javascript:;"><span class="txt">보험료설계</span></a></li>
+									<li class="main-menu-item status"><a href="javascript:;"><span class="txt">설계상태조회</span></a></li>
+									<li class="main-menu-item sales"><a href="javascript:;"><span class="txt">보장분석</span></a></li>
+								</ul>
+							</div>
+							<!--// .*menu -->
+
+							<!-- .*status -->
+							<div class="main-status">
+								<!-- 2024-02-28 : '조회'버튼 추가로 인한 마크업 구조 변경 -->
+								<h3 class="main-status-title item-row">
+									<span class="txt unit filled">청약현황</span>
+									<span class="unit fixed"><button type="button" class="btn texted primary space-reset-pt"><span>조회</span></button></span>
+								</h3>
+								<!--// 2024-02-28 : '조회'버튼 추가로 인한 마크업 구조 변경 -->
+								<ul class="main-status-list">
+									<li class="main-status-item type1">
+										<div class="subject"><span class="txt">보험료산출</span></div>
+										<a href="javascript:;" class="link unchecked"><!-- [D] 조회버튼 클릭 전 '미조회' 노출 -->
+											<span class="txt">미조회</span>
+										</a>
+									</li>
+									<li class="main-status-item type2">
+										<div class="subject"><span class="txt">전산심사</span></div>
+										<a href="javascript:;" class="link unchecked"><!-- [D] 조회버튼 클릭 전 '미조회' 노출 -->
+											<span class="txt">미조회</span>
+										</a>
+									</li>
+									<li class="main-status-item type3">
+										<div class="subject"><span class="txt">결제대기</span></div>
+										<a href="javascript:;" class="link unchecked"><!-- [D] 조회버튼 클릭 전 '미조회' 노출 -->
+											<span class="txt">미조회</span>
+										</a>
+									</li>
+									<li class="main-status-item type4">
+										<div class="subject"><span class="txt">계약완료</span></div>
+										<a href="javascript:;" class="link unchecked"><!-- [D] 조회버튼 클릭 전 '미조회' 노출 -->
+											<span class="txt">미조회</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!--// .*status -->
+
+							<!-- .*status -->
+							<div class="main-status">
+								<!-- 2024-02-28 : '조회'버튼 추가로 인한 마크업 구조 변경 -->
+								<h3 class="main-status-title item-row">
+									<span class="txt unit filled">활동대상</span>
+									<span class="unit fixed"><button type="button" class="btn texted primary space-reset-pt"><span>조회</span></button></span>
+								</h3>
+								<!--// 2024-02-28 : '조회'버튼 추가로 인한 마크업 구조 변경 -->
+								<ul class="main-status-list">
+									<li class="main-status-item type5">
+										<div class="subject"><span class="txt">해피콜 미완료</span></div>
+										<a href="javascript:;" class="link"><!-- [D] 조회버튼 클릭 후 건수 노출 -->
+											<strong class="count">123건</strong>
+										</a>
+									</li>
+									<li class="main-status-item type6">
+										<div class="subject"><span class="txt">고객동의만료예정</span></div>
+										<a href="javascript:;" class="link"><!-- [D] 조회버튼 클릭 후 건수 노출 -->
+											<strong class="count">123건</strong>
+										</a>
+									</li>
+									<li class="main-status-item type7">
+										<div class="subject"><span class="txt">상령일고객확인</span></div>
+										<a href="javascript:;" class="link"><!-- [D] 조회버튼 클릭 후 건수 노출 -->
+											<strong class="count">123명</strong>
+										</a>
+									</li>
+									<li class="main-status-item type8">
+										<div class="subject"><span class="txt">고객 기념일</span></div>
+										<a href="javascript:;" class="link"><!-- [D] 조회버튼 클릭 후 건수 노출 -->
+											<strong class="count">17건</strong>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!--// .*status -->
+
+							<!-- .*board -->
+							<div class="main-board">
+								<!-- .tab* -->
+								<div class="tab main-board-tab">
+									<ul class="tab-head option-txt" role="tablist">
+										<li class="tab-menu is-active" role="tab" id="tabMainEventMenu" aria-controls="tabMainEventPanel" aria-selected="true"><a href="javascript:;" tabindex="0">이벤트</a></li>
+										<li class="tab-menu" role="tab" id="tabMainNoticeMenu" aria-controls="tabMainNoticePanel" aria-selected="false"><a href="javascript:;" tabindex="-1">공지사항</a></li>
+									</ul>
+									<div class="tab-list">
+										<div class="tab-item is-active" id="tabMainEventPanel" role="tabpanel" aria-labelledby="tabMainEventMenu" aria-hidden="false" tabindex="0">
+											<!-- [D]이벤트 -->
+											<ul class="main-board-list">
+												<li class="main-board-item">
+													<span class="badge option-status primary">축하</span>
+													<div class="main-board-subject">
+														<a href="javascript:;">이벤트 내용</a>
+														<span class="date">2023.08.04</span>
+													</div>
+												</li>
+												<li class="main-board-item">
+													<span class="badge option-status highlight">긴급</span>
+													<div class="main-board-subject">
+														<a href="javascript:;">시스템 작업 예정 입니다. 작업 시간을 확인해 주세요.</a>
+														<span class="date">2023.08.04</span>
+													</div>
+												</li>
+												<li class="main-board-item">
+													<span class="badge option-status warning">New</span>
+													<div class="main-board-subject">
+														<a href="javascript:;">시스템 작업 예정 공지</a>
+														<span class="date">2023.08.04</span>
+													</div>
+												</li>
+												<li class="main-board-item">
+													<span class="badge option-status success">중요</span>
+													<div class="main-board-subject">
+														<a href="javascript:;">시스템 작업 예정 공지</a>
+														<span class="date">2023.08.04</span>
+													</div>
+												</li>
+											</ul>
+											<button type="button" class="btn-more"><span class="sr-only">이벤트 더보기</span></button><!-- 2023-12-08 : 버튼 추가 -->
+											<!--// [D]이벤트 -->
+										</div>
+										<div class="tab-item" id="tabMainNoticePanel" role="tabpanel" aria-labelledby="tabMainNoticeMenu" aria-hidden="true" tabindex="-1">
+											<!-- [D]공지사항 -->
+											<ul class="main-board-list">
+												<li class="main-board-item">
+													<span class="badge option-status primary">축하</span>
+													<div class="main-board-subject">
+														<a href="javascript:;">공지사항 내용</a>
+														<span class="date">2023.08.04</span>
+													</div>
+												</li>
+												<li class="main-board-item">
+													<span class="badge option-status warning">New</span>
+													<div class="main-board-subject">
+														<a href="javascript:;">김신한FC님 득남을 축하 드립니다.</a>
+														<span class="date">2023.08.04</span>
+													</div>
+												</li>
+												<li class="main-board-item">
+													<span class="badge option-status highlight">긴급</span>
+													<div class="main-board-subject">
+														<a href="javascript:;">시스템 작업 예정 공지</a>
+														<span class="date">2023.08.04</span>
+													</div>
+												</li>
+												<li class="main-board-item">
+													<span class="badge option-status success">중요</span>
+													<div class="main-board-subject">
+														<a href="javascript:;">시스템 작업 예정 공지</a>
+														<span class="date">2023.08.04</span>
+													</div>
+												</li>
+											</ul>
+											<button type="button" class="btn-more"><span class="sr-only">공지사항 더보기</span></button><!-- 2023-12-08 : 버튼 추가 -->
+											<!--// [D]공지사항 -->
+										</div>
+									</div>
+								</div>
+								<!--// .tab* -->
+							</div>
+							<!--// .*board -->
+						</div>
+						<!--// .*content -->
+					</div>
+					<!--// .group -->
+				</section>
+				<!--// .section -->
+
+				<!--// [D]개발영역 끝 -->
+
+			</article>
+			<!--// #content -->
+			
+		</main>
+		<!--// #main -->
+
+		<!-- #footer -->
+		<footer id="footer">
+			<div class="footer-summary">
+				<button type="button" class="btn-footer-info"><span class="txt">신한EZ손해보험(주) 사업자정보</span></button>
+			</div>
+			<div class="footer-detail">
+				<div class="footer-inner">
+					<div class="company-info">
+						<div class="info-group">
+							<span class="address">서울특별시 중구 남대문로 113 DB다동빌딩 5층</span><!-- 2024-02-21 : 주소 변경 -->
+							<span class="ceo">대표이사 : 강병관</span>
+						</div>
+						<div class="info-group">
+							<span class="license">사업자등록번호 : 220-86-65241</span>
+							<a href="https://www.shinhanez.co.kr" target="_blank" class="btn-txt-link"><span>신한EZ손해보험 홈페이지</span></a><!-- 2024-01-08 : 링크 변경 -->
+						</div>
+					</div>
+					<div class="footer-logo"><span class="sr-only">신한EZ손해보험</span></div>
+				</div>
+			</div>
+			<button type="button" class="btn-page-top"><span class="sr-only">TOP</span></button>
+		</footer>
+		<!--// #footer -->
+	</div>
+	<!--// #page -->
+
+	<!-- #popup -->
+	<div id="popup">
+	</div>
+	<!--// #popup -->
+
+	<!-- #loading -->
+	<div id="loading" class=""><!-- [D]활성화 .is-active 클래스 추가 -->
+		<div class="loading-bar"><span></span></div>
+	</div>
+	<!--// #loading -->
+
+</div>
+<!--// #wrap -->
+<script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+<script src="../../../../js/com/swiper-bundle.min.js"></script>
+<script src="../../../../js/com/lottie_light.min.js"></script>
+<script src="../../../../js/com/common_pub.js"></script>
+<script src="../../../../js/man/page_pub.js"></script>
+</body>
+</html>

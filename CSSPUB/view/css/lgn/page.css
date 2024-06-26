@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-09-06
+	- 파일명 : page.css
+	- 포함내용 : 로그인 카테고리 관련 스타일
+*/
+/* 
+	수정정보
+	- 수정일 : 2023-04-01
+	- 수정내용 : XXX(홍길동)
+*/
+
+/* ID/PW로그인 */
+.title-h3.login-title {display: none;}
+
+/* ID/PW로그인 - (태블릿+PC) */
+@media screen and (min-width: 768px) {
+	.title-h3.login-title {display: block; margin-bottom: var(--space-xl); text-align: center;}
+}
+
+.login-way {}
+.login-way:before {content: ''; display: inline-block; width: var(--icon-lg); height: var(--icon-lg); margin-right: 1.2rem; background-image: var(--bg-url-lg); background-repeat: no-repeat; background-size: var(--bg-size-lg); vertical-align: middle;}
+.login-way > em {display: inline-block; vertical-align: middle; font-weight: var(--font-medium); color: var(--color-dark);}
+
+.login-way.phone:before {background-position: 0 calc(var(--icon-lg) * -1);}
+.login-way.card:before {background-position: calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -1);}
+.login-way.shinhan:before {background-position: calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -1);}
+.login-way.kakao:before {background-position: calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -1);}
+.login-way.toss:before {background-image: url('../../image/lgn/ico-toss-lg.png'); background-position: 0 0; background-size: var(--icon-lg) auto;}
+.login-way.naver:before {background-position: calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -1);}
+.login-way.bank:before {background-position: calc(var(--icon-lg) * -8) calc(var(--icon-lg) * -2);}
+
+.section.option-result [class^="title-h"]:first-child {text-align: center; padding-bottom: 1.6rem;}
+.section.option-result [class^="title-h"]:first-child:before {content: ''; display: block; width: 6.4rem; height: 6.4rem; margin: 0 auto 3.2rem; background: var(--bg-url-max) no-repeat 0 0; background-size: var(--bg-size-max);}
+
+
+/* 기본 로그인 방식 선택 */
+.login-way.face:before {background-position: calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -2);}
+.login-way.fingerprint:before {background-position: calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -2);}
+.login-way.face-id:before {background-position: calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -2);}
+.login-way.pattern:before {background-position: calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -2);}
+.login-way.easy-password:before {background-position: calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -2);}
+.login-way.id-password:before {background-position: calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -2);}
+.login-way-content {padding-top: 6.0rem; text-align: center;}
+.login-way-content:before {content: ''; display: block; width: var(--icon-max); height: var(--icon-max); margin: 0 auto 1.6rem; background-image: var(--bg-url-max); background-repeat: no-repeat; background-size: var(--bg-size-max);}
+.login-way-content.fingerprint:before {background-position: calc(var(--icon-max) * -5)  calc(var(--icon-max) * -1);}
+.login-way-content.face-id:before {background-position: calc(var(--icon-max) * -8) calc(var(--icon-max) * -1);}
+.login-way-content.pattern {padding-top: 0;}
+.login-way-content.pattern:before {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -1);}
+.login-way-content.easy-password {padding-top: 0;}
+.login-way-content.easy-password:before {display: none;}
+.login-way-content .btn.outlined.option-sm {padding-left: 1.1rem; padding-right: 1.1rem;}
+
+.popup-foot .btn-group.option-center {justify-content: center; padding-bottom: 1.2rem;}
+
+/* 간편비밀번호 등록 */
+.process-pattern {height: 268px; background-color: #000;}
+.process-easy-password {display: flex; justify-content: center; align-items: center; margin: 1.6rem 0 4.0rem;}
+.process-easy-password .number {display: block; width: 1.6rem; height: 1.6rem; margin: 0 12px; background-color: var(--color-bg-dark); border-radius: 100%;}
+.process-easy-password .number.is-active {background-color: var(--color-primary);}
+.process-keypad {position: absolute; bottom: 0; width: 100%; height: 300px; margin-left: -2.0rem; background-color: #000;}
+
+/* 로그인 */
+.main-copy.login-title {text-align: center;}
+.main-copy.login-title:before {content: ''; display: block; width: var(--icon-max); height: var(--icon-max); margin: 0 auto var(--space-sm); background-image: var(--bg-url-max); background-repeat: no-repeat; background-size: var(--bg-size-max);}
+.login-title.phone:before {background-position: calc(var(--icon-max) * -2) calc(var(--icon-max) * -1);}
+.login-title.shinhan:before {background-position: 0 calc(var(--icon-max) * -2);}
+.login-title.kakao:before {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -2);}
+.login-title.toss:before {background-image: url('../../image/lgn/ico-toss-max.png'); background-position: 0 0; background-size: var(--icon-max) auto;}
+.login-title.naver:before {background-position: calc(var(--icon-max) * -3) calc(var(--icon-max) * -2);}
+.login-title.bio:before {background-position: calc(var(--icon-max) * -4) calc(var(--icon-max) * -1);}
+.login-title.easy-password:before {background-position: calc(var(--icon-max) * -6) calc(var(--icon-max) * -1);}
+.login-title.pattern:before {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -1);}
+
+/* 인증요청 스텝 */
+.app-certify .card-item.step-type1:before {background-position: calc(var(--icon-xl) * -7) calc(var(--icon-xl) * -9);} /* 신한 */
+.app-certify .card-item.step-type2:before {background-position: calc(var(--icon-xl) * -8) calc(var(--icon-xl) * -9);} /* 카카오 */
+.app-certify .card-item.step-type3:before {background-position: calc(var(--icon-xl) * -9) calc(var(--icon-xl) * -9);} /* 네이버 */
+.app-certify .card-item.step-type4:before {background-image: url('../../image/lgn/ico-toss-lg.png'); background-size: 4.8rem auto;} /* 토스 */
+.app-certify .card-item.step-type5:before {background-position: calc(var(--icon-xl) * -6) calc(var(--icon-xl) * -9);} /* 완료 */
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0046FF" />
+    <title>신한EZ손해보험 API포털</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon.ico" />
+    <link rel="stylesheet" href="../../../../css/com/content.css" />
+    <link rel="stylesheet" href="../../../../css/cmm/page.css" />
+  </head>
+  <body>
+    <!-- #wrap -->
+    <!-- Front일 경우 class="front-wrap" 추가 -->
+    <div id="wrap" class="front-wrap">
+      <!-- #skip -->
+      <div id="skip">
+        <div class="skip-menu">
+          <a href="#content">본문으로 건너뛰기</a>
+        </div>
+      </div>
+      <!--// #skip -->
+      <!-- #page -->
+      <div id="page" data-page-main="false">
+        <!-- [D]페이지 유형이 메인일 경우 data-page-main="true" -->
+
+        <!-- #header -->
+        <header id="header">
+          <h1 class="header-title">
+            <span class="logo">
+              <a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험 API포털</span></a>
+            </span>
+            <!-- [D]2023-12-14 - 로고 옆 텍스트 추가 -->
+            <span class="head-serve">개발</span>
+          </h1>
+          <!-- #nav -->
+          <nav id="gnb">
+            <div class="gnb-wrap">
+              <ul class="util list depth-u1">
+                <li class="userinfo">
+                  <span class="fc-primary">[이용기관명] 홍길동</span>님, 반갑습니다!
+                  <p class="ip">22.333.44.555 / 2023.12.31 23:59:42</p>
+                </li>
+                <li>
+                  <button type="button" class="btn pointed option-sm" onclick="btnMypClick();"><span>마이페이지</span></button>
+                  <div class="snb-wrap myp--submenu">
+                    <ul class="snb-list list depth-u2">
+                      <li><a href="javascript:;">대시보드</a></li>
+                      <li><a href="javascript:;">APP</a></li>
+                      <li><a href="javascript:;">승인요청현황</a></li>
+                      <li><a href="javascript:;">사용자 현황</a></li>
+                      <li><a href="javascript:;">API 사용통계</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <!-- 로그인 후(s) -->
+                  <button type="button" class="btn contained option-sm"><span>로그아웃</span></button>
+                  <!--// 로그인 후(e) -->
+                  <!-- 로그인 전(s) -->
+                  <button type="button" class="btn primary option-sm"><span>로그인</span></button>
+                  <!--// 로그인 전(e) -->
+                </li>
+              </ul>
+              <ul class="gnb-list list depth-u1">
+                <li>
+                  <a href="javascript:;"><strong>서비스</strong></a>
+                </li>
+                <li>
+                  <a href="javascript:;"><strong>APIs</strong></a>
+                </li>
+                <li>
+                  <a href="javascript:;"><strong>고객지원</strong></a>
+                  <div class="snb-wrap">
+                    <ul class="snb-list list depth-u2">
+                      <li><a href="javascript:;">FAQ</a></li>
+                      <li><a href="javascript:;">공지사항</a></li>
+                      <li><a href="javascript:;">기술 Q&amp;A</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!--// #nav -->
+        </header>
+        <!--// #header -->
+
+        <!-- .main -->
+        <main class="main">
+          <!-- #content -->
+          <article id="content">
+            <!-- [D]개발영역 시작 -->
+
+            <!-- .section -->
+            <section class="section option-bg type2">
+              <!-- .title* -->
+              <h2 class="title-main option-api front-bg"><span class="txt">1DEPTH 섹션명</span></h2>
+              <!--// .title* -->
+            </section>
+            <!--// .section -->
+
+            <!--// [D]개발영역 끝 -->
+          </article>
+          <!--// #content -->
+        </main>
+        <!--// .main -->
+
+        <!-- #footer -->
+        <footer id="footer">
+          <div class="footer-inner">
+            <div class="copyright">COPYRIGHT 2021. SHINHAN CORP. ALL RIGHTS RESERVED.</div>
+            <div class="family-site" aria-haspopup="true">
+              <button type="button" class="btn-familysite" aria-expanded="false">Family Site</button>
+              <ul class="familysite-list" role="listbox">
+                <li class="item" role="option">
+                  <a href="https://www.shinhangroup.com/" target="_blank" title="새창열림"><span>신한금융지주회사</span></a>
+                </li>
+                <li class="item" role="option">
+                  <a href="https://www.shinhanez.co.kr/" target="_blank" title="새창열림"><span>신한EZ손해보험</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <!--// #footer -->
+      </div>
+      <!--// #page -->
+
+      <!-- #popup -->
+      <div id="popup"></div>
+      <!--// #popup -->
+
+      <!-- #loading -->
+      <div id="loading" class="is-active">
+        <!-- [D]활성화 .is-active 클래스 추가 -->
+        <div class="loading-bar"><span></span></div>
+      </div>
+      <!--// #loading -->
+    </div>
+    <!--// #wrap -->
+
+    <script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+    <script src="../../../../js/com/lottie_light.min.js"></script>
+    <script src="../../../../js/com/common_pub.js"></script>
+    <script>
+      /* 로딩바 확인용 */
+      setTimeout(() => {
+        document.querySelector('#loading').classList.remove('is-active');
+      }, 5000);
+    </script>
+  </body>
+</html>

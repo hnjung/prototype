@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-09-07
+	- 파일명 : style.css
+	- 포함내용 : 어드민 스타일 정의
+*/
+#admin-wrap {position: relative; width: 100%; min-width: 1020px; height: 100%;}
+#admin-header {position: sticky; z-index: 11; top: 0; padding: 16px 20px 16px 0; background-color: var(--color-light); border-bottom: var(--line-sm) solid var(--color-bg-dark); box-shadow: var(--shadow-md);}
+#admin-header > .unit:first-child {width: 240px; padding-left: 20px;}
+#admin-main {position: relative; height: calc(100% - 65px);}
+#admin-content {min-width: calc(1020px + 264px); height: 100%; padding-left: 264px; padding-top: 20px;}
+#admin-footer {position: sticky; bottom: 0; width: 100%; height: 20px; padding-left: 264px; padding-right: 4px; background-color: var(--color-light);}
+#admin-section {overflow-x: hidden; overflow-y: auto; height: calc(100% - 52px); padding-left: 0;}
+
+#admin-aside {display: block; position: fixed; z-index: 5; top: 64px; bottom: 0; left: 0; width: 240px;}
+#admin-aside > .box {display: flex; flex-direction: column; height: 100%; border-radius: 0; padding-right: .2rem; padding-bottom: 0;}
+#admin-aside .scrollbar {height: 100%; overflow-y: auto; padding-right: 14px; padding-bottom: 16px;}
+#admin-aside .note-list a {color: var(--color-dark);}
+#admin-aside .note-list a:hover,
+#admin-aside .note-list a:active {text-decoration: underline;}
+
+.gnb-open #admin-aside {overflow: hidden; width: 20px;}
+.gnb-open #admin-content {padding-left: 44px;}
+.gnb-open #admin-footer {padding-left: 44px;}
+
+.section {padding: 2.4rem 2.0rem 4.0rem;}
+.section + .section {padding-top: 0;}
+.section:last-child {padding-bottom: 6.4rem;}
+.section.option-bg {padding-top: 3.2rem; background-color: var(--color-bg-light);}
+.section.option-single {padding-top: 0; padding-bottom: 0;}
+.section.has-space {padding-bottom: calc(2.4rem + 8.8rem); padding-bottom: calc(2.4rem + 8.8rem + constant(safe-area-inset-bottom)); padding-bottom: calc(2.4rem + 8.8rem + env(safe-area-inset-bottom));}
+.group ~ .group {padding-top: var(--space-xl);}
+
+select {-webkit-appearance: none; -moz-appearance: none; position: relative; display: inline-block; width: 100%; padding: .5rem 2.7rem .475rem 1.1rem; background: url('./image/ico-select-arrow.svg') no-repeat top 50% right .7rem; background-size: 1.2rem auto; border: var(--line-sm) solid var(--color-bg-dark); border-radius: var(--radius-sm); outline: none; line-height: 1.35; text-align: left; font-size: var(--font-sm); color: var(--color-dark); overflow-x: hidden; word-break: break-all; text-overflow: ellipsis; white-space: nowrap;}
+  
+.btn.ico-gnb-control:before {background-position: calc(var(--icon-md) * -2) 0;}
+
+.admin-tab {position: relative; font-size: 0;}
+.admin-tab:before {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: var(--color-bg-dark);}
+
+.admin-tab-scroll {overflow-x: hidden; padding: 0 32px 0 0;}
+
+.admin-tab-item {position: relative; display: inline-block; height: 32px; margin-right: 2px; padding: 4px 12px; background-color: var(--color-bg-dark); border: 1px solid var(--color-bg-dark); border-radius: 8px 8px 0 0; font-size: var(--font-xs); color: var(--color-base);}
+.admin-tab-item.is-active {background-color: var(--color-light); border-bottom-color: var(--color-light); color: var(--color-dark);}
+.admin-tab-item > span {vertical-align: middle;}
+
+.tab-close {display: inline-block; width: 16px; height: 16px; background: url(../image/com/ico-common-sm.svg) no-repeat calc(16px * -5) calc(16px * -3); background-size: 160px auto; vertical-align: middle; font-size: 0;}
+
+
+[class*="tab-move-"] {position: absolute; z-index: 1; display: block; bottom: 0; width: 16px; height: 32px; background-color: var(--color-bg-light); border: 1px solid var(--color-bg-dark); box-shadow: var(--shadow-md);}
+[class*="tab-move-"].is-hide {display: none;}
+[class*="tab-move-"]:before {content: ''; position: absolute; top: 50%; left: 50%; width: 24px; height: 24px; margin: -12px 0 0 -12px; background: url(../image/com/ico-common-md.svg) no-repeat 0 calc(var(--icon-md) * -1); background-size: 240px auto;}
+
+.tab-move-prev {left: 0;}
+.tab-move-next {right: 31px;}
+.tab-move-next:before {background-position: calc(var(--icon-md) * -1) calc(var(--icon-md) * -1);}
+
+.tab-all-close {position: absolute; z-index: 1; right: 0; bottom: 0; width: 32px; height: 32px; background-color: var(--color-bg-light); border: 1px solid var(--color-bg-dark);}
+.tab-all-close:before {content: ''; position: absolute; top: 50%; left: 50%; width: 24px; height: 24px; margin: -12px 0 0 -12px; background: url(../image/com/ico-common-md.svg) no-repeat 0 calc(var(--icon-md) * -3); background-size: 240px auto;}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+#content > .section.option-fixed {
+  min-width: auto;
+}
+.title-h3.login-title {
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+.title-h3 > .txt {
+  font-size: var(--font-title-md);
+}
+.form-value {
+  padding-top: var(--space-xxs);
+}

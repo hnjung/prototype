@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+	<title>매니저 도움 조회 및 결과 &gt; 신한EZ손해보험</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon-css.ico">
+	<link rel="stylesheet" href="../../../../css/com/content.css">
+</head>
+<body>
+<!-- #wrap -->
+<div id="wrap">
+
+	<!-- #skip -->
+	<div id="skip">
+		<div class="skip-menu">
+			<a href="#main">본문으로 건너뛰기</a>
+		</div>
+	</div>
+	<!--// #skip -->
+
+	<!-- #page -->
+	<div id="page">
+		<!-- #header-->
+		<header id="header">
+			<h1 class="header-title">
+				<span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험</span></a></span>
+				<span class="txt">매니저 도움 관리</span>
+			</h1>
+			<a href="javascript:;" class="btn-page-back">
+				<span class="sr-only">이전 페이지</span>
+			</a>
+			<button type="button" class="btn-menu">
+				<span class="ico-menu-bar"></span>
+				<span class="sr-only">전체 메뉴 열기</span>
+			</button>
+			<!-- #nav -->
+			<nav id="gnb">
+			</nav>
+			<!--// #nav -->
+		</header>
+		<!--// #header-->
+
+		<!-- #main -->
+		<main id="main">
+
+			<!-- #content -->
+			<article id="content">
+				<!-- [D]개발영역 시작 -->
+
+				<!-- .section -->
+				<section class="section">
+					<!-- .title* -->
+					<h2 class="title-main"><span class="txt">매니저 도움 관리</span></h2>
+					<!--// .title* -->
+
+					<!-- .group -->
+					<div class="group">
+						<div class="form-wrap">
+							<!-- 2024-01-15 : 필드 수정으로 인한 마크업 수정 -->	
+							<!-- .form-list -->
+							<ul class="form-list">
+								<!-- 사원검색은 마스터 권한 사용자에게만 출력 -->
+								<li class="form-item">
+									<div class="form-name"><strong><label for="textfield1-1">사원검색</label></strong></div>
+									<div class="form-value item-half">
+										<div class="unit">
+											<!-- .input -->
+											<div class="input w-100 option-popup">
+												<input type="text" name="" id="textfield1-1" class="input-data option-delete is-active" placeholder="사원번호" value="12345678" readonly><!-- 2024-04-12 : 삭제 버튼 노출(값있을 경우 is-active 클래스 추가) -->
+												<button type="button" class="btn-search"><span class="sr-only">검색</span></button>
+											</div>
+											<!--// .input -->
+										</div>
+										<div class="unit">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="text" name="" class="input-data" placeholder="사원명" value="김신한" title="사원명 입력" readonly>
+											</div>
+											<!--// .input -->
+										</div>
+									</div>
+								</li>
+								<!--// 사원검색은 마스터 권한 사용자에게만 출력 -->
+
+								<li class="form-item item-half">
+									<div class="unit">
+										<div class="form-name"><strong><label for="selectA">도움상태</label></strong></div>
+										<div class="form-value">
+											<!-- .select -->
+											<div class="select w-100">
+												<select name="" id="selectA" class="select-data" aria-label="도움상태" aria-hidden="true" tabindex="-1">
+													<option value="" disabled selected>전체</option>
+													<option value="selectA1">매니저요청대기</option>
+													<option value="selectA2">매니저진행</option>
+													<option value="selectA3">매니저완료</option>
+													<option value="selectA4">요청취소</option>
+												</select>
+											</div>
+											<!--// .select -->
+										</div>
+									</div>
+									<div class="unit">
+										<div class="form-name"><strong><label for="textfield35">요청일자</label></strong></div>
+										<div class="form-value item-half">
+											<!-- .item* -->
+											<div class="unit item-row">
+												<div class="unit">
+													<!-- .input -->
+													<div class="input option-date w-fix-md">
+														<input type="text" name="" id="textfield35" class="input-data" placeholder="YYYY.MM.DD" title="기간 시작일 선택">
+														<button type="button" class="btn-calendar" aria-label="기간 시작일" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+													</div>
+													<!--// .input -->
+												</div>
+												<div class="unit">
+													<!-- .input -->
+													<div class="input option-date w-fix-md">
+														<input type="text" name="" id="textfield36" class="input-data" placeholder="YYYY.MM.DD" title="기간 종료일 선택">
+														<button type="button" class="btn-calendar" aria-label="기간 종료일" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+													</div>
+													<!--// .input -->
+												</div>
+											</div>
+											<!--// .item* -->
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!--// .form-list -->
+							<!--// 2024-01-15 : 필드 수정으로 인한 마크업 수정 -->	
+						</div>
+						<!-- .btn-group* -->
+						<div class="btn-group">
+							<button type="button" class="btn filled fixed"><span>초기화</span></button>
+							<button type="button" class="btn primary"><span>검색</span></button>
+						</div>
+						<!--// .btn-group* -->
+					</div>
+					<!--// .group -->
+				</section>
+				<!--// .section -->
+
+				<!-- .section 2024-02-05 : 검색결과 전체 수정 -->
+				<section class="section">
+					<div class="group">
+						<!-- .data -->
+						<div class="data">
+							<!-- .list-head 2024-02-13 : 문구 삭제  <div class="list-head">
+								<div class="list-info">
+									<span>도움상태 선택 시 설계사 도움화면으로 이동합니다.</span>
+								</div>
+							</div> -->
+							
+							<div class="data-body option-fixed-side" tabindex="0">
+								<table class="data-list">
+									<caption class="sr-only">
+										<!-- 표제목 -->
+										<strong>매니저 도움관리 검색 표</strong>
+										<!-- 표내용순서 -->
+										<span>No, 설계사, 상품명, 청약번호, 계약자, 요청일시, 도움상태, 단계, 매니저명, 더보기 정보</span>
+									</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+										<col>
+										<col>
+										<col>
+										<col>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">No</th>
+											<th scope="col">설계사</th>
+											<th scope="col">상품명</th>
+											<th scope="col">청약번호</th>
+											<th scope="col">계약자</th>
+											<th scope="col">요청일시</th>
+											<th scope="col">도움상태</th>	
+											<th scope="col">단계</th>
+											<th scope="col">매니저명</th>
+											<th scope="col">더보기</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="is-active">
+											<td>1</td>
+											<td>홍길동</td>
+											<td>운전자보험은 신한이지(무배당)</td>
+											<td>LA240129282000</td>
+											<td>김*한</td>
+											<td>2024.01.30 15:06:20</td>  
+											<td><button type="button" class="btn texted primary"><span>매니저요청대기</span></button></td>
+											<td>대기중</td>
+											<td>-</td>
+											<td class="data-control"><button class="btn-row-fold fn-fold-id" aria-expanded="false" data-fold-target="dataSub1"><span class="sr-only">열기</span></button></td>
+										</tr>
+										<tr class="table-inner is-open" id="dataSub1" aria-hidden="false">
+											<td colspan="9">
+												<table class="data-sub-list">
+													<caption class="sr-only">
+														<!-- 표제목 -->
+														<strong>매니저 도움 관리 상세보기 표</strong>
+														<!-- 표내용순서 -->
+														<span>청약일시, 청약번호 정보</span>
+													</caption>
+													<colgroup>
+														<col style="width:20%">
+														<col style="width:20%">
+														<col style="width:20%">
+														<col style="width:20%">
+														<col style="width:20%">
+													</colgroup>
+													<tbody>
+														<tr>
+															<th>
+																<strong class="name">청약일시</strong>
+																<span class="value">2023.08.10 14:32:33</span>
+															</th>
+															<td>
+																<strong class="name">플랜명</strong>
+																<span class="value">드라이빙케어</span>
+															</td>
+															<td>
+																<strong class="name">게약자</strong>
+																<span class="value">김*한(25세)</span>
+															</td>
+															<td>
+																<strong class="name">계약자 생년월일</strong>
+																<span class="value">1985.01.01</span>
+															</td>
+															<td>
+																<strong class="name">-</strong>
+															</td>
+														</tr>
+														<tr>
+															<th>
+																<strong class="name">청약번호</strong>
+																<span class="value">M12345678901</span>
+															</th>
+															<td>
+																<strong class="name">납입보험료</strong>
+																<span class="value">23,956원
+																</span>
+															</td>
+															<td>
+																<strong class="name">피보험자</strong>
+																<span class="value">김*한(25세)</span>
+															</td>
+															<td>
+																<strong class="name">피보험자 생년월일</strong>
+																<span class="value">1985.01.01</span>
+															</td>
+															<td>
+																<strong class="name">관계</strong>
+																<span class="value">본인</span>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>김길동</td>
+											<td>건강보험도 신한이지(무배당)</td>
+											<td>LA240125281489</td>
+											<td>최*한</td>
+											<td>2024.01.30 10:21:38</td>  
+											<td><button type="button" class="btn texted primary"><span>매니저진행</span></button></td>
+											<td>진행중</td>
+											<td>홍교차</td>
+											<td class="data-control"><button class="btn-row-fold fn-fold-id" aria-expanded="false" data-fold-target="dataSub1"><span class="sr-only">열기</span></button></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>최길동</td>
+											<td>운전자보험은 신한이지(무배당)</td>
+											<td>LA123456789012</td>
+											<td>설*한</td>
+											<td>2024.01.29 10:21:38</td>  
+											<td>매니저완료</td>
+											<td>완료</td>
+											<td>한교차</td>
+											<td class="data-control"><button class="btn-row-fold fn-fold-id" aria-expanded="false" data-fold-target="dataSub1"><span class="sr-only">열기</span></button></td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td>김길동</td>
+											<td>건강보험도 신한이지(무배당)</td>
+											<td>LA240125281489</td>
+											<td>최*한</td>
+											<td>2024.01.29 10:21:38</td>  
+											<td>기한만료</td>
+											<td>만료</td>
+											<td>-</td>
+											<td class="data-control"><button class="btn-row-fold fn-fold-id" aria-expanded="false" data-fold-target="dataSub1"><span class="sr-only">열기</span></button></td>
+										</tr>
+										<tr>
+											<td>10</td>
+											<td>김길동</td>
+											<td>건강보험도 신한이지(무배당)</td>
+											<td>LA240125281489</td>
+											<td>가*한	</td>
+											<td>2024.01.29 10:21:38</td>  
+											<td>요청취소</td>
+											<td>취소</td>
+											<td>-</td>
+											<td class="data-control"><button class="btn-row-fold fn-fold-id" aria-expanded="false" data-fold-target="dataSub1"><span class="sr-only">열기</span></button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="list-nodata">
+								<p>검색결과가 없습니다.<br>다른 검색어를 이용해 보세요.</p>
+							</div>
+
+							<!-- .list-foot -->
+							<div class="list-foot">
+								<!-- .list-paging -->
+								<div class="list-paging">
+									<a href="javascript:;" class="btn-list-prev"><span class="sr-only">이전 페이지</span></a>
+									<span class="page-current">
+										<strong>1</strong>
+										<a href="javascript:;">2</a>
+										<a href="javascript:;">3</a>
+										<a href="javascript:;">4</a>
+										<a href="javascript:;">5</a>
+									</span>
+									<a href="javascript:;" class="btn-list-next"><span class="sr-only">다음 페이지</span></a>
+								</div>
+								<!--// .list-paging -->
+							</div>
+							<!--// .list-foot -->
+						</div>
+						<!--// .data -->
+					</div>
+				</section>
+				<!--// .section 2024-02-05 : 검색결과 전체 수정 -->
+
+				<!--// [D]개발영역 끝 -->
+			</article>
+			<!--// #content -->
+			
+		</main>
+		<!--// #main -->
+
+		<!-- #footer -->
+		<footer id="footer"></footer>
+		<!--// #footer -->
+	</div>
+	<!--// #page -->
+
+	<!-- #popup -->
+	<div id="popup">
+		<!-- .calendar-popup -->
+		<div class="calendar-popup" id="calendarPopup" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="calendarTitle">
+			<!-- .calendar-content -->
+			<div class="calendar-content">
+				<!-- .calendar-title -->
+				<h2 class="calendar-title" id="calendarTitle"><span></span></h2>
+				<!--// .calendar-title -->
+				<!-- .calendar -->
+				<div class="calendar">
+					<button class="btn-prev"><span class="sr-only">이전달</span></button>
+					<button class="btn-next"><span class="sr-only">다음달</span></button>
+					<div class="calendar-group">
+						<div class="calendar-head">
+							<div class="select in-calendar">
+								<select name="" id="calendar1" class="select-data fn-year" title="년도 선택" aria-label="년" aria-hidden="true" tabindex="-1">
+									<option value="2023" selected>2023</option>
+									<option value="2024">2024</option>
+									<option value="2025">2025</option>
+								</select>
+							</div>
+							<div class="select in-calendar">
+								<select name="" id="calendar2" class="select-data fn-month" title="월 선택" aria-label="월" aria-hidden="true" tabindex="-1">
+									<option value="04" selected>04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+								</select>
+							</div>
+						</div>
+						<div class="calendar-body">
+							<div class="week">
+								<span class="day">일</span>
+								<span class="day">월</span>
+								<span class="day">화</span>
+								<span class="day">수</span>
+								<span class="day">목</span>
+								<span class="day">금</span>
+								<span class="day">토</span>
+							</div>
+							<div class="day-group">
+								<button class="day prev">26</button>
+								<button class="day prev">27</button>
+								<button class="day prev">28</button>
+								<button class="day prev">29</button>
+								<button class="day prev">30</button>
+								<button class="day prev">31</button>
+								<button class="day">1</button>
+								<button class="day">2</button>
+								<button class="day">3</button>
+								<button class="day">4</button>
+								<button class="day today">5</button>
+								<button class="day">6</button>
+								<button class="day is-active">7</button>
+								<button class="day">8</button>
+								<button class="day">9</button>
+								<button class="day">10</button>
+								<button class="day holiday">11</button>
+								<button class="day">12</button>
+								<button class="day">13</button>
+								<button class="day">14</button>
+								<button class="day">15</button>
+								<button class="day">16</button>
+								<button class="day">17</button>
+								<button class="day is-start">18</button>
+								<button class="day ing">19</button>
+								<button class="day ing">20</button>
+								<button class="day ing">21</button>
+								<button class="day ing">22</button>
+								<button class="day is-end">23</button>
+								<button class="day">24</button>
+								<button class="day">25</button>
+								<button class="day">26</button>
+								<button class="day">27</button>
+								<button class="day">28</button>
+								<button class="day">29</button>
+								<button class="day">30</button>
+								<button class="day next">1</button>
+								<button class="day next">2</button>
+								<button class="day next">3</button>
+								<button class="day next">4</button>
+								<button class="day next">5</button>
+								<button class="day next">6</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--// .calendar -->
+				<!-- .btn-popup-close -->
+				<button type="button" class="btn-popup-close">
+					<span class="icon"></span>
+					<span class="sr-only">팝업 닫기</span>
+				</button>
+				<!--// .btn-popup-close -->
+			</div>
+			<!--// .calendar-content -->
+		</div>
+		<!--// .calendar-popup -->
+	</div>
+	<!--// #popup -->
+
+
+</div>
+<!--// #wrap -->
+<script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+<script src="../../../../js/com/lottie_light.min.js"></script>
+<script src="../../../../js/com/local_pub.js"></script><!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+<script src="../../../../js/com/common_pub.js"></script>
+</body>
+</html>

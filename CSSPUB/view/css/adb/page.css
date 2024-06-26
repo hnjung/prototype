@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-08-18
+	- 파일명 : page.css
+	- 포함내용 : 계약관리 콘텐츠 스타일
+*/
+
+.option-single .header-title .logo {display: block; margin-left: auto; margin-right: auto;}
+.option-single .header-title .txt {display: none;}
+
+.section.app-down{padding-top:var(--space-xl);}
+.section.app-down .main-copy {padding-bottom: var(--space-sm); text-align:center; }
+.section.app-down .main-copy > .copy{color:var(--color-txt-body); font-size: var(--font-sm); font-weight: var(--font-medium);}
+.section.app-down .visual {margin-bottom:var(--space-sm);}
+.section.app-down .app-visual {width: min(32.0rem, 100%); margin: 0 auto;}
+.section.app-down .visual .text {margin-top:var(--space-sm); font-size:var(--font-xxs); text-align: center; color:var(--color-base)}
+.section.app-down .card-list.option-icon .card-item {padding:2.3rem}
+.section.app-down .card-list.option-icon .card-item + .card-item {margin-top:var(--space-sm)}
+.section.app-down .card-list.option-icon .card-title .key::before {width:var(--icon-md); height:var(--icon-md); margin-right:var(--space-min); background-image: var(--bg-url-md); background-size: var(--bg-size-md);}
+.section.app-down .card-list.option-icon .card-title .key.type1::before {background-position:calc(var(--icon-md) * -9) calc(var(--icon-md) * -7)}
+.section.app-down .card-list.option-icon .card-title .key.type2::before {background-position:calc(var(--icon-md) * -8) calc(var(--icon-md) * -7)}
+.section.app-down .card-list.option-icon .btn-group{margin-top:var(--space-sm)}
+
+@media screen and (min-width: 768px) {
+	.option-single #header {border-bottom: none; box-shadow: none;}
+	.option-single #content > .section:first-child {padding-top:6.2rem}
+	.option-single #content .btn-group:not(.option-main) > .btn {min-width: 100%;}
+	.option-single .header-title {padding-inline:0;}
+	.section.app-down .card-list.option-icon .card-item + .card-item{margin-top:0}
+	.section.app-down .card-list {justify-content: center;}
+	.section.app-down .card-list.option-icon .card-item {width: min(32.0rem, 100%);}
+}
+
+@media screen and (min-width: 1024px) {
+	.mo-only {display:none;}
+	.option-single #header {height: calc(var(--header-height) - var(--line-sm)); border-bottom: var(--line-sm) solid var(--color-bg-dark); box-shadow: var(--shadow-sm);}
+	.option-single #header .header-title {bottom: 1.9rem;}
+
+} 

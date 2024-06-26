@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import url('common.font.css'); /* 웹폰트 */
+@import url('common.reset.css'); /* 전역변수, 초기화 */
+@import url('common.layout.css'); /* 전체레이아웃, 브레드크럼 */
+@import url('common.popup.css'); /* 팝업 스타일 정의 - 모달, 바텀시트, 팝오버, 툴팁 */
+@import url('common.form.css'); /* 데이터 관련 요소 스타일 정의 - 버튼, 텍스트필드, 캘린더, 셀렉트박스, 텍스트에어리어, 라디오버튼, 체크박스, 칩, 스위치, 토글라디오버튼 */
+@import url('common.module.css'); /* 그룹화 된 구성 요소 스타일 정의 - 공지사항, 박스, 탭, 아코디언, 등록폼, 폼도움말, 검색, 게시판형목록, 카드형목록, 테이블, 요소분할 */
+@import url('common.element.css'); /* 단일 요소 스타일 정의 - 스크롤바, 아이콘, 뱃지, 태그, 스텝, 링크, 헤드라인, 제목, 텍스트, 폰트, 정렬, 사이즈, 여백 */
+
+/* 
+	기본정보
+	- 생성일 : 2023-04-01
+	- 파일명 : content.css
+	- 포함내용 : 공통 이외의 사용 빈도수가 상대적으로 낮은 콘텐츠 스타일 정의
+*/
+
+/* 모바일앱웹 전용 레이아웃 - 디바이스 가로 601 이상 시 넓이 고정 - (기준A) */
+@media screen and (min-width: 601px) {
+	/* layout */
+	#wrap {width: var(--device-max-w); margin-left: auto; margin-right: auto;}
+	#gnb {left: 50%; right: auto; width: var(--device-max-w); margin-left: calc(var(--device-max-w) / 2 * -1);}
+	#search {left: 50%; right: auto; width: var(--device-max-w); margin-left: calc(var(--device-max-w) / 2 * -1);}
+	.content-foot {left: 50%; right: auto; width: var(--device-max-w); margin-left: calc(var(--device-max-w) / 2 * -1);}
+	.popup-wrap.option-full .content-foot {width: 360px; margin-left: calc(360px / 2 * -1);}
+
+	/* form */
+	.btn-group.option-main {left: 50%; right: auto; width: var(--device-max-w); margin-left: calc(var(--device-max-w) / 2 * -1);}
+
+	/* popup */
+	.btn-popup-guide-open {left: 50%; width: var(--device-max-w); margin-left: calc(var(--device-max-w) / 2 * -1);}
+	.popup-wrap.option-guide .popup-inner {width: var(--device-max-w);}
+
+	/* toast */
+	.toast {left: 50%; width: calc(var(--device-max-w) - (var(--space-body) * 2)); margin-left: calc((var(--device-max-w) - (var(--space-body) * 2)) / 2 * -1);}
+
+	/* 제휴페이지 */
+	#page.main-option-partner #header {left: 50%; width: var(--device-max-w); margin-left: calc(var(--device-max-w) / 2 * -1);}
+}
+
+/* 주소 검색 */
+.board-option-post {justify-content: left; align-items: start; padding: var(--space-sm) var(--space-lg) var(--space-sm) 0;}
+.board-option-post .unit + .unit {margin-left: var(--space-sm);}
+.cell-postcode {display: block; font-weight: var(--font-semibold); font-size: var(--font-xs); color: var(--color-dark);}
+.cell-address {display: block; font-size: var(--font-xs); color: var(--color-dark);}
+.cell-old-address {display: block; margin-top: var(--space-xxs); font-size: var(--font-xxs); color: var(--color-base);}
+
+/* 결제 수단 선택 */
+.payment-menu .radio-group.option-boxed {flex-direction: row; flex-wrap: nowrap;}
+.payment-menu .radio-group.option-boxed .radio-item {flex-direction: column; justify-content: center; margin-top: 0; padding: 2.0rem; font-weight: var(--font-medium); font-size: var(--font-xs);}
+.payment-menu .radio-group.option-boxed .radio-item .control[type='radio'] {overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); clip-path: polygon(0 0, 0 0, 0 0); width: 1px; height: 1px; margin: -1px;}
+
+.payment-menu .radio-item .label {padding-left: 0; display: block; width: 100%; text-align: center; font-weight: var(--font-regular);}
+.payment-menu .radio-item .label > .txt:before {content: ''; display: block; width: var(--icon-lg); height: var(--icon-lg); margin: 0 auto var(--space-min); background-image: var(--bg-url-lg); background-repeat: no-repeat; background-size: var(--bg-size-lg);}
+.payment-menu .radio-item.card .label > .txt:before {background-position: 0 calc(var(--icon-lg) * -3);}
+.payment-menu .radio-item.easy .label > .txt:before {background-position: calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -3);}
+.payment-menu .radio-item.bank .label > .txt:before {background-position: calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -3);}
+.payment-menu .radio-item + .radio-item {margin-left: var(--space-xxs);}
+.payment-menu .radio-item .control[type='radio']:checked ~ .label {font-weight: var(--font-semibold); color: var(--color-primary);}
+
+.payment-content {margin-top: var(--space-lg);}
+.payment-content .radio-item {padding-right: 0;}
+.payment-content [class^="ico-pay-"] {display: inline-block; height: var(--icon-md); background-image: url('../../image/com/ico-payment.svg'); background-repeat: no-repeat; background-size: 12.0rem auto; vertical-align: middle;}
+.payment-content [class^="ico-pay-"] ~ .txt {vertical-align: middle; margin-left: .4rem;}
+.payment-content .ico-pay-shinhan {width: 3.2rem; background-position: 0 0;}
+.payment-content .ico-pay-naver {width: 5.0rem; background-position: 0 calc(var(--icon-md) * -1);}
+.payment-content .ico-pay-toss {width: 5.8rem; background-image: url('../../image/com/ico-payment-toss.png'); background-position: 0 0; background-size: auto var(--icon-md);}
+.payment-content .ico-pay-kakao {width: 4.8rem; background-position: 0 calc(var(--icon-md) * -3);}
+.payment-content .ico-pay-payco {width: 4.8rem; background-position: 0 calc(var(--icon-md) * -4);}
+
+.payment-app-card {position: absolute; z-index: 1; right: 0; top: 0;}
+
+/* FC통화 */
+.fc-call {position: relative;}
+.fc-call .call-num {display: block; padding: 2rem 2.4rem; border-radius: var(--radius-lg); background-color: var(--color-primary-bg-light);}
+.fc-call .call-num::after {display: none;}
+.fc-call .desc {position: relative; padding-left: 3.2rem;}
+.fc-call .desc::after {content: ''; display: block; position: absolute; top: 0.3rem; left: 0.3rem; width: var(--icon-md); height: var(--icon-md); background: var(--bg-url-md) no-repeat 0 calc(var(--icon-md) * -4); background-size: var(--bg-size-md);}
+.fc-call .desc > em {font-weight: var(--font-semibold); font-size: var(--font-xs); color: var(--color-dark); line-height: 1.35;}
+.fc-call .desc > p {padding-top: var(--radius-sm); font-size: var(--font-xxs); color: var(--color-base); line-height: 1.35;}

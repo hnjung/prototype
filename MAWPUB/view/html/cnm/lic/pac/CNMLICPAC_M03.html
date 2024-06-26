@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+	<title>결제방법 신청/변경 선택 상세 &gt; 신한EZ손해보험</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon-maw.ico">
+	<link rel="stylesheet" href="../../../../css/com/content.css">
+	<link rel="stylesheet" href="../../../../css/cnm/page.css">
+</head>
+<body>
+<!-- #wrap -->
+<div id="wrap">
+
+	<!-- #skip -->
+	<div id="skip">
+		<div class="skip-menu">
+			<a href="#main">본문으로 건너뛰기</a>
+		</div>
+	</div>
+	<!--// #skip -->
+	<!-- #page -->
+	<div id="page" data-page-main="false" data-main-copy="true">
+		<!-- [D]
+			페이지 유형이 메인(HMEHMEHME_M01)일 경우 data-page-main="true"
+			메인 카피가 있는 경우(헤더 타이틀 숨김) data-main-copy="true"
+		-->
+		<!-- #header-->
+		<header id="header">
+			<h1 class="header-title">
+				<span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험</span></a></span>
+				<span class="txt">결제방법 변경</span>
+			</h1>
+			<a href="javascript:;" class="btn-page-back" role="button">
+				<span class="sr-only">이전 페이지</span>
+			</a>
+			<button type="button" class="btn-menu">
+				<span class="ico-menu-bar"></span>
+				<span class="sr-only">전체 메뉴 열기</span>
+			</button>
+			<!-- #nav -->
+			<nav id="gnb">
+			</nav>
+			<!--// #nav -->
+		</header>
+		<!--// #header-->
+
+		<!-- #main -->
+		<main id="main" role="main">
+
+			<!-- #content -->
+			<article id="content">
+
+				<!-- [D]개발영역 시작 -->
+
+				<!-- .section -->
+				<section class="section">
+					<!-- .title* -->
+					<h2 class="main-copy">
+						<strong class="sub fc-primary">결제방법 변경</strong>
+						<span class="txt">변경할 결제방법을 알려주세요</span>
+					</h2>
+					<!--// .title* -->
+
+					<!-- .group --> <!-- 2024-02-06 : 설명 문구 삭제 -->
+					<!-- <div class="group">
+						<div class="note">
+							<ul class="note-list depth-root">
+								<li>보험 상품별로 결제수간이 제한될 수 있습니다.</li>
+							</ul>
+						</div>
+					</div> -->
+					<!--// .group -->
+					
+					<!-- .group -->
+					<div class="group">
+						<!-- 단건 선택 시 노출 -->
+						<div class="summary" style="display: none;">
+							<ul class="summary-list">
+								<li class="summary-item">
+									<div class="card-title"><!-- 2024-04-11 : card-title 태그 div로 변경 -->
+										<span class="txt">
+											<em>EZ1234000000</em>
+										</span>
+										<strong class="key"><em>신한EZ손해 무배당 화재 보험</em></strong>
+									</div><!-- 2024-04-11 : card-title 태그 div로 변경 -->
+									<div class="card-info">
+										<div class="item-row">
+											<div class="unit"><span class="txt">납입방법/이체일</span></div>
+											<div class="unit"><span class="txt option-value">자동이체/10일</span></div>
+										</div>
+										<div class="item-row">
+											<div class="unit"><span class="txt">카드사명</span></div>
+											<div class="unit"><span class="txt option-value">신한카드</span></div>
+										</div>
+										<div class="item-row">
+											<div class="unit"><span class="txt">카드번호</span></div>
+											<div class="unit"><span class="txt option-value">1510-2458-2●●●-●●●●</span></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //단건 선택 시 노출 -->
+
+						<!-- 다건 선택 시 노출 -->
+						<div class="summary">
+							<div class="summary-item">
+								<h3 class="summary-title">
+									<span class="txt fs-sm">선택된 계약건</span>
+									<strong><span class="fc-primary">3</span>건</strong>
+								</h3>
+								<button type="button" class="btn option-md filled w-100"><span>자세히보기</span></button>
+							</div>
+						</div>
+						<!-- //다건 선택 시 노출 -->
+					</div>
+					<!--// .group -->
+				</section>
+				<!--// .section -->
+
+				<!-- [D]결제영역 시작 --> <!-- 2023-11-29 공통 결제UI 반영 -->
+				<!-- .section -->
+				<section class="section">
+					<!-- .title* -->
+					<h3 class="title-h4 space-mb-sm"><span class="txt">보험료 납입 방법</span></h3>
+					<!--// .title* -->
+					<!-- .group -->
+					<div class="group" id="pdr-payment">
+						<!-- 2024-02-29 : 정렬 태그 추가 -->
+						<div class="align-right">
+							<!-- .switch* -->
+							<label for="formItem1" class="switch-item space-mb-lg">
+								<span class="label">자동결제</span>
+								<input type="checkbox" name="" id="formItem1" class="control" checked>
+							</label>
+							<!--// .switch* -->
+						</div>
+						<!--// 2024-02-29 : 정렬 태그 추가 -->
+
+						<!-- [D]자동결제 on -->
+						<div id="payInfoSave" style="display: block;">
+							<!-- .payment-menu -->
+							<div class="payment-menu">
+								<!-- .radio* -->
+								<fieldset class="radio-group option-boxed">
+									<label for="formItem3a" class="radio-item bank">
+										<input type="radio" name="formItem3" id="formItem3a" class="control" checked>
+										<span class="label"><em class="txt">계좌이체</em></span>
+									</label>
+									<label for="formItem3c" class="radio-item card">
+										<input type="radio" name="formItem3" id="formItem3c" class="control">
+										<span class="label"><em class="txt">카드결제</em></span>
+									</label>
+								</fieldset>
+								<!--// .radio* -->
+							</div>
+							<!--// .payment-menu -->
+
+							<!-- .payment-content --><!-- [D]계좌이체 선택 시 -->
+							<div class="payment-content" id="pdr-payment-content-bank" style="display: block;">
+								<!-- .text -->
+								<p class="text space-mb-lg"><span class="fc-primary">김신한</span>님 본인 명의의 계좌만 가능</p>
+								<!--// .text -->
+								<!-- .form -->
+								<div class="form">
+									<div class="form-wrap">
+										<!-- .form-list -->
+										<ul class="form-list">
+											<li class="form-item">
+												<div class="form-name"><strong><label for="payAccount" id="payAccountTitle">계좌선택</label></strong></div>
+												<div class="form-value">
+													<!-- .select -->
+													<div class="select w-100">
+														<select name="" id="payAccount" class="select-data" aria-labelledby="payAccountTitle" aria-hidden="true" tabindex="-1">
+															<option value="" selected="">내 계좌</option>
+															<option value="">직접입력</option>
+														</select>
+													</div>
+													<!--// .select -->
+												</div>
+											</li>
+											<li class="form-item">
+												<div class="form-name"><strong><label for="accountNum" id="accountNumTitle">계좌번호</label></strong></div>
+												<div class="form-value">
+													<!-- .select -->
+													<div class="select w-100">
+														<select name="" id="accountNum" class="select-data" aria-labelledby="accountNumTitle" aria-hidden="true" tabindex="-1">
+															<option value="" selected="">신한은행 (김●한, ●●●●012345678)</option>
+															<option value="">신한은행 (김●한, ●●●●012345678)</option>
+														</select>
+													</div>
+													<!--// .select -->
+												</div>
+											</li>
+											<!-- [D]계좌선택 직접입력 시 노출 -->
+											<li class="form-item">
+												<div class="form-name"><strong><label for="payCItem1" id="payCItem1Title">은행/증권사</label></strong></div><!-- 2024-03-19 라벨 문구 수정 -->
+												<div class="form-value">
+													<!-- .btn --><!-- [D]은행 선택 팝업 ../../../cmm/idv/idv/CMMIDVIDV_P01.html 참고 -->
+													<button type="button" class="btn selected w-100 fn-select-btn fn-popup-open" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="payCItem1Title" aria-controls="popupBankList" data-popup-id="#popupBankList" id="payCItem1"><!-- 2024-02-02 : 태그 속성 추가 및 수정 -->
+														<span class="txt is-placeholder">선택해 주세요</span>
+													</button>
+													<!--// .btn -->
+												</div>
+											</li>
+											<li class="form-item">
+												<div class="form-name"><strong><label for="payCItem2">계좌번호</label></strong></div>
+												<div class="form-value">
+													<!-- .input-button -->
+													<div class="input-button w-100">
+														<div class="unit filled">
+															<!-- .input -->
+															<div class="input w-100">
+																<input type="tel" name="" id="payCItem2" class="input-data" placeholder="- 없이 숫자만 입력">
+															</div>
+															<!--// .input -->
+														</div>
+														<div class="unit fixed">
+															<!-- .btn -->
+															<button type="button" class="btn contained option-md"><span>계좌확인</span></button>
+															<!--// .btn -->
+														</div>
+													</div>
+													<!--// .input-button -->
+												</div>
+											</li>
+											<!--// [D]계좌선택 직접입력 시 노출 -->
+											<li class="form-item">
+												<div class="form-name"><strong><label for="PaymentDate" id="PaymentDateTitle">자동이체(결제)일</label></strong></div>
+												<div class="form-value">
+													<!-- .select -->
+													<div class="select w-100">
+														<select name="" id="PaymentDate" class="select-data" aria-labelledby="PaymentDateTitle" aria-hidden="true" tabindex="-1">
+															<option value="" disabled="" selected="">선택해 주세요</option>
+															<option value="">1일</option>
+															<option value="">10일</option>
+														</select>
+													</div>
+													<!--// .select -->
+												</div>
+											</li>
+										</ul>
+										<!--// .form-list -->
+									</div>
+								</div>
+								<!--// .form -->
+							</div>
+							<!--// .payment-content -->
+
+							<!-- .payment-content --><!-- [D]카드결제 선택 시 -->
+							<div class="payment-content" id="pdr-payment-content-card" style="display: none;">
+								<!-- .text -->
+								<p class="text space-mb-lg"><span class="fc-primary">김신한</span>님 본인 명의의 카드만 가능</p><!-- 2024-02-29 문구 수정 -->
+								<!--// .text -->
+								<!-- .form -->
+								<div class="form">
+									<div class="form-wrap">
+										<!-- .form-list -->
+										<ul class="form-list">
+											<li class="form-item">
+												<div class="form-name"><strong><label for="payAItem1" id="payAItem1Title">카드사</label></strong></div>
+												<div class="form-value">
+													<!-- .select -->
+													<!-- <div class="select w-100">
+														<select name="" id="payAItem1" class="select-data" aria-labelledby="payAItem1Title" aria-hidden="true" tabindex="-1">
+															<option value="" disabled="" selected="">선택해 주세요</option>
+															<option value="">삼성카드</option>
+															<option value="">현대카드</option>
+															<option value="">BC카드</option>
+														</select>
+													</div> -->
+													<!--// .select -->
+
+													<!-- .btn --><!-- [D]카드사 선택 팝업 ../../../cmm/idv/idv/CMMIDVIDV_P02.html 참고 - 2024-01-22 : 호출 방식 변경 -->
+													<button type="button" class="btn selected w-100 fn-select-btn fn-popup-open" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="payAItem1Title" aria-controls="popupCardList" data-popup-id="#popupCardList" id="payAItem1"><!-- 2024-02-02 : 태그 속성 추가 및 수정 -->
+														<span class="txt is-placeholder">선택해 주세요</span>
+													</button>
+													<!--// .btn -->
+												</div>
+											</li>
+											<li class="form-item">
+												<div class="form-name"><strong><label for="payAItem3">카드번호</label></strong></div>
+												<div class="form-value">
+													<!-- .input -->
+													<!-- <div class="input w-100">
+														<input type="text" name="" id="payAItem3" class="input-data" placeholder="-없이 숫자만 입력" maxlength="">
+													</div> -->
+													<!--// .input -->
+
+													<!-- .input-mixed - 2024-01-22 : 보안키패드 호출 구조로 변경 - 2024-01-31 : 대체텍스트 추가 -->
+													<div class="input-mixed type-card">
+														<div class="unit filled">
+															<!-- .input -->
+															<div class="input w-100">
+																<input type="text" name="" id="payAItem3" class="input-data" placeholder="4자리" title="카드번호 첫번째 4자리">
+															</div>
+															<!--// .input -->
+														</div>
+														<div class="unit fixed">
+															<span class="dash"><span class="sr-only">-</span></span>
+														</div>
+														<div class="unit filled">
+															<!-- .input -->
+															<div class="input w-100">
+																<input type="text" name="" id="payAItem31" class="input-data" placeholder="4자리" title="카드번호 두번째 4자리">
+															</div>
+															<!--// .input -->
+														</div>
+														<div class="unit fixed">
+															<span class="dash"><span class="sr-only">-</span></span>
+														</div>
+														<div class="unit filled">
+															<!-- .input -->
+															<div class="input w-100">
+																<input type="text" name="" id="payAItem32" class="input-data" placeholder="4자리" value="1234" title="카드번호 세번째 4자리">
+															</div>
+															<!--// .input -->
+														</div>
+														<div class="unit fixed">
+															<span class="dash"><span class="sr-only">-</span></span>
+														</div>
+														<div class="unit filled">
+															<!-- .input -->
+															<div class="input w-100">
+																<input type="text" name="" id="payAItem33" class="input-data" placeholder="4자리" value="●●●●" title="카드번호 마지막 4자리">
+															</div>
+															<!--// .input -->
+														</div>
+													</div>
+													<!--// .input-mixed - 2024-01-22 : 보안키패드 호출 구조로 변경 - 2024-01-31 : 대체텍스트 추가 -->
+												</div>
+											</li>
+											<li class="form-item">
+												<div class="form-name"><strong><label for="payAItem4">유효기간</label></strong></div>
+												<div class="form-value item-row">
+													<div class="unit filled">
+														<!-- .select -->
+														<div class="select w-100">
+															<select name="" id="payAItem4" class="select-data" aria-label="유효기간 월 선택" aria-hidden="true" tabindex="-1">
+																<option value="" disabled="" selected="">월 선택</option>
+																<option value="">2024</option>
+																<option value="">2025</option>
+																<option value="">2026</option>
+															</select>
+														</div>
+														<!--// .select -->
+													</div>
+													<div class="unit filled">
+														<!-- .select -->
+														<div class="select w-100">
+															<select name="" id="payAItem5" class="select-data" aria-label="유효기간 년 선택" aria-hidden="true" tabindex="-1">
+																<option value="" disabled="" selected="">년 선택</option>
+																<option value="">07</option>
+																<option value="">08</option>
+																<option value="">09</option>
+															</select>
+														</div>
+														<!--// .select -->
+													</div>
+												</div>
+											</li>
+											<li class="form-item">
+												<div class="form-name"><strong><label for="PaymentDate" id="PaymentDateTitle">자동이체(결제)일</label></strong></div>
+												<div class="form-value">
+													<!-- .select -->
+													<div class="select w-100">
+														<select name="" id="PaymentDate" class="select-data" aria-labelledby="PaymentDateTitle" aria-hidden="true" tabindex="-1">
+															<option value="" disabled="" selected="">선택해 주세요</option>
+															<option value="">1일</option>
+															<option value="">10일</option>
+														</select>
+													</div>
+													<!--// .select -->
+												</div>
+											</li>
+										</ul>
+										<!--// .form-list -->
+									</div>
+								</div>
+								<!--// .form -->
+							</div>
+							<!--// .payment-content -->
+						</div>
+
+						<!-- [D]자동결제 off -->
+						<div id="payInfoReset" style="display: none;">
+							<div class="list-nodata option-info">
+								<p>보험료 납입 방법이 &#39;직접납입&#39; 으로<br>변경됩니다.</p>
+								<p class="fs-tiny space-mt-sm">2개월 이상 보험료가 납입되지 않을 경우 효력이<br>상실되어 보상을 받으실 수 없게 되오니<br>자동결제 등록을 권장드립니다.</p>
+							</div>
+						</div>
+					</div>
+					<!--// .group -->
+				</section>
+				<!--// .section -->
+				<!-- [D]결제영역 끝 -->
+
+				<!-- .btn-group -->
+				<div class="btn-group option-main">
+					<button type="button" class="btn primary"><span>다음</span></button>
+				</div>
+				<!--// .btn-group -->
+			
+				<!--// [D]개발영역 끝 -->
+
+			</article>
+			<!--// #content -->
+
+		</main>
+		<!--// #main -->
+
+		<!-- #footer -->
+		<footer id="footer"></footer>
+		<!--// #footer -->
+	</div>
+	<!--// #page -->
+
+	<!-- #popup -->
+	<div id="popup">
+	</div>
+	<!--// #popup -->
+
+</div>
+<!--// #wrap -->
+<script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+<script src="../../../../js/com/lottie_light.min.js"></script>
+<script src="../../../../js/com/local_pub.js"></script><!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+<script src="../../../../js/com/common_pub.js"></script>
+<script>
+/* 2회차 결제 화면 확인용 스크립트 */
+const prdPayment = document.querySelector('#pdr-payment');
+prdPayment.querySelectorAll('.payment-menu > .radio-group > .radio-item').forEach(function(_this) {
+	_this.addEventListener('input', function() {
+		prdPayment.querySelectorAll('.payment-content').forEach(function(_this) {
+			_this.style.display = 'none';
+		});
+		if (this.classList.contains('card')) {
+			document.querySelector('#pdr-payment-content-card').style.display = 'block';
+		}
+		if (this.classList.contains('bank')) {
+			document.querySelector('#pdr-payment-content-bank').style.display = 'block';
+		}
+	});
+});
+
+/* 첫회 보험료와 동일 체크 확인용 스크립트 */
+const payInfoCheck = document.querySelector('#formItem1');
+payInfoCheck.addEventListener('input', function() {
+	if (this.checked) {
+		document.querySelector('#payInfoSave').style.display = 'block';
+		document.querySelector('#payInfoReset').style.display = 'none';
+	} else {
+		document.querySelector('#payInfoSave').style.display = 'none';
+		document.querySelector('#payInfoReset').style.display = 'block';
+	}
+});
+</script>
+</body>
+</html>

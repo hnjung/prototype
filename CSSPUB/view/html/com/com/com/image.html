@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+	<meta name="theme-color" content="#0046FF">
+	<title>바닥 페이지 샘플 &gt; 신한EZ손해보험</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon-css.ico">
+	<link rel="stylesheet" href="../../../../css/com/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../../css/com/content.css">
+	<link rel="stylesheet" href="../../../../css/com/page.css">
+</head>
+<body>
+<!-- #wrap -->
+<div id="wrap">
+
+	<!-- #skip -->
+	<div id="skip">
+		<div class="skip-menu">
+			<a href="#main">본문으로 건너뛰기</a>
+		</div>
+	</div>
+	<!--// #skip -->
+	<!-- #page -->
+	<div id="page">
+		<!-- #header-->
+		<header id="header">
+			<h1 class="header-title">
+				<span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험</span></a></span>
+				<span class="txt">타이틀 영역</span>
+			</h1>
+			<a href="javascript:;" class="btn-page-back">
+				<span class="sr-only">이전 페이지</span>
+			</a>
+			<button type="button" class="btn-menu">
+				<span class="ico-menu-bar"></span>
+				<span class="sr-only">전체 메뉴 열기</span>
+			</button>
+			<!-- #nav -->
+			<nav id="gnb">
+			</nav>
+			<!--// #nav -->
+		</header>
+		<!--// #header-->
+
+		<!-- #main -->
+		<main id="main">
+
+			<!-- #content -->
+			<article id="content">
+
+				<!-- [D]개발영역 시작 -->
+
+				<!-- .section -->
+				<section class="section option-single bgbg">
+
+					공통
+					<img src="../../../../image/com/ico-common-etc.svg" alt="">
+					<img src="../../../../image/com/ico-common-lg.svg" alt="">
+					<img src="../../../../image/com/ico-common-max.svg" alt="">
+					<img src="../../../../image/com/ico-common-md.svg" alt="">
+					<img src="../../../../image/com/ico-common-sm.svg" alt="">
+					<img src="../../../../image/com/ico-common-xl.svg" alt="">
+					<img src="../../../../image/com/ico-common-xs.svg" alt="">
+					<img src="../../../../image/com/ico-payment.svg" alt="">
+					<img src="../../../../image/com/ico-edit.svg" alt="">
+
+					교차판매
+					<img src="../../../../image/cst/icon-cake.svg" alt="">
+					<img src="../../../../image/cst/icon-file.svg" alt="">
+					<img src="../../../../image/cst/icon-folder-open.svg" alt="">
+					<img src="../../../../image/cst/icon-folder.svg" alt="">
+					<img src="../../../../image/cst/icon-wedding.svg" alt="">
+					<img src="../../../../image/man/ico-main-md.svg" alt="">
+					<img src="../../../../image/qtn/account-bank.svg" alt="">
+
+					모바일앱웹
+					<img src="../../../../../../MAWPUB/view/image/cmm/ico-flag.svg" alt="">
+					<img src="../../../../../../MAWPUB/view/image/pdr/ico-pdr-lg.svg" alt="">
+					<img src="../../../../../../MAWPUB/view/image/pdr/ico-pdr-xl.svg" alt="">
+					<img src="../../../../../../MAWPUB/view/image/pdr/ico-pdr-max.svg" alt="">
+					<img src="../../../../../../MAWPUB/view/image/pdr/plan-avatar.svg" alt="">
+				</section>
+				<!--// .section -->
+
+				<!--// [D]개발영역 끝 -->
+
+			</article>
+			<!--// #content -->
+			
+		</main>
+		<!--// #main -->
+
+		<!-- #footer -->
+		<!-- <footer id="footer">
+		</footer> -->
+		<!--// #footer -->
+	</div>
+	<!--// #page -->
+
+	<!-- #popup -->
+	<div id="popup">
+	</div>
+	<!--// #popup -->
+
+	<!-- #loading -->
+	<div id="loading" class=""><!-- [D]활성화 .is-active 클래스 추가 -->
+		<div class="loading-bar"><span></span></div>
+	</div>
+	<!--// #loading -->
+
+</div>
+<!--// #wrap -->
+<script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+<script src="../../../../js/com/swiper-bundle.min.js"></script>
+<script src="../../../../js/com/lottie_light.min.js"></script>
+<script src="../../../../js/com/local_pub.js"></script><!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+<script src="../../../../js/com/common_pub.js"></script>
+<script>
+	/* const swiper = new Swiper('.swiper', {
+		speed: 400,
+		spaceBetween: 100,
+		keyboard: {
+			enabled: true,
+			onlyInViewport: false,
+		},
+	}); */
+
+	/* const list = document.querySelector('.list-test');
+	let currentItemIndex = null;
+	let currentItem = null;
+
+	list.addEventListener('touchstart', (e) => {
+		console.log('touchstart', e.target);
+		currentItem = e.target;
+		const listArr = [...currentItem.parentElement.children];
+		currentItemIndex = listArr.indexOf(currentItem);
+	});
+
+	list.addEventListener('touchmove', (e) => {
+		e.preventDefault();
+	});
+
+	list.addEventListener('touchcancel', (e) => {
+		e.preventDefault();
+
+		console.log('touchcancel', e.target);
+		const currentDropItem = e.target;
+		const listArr = [...currentItem.parentElement.children];
+		const dropItemIndex = listArr.indexOf(currentDropItem);
+
+		if (currentItemIndex < dropItemIndex) {
+			currentDropItem.after(currentItem);
+		} else {
+			currentDropItem.before(currentItem);
+		}
+	});
+
+
+
+	list.addEventListener("touchstart", function(e) {
+		console.log('touchstart!!', e.target);
+	});
+	list.addEventListener("touchend", function(e) {
+		console.log('touchend!!', e, e.target, e.changedTouches.item(0));
+	});
+	list.addEventListener("touchcancel", function(e) {
+		console.log('touchcancel!!', e.target);
+	});
+	list.addEventListener("touchleave", function(e) {
+		console.log('touchleave!!', e.target);
+	});
+	list.addEventListener("touchmove", function(e) {
+		console.log('touchmove!!', e.target);
+	});
+
+	list.addEventListener("mousedown", function(e) {
+		console.log('mousedown!!', e.target);
+	});
+	list.addEventListener("mouseup", function(e) {
+		console.log('mouseup!!', e, e.target);
+	}); */
+</script>
+</body>
+</html>

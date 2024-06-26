@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-08-18
+	- 파일명 : page.css
+	- 포함내용 : 상품보기 카테고리 관련 스타일
+*/
+
+/* 상품보기 : 운전자보험 간편설계 */  
+.section .tab-list.option-full {margin:0 calc(var(--space-lg) * -1);}
+.section .tab-list.option-full > .tab-item {padding:0}
+
+.section-item.option-visual .inner {display: flex; justify-content: center; align-items: center;}
+.section-item.option-visual .inner .image {max-width: none; height: 470px;}
+.section-item.option-visual .inner .image.ta {display: none;}
+
+.section-item.option-full {padding:0;}
+.section-item.option-full .tab-scroll {position:relative; padding:1.6rem 2rem; border-bottom: var(--line-sm) solid var(--color-bg-dark); box-shadow: 0px 2px 8px 0px rgba(18, 25, 43, 0.08); z-index:2;}
+.section-item.option-full .tab-list {position: relative;}
+.section-item.option-full .tab-item  {padding:0;}
+.section-item.option-full .btn-group.option-main>a {text-align: center;}
+.section-item.option-full .btn-group.option-main>a::before {display:block; content:""; position: absolute; bottom:-.1rem; left:50%;  z-index: 2; width:11.1rem; height:6.7rem; margin-left:-9.7rem; background:url('../../image/prd/btn-avatar-mo.png'); background-size:100% 100%; background-repeat: no-repeat;transform: translateX(-50%);}
+.section-item.option-full .pc-only {display:none}
+
+.note.plan {position: relative; padding:var(--space-lg); margin:0 var(--space-lg)}
+.note.plan .note-head {padding:0 0 var(--space-xs);  border-bottom:var(--line-sm) solid var(--color-bg-base)} 
+.note.plan .note-title {font-size:var(--font-sm); font-weight:var(--font-medium); color:var(--color-dark);}
+.note.plan .note-list {padding:var(--space-sm) 0;}
+.note.plan .note-list li+li {margin:0;}
+.note.plan + .txt-info {margin:var(--space-md) var(--space-lg);; font-size:var(--font-xxs); color:var(--color-line-base)}
+
+/* (태블릿+PC) */
+@media screen and (min-width: 768px) { 
+	.section-item.option-full .tab-scroll{display:flex;justify-content: center;}  
+	.section-item.option-full .mo-only {display:none}
+	.section-item.option-full .pc-only {display:block}
+	.section-item.option-full .btn-group.option-main {display:inline-flex; width:20.4rem; padding:0; position:absolute; top:21%; bottom:auto; left:auto; right:9%;}
+	.section-item.option-full .btn-group.option-main>a::before {left:50%; bottom:5.5rem; width:14.6rem; height:6.4rem; margin-left:0; background-image:url('../../image/prd/btn-avatar.png'); background-size:100% 9.7rem; transform: translateX(-50%);}
+
+	.section-item.option-visual .inner .image.ta {display: flex; width: 100%; max-width: 1024px; height: auto;}
+	.section-item.option-visual .inner .image.mo {display: none;}
+}
+
+/* 전체레이아웃 - (PC) */
+@media screen and (min-width: 1025px) {
+	.section-item.option-full .tab-list{width:928px; margin: 0 auto; padding:0;}
+	.section-item.option-full .plan-img {margin:0 -4.8rem}
+	.section-item.option-full .btn-group.option-main {top:14.4rem; right:4.8rem;}
+}

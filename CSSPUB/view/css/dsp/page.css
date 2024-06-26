@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-12-20
+	- 파일명 : page.css
+	- 포함내용 : 서류제출프로세스
+*/
+/* 
+	수정정보
+	- 수정일 : 2023-04-01
+	- 수정내용 : XXX(홍길동)
+*/
+
+.multi-file .file-list.option-main .file-btn {padding: var(--space-xs) var(--space-sm);}
+.multi-file .file-list.option-main .file-btn::before {content: ''; display: inline-block; width: var(--icon-md); height: var(--icon-md); margin-bottom: 0; background: var(--bg-url-md) no-repeat calc(var(--icon-md) * -1) calc(var(--icon-md) * -4); background-size: var(--bg-size-md); vertical-align: middle;}
+.multi-file .file-list.option-main .file-btn > .txt {font-weight: var(--font-regular); font-size: var(--font-md);}
+
+.data .data-body .data-list tr td > em {font-weight: var(--font-medium); color: var(--color-txt-body);}

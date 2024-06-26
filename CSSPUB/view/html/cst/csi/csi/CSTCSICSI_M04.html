@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+	<title>고객정보 입력(or조회 출력) &gt; 신한EZ손해보험</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon-css.ico">
+	<link rel="stylesheet" href="../../../../css/com/content.css">
+	<link rel="stylesheet" href="../../../../css/cst/page.css">
+</head>
+<body>
+<!-- #wrap -->
+<div id="wrap">
+
+	<!-- #skip -->
+	<div id="skip">
+		<div class="skip-menu">
+			<a href="#main">본문으로 건너뛰기</a>
+		</div>
+	</div>
+	<!--// #skip -->
+
+	<!-- #page -->
+	<div id="page">
+		<!-- #header-->
+		<header id="header">
+			<h1 class="header-title">
+				<span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험</span></a></span>
+				<span class="txt">고객등록</span><!-- 2023-10-16 : 문구 수정 -->
+			</h1>
+			<a href="javascript:;" class="btn-page-back">
+				<span class="sr-only">이전 페이지</span>
+			</a>
+			<button type="button" class="btn-menu">
+				<span class="ico-menu-bar"></span>
+				<span class="sr-only">전체 메뉴 열기</span>
+			</button>
+			<!-- #nav -->
+			<nav id="gnb">
+			</nav>
+			<!--// #nav -->
+		</header>
+		<!--// #header-->
+
+		<!-- #main -->
+		<main id="main">
+
+			<!-- #content -->
+			<article id="content">
+				<!-- [D]개발영역 시작 -->
+
+				<!-- .section -->
+				<section class="section custom">
+  
+					<!-- .title* -->
+					<h2 class="title-step">
+						<span class="txt">고객등록</span><!-- 2023-10-16 : 문구 수정 -->
+						<!-- .step -->
+						<div class="step"><strong>3</strong><span>/6</span></div>
+						<!--// .step -->
+					</h2>
+					<!--// .title* -->
+
+					<div class="group">
+						<!-- .list-head -->
+						<div class="list-head option-row">
+							<h3 class="list-title">고객 기본 정보</h3>
+							<div class="list-must">
+								<span class="must">표시는 필수 입력 값입니다.</span>
+							</div>
+							<div class="list-btn">
+								<button type="button" class="btn contained option-sm"><span>고객정보등록</span></button><!-- 2023-12-28 : 버튼 추가 -->
+								<button type="button" class="btn contained option-sm"><span>고객 정보 조회</span></button>
+								<button type="button" class="btn contained option-sm"><span>고객셀프등록</span></button><!-- 2024-03-25 : 버튼명 변경 -->
+							</div>
+						</div>
+						<!--// .list-head -->
+
+						<!-- .form -->
+						<div class="form">
+							<div class="form-wrap">
+								<!-- .form-list -->
+								<ul class="form-list">
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield1-1">설계사</label></strong></div>
+										<div class="form-value item-half">
+											<!-- .item* -->
+											<div class="unit item-row">
+												<!-- .input -->
+												<div class="input w-100 option-popup">
+													<input type="text" name="" id="textfield1-1" class="input-data" placeholder="placeholder" value="1234567" title="설계사 검색" readonly>
+													<button type="button" class="btn-search"><span class="sr-only">검색</span></button>
+												</div>
+												<!--// .input -->
+											</div>
+											<!--// .item* -->
+											<div class="unit">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="text" name="" id="textfield1-2" class="input-data" title="설계사 성명" value="홍길동" readonly>
+												</div>
+												<!--// .input -->
+											</div>
+										</div>
+									</li>
+									<li class="form-item item-half option-bottom"><!-- 2024-04-08 : 중복조회 버튼 추가로 인한 정렬 클래스 추가 -->
+										<div class="unit">
+											<div class="form-name"><strong><label for="textfield1-3">성명</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+											<div class="form-value">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="text" name="" id="textfield1-3" class="input-data" value="김신한" readonly> 
+												</div>
+												<!--// .input -->
+											</div>
+										</div>
+										<div class="unit">
+											<!-- 2024-04-08 : 중복조회 버튼 추가 -->
+											<div class="form-name item-row option-bottom">
+												<div class="unit">
+													<strong><label for="textfield1-4">주민등록번호</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong>
+												</div>
+												<div class="unit">
+													<button type="button" class="btn outlined option-sm space-reset-ml"><span>중복조회</span></button>
+												</div>
+											</div>
+											<!--// 2024-04-08 : 중복조회 버튼 추가 -->
+											<div class="form-value">
+												<!-- [D] 'is-readonly'일 경우 .is-readonly 클래스 추가 -->
+												<!-- .input-mixed -->
+												<div class="input-mixed w-100 is-readonly">
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="textfield1-4" maxlength="6" class="input-data" title="주민등록번호 앞 6자리" placeholder="placeholder" value="990101" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<span class="dash"><span class="sr-only">-</span></span>
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="password" name="" id="textfield45" maxlength="7" title="주민등록번호 뒤 7자리" class="input-data" value="1●●●●●●" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+												</div>
+												<!--// .input-mixed -->
+											</div>
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield1-5">휴대폰번호</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div><!-- 2024-01-02 : '휴대폰 번호' 띄어쓰기 수정 -->
+										<div class="form-value item-half">
+											<div class="unit">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="tel" name="" maxlength="7" id="textfield1-5" class="input-data" value="01012349876" readonly>
+												</div>
+												<!--// .input -->
+											</div>
+											<div class="unit space-reset-mt"></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--// .form -->
+					</div>				
+				</section>
+				<!--// .section -->
+				
+				<!-- .section -->
+				<section class="section custom">
+					<!-- .group -->
+					<div class="group">
+						<!-- .form -->
+						<div class="form option-fold fn-fold-wrap is-open" data-fold-slide="true">
+							<h3 class="form-title fn-fold-link" id="formTitle1">보험가입설계를 위한 정보 동의 여부</h3>
+							<button type="button" class="btn-fold fn-fold-btn" aria-expanded="true" aria-controls="formBody1" aria-labelledby="formTitle1"><span class="sr-only">열기</span></button>
+							<div class="form-wrap fn-fold-item" id="formBody1" role="region" aria-labelledby="formTitle1" aria-hidden="false">
+								<!-- 2024-02-15 : '소비자 권익보호에 관한 사항' 추가, 약관동의 마크업 수정 -->
+								<div class="box option-bg space-mt-sm">
+									<p class="note-title2">소비자 권익보호에 관한 사항</p>
+									<p class="text2">귀하는 개인(신용)정보의 수집•이용 및 조회, 제공에 관한 동의를 거부하실 수 있으며, 개 인의 신용도 등을 평가하기 위한 목적 이외 의 개인(신용)정보 제공 동의를 철회할 수 있습니다. 다만, 본 동의는 「고객정보 관리 및 가입설계 」를 위해 필수적인 사항이므로 동의를 거부 하시는 경우 관련 업무 수행이 불가능합니다.</p>
+								</div>
+
+								<ul class="form-list">
+									<li class="form-item space-pt-xl">
+										<div class="form-name"><strong>약관동의</strong></div>
+										<div class="form-value">
+											<div class="agreement space-reset-mt">
+												<div class="agree-total option-parent">
+													<label for="agreeItem2" class="checkbox-item option-agree">
+														<input type="checkbox" name="" id="agreeItem2" class="control">
+														<span class="label"><span class="fc-primary">[필수]</span>고객정보 관리 및 가입설계를 위한 동의</span>
+													</label>
+												</div>
+					
+												<div class="agree-group">
+													<div class="agree-title">
+														<div class="unit">
+															<span class="txt">개인(신용)정보의 수집·이용에 관한 사항</span>
+														</div>
+														<div class="unit"><a href="javascript:;" class="btn-ico-link"><span class="sr-only">보기</span></a></div>
+													</div>
+													<div class="agree-sub-title">
+														<span class="txt">고유식별정보 수집·이용 동의</span>
+													</div>
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem3a" class="radio-item">
+																<input type="radio" name="agreeItem3" id="agreeItem3a" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem3b" class="radio-item">
+																<input type="radio" name="agreeItem3" id="agreeItem3b" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+													<div class="agree-sub-title">
+														<span class="txt">민감정보 수집·이용 동의</span>
+													</div>
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem4a" class="radio-item">
+																<input type="radio" name="agreeItem4a" id="agreeItem4a" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem4b" class="radio-item">
+																<input type="radio" name="agreeItem4a" id="agreeItem4b" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+													<div class="agree-sub-title">
+														<span class="txt">개인(신용)정보 수집·이용 동의</span>
+													</div>
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem5a" class="radio-item">
+																<input type="radio" name="agreeItem5a" id="agreeItem5a" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem5b" class="radio-item">
+																<input type="radio" name="agreeItem5a" id="agreeItem5b" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+													<div class="agree-title">
+														<div class="unit">
+															<span class="txt">개인(신용)정보의 제공에 관한 사항</span>
+														</div>
+														<div class="unit"><a href="javascript:;" class="btn-ico-link"><span class="sr-only">보기</span></a></div>
+													</div>
+													<div class="agree-sub-title">
+														<span class="txt">고유식별정보 제공 동의</span>
+													</div>
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem6a" class="radio-item">
+																<input type="radio" name="agreeItem6a" id="agreeItem6a" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem6b" class="radio-item">
+																<input type="radio" name="agreeItem6a" id="agreeItem6b" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+													<div class="agree-sub-title">
+														<span class="txt">민감정보 제공 동의</span>
+													</div>
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem7a" class="radio-item">
+																<input type="radio" name="agreeItem7a" id="agreeItem7a" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem7b" class="radio-item">
+																<input type="radio" name="agreeItem7a" id="agreeItem7b" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+													<div class="agree-sub-title">
+														<span class="txt">개인(신용)정보 제공 동의 (국내)</span><!-- 2024-03-26 : '(국내)' 문구 추가 -->
+													</div>
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem8a" class="radio-item">
+																<input type="radio" name="agreeItem8a" id="agreeItem8a" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem8b" class="radio-item">
+																<input type="radio" name="agreeItem8a" id="agreeItem8b" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+
+													<!-- 2024-03-26 : 개인(신용)정보 제공 동의(국외) 추가 -->
+													<div class="agree-sub-title">
+														<span class="txt">개인(신용)정보 제공 동의 (국외)</span>
+													</div>
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem8a-1" class="radio-item">
+																<input type="radio" name="agreeItem8a-1" id="agreeItem8a-1" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem8a-2" class="radio-item">
+																<input type="radio" name="agreeItem8a-1" id="agreeItem8a-2" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+													<!--// 2024-03-26 : 개인(신용)정보 제공 동의(국외) 추가 -->
+					
+													<div class="agree-title">
+														<div class="unit">
+															<span class="txt">개인(신용)정보의 조회에 관한 사항</span>
+														</div>
+														<div class="unit"><a href="javascript:;" class="btn-ico-link"><span class="sr-only">보기</span></a></div>
+													</div>
+													<div class="agree-sub-title">
+														<span class="txt">고유식별정보 조회 동의</span>
+													</div>
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem9a" class="radio-item">
+																<input type="radio" name="agreeItem9a" id="agreeItem9a" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem9b" class="radio-item">
+																<input type="radio" name="agreeItem9a" id="agreeItem9b" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+													<div class="agree-sub-title">
+														<span class="txt">민감정보 조회 동의</span>
+													</div>
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem10a" class="radio-item">
+																<input type="radio" name="agreeItem10a" id="agreeItem10a" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem10b" class="radio-item">
+																<input type="radio" name="agreeItem10a" id="agreeItem10b" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+													<div class="agree-sub-title">
+														<span class="txt">개인(신용)정보 조회 동의</span>
+													</div>
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem11a" class="radio-item">
+																<input type="radio" name="agreeItem11a" id="agreeItem11a" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem12b" class="radio-item">
+																<input type="radio" name="agreeItem11a" id="agreeItem12b" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+												</div>
+											</div>
+											<!--// .agreement -->
+					
+											<!-- .agreement -->
+											<div class="agreement space-mt-xs">
+												<!-- 2024-03-07 : 약관 동의 수정 -->
+												<div class="agree-total option-parent">
+													<div class="unit">
+														<!-- .checkbox* -->
+														<label for="agreeItem8" class="checkbox-item option-agree">
+															<input type="checkbox" name="" id="agreeItem8" class="control">
+															<span class="label">[선택] 상품 소개를 위한 개인(신용)정보 동의</span>
+														</label>
+														<!--// .checkbox* -->
+													</div>
+												</div>
+					
+												<div class="agree-group">
+													<p class="agree-lead">
+														본 동의는 금융거래에 필수적이지 않으며 동의를 거부하실 수 있습니다. 또한, 동의하시더라도 당사 홈페이지 및 고객센터(1544-2580)를 통해 철회하거나 가입 권유 목적의 연락에 대한 중단을 요청하실 수 있으며 연락중지청구 시스템 Do not Call 센터(www.donotcall.or.kr)를 통해 언제든지 마케팅활동에 대한 중지를 요청할 수 있습니다. 동의하시는 경우 상품이나 서비스의 홍보 및 판매권유 등의 목적으로 개인정보를 이용하여 연락을 드릴 수 있습니다.
+													</p>
+					
+													<div class="agree-title">
+														<div class="unit">
+															<span class="txt">개인(신용)정보의 수집·이용에 대한 동의</span>
+														</div>
+														<div class="unit"><a href="javascript:;" class="btn-ico-link"><span class="sr-only">보기</span></a></div>
+													</div>
+													<div class="agree-graph">
+														<div class="agree-graph-wrap" aria-label="동의 내용의 평가 등급으로 안심, 다소안심, 보통, 신중, 주의 등급으로 구분">
+															<ul class="agree-step-list">
+																<li class="agree-step-item" aria-hidden="false" aria-label="해당 등급">
+																	<span class="txt">안심</span>
+																	<span class="bar"></span>
+																</li>
+																<li class="agree-step-item" aria-hidden="true">
+																	<span class="txt">다소안심</span>
+																	<span class="bar"></span>
+																</li>
+																<li class="agree-step-item" aria-hidden="true">
+																	<span class="txt">보통</span>
+																	<span class="bar"></span>
+																</li>
+																<li class="agree-step-item" aria-hidden="true">
+																	<span class="txt">신중</span>
+																	<span class="bar"></span>
+																</li>
+																<li class="agree-step-item" aria-hidden="true">
+																	<span class="txt">주의</span>
+																	<span class="bar"></span>
+																</li>
+															</ul>
+														</div>
+														<p class="sub-txt">위의 등급은 사생활 침해 위험, 혜택, 명확성 등을 종합적으로 고려하여 동의 내용의 평가등급을 제공하는 제도입니다.</p>
+													</div>
+					
+													<div class="agree-sub-title">
+														<span class="txt">개인(신용)정보의 수집 ·이용 항목</span>
+													</div>
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem12a" class="radio-item">
+																<input type="radio" name="agreeItem12a" id="agreeItem12a" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem12a-1" class="radio-item">
+																<input type="radio" name="agreeItem12a" id="agreeItem12a-1" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+					
+													<div class="agree-sub-title">
+														<span class="txt">광고성 정보의 수신 동의</span>
+													</div>
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem9-1a" class="radio-item">
+																<input type="radio" name="agreeItem9-1" id="agreeItem9-1a" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem9-1b" class="radio-item">
+																<input type="radio" name="agreeItem9-1" id="agreeItem9-1b" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+													<div class="agree-btn">
+														<!-- .chip* -->
+														<fieldset class="chip-group">
+															<label for="agreeChannel1a" class="chip-item">
+																<input type="checkbox" name="" id="agreeChannel1a" class="control">
+																<span class="label">전체</span>
+															</label>
+															<label for="agreeChannel1b" class="chip-item">
+																<input type="checkbox" name="" id="agreeChannel1b" class="control">
+																<span class="label">전화(ARS포함)</span>
+															</label>
+															<label for="agreeChannel1c" class="chip-item">
+																<input type="checkbox" name="" id="agreeChannel1c" class="control">
+																<span class="label">문자</span>
+															</label>
+															<label for="agreeChannel1d" class="chip-item">
+																<input type="checkbox" name="" id="agreeChannel1d" class="control">
+																<span class="label">이메일</span>
+															</label>
+															<label for="agreeChannel1e" class="chip-item">
+																<input type="checkbox" name="" id="agreeChannel1e" class="control">
+																<span class="label">우편(DM)</span>
+															</label>
+														</fieldset>
+														<!--// .chip* -->
+													</div>
+					
+													<div class="agree-title">
+														<div class="unit">
+															<span class="txt">개인(신용) 정보 제공 동의</span>
+														</div>
+														<div class="unit"><a href="javascript:;" class="btn-ico-link"><span class="sr-only">보기</span></a></div>
+													</div>
+													<div class="agree-graph">
+														<div class="agree-graph-wrap" aria-label="동의 내용의 평가 등급으로 안심, 다소안심, 보통, 신중, 주의 등급으로 구분">
+															<ul class="agree-step-list">
+																<li class="agree-step-item" aria-hidden="true">
+																	<span class="txt">안심</span>
+																	<span class="bar"></span>
+																</li>
+																<li class="agree-step-item" aria-hidden="false" aria-label="해당 등급">
+																	<span class="txt">다소안심</span>
+																	<span class="bar"></span>
+																</li>
+																<li class="agree-step-item" aria-hidden="true">
+																	<span class="txt">보통</span>
+																	<span class="bar"></span>
+																</li>
+																<li class="agree-step-item" aria-hidden="true">
+																	<span class="txt">신중</span>
+																	<span class="bar"></span>
+																</li>
+																<li class="agree-step-item" aria-hidden="true">
+																	<span class="txt">주의</span>
+																	<span class="bar"></span>
+																</li>
+															</ul>
+														</div>
+														<p class="sub-txt">위의 등급은 사생활 침해 위험, 혜택, 명확성 등을 종합적으로 고려하여 동의 내용의 평가등급을 제공하는 제도입니다.</p>
+													</div>
+					
+													<div class="agree-select">
+														<!-- .radio* -->
+														<fieldset class="radio-group">
+															<label for="agreeItem13a" class="radio-item">
+																<input type="radio" name="agreeItem13a" id="agreeItem13a" class="control">
+																<span class="label">동의안함</span>
+															</label>
+															<label for="agreeItem13a-1" class="radio-item">
+																<input type="radio" name="agreeItem13a" id="agreeItem13a-1" class="control">
+																<span class="label">동의함</span>
+															</label>
+														</fieldset>
+														<!--// .radio* -->
+													</div>
+												</div>
+												<!--// 2024-03-07 : 약관 동의 수정 -->
+											</div>
+											<!--// .agreement -->
+										</div>
+									</li>
+								</ul>
+								<!--// 2024-02-15 : '소비자 권익보호에 관한 사항' 추가, 약관동의 마크업 수정 -->
+							</div>
+						</div>
+						<!--// .form -->
+
+						<!-- .form -->
+						<div class="form option-fold fn-fold-wrap" data-fold-slide="true">
+							<h3 class="form-title fn-fold-link" id="formTitle2">고객 필수 정보</h3>
+							<button type="button" class="btn-fold fn-fold-btn" aria-expanded="true" aria-controls="formBody2" aria-labelledby="formTitle2"><span class="sr-only">열기</span></button>
+							<div class="form-wrap fn-fold-item" id="formBody2" role="region" aria-labelledby="formTitle2" aria-hidden="false">
+								<!-- .form-list -->
+								<!-- 2023-12-21 : 컨텐츠 전체 수정 -->
+								<ul class="form-list">
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield3-1">직업정보</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value item-half">
+											<div class="unit">
+												<!-- .input -->
+												<div class="input w-100 option-popup">
+													<input type="text" name="" id="textfield3-1" class="input-data" placeholder="placeholder" value="1234567" title="설계사 검색" readonly>
+													<button type="button" class="btn-search"><span class="sr-only">검색</span></button>
+												</div>
+												<!--// .input -->
+											</div>
+											<div class="unit">
+												<!-- .segment* -->
+												<fieldset class="segment-group">
+													<label for="radioT3" class="segment-item">
+														<input type="radio" name="radioT3" id="radioT3" class="control" checked>
+														<span class="label"><em class="txt">일반금융 소비자</em></span>
+													</label>
+													<label for="radioT3-1" class="segment-item">
+														<input type="radio" name="radioT3" id="radioT3-1" class="control">
+														<span class="label"><em class="txt">전문금융 소비자</em></span>
+													</label>
+												</fieldset>
+												<!--// .segment* -->
+											</div>
+										</div>
+										<ul class="list depth-u4 space-mt-xxs">
+											<li>‘전문금융 소비자’일 경우 직업을 다시 확인해 주세요.</li>
+										</ul>
+									</li>
+									<!-- 2023-12-28 : '운전여부', '운행용도' 항목 추가 -->
+									<!-- 2024-01-16 : '운전여부', '운행용도' 항목 삭제 
+									<li class="form-item item-half">
+										<div class="unit">
+											<div class="form-name"><strong>운전여부</strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+											<div class="form-value">
+												<!-- .segment* 
+												<fieldset class="segment-group">
+													<label for="radioT6" class="segment-item">
+														<input type="radio" name="radioT6" id="radioT6" class="control" checked>
+														<span class="label"><em class="txt">예</em></span>
+													</label>
+													<label for="radioT6-1" class="segment-item">
+														<input type="radio" name="radioT6" id="radioT6-1" class="control">
+														<span class="label"><em class="txt">아니요</em></span>
+													</label>
+												</fieldset>
+												<!--// .segment* 
+											</div>
+										</div>
+										<div class="unit">
+											<div class="form-name"><strong>운행용도</strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+											<div class="form-value">
+												<!-- .segment* 
+												<fieldset class="segment-group">
+													<label for="radioT7" class="segment-item">
+														<input type="radio" name="radioT7" id="radioT7" class="control" checked>
+														<span class="label"><em class="txt">자가용</em></span>
+													</label>
+													<label for="radioT7-1" class="segment-item">
+														<input type="radio" name="radioT7" id="radioT7-1" class="control">
+														<span class="label"><em class="txt">영업용</em></span>
+													</label>
+													<label for="radioT7-2" class="segment-item">
+														<input type="radio" name="radioT7" id="radioT7-2" class="control">
+														<span class="label"><em class="txt">비운전자</em></span>
+													</label>
+												</fieldset>
+												<!--// .segment* 
+											</div>
+										</div>
+									</li>-->
+									<!--// 2023-12-28 : '운전여부', '운행용도' 항목 추가 -->
+
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield3-12">이메일</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input option-search option-email w-100">
+												<input type="text" name="" id="textfield3-12" class="input-data" placeholder="입력해 주세요">
+												<ul class="words">
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@naver.com</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@nate.com</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@kakao.com</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@daum.net</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@hanmail.net</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@gmail.com</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@hotmail.com</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@korea.com</a></li>
+													<li class="word-item"><a href="javascript:;" tabindex="-1">@outlook.com</a></li>
+												</ul>
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name item-row">
+											<div class="unit">
+												<strong class="fw-medium"><label>자택 주소</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong>
+											</div>
+											<div class="unit">
+												<!-- 2023-11-21 : 삭제 <button type="button" class="btn outlined option-sm"><span>주소검색</span></button> -->
+												<button type="button" class="btn outlined option-sm space-reset-ml"><span>초기화</span></button>
+											</div>
+										</div>
+										<div class="form-value item-col">
+											<!-- .item* -->
+											<div class="unit">
+												<!-- .input-button -->
+												<div class="input-button option-read w-100">
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<div class="read-data">
+																<!-- [D]입력 전 --><!-- <span class="is-placeholder">검색해 주세요</span> -->
+																서울시 중구 남대문로 113 (다동 103) DB다동빌딩 5층
+															</div>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<!-- .btn -->
+														<button type="button" class="btn contained option-md"><span>주소검색</span></button>
+														<!--// .btn -->
+													</div>
+												</div>
+												<!--// .input-button -->
+											</div>
+											<!--// .item* -->
+										</div>
+									</li>
+									<li class="form-item item-half">
+										<div class="unit">
+											<div class="form-name"><strong><label for="textfield4-1">국적선택</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+											<div class="form-value">
+												<!-- .segment* -->
+												<fieldset class="segment-group">
+													<label for="radioT1" class="segment-item">
+														<input type="radio" name="radioT" id="radioT1" class="control" checked>
+														<span class="label"><em class="txt">내국인</em></span>
+													</label>
+													<label for="radioT2" class="segment-item">
+														<input type="radio" name="radioT" id="radioT2" class="control">
+														<span class="label"><em class="txt">외국인</em></span>
+													</label>
+												</fieldset>
+												<!--// .segment* -->
+											</div>
+										</div>
+										<div class="unit">
+											<div class="form-name"><strong><label for="checkP1-1">국가선택</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+											<div class="form-value">
+												<!-- .input -->
+												<div class="input w-100 option-popup">
+													<input type="text" name="" id="checkP1-1" class="input-data" placeholder="검색해 주세요" value="대한민국" readonly>
+													<button type="button" class="btn-search"><span class="sr-only">검색</span></button>
+												</div>
+												<!--// .input -->
+											</div>
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield4-11">영문명</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="text" name="" id="textfield4-11" class="input-data" placeholder="입력해 주세요" value="Kim shinhan" > 
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield3-4">계약관리 매체 동의</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<!-- .checkbox* -->
+											<fieldset class="checkbox-group">
+												<label for="checkA1" class="checkbox-item">
+													<input type="checkbox" name="" id="checkA1" class="control" checked>
+													<span class="label">문자</span>
+												</label>
+												<label for="checkA2" class="checkbox-item">
+													<input type="checkbox" name="" id="checkA2" class="control" checked>
+													<span class="label">알림톡</span>
+												</label>
+												<label for="checkA3" class="checkbox-item">
+													<input type="checkbox" name="" id="checkA3" class="control" checked>
+													<span class="label">이메일</span>
+												</label>
+											</fieldset>
+											<!--// .checkbox* -->
+										</div>
+									</li>
+									<!-- 2024-01-18 : 연락금지(두낫콜)해제 삭제  
+									<li class="form-item">
+										<div class="form-name"><strong><label for="">연락금지(두낫콜)해제</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<div class="item-col">
+												<div class="unit">
+													<div class="note">
+														<ul class="note-list">
+															<li>금융소비자보호법 제 21조의 2의 ②에 근거하여 신한EZ손해보험과 담당FC가 상품소개 또는 계약체결 권유 목적으로 연락 드리는 것을 금지 신청할 수 있습니다. 연락금지(두낫콜) 신청시에는 신한EZ손해보험에서 제공해드리는 다양한 서비스와 이벤트 등에 대한 안내도 불가하니 참고해주시기 바랍니다.(단, 마케팅 목적 외 계약관리 목적 연락은 가능) 연락금지 두낫콜을 해제하시거나 당사 마케팅동의시에는 마케팅 연락이 갈 수 있습니다.</li><!-- 2024-01-02 : 문구 수정
+														</ul>
+													</div>
+												</div>
+												<div class="unit space-mt-sm">
+													<fieldset class="radio-group">
+														<label for="radioA3" class="radio-item">
+															<input type="radio" name="radioA3" id="radioA3" class="control" checked>
+															<span class="label">해제 신청</span>
+														</label>
+														<label for="radioA3-1" class="radio-item">
+															<input type="radio" name="radioA3" id="radioA3-1" class="control">
+															<span class="label">해제 미신청</span>
+														</label>
+													</fieldset>
+												</div>
+											</div>
+										</div>
+									</li>-->
+									<!-- 2024-01-18 : '야간영업금지 해제 신청' 내용 수정 -->
+									<li class="form-item">
+										<div class="form-name"><strong><label for="">야간영업금지 해제 신청</label></strong><strong class="must"><span class="sr-only">필수입력</span></strong></div>
+										<div class="form-value">
+											<div class="item-col">
+												<div class="unit">
+													<div class="note">
+														<ul class="note-list">
+															<li>금융소비자보호법 제 21조 2의 ③에 근거하여 금융상품판매업자등은 금융상품을 소개하거나 계약 체결을 권유할 목적으로 야간(오후 9시 이후부터 다음날 오전8시 까지)에 고객님을 방문하거나 연락하여서는 아니 됩니다.</li>
+															<li>다만, 고객님께서 <strong class="fc-primary">신청</strong>하시는 경우 당사 및 담당자가 야간에 방문하거나 연락 드릴 수 있습니다.</li><!-- 2024-01-24 : 문구, 컬러 수정 -->
+														</ul>
+													</div>
+												</div>
+												<div class="unit space-mt-sm">
+													<fieldset class="radio-group">
+														<label for="radioA4" class="radio-item">
+															<input type="radio" name="radioA4" id="radioA3" class="control" checked>
+															<span class="label">신청</span>
+														</label>
+														<label for="radioA4-1" class="radio-item">
+															<input type="radio" name="radioA4" id="radioA4-1" class="control">
+															<span class="label">미신청</span>
+														</label>
+													</fieldset>
+												</div>
+											</div>
+										</div>
+									</li>
+									<!--// 2024-01-18 : '야간영업금지 해제 신청' 내용 수정 -->
+								</ul>
+								<!--// 2023-12-21 : 컨텐츠 전체 수정 -->
+							</div>
+						</div>
+						<!--// .form -->
+
+						<!-- .form -->
+						<div class="form option-fold fn-fold-wrap" data-fold-slide="true">
+							<h3 class="form-title fn-fold-link" id="formTitle3">고객 추가 정보 (선택)</h3>
+							<button type="button" class="btn-fold fn-fold-btn" aria-expanded="true" aria-controls="formBody3" aria-labelledby="formTitle3"><span class="sr-only">열기</span></button>
+							<div class="form-wrap fn-fold-item" id="formBody3" role="region" aria-labelledby="formTitle3" aria-hidden="false">
+								<p class="title-copy space-pt-sm">고객정보 부재 시 고객에게 직접 문의하여 입력해 주세요.</p>
+								<!-- .form-list -->
+								<!-- 2023-12-21 : 컨텐츠 전체 수정 -->
+								<ul class="form-list">
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield4-4">직장명</label></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="text" name="" id="textfield4-4" class="input-data" placeholder="입력해 주세요" value="" > 
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<li class="form-item item-half">
+										<div class="unit">
+											<div class="form-name"><strong><label for="textfield4-5">부서명</label></strong></div>
+											<div class="form-value">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="text" name="" id="textfield4-5" class="input-data" placeholder="입력해 주세요" value="" > 
+												</div>
+												<!--// .input -->
+											</div>
+										</div>
+										<div class="unit">
+											<div class="form-name"><strong><label for="textfield4-6">직위</label></strong></div>
+											<div class="form-value">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="text" name="" id="textfield4-6" class="input-data" placeholder="입력해 주세요" value="" > 
+												</div>
+												<!--// .input -->
+											</div>
+										</div>
+									</li>
+
+									<li class="form-item">
+										<div class="form-name item-row">
+											<div class="unit">
+												<strong class="fw-medium"><label>직장 주소</label></strong><!-- 2024-01-02 : '필수입력' 삭제 <strong class="must"><span class="sr-only">필수입력</span></strong>-->
+											
+											</div>
+											<div class="unit">
+												<button type="button" class="btn outlined option-sm space-reset-ml"><span>초기화</span></button>
+											</div>
+										</div>
+										<div class="form-value item-col">
+											<!-- .item* -->
+											<div class="unit">
+												<!-- .input-button -->
+												<div class="input-button option-read w-100">
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<div class="read-data">
+																<!-- [D]입력 전 --><!-- <span class="is-placeholder">검색해 주세요</span> -->
+																서울시 중구 남대문로 113 (다동 103) DB다동빌딩 5층
+															</div>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<!-- .btn -->
+														<button type="button" class="btn contained option-md"><span>주소검색</span></button>
+														<!--// .btn -->
+													</div>
+												</div>
+												<!--// .input-button -->
+											</div>
+											<!--// .item* -->
+										</div>
+									</li>
+
+									<li class="form-item item-half">
+										<div class="unit">
+											<div class="form-name"><strong><label for="textfield4-7">직장 전화번호</label></strong></div>
+											<div class="form-value">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="tel" name="" id="textfield4-7" class="input-data" placeholder="- 없이 숫자만 입력(예: 0212341234)" value="" > 
+												</div>
+												<!--// .input -->
+											</div>
+										</div>
+										<div class="unit">
+											<div class="form-name"><strong><label for="textfield4-8">자택 전화번호</label></strong></div>
+											<div class="form-value">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="tel" name="" id="textfield4-8" class="input-data" placeholder="- 없이 숫자만 입력(예: 0212341234)" value="" > 
+												</div>
+												<!--// .input -->
+											</div>
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield4-9">기타 전화번호</label></strong></div>
+										<div class="form-value">
+											<!-- .input -->
+											<div class="input w-100">
+												<input type="tel" name="" id="textfield4-9" class="input-data" placeholder="- 없이 숫자만 입력(예: 0212341234)" value="" > 
+											</div>
+											<!--// .input -->
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield4-10">생년월일</label></strong></div>
+										<div class="form-value item-half">
+											<!-- .item* -->
+											<div class="unit">
+												<!-- .segment* -->
+												<fieldset class="segment-group">
+													<label for="radioT4" class="segment-item">
+														<input type="radio" name="radioT4" id="radioT4" class="control" checked>
+														<span class="label"><em class="txt">양력</em></span>
+													</label>
+													<label for="radioT4-1" class="segment-item">
+														<input type="radio" name="radioT4" id="radioT4-1" class="control">
+														<span class="label"><em class="txt">음력</em></span>
+													</label>
+												</fieldset>
+												<!--// .segment* -->
+											</div>
+											<!--// .item* -->
+											<div class="unit">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="text" name="" class="input-data" title="생년월일 직접 입력" placeholder="예 : 19990101">
+												</div>
+												<!--// .input -->
+											</div>
+										</div>
+									</li>
+									<li class="form-item">
+										<div class="form-name"><strong><label for="textfield4-10">결혼유무/결혼기념일</label></strong></div>
+										<div class="form-value item-half">
+											<!-- .item* -->
+											<div class="unit">
+												<!-- .segment* -->
+												<fieldset class="segment-group">
+													<label for="radioT5" class="segment-item">
+														<input type="radio" name="radioT5" id="radioT5" class="control" checked>
+														<span class="label"><em class="txt">미혼</em></span>
+													</label>
+													<label for="radioT5-1" class="segment-item">
+														<input type="radio" name="radioT5" id="radioT5-1" class="control">
+														<span class="label"><em class="txt">기혼</em></span>
+													</label>
+												</fieldset>
+												<!--// .segment* -->
+											</div>
+											<!--// .item* -->
+											<div class="unit">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="text" name="" class="input-data" title="결혼기념일 직접 입력" placeholder="예 : 19990101" readonly>
+												</div>
+												<!--// .input -->
+											</div>
+										</div>
+									</li>
+								</ul>
+								<!--// 2023-12-21 : 컨텐츠 전체 수정 -->
+							</div>
+						</div>
+						<!--// .form -->
+						
+						<!-- .form -->
+						<div class="form option-fold fn-fold-wrap" data-fold-slide="true">
+							<h3 class="form-title fn-fold-link" id="formTitle4">친권자 정보</h3>
+							<button type="button" class="btn-fold fn-fold-btn" aria-expanded="true" aria-controls="formBody4" aria-labelledby="formTitle4"><span class="sr-only">열기</span></button>
+							<div class="form-wrap fn-fold-item" id="formBody4" role="region" aria-labelledby="formTitle4" aria-hidden="false">
+								<!-- .form-list -->
+								<ul class="form-list">
+									<li class="form-item item-half">
+										<div class="unit">
+											<div class="form-name"><strong><label for="textfield5-1">성명</label></strong></div>
+											<div class="form-value">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="text" name="" id="textfield5-1" class="input-data" readonly> 
+												</div>
+												<!--// .input -->
+											</div>
+										</div>
+										<div class="unit">
+											<div class="form-name"><strong><label for="textfield5-2">주민등록번호</label></strong></div>
+											<div class="form-value">
+												<!-- [D] 'is-readonly'일 경우 .is-readonly 클래스 추가 -->
+												<!-- .input-mixed -->
+												<div class="input-mixed w-100 is-readonly">
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="textfield5-2" maxlength="6" class="input-data" title="주민등록번호 앞 6자리" placeholder="placeholder" value="990101" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<span class="dash"><span class="sr-only">-</span></span>
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="password" name="" maxlength="7" title="주민등록번호 뒤 7자리" class="input-data" value="1●●●●●●" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+												</div>
+												<!--// .input-mixed -->
+											</div>
+										</div>
+									</li>
+									<li class="form-item item-half">
+										<div class="unit">
+											<div class="form-name"><strong><label for="textfield5-3">휴대폰번호</label></strong></div><!-- 2024-01-02 : '휴대폰 번호' 띄어쓰기 수정 -->
+											<!-- 2024-01-18 : 태그 삭제 <div class="form-value item-half"> -->
+											<div class="form-value">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="tel" name="" maxlength="7" id="textfield5-3" class="input-data" readonly>
+												</div>
+												<!--// .input -->
+											</div>
+										</div>
+										<div class="unit">
+											<div class="form-name"><strong><label for="textfield5-4">친권자 동의 일자</label></strong></div>
+											<div class="form-value">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="text" name="" maxlength="7" id="textfield5-4" class="input-data" readonly>
+												</div>
+												<!--// .input -->
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--// .form -->
+					</div>
+					<!--// .group -->
+
+					<!-- 2023-12-21 : 버튼 추가 -->
+					<div class="group">
+						<div class="btn-group">
+							<button type="button" class="btn primary"><span>고객 휴대폰인증</span></button>
+							<!-- 인증 완료 시 <button type="button" class="btn primary" disabled><span>인증완료</span></button> -->
+						</div>
+					</div>
+					<!--// 2023-12-21 : 버튼 추가 -->
+				</section>
+				<!--// .section -->
+			
+				<!-- .btn-group* -->
+				<div class="btn-group option-main">
+					<button type="button" class="btn filled fixed"><span>이전</span></button>
+					<button type="button" class="btn primary"><span>확인</span></button>
+				</div>
+				<!--// .btn-group* -->
+
+				<!--// [D]개발영역 끝 -->
+			</article>
+			<!--// #content -->
+			
+		</main>
+		<!--// #main -->
+
+		<!-- #footer -->
+		<footer id="footer"></footer>
+		<!--// #footer -->
+	</div>
+	<!--// #page -->
+
+	<!-- #popup -->
+	<div id="popup">
+		
+	</div>
+	<!--// #popup -->
+
+
+</div>
+<!--// #wrap -->
+<script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+<script src="../../../../js/com/lottie_light.min.js"></script>
+<script src="../../../../js/com/local_pub.js"></script><!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+<script src="../../../../js/com/common_pub.js"></script>
+</body>
+</html>

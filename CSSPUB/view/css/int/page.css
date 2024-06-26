@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-09-06
+	- 파일명 : page.css
+	- 포함내용 : 인트로 콘텐츠 스타일
+*/
+
+/* 인트로 */
+.section.intro {padding-bottom:1.7rem}  
+.section.intro .intro-logo>a {display:inline-flex; width: 10.02rem; height: 2.4rem; margin: 0; background-image: url('../../image/com/logo-main.svg');}
+.section.intro .main-copy > .txt {font-size:2.6rem}
+.section.intro .main-copy > .copy {padding-top:var(--space-sm)}
+.section.intro .btn-group {margin-top:var(--space-sm)}
+.section.intro .btn-group .btn {min-height:6.4rem; font-size:var(--font-lg);}
+.section.intro .btn-group .btn>span {font-weight:var(--font-semibold);}
+.section.intro .company-info {display:none}  
+.section.intro .intro-img {background-color:#C9E5FF; border-radius:2rem;}
+.section.intro .mo-only {width: 32.0rem; margin: 0 auto;}
+.section.intro .pc-only {display:none}
+
+/* 보안프로그램 설치(PC) */  
+.section.security-program .main-title {padding-top:.8rem; text-align:center;}
+.section.security-program .main-title .icon {display:flex; width:24rem; height:14.4rem; margin:0 auto 1.6rem; background: url('../../image/int/bg-avatar.svg') no-repeat 0 0; background-size: 100% auto;}
+.section.security-program .data-list td {color:var(--color-txt-sub)}
+
+@media screen and (min-width: 768px) {
+	.section.intro .mo-only {display:none}
+	.section.intro .pc-only {display:block}	
+	#content >.section.intro {display:flex; align-items:center; justify-content:center; flex-direction: column; width:100%; height:100vh; background-color:var( --color-bg-light); padding:0;}
+	#content .section.intro:first-child .main-copy {padding-bottom:3.5rem}
+	.section.intro .intro-box {width:76.8rem; height:45.6rem; padding-left:41.6rem; position:relative; background-color:var(--color-light); border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);}
+	.section.intro .intro-item {width:35.2rem; padding:var(--space-xxl) var(--space-max) var(--space-max) var(--space-xxl)} 
+	.section.intro .intro-img {position:absolute; top:.8rem; left:.8rem; width:40.8rem; height:44rem; border-radius:2rem 0 0 2rem}
+	.section.intro .btn-group {margin-top:0}
+	.section.intro .company-info {display:block; margin:var( --space-lg) 0 0; width:76.8rem}
+	.section.intro .company-info > .info-group > span {margin:0 0 0 var(--space-xs)}
+}
+
+/* 에러페이지 */
+#page.option-error-404 .btn-page-top {display: none;}
+#page.option-error .btn-page-top,
+#page.option-error .util,
+#page.option-error .bookmark,
+#page.option-error .gnb-wrap {display: none;}
+
+.error-wrap {max-width: 320px; margin-left: auto; margin-right: auto; text-align: center;}
+.error-img {width: min(32.0rem, 100%); margin: 0 auto; padding: var(--space-xxs) 0 var(--space-lg);}
+.error-txt {padding-top: var(--space-xxs); color: var(--color-txt-sub); word-break: keep-all;}
+.error-btn {width: 100%; margin-top: var(--space-xxl);}
+.card.error-data {margin-top: var(--space-xl); padding-top: 1.9rem; padding-bottom: 1.9rem; background-color: var(--color-bg-light); border-color: var(--color-bg-light);}
+.card.error-data ~ .list.depth-u4 {margin-top: var(--space-xxs); text-align: left;}
+
+/* 에러페이지 - (태블릿) */
+@media screen and (min-width: 768px) {
+	.error-img {padding-top: var(--space-xxl);} 
+	.error-btn {width: auto;}
+}

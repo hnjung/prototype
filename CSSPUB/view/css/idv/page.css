@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-08-18
+	- 파일명 : page.css
+	- 포함내용 : 본인인증 카테고리 관련 스타일
+*/
+/* 
+	수정정보
+	- 수정일 : 2023-04-01
+	- 수정내용 : XXX(홍길동)
+*/
+
+.section.terms,
+.section.terms .title-h3+.txt {margin-top:var(--space-lg);}
+.section.terms+.section.terms{margin-top:var(--space-xxs);}
+.section.terms+.section.terms>.group:first-child{padding-top:var(--space-max); border-top:var(--line-sm) solid var(--color-bg-base);}
+.section.terms .title-h4+.title-h4{margin-top:var(--space-sm);}
+.popup-content .section.terms .group + .group {padding-top:var(--space-xl);}
+
+/* 로그인 */
+.login-title {text-align: center;}
+.login-title:before {content: ''; display: block; width: var(--icon-max); height: var(--icon-max); margin: 0 auto var(--space-sm); background-image: var(--bg-url-max); background-repeat: no-repeat; background-size: var(--bg-size-max);}
+.login-title.phone:before {background-position: calc(var(--icon-max) * -2) calc(var(--icon-max) * -1);}
+.login-title.shinhan:before {background-position: 0 calc(var(--icon-max) * -2);}
+.login-title.kakao:before {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -2);}
+.login-title.toss:before {background-image: url('../../image/lgn/ico-toss-max.png'); background-position: 0 0; background-size: var(--icon-max) auto;}
+.login-title.naver:before {background-position: calc(var(--icon-max) * -3) calc(var(--icon-max) * -2);}
+.login-title.bio:before {background-position: calc(var(--icon-max) * -4) calc(var(--icon-max) * -1);}
+.login-title.easy-password:before {background-position: calc(var(--icon-max) * -6) calc(var(--icon-max) * -1);}
+.login-title.pattern:before {background-position: calc(var(--icon-max) * -1) calc(var(--icon-max) * -1);}
+.login-title.card:before {background-position: calc(var(--icon-max) * -3) calc(var(--icon-max) * -1);}
+
+.login-way {}
+.login-way:before {content: ''; display: inline-block; width: var(--icon-lg); height: var(--icon-lg); margin-right: 1.2rem; background-image: var(--bg-url-lg); background-repeat: no-repeat; background-size: var(--bg-size-lg); vertical-align: middle;}
+.login-way > em {display: inline-block; vertical-align: middle; font-weight: var(--font-medium); color: var(--color-dark);}
+
+.login-way.phone:before {background-position: 0 calc(var(--icon-lg) * -1);}
+.login-way.card:before {background-position: calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -1);}
+.login-way.bank:before {background-position: calc(var(--icon-lg) * -8) calc(var(--icon-lg) * -2);}
+.login-way.shinhan:before {background-position: calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -1);}
+.login-way.kakao:before {background-position: calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -1);}
+.login-way.toss:before {background-image: url('../../image/lgn/ico-toss-lg.png'); background-position: 0 0; background-size: var(--icon-lg) auto;}
+.login-way.naver:before {background-position: calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -1);}
+
+/* 은행/증권사 선택 */
+.bank-list {display: flex; flex-wrap: wrap;}
+.bank-list + .bank-list {margin-top: 4.8rem; padding-top: 3.0rem; border-top: var(--line-sm) solid var(--color-bg-base);}
+.bank-item {flex-shrink: 0; width: 50%; padding: 1.8rem 0 0;}
+.bank-item .label {display: flex; align-items: center; min-height: var(--icon-lg); padding-left: 4.4rem;}
+.bank-item .label > .txt {display: inline-block; vertical-align: middle; line-height: 1.35;}
+.bank-select {position: relative;}
+.bank-select .control:focus ~ .label > .txt,
+.bank-select .control:checked ~ .label > .txt {font-weight: var(--font-semibold);}
+
+.bank-item .label:after {content: ''; position: absolute; top: 0; left: 0; width: var(--icon-lg); height: var(--icon-lg); background: var(--bg-url-lg) no-repeat calc(var(--icon-lg) * -1) 0; background-size: var(--bg-size-lg); opacity: 0; transform: scale3d(0, 0, 1);}
+.bank-select .control:focus ~ .label:after,
+.bank-select .control:checked ~ .label:after {opacity: 1; transform: scale3d(1, 1, 1); transition: all var(--animation-speed) var(--animation-timing-outback);}
+
+.bank-item .label:before {content: ''; position: absolute; top: 0; left: 0; width: var(--icon-lg); height: var(--icon-lg); background-image: url('../../image/qtn/account-bank.svg'); background-repeat: no-repeat; background-size: var(--bg-size-lg); vertical-align: middle; opacity: 1; transform: scale3d(1, 1, 1);}
+.bank-select .control:focus ~ .label:before,
+.bank-select .control:checked ~ .label:before {opacity: 0; transform: scale3d(0, 0, 1); transition: all var(--animation-speed) var(--animation-timing-outback);}
+
+.bank-item .label.kb:before {background-position: 0 0;}
+.bank-item .label.shinhan:before {background-position: calc(var(--icon-lg) * -1) 0;}
+.bank-item .label.nonghyup:before {background-position: calc(var(--icon-lg) * -2) 0;}
+
+.bank-item .label.keb:before {background-position: calc(var(--icon-lg) * -4) 0;}
+.bank-item .label.kbank:before {background-position: calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -1);}
+.bank-item .label.shinhyup:before {background-position: calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -1);}
+.bank-item .label.samsung2:before {background-position: calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -4);}
+.bank-item .label.hyundai:before {background-position: calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -4);}
+.bank-item .label.lotte:before {background-position: calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -4);}
+
+/* 인증요청 스텝 */
+.app-certify .card-item.step-type1:before {background-position: calc(var(--icon-xl) * -7) calc(var(--icon-xl) * -9);} /* 신한 */
+.app-certify .card-item.step-type2:before {background-position: calc(var(--icon-xl) * -8) calc(var(--icon-xl) * -9);} /* 카카오 */
+.app-certify .card-item.step-type3:before {background-position: calc(var(--icon-xl) * -9) calc(var(--icon-xl) * -9);} /* 네이버 */
+.app-certify .card-item.step-type4:before {background-image: url('../../image/lgn/ico-toss-lg.png'); background-size: 4.8rem auto;} /* 토스 */
+.app-certify .card-item.step-type5:before {background-position: calc(var(--icon-xl) * -6) calc(var(--icon-xl) * -9);} /* 완료 */
+.app-certify .card-item.step-type6:before {background-position: calc(var(--icon-xl) * -2) calc(var(--icon-xl) * -5);} /* ARS인증 */
+
+/* 신용카드 ARS본인인증 */
+.ars-time{display:flex; flex-direction:column; justify-content:center; align-items: center;}
+.ars-time:before{content:""; width:16rem; height:8rem; margin-bottom:var(--space-xxs); background-image: url('../../image/idv/ars-img1.png'); background-position: 0 0; background-size:100% auto;}
+.ars-time .ars-time-box {display:inline-flex; align-items:center; min-height:4rem; padding:0 var(--space-sm); background-color:var(--color-primary-bg-light); border:var(--line-sm) solid var(--color-primary-bg-base); border-radius:10rem;}
+.ars-time .txt{font-size:var(--font-title-sm);;}

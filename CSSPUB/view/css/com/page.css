@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-09-25
+	- 파일명 : page.css
+	- 포함내용 : 공통 콘텐츠 스타일
+*/
+
+.session-count {position: relative; padding-top: var(--space-lg);}
+.session-count::before {content: ''; display: block; width: 100%; height: 160px; margin: 0 auto; background: url('../../image/com/session-img.png') no-repeat 50% 0; background-size: 280px auto;}
+.session-count .txt {display: block; margin: var(--space-lg) 0; text-align: center; line-height: 1.35; letter-spacing: -.024rem; font-weight: var(--font-semibold); font-size: var(--font-title-lg);}
+.session-count .txt > em {color: var(--color-primary);}
+
+.redirect-logo {display: block; width: 13.3929rem; height: 2.0rem; margin: var(--space-xxl) auto var(--space-lg); background: url('../../image/com/logo.svg') no-repeat 0 0; background-size: 100% auto;}
+.redirect-img {margin-top: var(--space-lg);}

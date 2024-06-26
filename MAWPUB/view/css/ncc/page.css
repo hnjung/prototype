@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-08-18
+	- 파일명 : page.css
+	- 포함내용 : 차량사진 등록 콘텐츠 스타일
+*/
+
+/* 안내 */
+.kstyle-step .card-item.step-type1:before {background-position: calc(var(--icon-xl) * -7) calc(var(--icon-xl) * -3);} /* 본인인증 */
+.kstyle-step .card-item.step-type2:before {background-position: calc(var(--icon-xl) * -9) calc(var(--icon-xl) * -5);} /* 가입정보 확인 */
+.kstyle-step .card-item.step-type3:before {background-position: calc(var(--icon-xl) * -8) calc(var(--icon-xl) * -5);} /* 차량사진 등록 */
+.kstyle-step .card-item.step-type4:before {background-position: calc(var(--icon-xl) * -7) calc(var(--icon-xl) * -5);} /* 사진 심사 진행 */
+
+/* 사진등록 */
+.car-photo .box {margin-top: var(--space-lg);}
+.car-photo .box:first-child {margin-top: var(--space-sm);}
+
+.car-photo .title-h5 {display: flex; justify-content: space-between;}
+.car-photo .title-h5 ~ .file {margin-top: var(--space-sm);}
+.car-photo .file-btn {display: flex; justify-content: center; align-items: center; height: 18.2rem; padding: 0; background-color: transparent; background-repeat: no-repeat; background-position: 50% 0; background-size: min(27.2rem, 100%) auto;}
+.car-photo .file-btn::before {width: 6.8rem; height: 6.8rem; background: url('../../image/ncc/ico-photo.svg') no-repeat 0 0; background-size: 100% auto;}
+
+.car-photo .front-left .file-btn {background-image: url('../../image/ncc/car-front-left.png');}
+.car-photo .front-right .file-btn {background-image: url('../../image/ncc/car-front-right.png');}
+.car-photo .back-left .file-btn {background-image: url('../../image/ncc/car-back-left.png');}
+.car-photo .back-right .file-btn {background-image: url('../../image/ncc/car-back-right.png');}
+.car-photo .side-left .file-btn {background-image: url('../../image/ncc/car-side-left.png');}
+.car-photo .side-right .file-btn {background-image: url('../../image/ncc/car-side-right.png');}
+
+.car-photo .file-name {padding: 0; border: 0; border-radius: var(--radius-lg);}
+.car-photo .file-name::before {display: none;}
+.car-photo .file.has-value > .file-name > img {margin-left: auto; margin-right: auto;}
+.car-photo .file.option-image .btn-attach {position: absolute; z-index: 1; bottom: 0; right: 0; width: 6.8rem; height: 6.8rem; background: url('../../image/ncc/ico-photo.svg') no-repeat 0 0; background-size: 100% auto;}

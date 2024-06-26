@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+	<title>(공통)신용카드 본인인증 &gt; 신한EZ손해보험</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../../image/com/favicon-css.ico">
+	<link rel="stylesheet" href="../../../../css/com/content.css">
+	<link rel="stylesheet" href="../../../../css/idv/page.css">
+</head>
+<body>
+<!-- #wrap -->
+<div id="wrap">
+
+	<!-- #page -->
+	<div id="page" data-page-main="true"><!-- [D]페이지 유형이 메인(MANMANMAN_M01) 또는 고객화면(교차판매 화면구분 컴포넌트)일 경우 data-page-main="true" - 2023-11-13 : 설명 추가 -->
+		<!-- #header-->
+		<header id="header">
+			<h1 class="header-title">
+				<span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험</span></a></span>
+			</h1>
+		</header>
+		<!--// #header-->
+
+		<!-- #main -->
+		<main id="main">
+
+			<!-- #content -->
+			<article id="content">
+
+				<!-- [D]개발영역 시작 -->
+
+				<!-- .section -->
+				<section class="section">
+					<!-- 2024-02-01 : 디자인 수정으로 인한 마크업 수정 -->
+					<h2 class="main-copy login-title card">
+						<strong class="sub fc-primary">신용카드인증</strong>
+						<span class="txt">본인 인증을 해주세요</span>
+						<a href="javascript:;" class="btn-bullet-link"><span>다른 인증방법</span></a>
+					</h2>
+					<!--// .title* -->
+
+					<!-- .group -->
+					<div class="group">
+						<!-- .note* -->
+						<div class="note">
+							<ul class="note-list">
+								<li>본인명의 신용카드만 인증이 가능합니다</li>
+								<li>카드번혹와 카드사에 등록된 휴대폰번호가 필요합니다.</li>
+								<li>카드사에 등록된 류대폰번호만 입력해야 합니다.</li>
+							</ul>
+						</div>
+						<!--// .note* -->
+					</div>
+					<!--// .group -->
+					<!--// 2024-02-01 : 디자인 수정으로 인한 마크업 수정 -->
+
+					<!-- .group -->
+					<div class="group">
+						<div class="data">
+							<!-- .list-head -->
+							<div class="list-head space-reset-mb">
+								<h3 class="list-title">카드선택</h3>
+							</div>
+							<!--// .list-head -->
+							<!-- .bank-list -->
+							<ul class="bank-list">
+								<li class="bank-item fn-select-item">
+									<label for="bankA6" class="bank-select">
+										<input type="radio" name="cardA" id="bankA6" class="control sr-only fn-select-input" data-select-value="valueA6"><!-- [D]DB에 저장되는 값 (data-select-value="") -->
+										<div class="label lotte">
+											<span class="txt fn-select-title">롯데카드</span>
+										</div>
+									</label>
+								</li>
+								<li class="bank-item fn-select-item">
+									<label for="bankA4" class="bank-select">
+										<input type="radio" name="cardA" id="bankA4" class="control sr-only fn-select-input" data-select-value="valueA4">
+										<div class="label samsung2">
+											<span class="txt fn-select-title">삼성카드</span><!-- [D]화면에 출력되는 값 (fn-select-title="") -->
+										</div>
+									</label>
+								</li>
+								<li class="bank-item fn-select-item">
+									<label for="bankA5" class="bank-select">
+										<input type="radio" name="cardA" id="bankA5" class="control sr-only fn-select-input" data-select-value="valueA7">
+										<div class="label hyundai">
+											<span class="txt fn-select-title">현대카드</span>
+										</div>
+									</label>
+								</li>
+								<li class="bank-item fn-select-item">
+									<label for="bankA7" class="bank-select">
+										<input type="radio" name="cardA" id="bankA7" class="control sr-only fn-select-input" data-select-value="valueA8">
+										<div class="label shinhan">
+											<span class="txt fn-select-title">신한카드</span>
+										</div>
+									</label>
+								</li>
+								<li class="bank-item fn-select-item">
+									<label for="bankA2" class="bank-select">
+										<input type="radio" name="cardA" id="bankA2" class="control sr-only fn-select-input" data-select-value="valueA2">
+										<div class="label keb">
+											<span class="txt fn-select-title">하나카드</span>
+										</div>
+									</label>
+								</li>
+								<li class="bank-item fn-select-item">
+									<label for="bankA1" class="bank-select">
+										<input type="radio" name="cardA" id="bankA1" class="control sr-only fn-select-input" data-select-value="valueA1">
+										<div class="label kb">
+											<span class="txt fn-select-title">KB국민카드</span>
+										</div>
+									</label>
+								</li>
+								<li class="bank-item fn-select-item">
+									<label for="bankA3" class="bank-select">
+										<input type="radio" name="cardA" id="bankA3" class="control sr-only fn-select-input" data-select-value="valueA3">
+										<div class="label nonghyup">
+											<span class="txt fn-select-title">NH농협카드</span>
+										</div>
+									</label>
+								</li>
+							</ul>
+							<!--// .bank-list -->
+
+							<!-- [D]카드사 선택시 노출 -->
+							<div class="form space-mt-xl">
+								<div class="form-wrap">
+									<!-- .form-list -->
+									<ul class="form-list">
+										<li class="form-item">
+											<div class="form-name"><strong><label for="formItem1">휴대폰번호</label></strong></div>
+											<div class="form-value">
+												<!-- .input -->
+												<div class="input w-100">
+													<input type="text" name="" id="formItem1" class="input-data" placeholder="-없이 숫자만 입력" maxlength="" value="" aria-required="true">
+												</div>
+												<!--// .input -->
+											</div>
+										</li>
+
+										
+										<li class="form-item">
+											<div class="form-name"><strong><label for="formItem2">카드번호</label></strong></div>										
+											<div class="form-value">
+												<!-- [D] 카드별 노출 케이스 : Default -->
+												<div class="input-mixed type-card">
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem3" class="input-data" placeholder="4자리" value="●●●●" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<span class="dash"><span class="sr-only">-</span></span>
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem31" class="input-data" placeholder="4자리" value="●●●●" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<span class="dash"><span class="sr-only">-</span></span>
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem32" class="input-data" placeholder="4자리" value="">
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<span class="dash"><span class="sr-only">-</span></span>
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem33" class="input-data" placeholder="4자리" value="●●●●">
+														</div>
+														<!--// .input -->
+													</div>
+												</div>
+												<!--// [D] 카드별 노출 케이스 : Default -->
+
+												<!-- [D]카드별 노출 케이스 : 롯데카드, 삼성카드, 신한카드, 하나카드, KB국민카드 : 아메리칸 익스프레스 -->
+												<div class="input-mixed type-card" style="display:none">
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem4" class="input-data" placeholder="4자리" value="●●●●" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<span class="dash"><span class="sr-only">-</span></span>
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem41" class="input-data" placeholder="3자리" value="●●●" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem42" class="input-data" placeholder="3자리" value="">
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<span class="dash"><span class="sr-only">-</span></span>
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem43" class="input-data" placeholder="5자리" value="●●●●●">
+														</div>
+														<!--// .input -->
+													</div>
+												</div>
+												<!--// [D]카드별 노출 케이스 : 롯데카드, 삼성카드, 신한카드, 하나카드, KB국민카드 : 아메리칸 익스프레스 -->
+
+												<!-- [D]카드별 노출 케이스 : 현대카드 : 아메리칸 익스프레스 -->
+												<div class="input-mixed type-card" style="display:none">
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem5" class="input-data" placeholder="4자리" value="●●●●" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<span class="dash"><span class="sr-only">-</span></span>
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem51" class="input-data" placeholder="3자리" value="●●●" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem52" class="input-data" placeholder="4자리" value="">
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<span class="dash"><span class="sr-only">-</span></span>
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem53" class="input-data" placeholder="4자리" value="●●●●">
+														</div>
+														<!--// .input -->
+													</div>
+												</div>
+												<!--// [D]카드별 노출 케이스 : 현대카드 : 아메리칸 익스프레스 -->
+
+												<!-- [D]카드별 노출 케이스 : 현대카드 : 다이너스 -->
+												<div class="input-mixed type-card" style="display:none">
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem6" class="input-data" placeholder="4자리" value="●●●●" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<span class="dash"><span class="sr-only">-</span></span>
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem61" class="input-data" placeholder="3자리" value="●●●" readonly>
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem62" class="input-data" placeholder="2자리" value="">
+														</div>
+														<!--// .input -->
+													</div>
+													<div class="unit fixed">
+														<span class="dash"><span class="sr-only">-</span></span>
+													</div>
+													<div class="unit filled">
+														<!-- .input -->
+														<div class="input w-100">
+															<input type="text" name="" id="payAItem63" class="input-data" placeholder="4자리" value="●●●●">
+														</div>
+														<!--// .input -->
+													</div>
+												</div>
+												<!--// [D]카드별 노출 케이스 : 현대카드 : 다이너스-->
+
+												<!-- [D] 카드별 체크박스 노출 케이스 :
+													현대카드 - 다이너스(Diners Club) 카드일 경우 체크, 아메리칸 익스프레스(AMEX) 카드일 경우 체크 노출
+													롯데카드, 삼성카드, 신한카드, 하나카드, KB국민카드 - 아메리칸 익스프레스(AMEX) 카드일 경우 체크
+												-->
+												<div class="item-col space-mt-sm">
+													<div class="unit">
+														<!-- .checkbox* -->
+														<label for="checkA1" class="checkbox-item">
+															<input type="checkbox" name="" id="checkA1" class="control">
+															<span class="label">다이너스(Diners Club) 카드일 경우 체크</span>
+														</label>
+													</div>
+													<div class="unit">
+														<label for="checkA2" class="checkbox-item">
+															<input type="checkbox" name="" id="checkA2" class="control">
+															<span class="label">아메리칸 익스프레스(AMEX) 카드일 경우 체크</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<!--// .form-list -->
+								</div>
+							</div>
+							<!--// [D]카드사 선택시 노출 -->
+						</div>
+					</div>
+					<!--// .group -->
+
+					<!-- .group -->
+					<div class="group">
+						<!-- .note* -->
+						<div class="note option-fold fn-fold-wrap is-open" data-fold-slide="true">
+							<div class="note-head">
+								<strong class="note-title fn-fold-link" id="noteTitle2">알려드립니다</strong>
+								<button type="button" class="btn-fold fn-fold-btn" aria-expanded="false" aria-controls="noteBody2" aria-labelledby="noteTitle2"><span class="sr-only">열기</span></button>
+							</div>
+							<div class="note-body fn-fold-item" id="noteBody2" role="region" aria-labelledby="noteTitle2" aria-hidden="true">
+								<ul class="note-list">
+									<li>휴대폰번호, 카드번호, 본인확인 비밀번호 등 개인정보를 잘못 입력하는 경우, 본인확인이 실패할 수 있습니다.</li>
+									<li>가족, 선불카드는 본인확인이 불가능합니다.</li>
+									<li>착신전환, 수신거부 등 휴대폰 설정상태에 따라 본인확인이 실패할 수 있습니다.</li>
+									<li>비밀번호 입력 오류 횟수 초과 또는 도난/분실된 카드는 본인확인이 불가능합니다.</li>
+								</ul>
+							</div>
+						</div>
+						<!--// .note* -->
+					</div>
+					<!--// .group -->
+				</section>
+				<!--// .section -->
+
+				<!-- .btn -->
+				<div class="btn-group option-main">
+					<button type="button" class="btn primary fn-popup-open" data-popup-id="#popupAgree" aria-haspopup="dialog" aria-controls="popupAgree"><span>확인</span></button>
+				</div>
+				<!--// .btn -->
+
+				<!--// [D]개발영역 끝 -->
+
+			</article>
+			<!--// #content -->
+
+		</main>
+		<!--// #main -->
+
+		
+	</div>
+	<!--// #page -->
+
+	<!-- #popup -->
+	<div id="popup">
+		<!-- [D]정보동의 -->
+		<!-- .popup-wrap -->
+		<div class="popup-wrap option-bottom-sheet" id="popupAgree" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popupAgreeTitle">
+			<!-- .popup-inner -->
+			<div class="popup-inner" tabindex="0" data-focus-on="true">
+				<!-- .popup-head -->
+				<div class="popup-head">
+					<h2 class="popup-title" id="popupAgreeTitle"><span>약관동의</span></h2>
+				</div>
+				<!--// .popup-head -->
+				<!-- .popup-content -->
+				<div class="popup-content">
+					<!-- .section -->
+					<section class="section">
+						<!-- .group -->
+						<div class="group">
+							<!-- .agreement -->
+							<div class="agreement">
+								<div class="agree-total option-parent">
+									<!-- .checkbox* -->
+									<label for="agree-check-all" class="checkbox-item option-agree">
+										<input type="checkbox" name="agreeCheckAll" id="agree-check-all" class="control">
+										<span class="label">전체동의</span>
+									</label>
+									<!--// .checkbox* -->
+								</div>
+								<div class="agree-group">
+									<div class="agree-item">
+										<div class="unit">
+											<!-- .checkbox* -->
+											<label for="agree-check1" class="checkbox-item option-single">
+												<input type="checkbox" name="agreeCheck1" id="agree-check1" class="control">
+												<span class="label">카드사 서비스 이용약관</span>
+											</label>
+											<!--// .checkbox* -->
+										</div>
+										<div class="unit"><a href="javascript:;" class="btn-ico-link"><span class="sr-only">보기</span></a></div>
+									</div>
+									<div class="agree-item">
+										<div class="unit">
+											<!-- .checkbox* -->
+											<label for="agree-check2" class="checkbox-item option-single">
+												<input type="checkbox" name="agreeCheck2" id="agree-check2" class="control">
+												<span class="label">본인확인 서비스 이용약관</span>
+											</label>
+											<!--// .checkbox* -->
+										</div>
+										<div class="unit"><a href="javascript:;" class="btn-ico-link"><span class="sr-only">보기</span></a></div>
+									</div>
+									<div class="agree-item">
+										<div class="unit">
+											<!-- .checkbox* -->
+											<label for="agree-check3" class="checkbox-item option-single">
+												<input type="checkbox" name="agreeCheck3" id="agree-check3" class="control">
+												<span class="label">개인정보 수집 및 이용 동의</span>
+											</label>
+											<!--// .checkbox* -->
+										</div>
+										<div class="unit"><a href="javascript:;" class="btn-ico-link"><span class="sr-only">보기</span></a></div>
+									</div>
+									<div class="agree-item">
+										<div class="unit">
+											<!-- .checkbox* -->
+											<label for="agree-check4" class="checkbox-item option-single">
+												<input type="checkbox" name="agreeCheck4" id="agree-check4" class="control">
+												<span class="label">고유식별정보 처리 동의</span>
+											</label>
+											<!--// .checkbox* -->
+										</div>
+										<div class="unit"><a href="javascript:;" class="btn-ico-link"><span class="sr-only">보기</span></a></div>
+									</div>
+								</div>
+							</div>
+							<!--// .agreement -->
+						</div>
+						<!--// .group -->
+					</section>
+					<!--// .section -->
+				</div>
+				<!--// .popup-content -->
+				<!-- .popup-foot -->
+				<div class="popup-foot">
+					<!-- .btn-group* -->
+					<div class="btn-group">
+						<button type="button" class="btn primary"><span>확인</span></button>
+					</div>
+					<!--// .btn-group* -->
+				</div>
+				<!--// .popup-foot -->
+				<!-- .btn-popup-close -->
+				<button type="button" class="btn-popup-close fn-popup-close" data-popup-id="#popupAgree">
+					<span class="sr-only">팝업 닫기</span>
+				</button>
+				<!--// .btn-popup-close -->
+			</div>
+			<!--// .popup-inner -->
+		</div>
+		<!--// .popup-wrap -->
+		<!--// [D]정보동의 -->
+
+	
+	</div>
+	<!--// #popup -->
+
+</div>
+<!--// #wrap -->
+<script src="../../../../js/com/jquery-3.7.0.min.js"></script>
+<script src="../../../../js/com/lottie_light.min.js"></script>
+<script src="../../../../js/com/local_pub.js"></script><!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+<script src="../../../../js/com/common_pub.js"></script>
+</body>
+</html>

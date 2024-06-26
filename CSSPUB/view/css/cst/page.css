@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-08-18
+	- 파일명 : page.css
+	- 포함내용 : 고객관리 콘텐츠 스타일
+*/
+
+/* 주소검색 */
+.list-address button {display:block; width: 100%; padding:var(--space-md) 0; text-align:left; color: var(--color-txt-body);}
+.list-address .item{border-bottom:var(--line-sm) solid var(--color-bg-base)}
+.list-address .item:first-child {border-top:var(--line-sm) solid var(--color-bg-base)}
+.list-address .address {font-size:var(--font-sm);}
+.list-address .old-address {margin-top:var(--space-min); font-size:var(--font-xs); color:var(--color-base)}
+.form-value .note.list-address{padding:var(--space-lg)}
+
+/* 직업검색 */
+.search-word {overflow-y: auto; margin-top:var(--space-lg); height:284px; border:var(--line-sm) solid var(--color-bg-dark); border-radius: var(--radius-md);}
+.search-word .segment-group {display:block; background-color: var(--color-light);}
+.search-word .segment-item .label {justify-content: flex-start; padding: var(--space-xs) var(--space-lg); min-height: 4.8rem; text-align: left; color: var(--color-dark); font-size: var(--font-md);}
+.search-word .segment-item .label .txt {text-align: left; color: var(--color-dark);}
+.search-word .segment-item .label strong {color:var(--color-primary); font-weight: var(--font-regular);}
+.search-word .segment-item .control {top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; border-radius: 0;}
+.search-word .segment-item .control:checked {background-color: var(--color-primary-bg-base); border-color: transparent; box-shadow: none;}
+.search-word .segment-item .control:checked ~ .label {color: var(--color-dark); font-weight: var(--font-medium);}
+.search-word .segment-item .control:checked ~ .label strong {font-weight: var(--font-medium);}
+.search-word .segment-item + .segment-item::before {display:none}
+
+/* 메시지 발송 대상 고객 선택 */
+.section.custom .msgcheck-list .item {position:relative; display:flex; align-items:center;}
+.section.custom .msgcheck-list .item .avatar {margin-right:var(--space-xs)}
+.section.custom .msgcheck-list .item+.item {margin-top:var(--space-xl)}
+.section.custom .msgcheck-list .checkbox-item {position:absolute; top:50%; right:0; transform:translateY(-50%);}
+.section.custom .msgcheck-list .tit {font-size:var(--font-md); font-weight:var(--font-semibold); color:var(--color-dark)}
+.section.custom .msgcheck-list .txt {font-size:var(--font-xxs); color:var(--color-base)}
+
+/* 사원 정보 조회 */
+.section.custom .tree-wrap {overflow-y:auto; padding:.5rem; height:31rem; border:1px solid var(--color-bg-dark); border-radius:var(--radius-sm);}
+.section.custom .tree-wrap .tree a {display:inline-flex; margin:.6rem 0; font-size:var(--font-xs); color:var(--color-txt-body); word-break: break-all;}
+.section.custom .tree-wrap .tree a::before {display:inline-block; content:""; min-width:1.6rem; height:1.6rem; margin:0 .4rem; background:url('../../image/cst/icon-folder.svg') no-repeat center center; background-size:var(--icon-sm);}
+.section.custom .tree-wrap .tree span {display:block}
+.section.custom .tree-wrap .tree .depth1 li>span {padding-left:var(--space-body);}
+.section.custom .tree-wrap .tree .depth2 li>span {padding-left:calc(var(--space-body)*2);}
+.section.custom .tree-wrap .tree .depth3 li>span {padding-left:calc(var(--space-body)*3);}
+.section.custom .tree-wrap .tree .depth4 li>span {padding-left:calc(var(--space-body)*4);}
+.section.custom .tree-wrap .tree .depth5 li>span {padding-left:calc(var(--space-body)*5);}
+.section.custom .tree-wrap .tree .is-open>span>a::before{background:url('../../image/cst/icon-folder-open.svg') no-repeat center center;}
+.section.custom .tree-wrap .tree .ico-file>span>a::before{background:url('../../image/cst/icon-file.svg') no-repeat center center;}
+.section.custom .tree-wrap .tree .is-active.ico-file {background-color:var(--color-primary-bg-light); }
+.section.custom .tree-wrap .tree .is-active.ico-file a {font-weight:var(--font-medium);}
+.section.custom .tree-wrap .tree li>ul {transition: height var(--animation-speed) var(--animation-timing-ease);}
+.section.custom .tree-wrap .tree [aria-expanded="false"]>ul{overflow:hidden; height:0; transition: all ;}
+.section.custom .tree-wrap .tree [aria-expanded="true"]>ul{overflow:visible; height:auto;}
+
+/* 축하 메시지 발송 */
+.textarea.message {width:100%; height:16rem}
+
+/* 고객기념일 조회 및 결과 */
+.section.custom .client-anniver {overflow:hidden; display:flex; align-items:center; justify-content: center; margin:var(--space-sm) 0; height:4rem; border-radius:var(--space-lg);}
+.section.custom .client-anniver [class^="ico-"] {display:inline-flex; width:100%; height:100%; align-items:center; justify-content:center; color:var(--color-dark)}
+.section.custom .client-anniver [class^="ico-"] strong {margin-left:var(--space-min); font-weight: var(--font-semibold);}
+.section.custom .client-anniver [class^="ico-"]>span::before {display:inline-block; content:""; min-width:2.4rem; height:2.4rem; margin-right:var(--space-min); vertical-align:middle; background-size:var(--icon-sm);}
+.section.custom .client-anniver .ico-birth>span::before {background:url('../../image/cst/icon-cake.svg') no-repeat center center;}
+.section.custom .client-anniver .ico-wedding>span::before {background:url('../../image/cst/icon-wedding.svg') no-repeat center center;}
+.section.custom .client-anniver .ico-birth strong {color:var(--color-primary)}
+.section.custom .client-anniver .ico-wedding strong {color:#7B00F6}
+.section.custom .client-anniver .ico-birth {background-color:var(--color-primary-bg-base)}
+.section.custom .client-anniver .ico-wedding {background-color:#F7F0FF}
+.section.custom .client-calendar {margin-bottom:var(--space-lg)}
+.section.custom .client-calendar>ul{display: flex; flex-wrap:nowrap; overflow-x: auto;}
+.section.custom .client-calendar>ul>li {display: flex; flex-direction: column; min-width: 3.2rem; margin-left:1.6rem; text-align: center;}
+.section.custom .client-calendar>ul>li:first-child {margin-left:0;}
+.section.custom .client-calendar>ul .week,
+.section.custom .client-calendar>ul .day {display:flex; justify-content:center; align-items: center;}
+.section.custom .client-calendar>ul .week {height:2rem; margin-bottom:var(--space-xxs); font-size:var(--font-xxs); color:var(--color-txt-sub)}
+.section.custom .client-calendar>ul .week.sun {color:var(--color-highlight)}
+.section.custom .client-calendar>ul .week.sat {color:var(--color-primary)}
+.section.custom .client-calendar>ul .day {position:relative; width:3.2rem; height:3.2rem; font-size:var(--font-xs); font-weight:var(--font-medium); color:var(--color-txt-body)}
+.section.custom .client-calendar .is-active .day {background-color: var(--color-primary); color:var(--color-light); border-radius:1.2rem; box-shadow: 0px 2px 8px 0px rgba(85, 141, 255, 0.16);}
+.section.custom .client-calendar .today .day::after {display:block; content:""; position: absolute; bottom:var(--space-min); left:50%; width:.4rem; height:.4rem; background-color:var(--color-highlight); border-radius:var(--radius-sm); transform: translateX(-50%);} 
+.section.custom .client-calendar .plus { font-size:var(--font-min); line-height:1.25; color:var(--color-txt-sub)}
+
+/* 고객정보 입력 */
+.section.custom .form-item .unit.space-pt{padding-top: var(--space-xl)}
+
+/* 방문안내 알림톡 발송(팝업) */
+.section.notification-wrap {display:flex; flex-direction: column; height:100%;}
+.notification-wrap .notification-content {padding-top:var(--space-xl)}
+.notification-wrap .notification-content,
+.notification-wrap .notification-content .form-wrap, 
+.notification-wrap .notification-content .form-list,    
+.notification-wrap .notification-content .form-item,
+.notification-wrap .notification-content .form-value,
+.notification-wrap .notification-content .textarea {height:100%;}
+
+
+@media screen and (min-width: 768px) {
+	/* 고객정보 입력 */
+	.section.custom .form-item .unit.space-pt{padding-top:0}
+
+	/* 사원 정보 조회 */
+	.tree-wrap {height:24rem;} 
+
+	/* 고객기념일 조회 및 결과 */
+	.section.custom .client-anniver {margin:0;}
+	.section.custom .client-anniver .ico-birth {min-width: 12rem;}
+	.section.custom .client-anniver .ico-wedding {min-width: 15.2rem;}
+	.section.custom .client-calendar table {overflow: hidden; margin-top:2.5rem; width: 100%; color:var(--color-txt-sub); border-collapse: separate; border:var(--line-sm) solid var(--color-bg-base); border-radius:var(--radius-lg)}
+	.section.custom .client-calendar table th,
+	.section.custom .client-calendar table td { padding:var(--space-xxs); border-right: var(--line-sm) solid var(--color-bg-base);; border-bottom: var(--line-sm) solid var(--color-bg-base);text-align: center; font-weight: var(--font-regular); font-size: var(--font-sm);}
+	.section.custom .client-calendar table th:first-child, 
+	.section.custom .client-calendar table td:first-child .day{font-size:var(--font-min); color:var(--color-highlight)}
+	.section.custom .client-calendar table td:last-child .day {color:var(--color-primary)}
+	.section.custom .client-calendar table tr th:last-child,
+	.section.custom .client-calendar table tr td:last-child {border-right:none;}
+	.section.custom .client-calendar table tr:last-child td {border-bottom:none}
+	.section.custom .client-calendar table th {height:4rem; font-size:var(--font-min)}
+	.section.custom .client-calendar table td {position:relative; height:12rem;}
+	.section.custom .client-calendar table td button {position:absolute; top: 0; bottom: 0; left: 0; right: 0; padding:var(--space-xxs); cursor: pointer;}
+	.section.custom .client-calendar table td .item {display:flex; flex-direction: column; justify-content: end; height:100%; text-align: left;}
+	.section.custom .client-calendar table td .item strong {display:flex; align-items:center; padding-left:.7rem; font-size:var(--font-xxs); border-radius:var(--radius-sm);}
+	.section.custom .client-calendar table td .item>strong+strong {margin-top:.2rem}
+	.section.custom .client-calendar table td .item>strong>em {margin-right:.2rem}
+	.section.custom .client-calendar table td .item .birth {background-color:var(--color-primary-bg-base);}
+	.section.custom .client-calendar table td .item .birth>em{ color:var(--color-primary)}
+	.section.custom .client-calendar table td .item .wedding {background-color:#F5EBFF;}
+	.section.custom .client-calendar table td .item .wedding>em{color:#7B00F6}
+	.section.custom .client-calendar table .day {position:absolute; top:var(--space-xxs); left:var(--space-xxs); display:inline-flex; align-items:center; justify-content:center; width:3.2rem; height:3.2rem; color:var(--color-dark)}
+	.section.custom .client-calendar table .plus {margin-top:var(--space-min);}
+	
+}

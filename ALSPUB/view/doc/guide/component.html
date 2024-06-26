@@ -1,0 +1,3852 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>신한EZ손해보험 포털 UI/UX 공통 가이드 - 컴포넌트</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../image/com/favicon.ico" />
+    <link rel="stylesheet" href="../../css/com/content.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- #wrap -->
+    <div id="wrap" class="front-wrap">
+      <!-- #skip -->
+      <div id="skip">
+        <div class="skip-menu">
+          <a href="#main">본문으로 건너뛰기</a>
+        </div>
+      </div>
+      <!--// #skip -->
+      <!-- #page -->
+      <div id="page" data-page-main="false">
+        <!-- [D]페이지 유형이 메인일 경우 data-page-main="true" -->
+        <!-- #header-->
+        <header id="header">
+          <h1 class="header-title">
+            <span class="logo">
+              <a href="javascript:;" title="메인 페이지"><span class="sr-only">신한EZ손해보험제휴포털</span></a>
+            </span>
+            <span class="txt">공통 가이드 - 컴포넌트</span>
+          </h1>
+        </header>
+        <!--// #header-->
+
+        <!-- #main -->
+        <main id="main">
+          <aside id="aside">
+            <!-- .box -->
+            <div class="box option-bg">
+              <div class="space-mb-xxs">
+                <!-- .checkbox* -->
+                <label for="checkSideControl" class="checkbox-item option-single">
+                  <input type="checkbox" name="" id="checkSideControl" class="control" />
+                  <span class="label fs-caption">메뉴 전체 열기</span>
+                </label>
+                <!--// .checkbox* -->
+              </div>
+              <div class="scrollbar">
+                <!-- .link* -->
+                <a href="./index.html" class="btn-menu-link space-mb-sm"><span>가이드</span></a>
+                <!--// .link* -->
+                <!-- .accordion -->
+                <div class="accordion fn-fold-wrap" data-fold-slide="true">
+                  <div class="accordion-head">
+                    <div class="inner fn-fold-link">
+                      <span>엘리먼트</span>
+                    </div>
+                    <button type="button" class="btn-fold fn-fold-btn"><span class="sr-only">열기</span></button>
+                  </div>
+                  <div class="accordion-body fn-fold-item">
+                    <div class="inner">
+                      <!-- .note* -->
+                      <ul class="note-list">
+                        <li><a class="fn-guide-link" href="#element-badge">뱃지</a></li>
+                        <li><a class="fn-guide-link" href="#element-link">링크</a></li>
+                        <li><a class="fn-guide-link" href="#element-typography">타이포그래피</a></li>
+                        <li><a class="fn-guide-link" href="#element-font">폰트</a></li>
+                        <li><a class="fn-guide-link" href="#element-size">사이즈</a></li>
+                      </ul>
+                      <!--// .note* -->
+                    </div>
+                  </div>
+                </div>
+                <!--// .accordion -->
+                <!-- .accordion -->
+                <div class="accordion fn-fold-wrap" data-fold-slide="true">
+                  <div class="accordion-head">
+                    <div class="inner fn-fold-link">
+                      <span>모듈</span>
+                    </div>
+                    <button type="button" class="btn-fold fn-fold-btn"><span class="sr-only">열기</span></button>
+                  </div>
+                  <div class="accordion-body fn-fold-item">
+                    <div class="inner">
+                      <!-- .note* -->
+                      <ul class="note-list">
+                        <li><a class="fn-guide-link" href="#module-note">공지사항</a></li>
+                        <li><a class="fn-guide-link" href="#module-box">박스</a></li>
+                        <li><a class="fn-guide-link" href="#module-tab">탭</a></li>
+                        <li><a class="fn-guide-link" href="#module-accordion">아코디언</a></li>
+                        <li><a class="fn-guide-link" href="#module-formLayout">등록폼</a></li>
+                        <li><a class="fn-guide-link" href="#module-helper">폼도움말</a></li>
+                        <li><a class="fn-guide-link" href="#module-card-list">카드형목록</a></li>
+                        <li><a class="fn-guide-link" href="#module-table">테이블</a></li>
+                        <li><a class="fn-guide-link" href="#module-list-comm">목록 공통 (게시판형/카드형/테이블)</a></li>
+                        <li><a class="fn-guide-link" href="#module-item">요소분할</a></li>
+                      </ul>
+                      <!--// .note* -->
+                    </div>
+                  </div>
+                </div>
+                <!--// .accordion -->
+                <!-- .accordion -->
+                <div class="accordion fn-fold-wrap" data-fold-slide="true">
+                  <div class="accordion-head">
+                    <div class="inner fn-fold-link">
+                      <span>폼</span>
+                    </div>
+                    <button type="button" class="btn-fold fn-fold-btn"><span class="sr-only">열기</span></button>
+                  </div>
+                  <div class="accordion-body fn-fold-item">
+                    <div class="inner">
+                      <!-- .note* -->
+                      <ul class="note-list">
+                        <li><a class="fn-guide-link" href="#form-button">버튼</a></li>
+                        <li><a class="fn-guide-link" href="#form-textField">텍스트 필드</a></li>
+                        <li><a class="fn-guide-link" href="#form-selectBox">셀렉트박스</a></li>
+                        <li><a class="fn-guide-link" href="#form-textarea">텍스트에어리어</a></li>
+                        <li><a class="fn-guide-link" href="#form-attachfile">파일첨부</a></li>
+                        <li><a class="fn-guide-link" href="#form-radioButton">라디오버튼</a></li>
+                        <li><a class="fn-guide-link" href="#form-checkBox">체크박스</a></li>
+                        <li><a class="fn-guide-link" href="#form-chip">칩</a></li>
+                        <li><a class="fn-guide-link" href="#form-switch">스위치</a></li>
+                      </ul>
+                      <!--// .note* -->
+                    </div>
+                  </div>
+                </div>
+                <!--// .accordion -->
+                <!-- .accordion -->
+                <div class="accordion fn-fold-wrap" data-fold-slide="true">
+                  <div class="accordion-head">
+                    <div class="inner fn-fold-link">
+                      <span>예시</span>
+                    </div>
+                    <button type="button" class="btn-fold fn-fold-btn"><span class="sr-only">열기</span></button>
+                  </div>
+                  <div class="accordion-body fn-fold-item">
+                    <div class="inner">
+                      <!-- .note* -->
+                      <ul class="note-list">
+                        <li>
+                          <a class="fn-guide-link" href="#component-example">예시</a>
+                        </li>
+                      </ul>
+                      <!--// .note* -->
+                    </div>
+                  </div>
+                </div>
+                <!--// .accordion -->
+                <!-- .accordion -->
+                <div class="accordion fn-fold-wrap" data-fold-slide="true">
+                  <div class="accordion-head">
+                    <div class="inner fn-fold-link">
+                      <span>레이아웃</span>
+                    </div>
+                    <button type="button" class="btn-fold fn-fold-btn"><span class="sr-only">열기</span></button>
+                  </div>
+                  <div class="accordion-body fn-fold-item">
+                    <div class="inner">
+                      <!-- .note* -->
+                      <ul class="note-list">
+                        <li><a class="fn-guide-link" href="#layout-top-title">타이틀영역</a></li>
+                        <li><a class="fn-guide-link" href="#layout-result">결과화면</a></li>
+                      </ul>
+                      <!--// .note* -->
+                    </div>
+                  </div>
+                </div>
+                <!--// .accordion -->
+                <!-- .accordion -->
+                <div class="accordion fn-fold-wrap" data-fold-slide="true">
+                  <div class="accordion-head">
+                    <div class="inner fn-fold-link">
+                      <span>팝업</span>
+                    </div>
+                    <button type="button" class="btn-fold fn-fold-btn"><span class="sr-only">열기</span></button>
+                  </div>
+                  <div class="accordion-body fn-fold-item">
+                    <div class="inner">
+                      <!-- .note* -->
+                      <ul class="note-list">
+                        <li><a class="fn-guide-link" href="#popup-A">팝업A 타입</a></li>
+                        <li><a class="fn-guide-link" href="#popup-B">팝업B 타입</a></li>
+                      </ul>
+                      <!--// .note* -->
+                    </div>
+                  </div>
+                </div>
+                <!--// .accordion -->
+                <!-- .accordion -->
+                <div class="accordion fn-fold-wrap" data-fold-slide="true">
+                  <div class="accordion-head">
+                    <div class="inner fn-fold-link">
+                      <span>기타</span>
+                    </div>
+                    <button type="button" class="btn-fold fn-fold-btn"><span class="sr-only">열기</span></button>
+                  </div>
+                  <div class="accordion-body fn-fold-item">
+                    <div class="inner">
+                      <!-- .note* -->
+                      <ul class="note-list">
+                        <li><a class="fn-guide-link" href="#etc-loading">로딩</a></li>
+                      </ul>
+                      <!--// .note* -->
+                    </div>
+                  </div>
+                </div>
+                <!--// .accordion -->
+              </div>
+            </div>
+            <!--// .box -->
+          </aside>
+
+          <!-- #content -->
+          <article id="content">
+            <!-- .progress -->
+            <div class="progress">
+              <span class="bar"><span></span></span>
+            </div>
+            <!--// .progress -->
+
+            <!-- .section - 컴포넌트 - 뱃지 -->
+            <section class="section" id="element-badge">
+              <h2 class="title-h2"><span class="txt">@뱃지</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">유형1</span></h3>
+                <!-- .badge* -->
+                <div class="badge-group">
+                  <span class="badge option-base info">서비스소개</span>
+                </div>
+                <!--// .badge* -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 뱃지 -->
+
+            <!-- .section - 컴포넌트 - 링크 -->
+            <section class="section" id="element-link">
+              <h2 class="title-h2"><span class="txt">@링크</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">아이콘형</span></h3>
+                <!-- .link* -->
+                <a href="javascript:;" class="btn-ico-link"><span class="sr-only">보기</span></a>
+                <!--// .link* -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">밑줄형</span></h3>
+                <!-- .link* -->
+                <a href="javascript:;" class="btn-txt-link"><span>텍스트링크</span></a>
+                <a href="javascript:;" class="btn-txt-link primary"><span>텍스트링크</span></a>
+                <!--// .link* -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">불릿형</span></h3>
+                <!-- .link* -->
+                <a href="javascript:;" class="btn-bullet-link"><span>텍스트링크</span></a>
+                <a href="javascript:;" class="btn-bullet-link primary"><span>텍스트링크</span></a>
+                <!--// .link* -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 링크 -->
+
+            <!-- .section - 컴포넌트 - 타이포그래피 -->
+            <section class="section" id="element-typography">
+              <h2 class="title-h2"><span class="txt">@타이포그래피</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">헤드라인</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .headline* -->
+                  <h1 class="headline-h1"><span class="txt">H1 고객정보 등록</span></h1>
+                  <!--// .headline* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">타이틀</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .title* -->
+                  <h2 class="title-h2"><span class="txt">H2 고객정보 등록</span></h2>
+                  <!--// .title* -->
+                  <!-- .title* -->
+                  <h3 class="title-h3"><span class="txt">H3 고객정보 등록</span></h3>
+                  <!--// .title* -->
+                  <!-- .title* -->
+                  <h4 class="title-h4"><span class="txt">H4 고객정보 등록</span></h4>
+                  <!--// .title* -->
+                  <!-- .title* -->
+                  <h5 class="title-h5"><span class="txt">H5 고객정보 등록</span></h5>
+                  <!--// .title* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">타이틀 보조 문구</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- . -->
+                  <p class="title-copy">일반/상해보험의 보험금 청구 안내사항을 확인하실 수 있습니다.</p>
+                  <!--// . -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">왼쪽 콘텐츠 혼합형 (.option-item-left)</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .title* -->
+                  <h4 class="title-h4 option-item-left">
+                    <!-- @set: option-item-left -->
+                    <span class="txt">고객정보 등록</span>
+                    <div class="item">
+                      <span>왼쪽 콘텐츠</span>
+                    </div>
+                  </h4>
+                  <!--// .title* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">오른쪽 콘텐츠 혼합형 (.option-item-right)</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .title* -->
+                  <h4 class="title-h4 option-item-right">
+                    <!-- @set: option-item-right -->
+                    <span class="txt">고객정보 등록</span>
+                    <div class="item">
+                      <span>오른쪽 콘텐츠</span>
+                    </div>
+                  </h4>
+                  <!--// .title* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">굵기 혼합형 (.option-mixed)</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .title* -->
+                  <h4 class="title-h4 option-mixed">
+                    <!-- @set: option-mixed -->
+                    <span class="txt"><strong>김신한</strong>(<span class="fc-primary">5040163</span>)<strong>설계사</strong>가 보내드립니다.</span>
+                  </h4>
+                  <!--// .title* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">텍스트 정렬</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .item* -->
+                  <div class="item-row">
+                    <div class="unit filled align-left"><span class="fs-md">왼쪽</span></div>
+                    <div class="unit fixed"><span class="txt-line fs-md">|</span></div>
+                    <div class="unit filled align-center"><span class="fs-md">가운데</span></div>
+                    <div class="unit fixed"><span class="txt-line fs-md">|</span></div>
+                    <div class="unit filled align-right"><span class="fs-md">오른쪽</span></div>
+                    <div class="unit fixed"><span class="txt-line fs-md">|</span></div>
+                    <div class="unit filled"><span class="fs-tiny align-top">텍스트</span><span class="fs-md align-top">위</span></div>
+                    <div class="unit fixed"><span class="txt-line fs-md">|</span></div>
+                    <div class="unit filled"><span class="fs-tiny align-middle">텍스트</span><span class="fs-md align-middle">중간</span></div>
+                    <div class="unit fixed"><span class="txt-line fs-md">|</span></div>
+                    <div class="unit filled"><span class="fs-tiny align-bottom">텍스트</span><span class="fs-md align-bottom">아래</span></div>
+                  </div>
+                  <!--// .item* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">문단</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .text -->
+                  <p class="text">단일 문장 사용 시</p>
+                  <!--// .text -->
+                  <!-- .text* -->
+                  <span class="text-price"> <em>23,900</em>원 </span>
+                  <!--// .text* -->
+                  <br />
+                  <!-- .text* -->
+                  <span class="text-price2"> <em>23,900</em>원 </span>
+                  <!--// .text* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">목록</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .list -->
+                  <ul class="list depth-u1">
+                    <li>블릿이 있는 목록 - 1뎁스 블릿이 있는 목록 - 1뎁스 블릿이 있는 목록 - 1뎁스 블릿이 있는 목록 - 1뎁스 블릿이 있는 목록 - 1뎁스 블릿이 있는 목록 - 1뎁스</li>
+                    <li class="highlight">
+                      블릿이 있는 목록 - 1뎁스
+                      <ul class="list depth-u2">
+                        <li>블릿이 있는 목록 - 2뎁스 블릿이 있는 목록 - 2뎁스 블릿이 있는 목록 - 2뎁스 블릿이 있는 목록 - 2뎁스 블릿이 있는 목록 - 2뎁스 블릿이 있는 목록 - 2뎁스</li>
+                        <li class="primary">
+                          블릿이 있는 목록 - 2뎁스
+                          <ul class="list depth-u3">
+                            <li>블릿이 있는 목록 - 3뎁스 블릿이 있는 목록 - 3뎁스 블릿이 있는 목록 - 3뎁스 블릿이 있는 목록 - 3뎁스 블릿이 있는 목록 - 3뎁스 블릿이 있는 목록 - 3뎁스</li>
+                            <li class="primary">블릿이 있는 목록 - 3뎁스</li>
+                            <li class="highlight">블릿이 있는 목록 - 3뎁스</li>
+                          </ul>
+                          <ul class="list depth-u4">
+                            <li>블릿이 있는 목록 - 4뎁스</li>
+                            <li class="highlight">블릿이 있는 목록 - 4뎁스</li>
+                            <li class="primary">블릿이 있는 목록 - 4뎁스 블릿이 있는 목록 - 4뎁스 블릿이 있는 목록 - 4뎁스 블릿이 있는 목록 - 4뎁스 블릿이 있는 목록 - 4뎁스 블릿이 있는 목록 - 4뎁스 블릿이 있는 목록 - 4뎁스</li>
+                          </ul>
+                        </li>
+                        <li class="highlight">블릿이 있는 목록 - 2뎁스</li>
+                      </ul>
+                    </li>
+                    <li class="primary">블릿이 있는 목록 - 1뎁스</li>
+                  </ul>
+                  <ol class="list depth-o1">
+                    <li>① 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록</li>
+                    <li>
+                      ② 순서 있는 목록
+                      <ol class="list depth-o2">
+                        <li>1) 순서 있는 목록</li>
+                        <li>2) 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록 순서 있는 목록</li>
+                      </ol>
+                    </li>
+                  </ol>
+                  <!--// .list -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">혼합</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .title* -->
+                  <h5 class="title-h5"><span class="txt">H5 고객정보 등록</span></h5>
+                  <!--// .title* -->
+                  <!-- .text -->
+                  <p class="text">단일 문장 사용 시</p>
+                  <!--// .text -->
+                  <!-- .list -->
+                  <ul class="list depth-u1">
+                    <li>혼합으로 사용 시 상단 여백 세팅되어 있음</li>
+                  </ul>
+                  <!--// .list -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 타이포그래피 -->
+
+            <!-- .section - 컴포넌트 - 폰트 -->
+            <section class="section" id="element-font">
+              <h2 class="title-h2"><span class="txt">@폰트</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">크기</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <span class="fs-lg">Large</span>
+                  <span class="fs-md">Medium</span>
+                  <span class="fs-sm">Small</span>
+                  <span class="fs-xs">XSmall</span>
+                  <span class="fs-caption">Caption</span>
+                  <span class="fs-tiny">Tiny</span>
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">색상</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <span class="fc-primary">Primary</span>
+                  <span class="fc-secondary">Secondary</span>
+                  <span class="fc-highlight">Highlight</span>
+                  <span class="fc-warning">Warning</span>
+                  <span class="fc-info">Information</span>
+                  <span class="fc-success">Success</span>
+                  <span class="fc-disabled">Disabled</span>
+                  <span class="fc-base">Base</span>
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 폰트 -->
+
+            <!-- .section - 컴포넌트 - 사이즈 -->
+            <section class="section" id="element-size">
+              <h2 class="title-h2"><span class="txt">@사이즈</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">넓이</span></h3>
+                <!-- .note* -->
+                <div class="note">
+                  <ul class="note-list">
+                    <li><code>common.element.css</code> 파일의 사이즈 참고</li>
+                    <li>최소 % 넓이 : <code>.min-w-xx</code></li>
+                    <li>최대 % 넓이 : <code>.max-w-xx</code></li>
+                    <li>% 넓이 : <code>.w-xx</code></li>
+                    <li>고정 넓이 : <code>.w-fix-xx</code></li>
+                  </ul>
+                </div>
+                <!--// .note* -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">높이</span></h3>
+                <!-- .note* -->
+                <div class="note">
+                  <ul class="note-list">
+                    <li><code>common.element.css</code> 파일의 사이즈 참고</li>
+                    <li>최소 % 높이 : <code>.min-h-xx</code></li>
+                    <li>최대 % 높이 : <code>.max-h-xx</code></li>
+                    <li>% 높이 : <code>.h-xx</code></li>
+                    <li>고정 높이 : <code>.h-fix-xx</code></li>
+                  </ul>
+                </div>
+                <!--// .note* -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">여백</span></h3>
+                <!-- .note* -->
+                <div class="note">
+                  <ul class="note-list">
+                    <li><code>common.element.css</code> 파일의 여백 참고</li>
+                    <li><code>margin</code> : <code>.space-reset-mx .space-mt-xx .space-mb-xx .space-ml-xx .space-mr-xx</code></li>
+                    <li><code>padding</code> : <code>.space-reset-px .space-pt-xx .space-pb-xx .space-pl-xx .space-pr-xx</code></li>
+                  </ul>
+                </div>
+                <!--// .note* -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 사이즈 -->
+
+            <!-- .section - 컴포넌트 - 공지사항 -->
+            <section class="section" id="module-note">
+              <h2 class="title-h2"><span class="txt">@공지사항</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">한줄</span></h3>
+                <!-- .note* -->
+                <p class="note-info">
+                  <span>찾는 직업이 없는 경우, 가장 비슷한 직업으로 선택해주세요. 상담 시 직군에 맞는 직업으로 변경해드립니다. 찾는 직업이 없는 경우, 가장 비슷한 직업으로 선택해주세요. 상담 시 직군에 맞는 직업으로 변경해드립니다.</span>
+                </p>
+                <!--// .note* -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">여러줄</span></h3>
+                <!-- .note* -->
+                <ul class="note-list depth-root">
+                  <li>필수표시가 되어있는 항목은 전체를 정확하게 입력해주셔야 합니다.</li>
+                  <li>필수표시가 되어있는 항목은 전체를 정확하게 입력해주셔야 합니다. 필수표시가 되어있는 항목은 전체를 정확하게 입력해주셔야 합니다. 필수표시가 되어있는 항목은 전체를 정확하게 입력해주셔야 합니다.</li>
+                </ul>
+                <!--// .note* -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">여러줄-크기변경</span></h3>
+                <!-- .note* -->
+                <ul class="list depth-u1">
+                  <li>필수표시가 되어있는 항목은 전체를 정확하게 입력해주셔야 합니다.</li>
+                  <li>필수표시가 되어있는 항목은 전체를 정확하게 입력해주셔야 합니다. 필수표시가 되어있는 항목은 전체를 정확하게 입력해주셔야 합니다. 필수표시가 되어있는 항목은 전체를 정확하게 입력해주셔야 합니다.</li>
+                </ul>
+                <!--// .note* -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">박스형 - 상단 - 단락</span></h3>
+                <!-- .note* -->
+                <div class="note">
+                  <p class="note-txt">
+                    <span>찾는 직업이 없는 경우, 가장 비슷한 직업으로 선택해주세요. 상담 시 직군에 맞는 직업으로 변경해드립니다. 찾는 직업이 없는 경우, 가장 비슷한 직업으로 선택해주세요. 상담 시 직군에 맞는 직업으로 변경해드립니다.</span>
+                  </p>
+                </div>
+                <!--// .note* -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">박스형 - 상단 - 목록</span></h3>
+                <!-- .note* -->
+                <div class="note">
+                  <ul class="note-list depth-root">
+                    <li>필수표시가 되어있는 항목은 전체를 정확하게 입력해주셔야 합니다. 필수표시가 되어있는 항목은 전체를 정확하게 입력해주셔야 합니다. 필수표시가 되어있는 항목은 전체를 정확하게 입력해주셔야 합니다.</li>
+                    <li class="highlight">
+                      2뎁스가 있는 경우
+                      <ul class="list depth-u2">
+                        <li>2뎁스 내용</li>
+                        <li class="primary">2뎁스 내용</li>
+                        <li class="highlight">2뎁스 내용</li>
+                      </ul>
+                    </li>
+                    <li class="primary">선택정보는 고객에게 직접 문의하여 작성해 주세요.</li>
+                  </ul>
+                  <strong class="note-sub-title">타이틀영역</strong>
+                  <ul class="note-list depth-root">
+                    <li>목록</li>
+                  </ul>
+                </div>
+                <!--// .note* -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 공지사항 -->
+
+            <!-- .section - 컴포넌트 - 박스 -->
+            <section class="section" id="module-box">
+              <h2 class="title-h2"><span class="txt">@박스</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">기본</span></h3>
+                <!-- .box -->
+                <div class="box option-line">콘텐츠1</div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">배경색 (.option-bg)</span></h3>
+                <!-- .box -->
+                <div class="box option-bg">
+                  <!-- @set: option-bg -->
+                  <h4 class="note-title">제목</h4>
+                  <ul class="note-list">
+                    <li>내용</li>
+                  </ul>
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">라인 (.option-line)</span></h3>
+                <!-- .box -->
+                <div class="box item-row option-line">
+                  <!-- @set: option-line -->
+                  <div class="unit"><span class="fs-md">콘텐츠1</span></div>
+                  <div class="unit"><span class="fs-md">콘텐츠2</span></div>
+                  <div class="unit"><span class="fs-md">콘텐츠3</span></div>
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">강조형 (.primary)</span></h3>
+                <!-- .box -->
+                <div class="box option-bg primary">
+                  <!-- @set: option-bg, primary -->
+                  콘텐츠1
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 박스 -->
+
+            <!-- .section - 컴포넌트 - 탭 -->
+            <section class="section" id="module-tab">
+              <h2 class="title-h2"><span class="txt">@탭</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">기본 (.option-box)</span></h3>
+                <!-- .tab* -->
+                <div class="tab">
+                  <ul class="tab-head option-box" role="tablist">
+                    <li class="tab-menu is-active" role="tab" id="tabDMenu1" aria-controls="tabDPanel1" aria-selected="true"><a href="javascript:;" tabindex="0">탭이름1</a></li>
+                    <li class="tab-menu" role="tab" id="tabDMenu2" aria-controls="tabDPanel2" aria-selected="false"><a href="javascript:;" tabindex="-1">탭이름2</a></li>
+                    <li class="tab-menu" role="tab" id="tabDMenu3" aria-controls="tabDPanel3" aria-selected="false"><a href="javascript:;" tabindex="-1">탭이름3</a></li>
+                  </ul>
+                  <div class="tab-list">
+                    <div class="tab-item is-active" id="tabDPanel1" role="tabpanel" aria-labelledby="tabDMenu1" aria-hidden="false" tabindex="0">
+                      <!-- .box -->
+                      <div class="box option-bg" style="border-radius: 0">탭내용1</div>
+                      <!--// .box -->
+                    </div>
+                    <div class="tab-item" id="tabDPanel2" role="tabpanel" aria-labelledby="tabDMenu2" aria-hidden="true" tabindex="-1">
+                      <!-- .box -->
+                      <div class="box option-bg" style="border-radius: 0">탭내용2</div>
+                      <!--// .box -->
+                    </div>
+                    <div class="tab-item" id="tabDPanel3" role="tabpanel" aria-labelledby="tabDMenu3" aria-hidden="true" tabindex="-1">
+                      <!-- .box -->
+                      <div class="box option-bg" style="border-radius: 0">탭내용3</div>
+                      <!--// .box -->
+                    </div>
+                  </div>
+                </div>
+                <!--// .tab* -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">시트형 (.option-sheet)</span></h3>
+                <!-- .tab* -->
+                <div class="tab tab-in-tab">
+                  <ul class="tab-head option-sheet" role="tablist">
+                    <li class="tab-menu is-active" role="tab" id="tabApiMenu1" aria-controls="tabApiPanel1" aria-selected="true"><a href="javascript:;" tabindex="0">탭이름1</a></li>
+                    <li class="tab-menu" role="tab" id="tabApiMenu2" aria-controls="tabApiPanel2" aria-selected="false"><a href="javascript:;" tabindex="-1">탭이름2</a></li>
+                  </ul>
+
+                  <div class="tab-list">
+                    <div class="tab-item is-active" id="tabApiPanel1" role="tabpanel" aria-labelledby="tabApiMenu1" aria-hidden="false" tabindex="0">
+                      <div class="api-model">탭내용1</div>
+                    </div>
+
+                    <div class="tab-item" id="tabApiPanel2" role="tabpanel" aria-labelledby="tabApiMenu2" aria-hidden="true" tabindex="-1">
+                      <div class="api-model">탭내용2</div>
+                    </div>
+                  </div>
+                </div>
+                <!--// .tab* -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 탭 -->
+
+            <!-- .section - 컴포넌트 - 아코디언 -->
+            <section class="section" id="module-accordion">
+              <h2 class="title-h2"><span class="txt">@아코디언</span></h2>
+              <!-- .note* -->
+              <div class="note space-mb-xxs">
+                <ul class="note-list">
+                  <li>📌접고 펼치기 동작을 위한 아래 클래스 추가</li>
+                  <li>부모 요소 : <code>.fn-fold-wrap</code></li>
+                  <li>타이틀 요소(버튼 이벤트 연결 시) : <code>.fn-fold-link</code></li>
+                  <li>버튼 요소 : <code>.fn-fold-btn</code></li>
+                  <li>접고 펼칠 요소들 : <code>.fn-fold-item[]</code></li>
+                  <li>애니메이션 반영 여부 : <code>data-fold-slide="true"</code></li>
+                  <li>📌제목 클릭 시 아코디언을 펼칠 경우 클래스 추가, 클래스이 없을 경우 화살표 클릭 시 펼쳐짐 <code>(.fn-fold-link)</code></li>
+                  <li>📌제목에 체크박스가 있을 경우 클래스 삭제 <code>(.fn-fold-link)</code></li>
+                </ul>
+              </div>
+              <!--// .note* -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">기본</span></h3>
+
+                <!-- .accordion -->
+                <ul class="accordion-wrap">
+                  <!-- .accordion -->
+                  <li class="accordion2">
+                    <div class="accordion-head2">
+                      <div class="inner">
+                        <!-- .title* -->
+                        <button type="button" class="title-h4" id="accordionTitle1" aria-labelledby="accordionBody1"><span class="txt">제목영역1</span></button>
+                        <!--// .title* -->
+                      </div>
+                    </div>
+                    <div class="accordion-body2" id="accordionBody1" role="region" aria-labelledby="accordionTitle1">
+                      <!-- @set: fn-fold-item -->
+                      <div class="inner">열렸을 때 보이는 내용 열렸을 때 보이는 내용 열렸을 때 보이는 내용 열렸을 때 보이는 내용 열렸을 때 보이는 내용 열렸을 때 보이는 내용 열렸을 때 보이는 내용 열렸을 때 보이는 내용 열렸을 때 보이는 내용 열렸을 때 보이는 내용</div>
+                    </div>
+                  </li>
+                  <!--// .accordion -->
+                  <!-- .accordion -->
+                  <li class="accordion2">
+                    <div class="accordion-head2">
+                      <div class="inner">
+                        <!-- .title* -->
+                        <button type="button" class="title-h4" id="accordionTitle2" aria-labelledby="accordionBody2"><span class="txt">제목영역2</span></button>
+                        <!--// .title* -->
+                      </div>
+                    </div>
+                    <div class="accordion-body2" id="accordionBody2" role="region" aria-labelledby="accordionTitle2">
+                      <div class="inner">열렸을 때 보이는 내용</div>
+                    </div>
+                  </li>
+                  <!--// .accordion -->
+                  <li class="accordion2">
+                    <div class="accordion-head2">
+                      <div class="inner">
+                        <!-- .title* -->
+                        <button type="button" class="title-h4" id="accordionTitle3" aria-labelledby="accordionBody3"><span class="txt">제목영역3</span></button>
+                        <!--// .title* -->
+                      </div>
+                    </div>
+                    <div class="accordion-body2" id="accordionBody3" role="region" aria-labelledby="accordionTitle3">
+                      <div class="inner">열렸을 때 보이는 내용 열렸을 때 보이는 내용 열렸을 때 보이는 내용 열렸을 때 보이는 내용 열렸을 때 보이는 내용 열렸을 때 보이는 내용</div>
+                    </div>
+                  </li>
+                  <!--// .accordion -->
+                </ul>
+                <!--// .accordion -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 아코디언 -->
+
+            <!-- .section - 컴포넌트 - 등록폼 -->
+            <section class="section" id="module-formLayout">
+              <h2 class="title-h2"><span class="txt">@등록폼</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">기본</span></h3>
+                <!-- .form -->
+                <div class="form option-regist">
+                  <h3 class="form-title">필수정보</h3>
+                  <div class="form-wrap">
+                    <!-- .form-list -->
+                    <ul class="form-list">
+                      <li class="form-item">
+                        <div class="unit">
+                          <div class="form-name">
+                            <strong><label for="textfield1">이름</label></strong>
+                            <strong class="must"><span class="sr-only">필수입력</span></strong>
+                          </div>
+                          <div class="form-value">
+                            <!-- .input -->
+                            <div class="input w-100">
+                              <input type="text" name="" id="textfield1" class="input-data" placeholder="입력해 주세요" maxlength="20" value="김신한" aria-required="true" />
+                            </div>
+                            <!--// .input -->
+                          </div>
+                        </div>
+                      </li>
+                      <li class="form-item item-half">
+                        <!-- @set: item-half -->
+                        <div class="unit">
+                          <div class="form-name">
+                            <strong><label for="textfield7">필드명</label></strong>
+                          </div>
+                          <div class="form-value">
+                            <!-- .input -->
+                            <div class="input w-100">
+                              <input type="text" name="" id="textfield7" class="input-data" placeholder="입력해 주세요" maxlength="20" value="모바일은 상하 태블릿은 좌우 1:1로 배치할 경우" />
+                            </div>
+                            <!--// .input -->
+                          </div>
+                        </div>
+                        <div class="unit">
+                          <div class="form-name">
+                            <strong><label for="textfield8">필드명</label></strong>
+                          </div>
+                          <div class="form-value">
+                            <!-- .input -->
+                            <div class="input w-100">
+                              <input type="text" name="" id="textfield8" class="input-data" placeholder="입력해 주세요" maxlength="20" value="모바일은 상하 태블릿은 좌우 1:1로 배치할 경우" />
+                            </div>
+                            <!--// .input -->
+                          </div>
+                        </div>
+                      </li>
+                      <li class="form-item item-row option-half">
+                        <!-- @set: item-row.option-half -->
+                        <div class="unit filled">
+                          <div class="form-name">
+                            <strong><label for="textfield38">필드명</label></strong>
+                          </div>
+                          <div class="form-value">
+                            <!-- .input -->
+                            <div class="input w-100">
+                              <input type="text" name="" id="textfield38" class="input-data" placeholder="입력해 주세요" maxlength="20" value="좌우 간격이 태블릿 16, 모바일 8일 경우" />
+                            </div>
+                            <!--// .input -->
+                          </div>
+                        </div>
+                        <div class="unit filled">
+                          <div class="form-name">
+                            <strong><label for="textfield41">필드명</label></strong>
+                          </div>
+                          <div class="form-value">
+                            <!-- .input -->
+                            <div class="input w-100">
+                              <input type="text" name="" id="textfield41" class="input-data" placeholder="입력해 주세요" maxlength="20" value="좌우 간격이 태블릿 16, 모바일 8일 경우" />
+                            </div>
+                            <!--// .input -->
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!--// .form-list -->
+                  </div>
+                </div>
+                <!--// .form -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 등록폼 -->
+
+            <!-- .section - 컴포넌트 - 폼도움말 -->
+            <section class="section" id="module-helper">
+              <h2 class="title-h2"><span class="txt">@폼도움말</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <!-- .form -->
+                <div class="form option-regist">
+                  <div class="form-wrap">
+                    <!-- .form-list -->
+                    <ul class="form-list">
+                      <li class="form-item">
+                        <div class="unit">
+                          <div class="form-name">
+                            <strong><label for="textfield50">필드명</label></strong
+                            ><strong class="must"><span class="sr-only">필수입력</span></strong>
+                          </div>
+                          <div class="form-value">
+                            <!-- .input -->
+                            <div class="input w-100">
+                              <input type="text" name="" id="textfield50" class="input-data" placeholder="입력해 주세요" maxlength="20" value="김신한" aria-required="true" />
+                            </div>
+                            <!--// .input -->
+                            <div class="data-helper option-note" role="tooltip">
+                              <span class="helper-txt">안내 문구 (.option-note)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="form-item">
+                        <div class="unit">
+                          <div class="form-name">
+                            <strong><label for="textfield51">필드명</label></strong
+                            ><strong class="must"><span class="sr-only">필수입력</span></strong>
+                          </div>
+                          <div class="form-value">
+                            <!-- .input -->
+                            <div class="input w-100">
+                              <input type="text" name="" id="textfield51" class="input-data" placeholder="입력해 주세요" maxlength="20" value="김신한" aria-required="true" />
+                            </div>
+                            <!--// .input -->
+                            <div class="data-helper option-caption" role="tooltip">
+                              <span class="helper-txt">안내 문구2 (.option-caption)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="form-item">
+                        <div class="unit">
+                          <div class="form-name">
+                            <strong><label for="textfield52">필드명</label></strong>
+                          </div>
+                          <div class="form-value">
+                            <!-- .input -->
+                            <div class="input w-100">
+                              <input type="text" name="" id="textfield52" class="input-data" placeholder="입력해 주세요" maxlength="20" value="모바일은 상하 태블릿은 좌우 1:1로 배치할 경우" />
+                            </div>
+                            <!--// .input -->
+                            <div class="data-helper option-error" role="alert">
+                              <span class="helper-txt">오류 메시지 (.option-error)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="form-item">
+                        <div class="unit">
+                          <div class="form-name">
+                            <strong><label for="textfield53">필드명</label></strong>
+                          </div>
+                          <div class="form-value">
+                            <!-- .input -->
+                            <div class="input w-100">
+                              <input type="text" name="" id="textfield53" class="input-data" placeholder="입력해 주세요" maxlength="20" value="모바일은 상하 태블릿은 좌우 1:1로 배치할 경우" />
+                            </div>
+                            <!--// .input -->
+                            <div class="data-helper option-note" role="tooltip">
+                              <span class="helper-txt">두줄 예시) 다음 단계로 가려면 옵션을 필수로 선택해야 합니다. 두줄 예시) 다음 단계로 가려면 옵션을 필수로 선택해야 합니다.</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="form-item">
+                        <div class="unit">
+                          <div class="form-name">
+                            <strong><label for="textfield6">필드명</label></strong>
+                          </div>
+                          <div class="form-value">
+                            <!-- .item* -->
+                            <div class="item-row">
+                              <div class="unit filled">
+                                <!-- .input -->
+                                <div class="input w-100">
+                                  <input type="text" name="" id="textfield6" class="input-data" placeholder="입력해 주세요" maxlength="50" value="" />
+                                </div>
+                                <!--// .input -->
+                              </div>
+                              <div class="unit">
+                                <span class="fix-data">@</span>
+                              </div>
+                              <div class="unit w-40">
+                                <!-- .select -->
+                                <div class="select w-100">
+                                  <select name="" id="selectG" class="select-data" aria-label="옵션제목G" aria-hidden="true" tabindex="-1">
+                                    <option value="">선택해주세요</option>
+                                    <option value="">직접입력</option>
+                                    <option value="">naver.com</option>
+                                    <option value="">nate.com</option>
+                                    <option value="">daum.net</option>
+                                    <option value="" selected>hanmail.net</option>
+                                    <option value="">kakao.com</option>
+                                    <option value="">gmail.com</option>
+                                    <option value="">outlook.kr</option>
+                                    <option value="">icloud.com</option>
+                                  </select>
+                                </div>
+                                <!--// .select -->
+                              </div>
+                            </div>
+                            <!--// .item* -->
+                            <div class="data-helper option-caption primary" role="status">
+                              <span class="helper-txt">정상 입력</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!--// .form-list -->
+                  </div>
+                </div>
+                <!--// .form -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 폼도움말 -->
+
+            <!-- .section - 컴포넌트 - 카드형 -->
+            <section class="section" id="module-card-list">
+              <h2 class="title-h2"><span class="txt">@카드형목록</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">카드형</span></h3>
+                <!-- .list* -->
+                <ul class="list-card">
+                  <li>
+                    <!-- .item -->
+                    <div class="item">
+                      <div class="item-inner">
+                        <h3 class="item-title">현대글로비스</h3>
+                        <dl class="item-dl">
+                          <dt>
+                            <span class="badge option-base info">서비스소개</span>
+                          </dt>
+                          <dd>
+                            <p>현대글로비스(오토벨) 차량 구매 고객의 보험 가입 및 해지를 위한 필요 데이터 전송</p>
+                          </dd>
+                          <dt>
+                            <span class="badge option-base info">주요기능</span>
+                          </dt>
+                          <dd>
+                            <ul class="list depth-u1">
+                              <li>보험 청약 및 체결된 계약의 청약 철회</li>
+                              <li>구매하는 차량, 옵션에 따른 보험료 조회</li>
+                            </ul>
+                          </dd>
+                          <dt>
+                            <span class="badge option-base info">이용대상</span>
+                          </dt>
+                          <dd>
+                            <p>차량매매플랫폼 운영사</p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="btn-group">
+                        <a href="javascript:;" class="btn-svc fn-popup-open" data-popup-id="#popupExample" aria-haspopup="dialog" aria-controls="popupExample">
+                          <span>상세보기</span>
+                        </a>
+                        <a href="javascript:;" class="btn-svc filled fn-popup-open" data-popup-id="#popupExample" aria-haspopup="dialog" aria-controls="popupExample">
+                          <span>신청하기</span>
+                        </a>
+                      </div>
+                    </div>
+                    <!--// .item -->
+                  </li>
+                  <li>
+                    <!-- .item -->
+                    <div class="item">
+                      <div class="item-inner">
+                        <h3 class="item-title">기아자동차</h3>
+                        <dl class="item-dl">
+                          <dt>
+                            <span class="badge option-base info">서비스소개</span>
+                          </dt>
+                          <dd>
+                            <p>기아자동차 차량 구매 고객의 보험 가입 및 해지를 위한 필요 데이터 전송</p>
+                          </dd>
+                          <dt>
+                            <span class="badge option-base info">주요기능</span>
+                          </dt>
+                          <dd>
+                            <ul class="list depth-u1">
+                              <li>보험 청약</li>
+                              <li>체결된 계약의 청약 철회</li>
+                            </ul>
+                          </dd>
+                          <dt>
+                            <span class="badge option-base info">이용대상</span>
+                          </dt>
+                          <dd>
+                            <p>차량제조사</p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="btn-group">
+                        <a href="javascript:;" class="btn-svc">
+                          <span>상세보기</span>
+                        </a>
+                        <a href="javascript:;" class="btn-svc filled">
+                          <span>신청하기</span>
+                        </a>
+                      </div>
+                    </div>
+                    <!--// .item -->
+                  </li>
+                  <li>
+                    <!-- .item -->
+                    <div class="item">
+                      <div class="item-inner tran-base">
+                        <h3 class="item-title">서비스명 영역 입니다</h3>
+                        <dl class="item-dl">
+                          <dt>
+                            <span class="badge option-base info">서비스소개</span>
+                          </dt>
+                          <dd>
+                            <p>서비스 소개글 입니다. 주요기능 부터는 미등록 상태로 서비스 게시할 수 있습니다.</p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="btn-group">
+                        <a href="javascript:;" class="btn-svc">
+                          <span>상세보기</span>
+                        </a>
+                        <a href="javascript:;" class="btn-svc filled">
+                          <span>신청하기</span>
+                        </a>
+                      </div>
+                    </div>
+                    <!--// .item -->
+                  </li>
+                </ul>
+                <!--// .list* -->
+              </div>
+              <!-- //.group -->
+            </section>
+            <!--// .section - 컴포넌트 - 카드형목록(선택용) -->
+
+            <!-- .section - 컴포넌트 - 테이블 -->
+            <section class="section" id="module-table">
+              <h2 class="title-h2"><span class="txt">@테이블</span></h2>
+              <!-- .note* -->
+              <div class="note space-mb-xxs">
+                <ul class="note-list">
+                  <li>📌데이터형 고정은 상단 또는 왼쪽 1개의 <code>&lt;th&gt;</code>에 적용해 두었음. 1개 이상 고정하거나 <code>&lt;th&gt;</code> 스타일이 아닌 항목을 고정해야 할 경우 수정 필요함.</li>
+                </ul>
+              </div>
+              <!--// .note* -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">데이터형</span></h3>
+                <!-- .data -->
+                <div class="data">
+                  <div class="data-body">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>고객정보 표</strong>
+                        <!-- 표내용순서 -->
+                        <span>구분, 이름, 생년월일, 성별, 휴대폰번호, 마케팅동의, 전화수신여부, 대면여부, 등록일자 정보</span>
+                      </caption>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col" class="data-select">
+                            <!-- .checkbox* -->
+                            <label for="dataCheckAll" class="checkbox-item">
+                              <input type="checkbox" name="dataCheck" id="dataCheckAll" class="control" />
+                              <span class="label">전체 행 선택</span>
+                            </label>
+                            <!--// .checkbox* -->
+                          </th>
+                          <th scope="col">구분</th>
+                          <th scope="col">이름</th>
+                          <th scope="col">생년월일</th>
+                          <th scope="col">성별</th>
+                          <th scope="col">휴대폰번호</th>
+                          <th scope="col">마케팅동의</th>
+                          <th scope="col">전화수신</th>
+                          <th scope="col">대면여부</th>
+                          <th scope="col">등록일자</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="data-select">
+                            <!-- .checkbox* -->
+                            <label for="dataCheck1" class="checkbox-item">
+                              <input type="checkbox" name="dataCheck" id="dataCheck1" class="control" checked />
+                              <span class="label">행 선택</span>
+                            </label>
+                            <!--// .checkbox* -->
+                          </td>
+                          <td>추천</td>
+                          <td>김신한</td>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                          <td>아니요</td>
+                          <td>아니요</td>
+                          <td>미정</td>
+                          <td>2023.01.01</td>
+                        </tr>
+                        <tr class="is-active">
+                          <td class="data-select">
+                            <!-- .checkbox* -->
+                            <label for="dataCheck2" class="checkbox-item">
+                              <input type="checkbox" name="dataCheck" id="dataCheck2" class="control" />
+                              <span class="label">행 선택</span>
+                            </label>
+                            <!--// .checkbox* -->
+                          </td>
+                          <td>추천</td>
+                          <td>김신한</td>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                          <td>아니요</td>
+                          <td>아니요</td>
+                          <td>미정</td>
+                          <td>2023.01.01</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--// .data -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">데이터형 - 가로형 (.option-row)</span></h3>
+                <!-- .data -->
+                <div class="data">
+                  <div class="data-body option-row">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>고객정보 표</strong>
+                        <!-- 표내용순서 -->
+                        <span>이름, 생년월일, 성별, 휴대폰번호 정보</span>
+                      </caption>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th>김신한</th>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <th>김신한</th>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td rowspan="2">010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <th>김신한</th>
+                          <td>90.01.01</td>
+                          <td class="line">남</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--// .data -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">데이터형 - 내용이 넘칠 때 가로 스크롤 자동 생성 (.option-x-scroll)</span></h3>
+                <!-- .data -->
+                <div class="data">
+                  <div class="data-body option-x-scroll">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>고객정보 표</strong>
+                        <!-- 표내용순서 -->
+                        <span>구분, 이름, 생년월일, 성별, 휴대폰번호, 마케팅동의, 전화수신여부, 대면여부, 등록일자 정보</span>
+                      </caption>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">경과기간</th>
+                          <th scope="col">납입보험료</th>
+                          <th scope="col">해약환급금</th>
+                          <th scope="col">환급률</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>99년</td>
+                          <td>20,000원</td>
+                          <td>20,000원</td>
+                          <td>999%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--// .data -->
+                <!-- .data -->
+                <div class="data">
+                  <div class="data-body option-x-scroll">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>고객정보 표</strong>
+                        <!-- 표내용순서 -->
+                        <span>구분, 이름, 생년월일, 성별, 휴대폰번호, 마케팅동의, 전화수신여부, 대면여부, 등록일자 정보</span>
+                      </caption>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">경과기간</th>
+                          <th scope="col">납입보험료</th>
+                          <th scope="col">해약환급금</th>
+                          <th scope="col">환급률</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>9,000,000,000,000,000,000년</td>
+                          <td>2,000,000,000,000,000,000,000원</td>
+                          <td>2,000,000,000,000,000,000,000원</td>
+                          <td>9.00000000000000000000000000%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--// .data -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">데이터형 - 상단 고정 (.option-fixed-head)</span></h3>
+                <!-- .data -->
+                <div class="data">
+                  <div class="data-body option-fixed-head" tabindex="0">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>고객정보 표</strong>
+                        <!-- 표내용순서 -->
+                        <span>이름, 생년월일, 성별, 휴대폰번호 정보</span>
+                      </caption>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">이름</th>
+                          <th scope="col">생년월일</th>
+                          <th scope="col">성별</th>
+                          <th scope="col">휴대폰번호</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>김신한</td>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <td>김신한</td>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <td>김신한</td>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <td>김신한</td>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <td>김신한</td>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--// .data -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">데이터형 - 왼쪽 고정 (.option-fixed-side)</span></h3>
+                <!-- .data -->
+                <div class="data">
+                  <div class="data-body option-fixed-side" tabindex="0">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>고객정보 표</strong>
+                        <!-- 표내용순서 -->
+                        <span>이름, 생년월일, 성별, 휴대폰번호 정보</span>
+                      </caption>
+                      <colgroup>
+                        <col style="width: 100px" />
+                        <col style="width: 400px" />
+                        <col style="width: 400px" />
+                        <col style="width: 400px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th>김신한</th>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <th>김신한</th>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--// .data -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">데이터형 - 상단 + 왼쪽 고정</span></h3>
+                <!-- .data -->
+                <div class="data">
+                  <div class="data-body option-fixed-mix" tabindex="0">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>고객정보 표</strong>
+                        <!-- 표내용순서 -->
+                        <span>이름, 생년월일, 성별, 휴대폰번호 정보</span>
+                      </caption>
+                      <colgroup>
+                        <col style="width: 100px" />
+                        <col style="width: 400px" />
+                        <col style="width: 400px" />
+                        <col style="width: 400px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">이름</th>
+                          <th scope="col">생년월일</th>
+                          <th scope="col">성별</th>
+                          <th scope="col">휴대폰번호</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>김신한</th>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <th>김신한</th>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <th>김신한</th>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <th>김신한</th>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <th>김신한</th>
+                          <td>90.01.01</td>
+                          <td>남</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--// .data -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">데이터형 - 반응형 (.option-react)</span></h3>
+                <!-- .data -->
+                <div class="data">
+                  <div class="data-body option-react">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>표제목</strong>
+                        <!-- 표내용순서 -->
+                        <span>항목명, 항목명 정보</span>
+                      </caption>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th>항목명</th>
+                          <td>내용</td>
+                          <th>항목명</th>
+                          <td>내용</td>
+                        </tr>
+                        <tr>
+                          <th>항목명</th>
+                          <td>내용</td>
+                          <th>항목명</th>
+                          <td>내용</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--// .data -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">데이터형 - 입력형</span></h3>
+                <!-- .data -->
+                <div class="data-body">
+                  <table class="data-list">
+                    <caption class="sr-only">
+                      <!-- 표제목 -->
+                      <strong>피보험자 직접입력 목록</strong>
+                      <!-- 표내용순서 -->
+                      <span>선택, 번호, 가입유형, 관계, 한글성명, 영문성명, 주민등록번호, 보험시기, 보험종기, 직업할증 정보</span>
+                    </caption>
+                    <colgroup>
+                      <col style="width: 75px" />
+                      <col style="width: 75px" />
+                      <col style="width: auto" />
+                      <col style="width: 30%" />
+                      <col style="width: 15%" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">선택</th>
+                        <th scope="col">번호</th>
+                        <th scope="col">가입유형</th>
+                        <th scope="col">시기</th>
+                        <th scope="col">직업할증</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="data-select">
+                          <!-- .radio* -->
+                          <label for="dataRadio1" class="radio-item">
+                            <input type="radio" name="dataRadio" id="dataRadio1" class="control" />
+                            <span class="label">행 선택</span>
+                          </label>
+                          <!--// .radio* -->
+                        </td>
+                        <td>1</td>
+                        <td>
+                          <!-- .input -->
+                          <div class="input w-100">
+                            <input type="text" name="" id="textfieldTable1-1" class="input-data" placeholder="가입유형" title="가입유형" value="" />
+                          </div>
+                          <!-- .input -->
+                        </td>
+                        <td>
+                          <div class="item-row">
+                            <div class="unit">
+                              <!-- .input -->
+                              <div class="input option-date w-px-160">
+                                <input type="text" name="" id="textfieldTable1-7" class="input-data" placeholder="YYYY.MM.DD" />
+                                <button type="button" class="btn-calendar" aria-label="보험시기 일" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+                              </div>
+                              <!--// .input -->
+                            </div>
+                            <div class="unit">
+                              <!-- .input -->
+                              <div class="input w-100">
+                                <input type="text" name="" id="textfieldTable1-8" class="input-data" placeholder="HH:MM" title="보험시기 시분" maxlength="5" pattern="\d*" oninput="cc_format(this);" value="" />
+                              </div>
+                              <!-- .input -->
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <!-- .select -->
+                          <div class="select w-100">
+                            <select name="" id="textfieldTable1-11" class="select-data" title="직업할증" aria-hidden="true" tabindex="-1">
+                              <option value="" selected>N</option>
+                              <option value="">Y</option>
+                            </select>
+                          </div>
+                          <!--// .select -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="data-select">
+                          <!-- .radio* -->
+                          <label for="dataRadio2" class="radio-item">
+                            <input type="radio" name="dataRadio" id="dataRadio2" class="control" />
+                            <span class="label">행 선택</span>
+                          </label>
+                          <!--// .radio* -->
+                        </td>
+                        <td>2</td>
+                        <td>
+                          <!-- .input -->
+                          <div class="input w-100">
+                            <input type="text" name="" id="textfieldTable2-1" class="input-data" placeholder="가입유형" title="가입유형" value="01L-02" />
+                          </div>
+                          <!-- .input -->
+                        </td>
+                        <td>
+                          <div class="item-row">
+                            <div class="unit">
+                              <!-- .input -->
+                              <div class="input option-date w-px-160">
+                                <input type="text" name="" id="textfieldTable2-7" class="input-data" placeholder="YYYY.MM.DD" value="2023.11.15" />
+                                <button type="button" class="btn-calendar" aria-label="보험시기 일" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+                              </div>
+                              <!--// .input -->
+                            </div>
+                            <div class="unit">
+                              <!-- .input -->
+                              <div class="input w-100">
+                                <input type="text" name="" id="textfieldTable2-8" class="input-data" placeholder="HH:MM" title="보험시기 시분" maxlength="5" pattern="\d*" oninput="cc_format(this);" value="16:00" />
+                              </div>
+                              <!-- .input -->
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <!-- .select -->
+                          <div class="select w-100">
+                            <select name="" id="textfieldTable2-11" class="select-data" title="직업할증" aria-hidden="true" tabindex="-1">
+                              <option value="">N</option>
+                              <option value="" selected>Y</option>
+                            </select>
+                          </div>
+                          <!--// .select -->
+                        </td>
+                      </tr>
+                      <tr class="row-error">
+                        <td class="data-select">
+                          <!-- .radio* -->
+                          <label for="dataRadio3" class="radio-item">
+                            <input type="radio" name="dataRadio" id="dataRadio3" class="control" />
+                            <span class="label">행 선택</span>
+                          </label>
+                          <!--// .radio* -->
+                        </td>
+                        <td>3</td>
+                        <td>
+                          <!-- .input -->
+                          <div class="input w-100">
+                            <input type="text" name="" id="textfieldTable3-1" class="input-data" placeholder="가입유형" title="가입유형" value="01L-03" />
+                          </div>
+                          <!-- .input -->
+                        </td>
+                        <td>
+                          <div class="item-row">
+                            <div class="unit">
+                              <!-- .input -->
+                              <div class="input option-date w-px-160">
+                                <input type="text" name="" id="textfieldTable3-7" class="input-data" placeholder="YYYY.MM.DD" value="2023.11.15" />
+                                <button type="button" class="btn-calendar" aria-label="보험시기 일" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+                              </div>
+                              <!--// .input -->
+                            </div>
+                            <div class="unit">
+                              <!-- .input -->
+                              <div class="input w-100">
+                                <input type="text" name="" id="textfieldTable3-8" class="input-data" placeholder="HH:MM" title="보험시기 시분" maxlength="5" pattern="\d*" oninput="cc_format(this);" value="16:00" />
+                              </div>
+                              <!-- .input -->
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <!-- .select -->
+                          <div class="select w-100">
+                            <select name="" id="textfieldTable3-11" class="select-data" title="직업할증" aria-hidden="true" tabindex="-1">
+                              <option value="" selected>N</option>
+                              <option value="">Y</option>
+                            </select>
+                          </div>
+                          <!--// .select -->
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">@ 테이블 - 총 갯수 + 우측 텍스트 버튼 조합</span></h3>
+                <!-- .data -->
+                <div class="data">
+                  <!-- .list-head -->
+                  <div class="list-head">
+                    <div class="list-total">
+                      <span>총 <strong>20</strong>개</span>
+                    </div>
+                    <div class="unit">
+                      <button type="button" class="btn-txt-link primary"><span>텍스트버튼</span></button>
+                    </div>
+                  </div>
+                  <!--// .list-head -->
+                  <div class="data-body">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>APP 목록</strong>
+                        <!-- 표내용순서 -->
+                        <span>No., APP 이름, APP 설명, APP 승인상태, 처리</span>
+                      </caption>
+                      <colgroup>
+                        <col style="width: 8rem" />
+                        <col style="width: auto" />
+                        <col style="width: 30%" />
+                        <col style="width: 12%" />
+                        <col style="width: 16%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">No.</th>
+                          <th scope="col">이름</th>
+                          <th scope="col">설명</th>
+                          <th scope="col">승인상태</th>
+                          <th scope="col">처리</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>20</td>
+                          <td class="align-left">
+                            <a href="javascript:;" class="btn texted">
+                              <span>APP이름입니다</span>
+                            </a>
+                          </td>
+                          <td class="align-left">앱 설명글 입니다</td>
+                          <td>
+                            <a href="javascript:;" class="btn contained option-sm"><span>등록대기중</span></a>
+                          </td>
+                          <td>
+                            <a href="javascript:;" class="btn outlined option-sm"><span>승인요청</span></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19</td>
+                          <td class="align-left">
+                            <a href="javascript:;" class="btn texted">
+                              <span>APP이름입니다 APP이름입니다 APP이름입니다</span>
+                            </a>
+                          </td>
+                          <td class="align-left">앱 설명글 입니다</td>
+                          <td>
+                            <a href="javascript:;" class="btn contained option-sm"><span>등록승인중</span></a>
+                          </td>
+                          <td>
+                            <a href="javascript:;" class="btn contained option-sm"><span>취소</span></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- .list-foot -->
+                  <div class="list-foot">
+                    <!-- .list-paging -->
+                    <div class="list-paging">
+                      <a href="javascript:;" class="btn-list-prev"><span class="sr-only">이전 페이지</span></a>
+                      <span class="page-current">
+                        <strong>1</strong>
+                        <a href="javascript:;">2</a>
+                        <a href="javascript:;">3</a>
+                        <a href="javascript:;">4</a>
+                        <a href="javascript:;">5</a>
+                        <a href="javascript:;">6</a>
+                        <a href="javascript:;">7</a>
+                        <a href="javascript:;">8</a>
+                        <a href="javascript:;">9</a>
+                        <a href="javascript:;">10</a>
+                      </span>
+                      <a href="javascript:;" class="btn-list-next"><span class="sr-only">다음 페이지</span></a>
+                    </div>
+                    <!--// .list-paging -->
+                    <!-- .list-btn-->
+                    <div class="list-btn">
+                      <button type="button" class="btn primary"><span>등록</span></button>
+                    </div>
+                    <!--// .list-btn-->
+                  </div>
+                  <!--// .list-foot -->
+                </div>
+                <!--// .data -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">@ 테이블 + 상단 우측 버튼</span></h3>
+                <!-- .data -->
+                <div class="data">
+                  <!-- .list-head -->
+                  <div class="list-head">
+                    <div class="list-btn">
+                      <button type="button" class="btn contained option-md icon download-primary"><span>엑셀 다운로드</span></button>
+                    </div>
+                  </div>
+                  <!--// .list-head -->
+                  <div class="data-body">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>테이블 목록</strong>
+                        <!-- 표내용순서 -->
+                        <span>테이블헤드1, 테이블헤드2, 테이블헤드3 설명</span>
+                      </caption>
+                      <colgroup>
+                        <col style="width: 33.333%" />
+                        <col style="width: 33.333%" />
+                        <col style="width: 33.333%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">테이블헤드1</th>
+                          <th scope="col">테이블헤드2</th>
+                          <th scope="col">테이블헤드3</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>테이블1영역</td>
+                          <td>테이블2영역</td>
+                          <td>테이블3영역</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--// .data -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">@ 테이블 + 우측 입력 및 버튼 조합형</span></h3>
+                <!-- .data -->
+                <div class="data">
+                  <!-- .list-head -->
+                  <div class="list-head">
+                    <h3 class="list-title">
+                      <span class="txt">테이블 제목</span>
+                    </h3>
+                    <div class="list-btn">
+                      <div class="item-row">
+                        <div class="unit">
+                          <!-- .input -->
+                          <div class="input w-px-65">
+                            <input type="text" name="" id="textfieldRow" class="input-data size-small" placeholder="0" title="행갯수" value="" />
+                          </div>
+                          <!-- .input -->
+                        </div>
+                        <div class="unit">
+                          <button type="button" class="btn pointed option-md icon plus"><span>행추가</span></button>
+                          <button type="button" class="btn pointed option-md icon minus"><span>행삭제</span></button>
+                          <button type="button" class="btn filled option-md icon trash"><span>전체삭제</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// .list-head -->
+                  <div class="data-body">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>테이블 목록</strong>
+                        <!-- 표내용순서 -->
+                        <span>테이블헤드1, 테이블헤드2, 테이블헤드3 설명</span>
+                      </caption>
+                      <colgroup>
+                        <col style="width: 33.333%" />
+                        <col style="width: 33.333%" />
+                        <col style="width: 33.333%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">테이블헤드1</th>
+                          <th scope="col">테이블헤드2</th>
+                          <th scope="col">테이블헤드3</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>테이블1영역</td>
+                          <td>테이블2영역</td>
+                          <td>테이블3영역</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--// .data -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">@ 상세 타이틀영역 - 제목, 등록자, 등록일</span></h3>
+                <!-- .board -->
+                <div class="board">
+                  <!-- .board-wrap -->
+                  <div class="board-wrap">
+                    <div class="board-detail">
+                      <div class="board-head">
+                        <h3 class="title-h3"><span class="txt">제목입니다.</span></h3>
+                        <div class="date-item">
+                          <div class="unit">
+                            <em aria-label="등록자">이용기관명(홍*동)</em>
+                            <span aria-label="등록일">2023.01.01</span>
+                          </div>
+                        </div>
+                        <div class="date-item">
+                          <div class="unit">
+                            <span class="downfile">
+                              <button type="button" class="btn texted icon ic-file" aria-label="첨부파일">
+                                <span>filename123456.jpg(12.40KB)</span>
+                              </button>
+                            </span>
+                            <span class="downfile">
+                              <button type="button" class="btn texted icon ic-file" aria-label="첨부파일">
+                                <span>filename123456.xlsx(50.12KB)</span>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// .board-wrap -->
+                </div>
+                <!--// .board -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 테이블 -->
+
+            <!-- .section - 컴포넌트 - 목록 공통 -->
+            <section class="section" id="module-list-comm">
+              <h2 class="title-h2"><span class="txt">@목록 공통</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">보조문구</span></h3>
+                <!-- .board, .card, .data -->
+                <div class="xxx">
+                  <!-- .list-head -->
+                  <div class="list-head">
+                    <div class="list-info">
+                      <span>행 선택 시 고객정보 상세페이지로 이동합니다.</span>
+                    </div>
+                  </div>
+                  <!--// .list-head -->
+                </div>
+                <!--// .board, .card, .data -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">타이틀 + 보조문구</span></h3>
+                <!-- .board, .card, .data -->
+                <div class="xxx">
+                  <!-- .list-head -->
+                  <div class="list-head">
+                    <h3 class="list-title">목록 타이틀 <span class="txt">보조문구</span></h3>
+                    <div class="list-info">
+                      <span>행 선택 시 고객정보 상세페이지로 이동합니다.</span>
+                    </div>
+                  </div>
+                  <!--// .list-head -->
+                </div>
+                <!--// .board, .card, .data -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">타이틀 + 버튼1</span></h3>
+                <!-- .board, .card, .data -->
+                <div class="xxx">
+                  <!-- .list-head -->
+                  <div class="list-head">
+                    <h3 class="list-title">목록 타이틀</h3>
+                    <div class="list-btn">
+                      <button type="button" class="btn contained option-sm"><span>버튼</span></button>
+                      <button type="button" class="btn contained option-sm"><span>버튼</span></button>
+                    </div>
+                  </div>
+                  <!--// .list-head -->
+                </div>
+                <!--// .board, .card, .data -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">타이틀 + 버튼2</span></h3>
+                <!-- .board, .card, .data -->
+                <div class="xxx">
+                  <!-- .list-head -->
+                  <div class="list-head item-row">
+                    <h3 class="list-title">목록 타이틀</h3>
+                    <div class="unit">
+                      <button type="button" class="btn outlined option-sm"><span>버튼</span></button>
+                    </div>
+                  </div>
+                  <!--// .list-head -->
+                </div>
+                <!--// .board, .card, .data -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">타이틀 + 필수입력</span></h3>
+                <!-- .board, .card, .data -->
+                <div class="xxx">
+                  <!-- .list-head -->
+                  <div class="list-head option-row">
+                    <h3 class="list-title">목록 타이틀</h3>
+                    <div class="list-must">
+                      <span class="must">표시는 필수 입력 값입니다.</span>
+                    </div>
+                  </div>
+                  <!--// .list-head -->
+                </div>
+                <!--// .board, .card, .data -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">버튼</span></h3>
+                <!-- .board, .card, .data -->
+                <div class="xxx">
+                  <!-- .list-head -->
+                  <div class="list-head item-row option-right">
+                    <div class="unit">
+                      <button type="button" class="btn outlined option-sm"><span>오른쪽</span></button>
+                      <button type="button" class="btn outlined option-sm"><span>버튼</span></button>
+                    </div>
+                  </div>
+                  <!--// .list-head -->
+                </div>
+                <!--// .board, .card, .data -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">페이징</span></h3>
+                <!-- .board, .card, .data -->
+                <div class="xxx">
+                  <!-- .list-foot -->
+                  <div class="list-foot">
+                    <!-- .list-paging -->
+                    <div class="list-paging">
+                      <a href="javascript:;" class="btn-list-prev"><span class="sr-only">이전 페이지</span></a>
+                      <span class="page-current">
+                        <strong>1</strong>
+                        <a href="javascript:;">2</a>
+                        <a href="javascript:;">3</a>
+                        <a href="javascript:;">4</a>
+                        <a href="javascript:;">5</a>
+                        <a href="javascript:;">6</a>
+                        <a href="javascript:;">7</a>
+                        <a href="javascript:;">8</a>
+                        <a href="javascript:;">9</a>
+                        <a href="javascript:;">10</a>
+                      </span>
+                      <a href="javascript:;" class="btn-list-next"><span class="sr-only">다음 페이지</span></a>
+                    </div>
+                    <!--// .list-paging -->
+                  </div>
+                  <!--// .list-foot -->
+                </div>
+                <!--// .board, .card, .data -->
+                <!-- .board, .card, .data -->
+                <div class="xxx">
+                  <!-- .list-foot -->
+                  <div class="list-foot">
+                    <!-- .list-paging -->
+                    <div class="list-paging">
+                      <a href="javascript:;" class="btn-list-prev"><span class="sr-only">이전 페이지</span></a>
+                      <span class="page-current">
+                        <strong>1</strong>
+                        <a href="javascript:;">2</a>
+                        <a href="javascript:;">3</a>
+                        <a href="javascript:;">4</a>
+                        <a href="javascript:;">5</a>
+                        <a href="javascript:;">6</a>
+                        <a href="javascript:;">7</a>
+                        <a href="javascript:;">8</a>
+                        <a href="javascript:;">9</a>
+                        <a href="javascript:;">10</a>
+                      </span>
+                      <a href="javascript:;" class="btn-list-next"><span class="sr-only">다음 페이지</span></a>
+                    </div>
+                    <!--// .list-paging -->
+                    <!-- .list-btn-->
+                    <div class="list-btn">
+                      <button type="button" class="btn primary"><span>버튼</span></button>
+                      <button type="button" class="btn primary"><span>버튼</span></button>
+                    </div>
+                    <!--// .list-btn-->
+                  </div>
+                  <!--// .list-foot -->
+                </div>
+                <!--// .board, .card, .data -->
+                <br />
+                <br />
+                <!-- .board, .card, .data -->
+                <div class="xxx">
+                  <!-- .list-foot -->
+                  <div class="list-foot option-more">
+                    <button type="button" class="btn-list-more">
+                      <span>더보기</span>
+                      <span class="num"><strong>1</strong>/100</span>
+                    </button>
+                  </div>
+                  <!--// .list-foot -->
+                </div>
+                <!--// .board, .card, .data -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">데이터 없을 경우</span></h3>
+                <!-- .board, .card, .data -->
+                <div class="xxx">
+                  <div class="list-nodata">
+                    <p>목록이 없습니다.</p>
+                  </div>
+                  <div class="list-nodata option-search">
+                    <p>검색결과가 없습니다.<br />다른 검색어를 이용해 보세요.</p>
+                  </div>
+                </div>
+                <!--// .board, .card, .data -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 목록 공통 -->
+
+            <!-- .section - 컴포넌트 - 요소분할 -->
+            <section class="section" id="module-item">
+              <h2 class="title-h2"><span class="txt">@요소분할</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">상하</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .item* -->
+                  <div class="item-col">
+                    <div class="unit"><span class="fs-md">내용1</span></div>
+                    <div class="unit"><span class="fs-md">내용2</span></div>
+                    <div class="unit"><span class="fs-md">내용3</span></div>
+                  </div>
+                  <!--// .item* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">좌우</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .item* -->
+                  <div class="item-row">
+                    <div class="unit filled"><span class="fs-md">콘텐츠와 무관하게 폭을 채울 경우 .filled 클래스 사용</span></div>
+                    <div class="unit fixed"><span class="fs-md">콘텐츠 폭만큼 넓이 고정할 경우 .fixed 클래스 사용</span></div>
+                    <div class="unit"><span class="fs-md">기본 상대적 가변 넓이</span></div>
+                  </div>
+                  <!--// .item* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 요소분할 -->
+
+            <!-- .section - 컴포넌트 - 버튼 -->
+            <section class="section" id="form-button">
+              <h2 class="title-h2"><span class="txt">@버튼</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">유형별</span></h3>
+                <!-- .btn -->
+                <button type="button" class="btn primary"><span>확인(.primary)</span></button>
+                <button type="button" class="btn primary" disabled><span>확인(비활성화)</span></button>
+
+                <button type="button" class="btn filled"><span>취소(.filled)</span></button>
+                <button type="button" class="btn filled" disabled><span>취소(비활성화)</span></button>
+                <button type="button" class="btn contained"><span>버튼(.contained)</span></button>
+                <button type="button" class="btn contained" disabled><span>버튼(비활성화)</span></button>
+                <br />
+                <button type="button" class="btn outlined"><span>버튼(.outlined)</span></button>
+                <button type="button" class="btn outlined" disabled><span>버튼(비활성화)</span></button>
+                <button type="button" class="btn pointed"><span>버튼(.pointed)</span></button>
+                <button type="button" class="btn pointed" disabled><span>버튼(비활성화)</span></button>
+                <!--// .btn -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">크기별</span></h3>
+                <!-- .btn -->
+                <button type="button" class="btn primary option-cta"><span>버튼56(.option-cta)</span></button
+                ><!-- @set: option-cta -->
+                <button type="button" class="btn primary"><span>버튼48(기본)</span></button>
+                <button type="button" class="btn primary option-md"><span>버튼40(.option-md)</span></button
+                ><!-- @set: option-md -->
+                <button type="button" class="btn primary option-sm"><span>버튼32(.option-sm)</span></button
+                ><!-- @set: option-sm -->
+
+                <button type="button" class="btn filled option-cta"><span>버튼</span></button>
+                <button type="button" class="btn filled"><span>버튼</span></button>
+                <button type="button" class="btn filled option-md"><span>버튼</span></button>
+                <button type="button" class="btn filled option-sm"><span>버튼</span></button>
+
+                <button type="button" class="btn contained option-cta"><span>버튼</span></button>
+                <button type="button" class="btn contained"><span>버튼</span></button>
+                <button type="button" class="btn contained option-md"><span>버튼</span></button>
+                <button type="button" class="btn contained option-sm"><span>버튼</span></button>
+
+                <button type="button" class="btn outlined option-cta"><span>버튼</span></button>
+                <button type="button" class="btn outlined"><span>버튼</span></button>
+                <button type="button" class="btn outlined option-md"><span>버튼</span></button>
+                <button type="button" class="btn outlined option-sm"><span>버튼</span></button>
+
+                <button type="button" class="btn pointed option-cta"><span>버튼</span></button>
+                <button type="button" class="btn pointed"><span>버튼</span></button>
+                <button type="button" class="btn pointed option-md"><span>버튼</span></button>
+                <button type="button" class="btn pointed option-sm"><span>버튼</span></button>
+                <!--// .btn -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">밑줄형</span></h3>
+                <!-- .btn -->
+                <button type="button" class="btn texted"><span>텍스트버튼(.texted)</span></button>
+                <button type="button" class="btn texted" disabled><span>텍스트버튼(비활성화)</span></button>
+                <button type="button" class="btn texted primary"><span>텍스트버튼(.texted)</span></button>
+                <button type="button" class="btn texted primary" disabled><span>텍스트버튼(비활성화)</span></button>
+                <!--// .btn -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">불릿형</span></h3>
+                <!-- .btn -->
+                <button type="button" class="btn bulleted"><span>텍스트버튼(.bulleted)</span></button>
+                <button type="button" class="btn bulleted" disabled><span>텍스트버튼(비활성화)</span></button>
+                <button type="button" class="btn bulleted primary"><span>텍스트버튼(.bulleted)</span></button>
+                <button type="button" class="btn bulleted primary" disabled><span>텍스트버튼(비활성화)</span></button>
+                <!--// .btn -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">아이콘형</span></h3>
+                <!-- .btn -->
+                <button type="button" class="btn outlined option-md icon more"><span>아이콘버튼(.icon)</span></button>
+                <button type="button" class="btn outlined option-md icon more" disabled><span>아이콘버튼(비활성화)</span></button>
+
+                <button type="button" class="btn outlined option-sm icon download"><span>아이콘버튼(.icon)</span></button>
+
+                <button type="button" class="btn ico-download"><span class="sr-only">가입제안서 다운로드</span></button>
+                <button type="button" class="btn ico-download" disabled><span class="sr-only">가입제안서 다운로드</span></button>
+                <button type="button" class="btn ico-send"><span class="sr-only">상품별 상세 보험료 계산 결과 발송</span></button>
+                <button type="button" class="btn ico-send" disabled><span class="sr-only">상품별 상세 보험료 계산 결과 발송</span></button>
+
+                <button type="button" class="btn ico-filter"><span class="sr-only">상세조건 변경</span></button>
+                <!--// .btn -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">버튼 그룹</span></h3>
+                <!-- .btn-group* -->
+                <div class="btn-group">
+                  <button type="button" class="btn primary"><span>저장</span></button>
+                </div>
+                <!--// .btn-group* -->
+                <!-- .btn-group* -->
+                <div class="btn-group space-mt-xxs">
+                  <button type="button" class="btn filled fixed"><span>초기화</span></button>
+                  <button type="button" class="btn primary"><span>검색</span></button>
+                </div>
+                <!--// .btn-group* -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">버튼 그룹 - comment 조합</span></h3>
+                <!-- .btn-group* -->
+                <div class="btn-group">
+                  <div class="comment">최종수정 : 홍*동 2023.09.21 23:32</div>
+                  <button type="button" class="btn filled"><span>취소</span></button>
+                  <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+                <!--// .btn-group* -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 버튼 -->
+
+            <!-- .section - 컴포넌트 - 텍스트 필드 -->
+            <section class="section" id="form-textField">
+              <h2 class="title-h2"><span class="txt">@텍스트 필드</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">기본</span></h3>
+                <!-- .input -->
+                <div class="input w-fix-md">
+                  <input type="text" name="" id="textfield10" class="input-data" placeholder="입력해 주세요" required />
+                  <!--
+							<button type="button" class="btn-clear">
+								<span class="icon"></span>
+								<span class="sr-only">입력 내용 삭제</span>
+							</button>
+							-->
+                </div>
+                <!--// .input -->
+                <!-- .input -->
+                <div class="input w-fix-md">
+                  <input type="text" name="" id="textfield11" class="input-data is-error" placeholder="입력해 주세요" value="is-error" />
+                </div>
+                <!--// .input -->
+                <!-- .input -->
+                <div class="input w-fix-md">
+                  <input type="text" name="" id="textfield12" class="input-data" placeholder="입력해 주세요" value="Disabled" disabled />
+                </div>
+                <!--// .input -->
+                <!-- .input -->
+                <div class="input w-fix-md">
+                  <input type="text" name="" id="textfield13" class="input-data" placeholder="입력해 주세요" value="Readonly" readonly />
+                </div>
+                <!--// .input -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">날짜 (.option-date)</span></h3>
+                <!-- .input -->
+                <div class="input option-date w-fix-md">
+                  <!-- @set: option-date -->
+                  <input type="text" name="" id="textfield18" class="input-data" placeholder="YYYY.MM.DD" />
+                  <button type="button" class="btn-calendar" aria-label="달력제목A" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+                </div>
+                <!--// .input -->
+                <!-- .input -->
+                <div class="input option-date w-fix-md">
+                  <input type="text" name="" id="textfield19" class="input-data is-error" placeholder="YYYY.MM.DD" value="is-error" />
+                  <button type="button" class="btn-calendar" aria-label="달력제목B" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+                </div>
+                <!--// .input -->
+                <!-- .input -->
+                <div class="input option-date w-fix-md">
+                  <input type="text" name="" id="textfield20" class="input-data" placeholder="YYYY.MM.DD" value="Disabled" disabled />
+                  <button type="button" class="btn-calendar" aria-label="달력제목C" aria-expanded="false" aria-haspopup="dialog"><span class="sr-only">달력 선택</span></button>
+                </div>
+                <!--// .input -->
+                <!-- .input -->
+                <div class="input option-date w-fix-md">
+                  <input type="text" name="" id="textfield21" class="input-data" placeholder="YYYY.MM.DD" value="Readonly" readonly />
+                  <button type="button" class="btn-calendar" aria-label="달력제목D" aria-expanded="false" aria-haspopup="dialog" disabled><span class="sr-only">달력 선택</span></button>
+                </div>
+                <!--// .input -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">버튼형</span></h3>
+                <!-- .note* -->
+                <div class="note space-mb-xxs">
+                  <ul class="note-list">
+                    <li>📌버튼이 마지막 <code>.unit</code>에 있는 유형으로, 마지막 <code>.unit</code>에 다른 요소를 넣을 경우 혼합 컴포넌트 사용.</li>
+                  </ul>
+                </div>
+                <!--// .note* -->
+
+                <!-- .input-button -->
+                <div class="input-button w-fix-md">
+                  <div class="unit filled">
+                    <!-- .input -->
+                    <div class="input w-100">
+                      <input type="text" name="" id="textfield26" class="input-data" placeholder="placeholder" />
+                    </div>
+                    <!--// .input -->
+                  </div>
+                  <div class="unit fixed">
+                    <!-- .btn -->
+                    <button type="button" class="btn contained option-md"><span>버튼</span></button>
+                    <!--// .btn -->
+                  </div>
+                </div>
+                <!--// .input-button -->
+                <!-- .input-button -->
+                <div class="input-button is-error w-fix-md">
+                  <div class="unit filled">
+                    <!-- .input -->
+                    <div class="input w-100">
+                      <input type="text" name="" id="textfield27" class="input-data" placeholder="placeholder" value="is-error" />
+                    </div>
+                    <!--// .input -->
+                  </div>
+                  <div class="unit fixed">
+                    <!-- .btn -->
+                    <button type="button" class="btn contained option-md"><span>주소 검색</span></button>
+                    <!--// .btn -->
+                  </div>
+                </div>
+                <!--// .input-button -->
+                <!-- .input-button -->
+                <div class="input-button is-disabled w-fix-md">
+                  <div class="unit filled">
+                    <!-- .input -->
+                    <div class="input w-100">
+                      <input type="text" name="" id="textfield28" class="input-data" placeholder="placeholder" value="Disabled" disabled />
+                    </div>
+                    <!--// .input -->
+                  </div>
+                  <div class="unit fixed">
+                    <!-- .btn -->
+                    <button type="button" class="btn contained option-md" disabled><span>버튼</span></button>
+                    <!--// .btn -->
+                  </div>
+                </div>
+                <!--// .input-button -->
+                <!-- .input-button -->
+                <div class="input-button is-readonly w-fix-md">
+                  <div class="unit filled">
+                    <!-- .input -->
+                    <div class="input w-100">
+                      <input type="text" name="" id="textfield29" class="input-data" placeholder="placeholder" value="Readonly" readonly />
+                    </div>
+                    <!--// .input -->
+                  </div>
+                  <div class="unit fixed">
+                    <!-- .btn -->
+                    <button type="button" class="btn contained option-md" readonly><span>버튼</span></button>
+                    <!--// .btn -->
+                  </div>
+                </div>
+                <!--// .input-button -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">버튼 + 데이터형 (.option-read)</span></h3>
+                <!-- .input-button -->
+                <div class="input-button option-read">
+                  <!-- @set: option-read -->
+                  <div class="unit filled">
+                    <!-- .input -->
+                    <div class="input w-100">
+                      <div class="read-data">데이터 출력 시 버튼과 함께 노출될 경우</div>
+                    </div>
+                    <!--// .input -->
+                  </div>
+                  <div class="unit fixed">
+                    <!-- .btn -->
+                    <button type="button" class="btn outlined option-sm"><span>버튼명</span></button>
+                    <!--// .btn -->
+                  </div>
+                </div>
+                <!--// .input-button -->
+                <!-- .input-button -->
+                <div class="input-button option-read w-fix-lg">
+                  <div class="unit filled">
+                    <!-- .input -->
+                    <div class="input w-100">
+                      <div class="read-data">자택 <span class="txt-line">|</span> 04522 서울특별시 중구 다동길 46 (다동, 다동빌딩) 4층</div>
+                    </div>
+                    <!--// .input -->
+                  </div>
+                  <div class="unit fixed">
+                    <!-- .btn -->
+                    <button type="button" class="btn outlined option-sm"><span>수정</span></button>
+                    <!--// .btn -->
+                  </div>
+                </div>
+                <!--// .input-button -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">혼합-사업자등록번호</span></h3>
+                <!-- .item* -->
+                <div class="item-row w-px-430 dash-min">
+                  <div class="unit filled">
+                    <!-- .input -->
+                    <div class="input w-100">
+                      <input type="number" name="" id="textfield1-2" class="input-data" placeholder="" value="123" title="사업자 등록번호 앞번호" disabled />
+                    </div>
+                    <!--// .input -->
+                  </div>
+                  <div class="unit">
+                    <span class="fix-data">-</span>
+                  </div>
+                  <div class="unit filled">
+                    <!-- .input -->
+                    <div class="input w-100">
+                      <input type="number" name="" id="textfield1-3" class="input-data" placeholder="" value="45" title="사업자 등록번호 중간번호" disabled />
+                    </div>
+                    <!--// .input -->
+                  </div>
+                  <div class="unit">
+                    <span class="fix-data">-</span>
+                  </div>
+                  <div class="unit filled">
+                    <!-- .input -->
+                    <div class="input w-100">
+                      <input type="number" name="" id="textfield1-4" class="input-data" placeholder="" value="67890" title="사업자 등록번호 뒷번호" disabled />
+                    </div>
+                    <!--// .input -->
+                  </div>
+                </div>
+                <!--// .item* -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">혼합-전화번호</span></h3>
+                <!-- .item* -->
+                <div class="item-row w-px-430 dash-min">
+                  <div class="unit filled">
+                    <!-- .select -->
+                    <div class="select select-type w-100">
+                      <select name="" id="textfield1-8" class="select-data" title="기관 전화번호 국번 선택">
+                        <option value="" selected>선택</option>
+                        <option value="">02</option>
+                        <option value="">032</option>
+                        <option value="">033</option>
+                        <option value="">010</option>
+                      </select>
+                    </div>
+                    <!--// .select -->
+                  </div>
+
+                  <div class="unit">
+                    <span class="fix-data">-</span>
+                  </div>
+                  <div class="unit filled">
+                    <!-- .input -->
+                    <div class="input w-100">
+                      <input type="tel" name="" id="textfield1-9" class="input-data" placeholder="" value="" maxlength="4" title="기관 전화번호 중간번호" />
+                    </div>
+                    <!--// .input -->
+                  </div>
+                  <div class="unit">
+                    <span class="fix-data">-</span>
+                  </div>
+                  <div class="unit filled">
+                    <!-- .input -->
+                    <div class="input w-100">
+                      <input type="tel" name="" id="textfield1-10" class="input-data" placeholder="" value="" maxlength="4" title="기관 전화번호 뒷번호" />
+                    </div>
+                    <!--// .input -->
+                  </div>
+                </div>
+                <!--// .item* -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">혼합-주민번호(앞6자리 + 뒷1자리)</span></h3>
+                <!-- .item* -->
+                <div class="item-row">
+                  <!-- .unit -->
+                  <div class="unit item-row">
+                    <div class="unit">
+                      <!-- .input -->
+                      <div class="input w-px-153">
+                        <input type="number" name="" id="textfieldEX1-8" class="input-data" placeholder="YYMMDD" title="피보험자주민번호 앞 6자리" value="" maxlength="6" />
+                      </div>
+                      <!--// .input -->
+                    </div>
+                    <div class="unit">
+                      <span class="fix-data">-</span>
+                    </div>
+                    <div class="unit">
+                      <!-- .input -->
+                      <div class="input w-px-65">
+                        <input type="number" name="" id="textfieldEX1-9" class="input-data" placeholder="●" title="피보험자주민번호 뒷 첫번째1자리" value="" maxlength="1" />
+                      </div>
+                      <!--// .input -->
+                    </div>
+                  </div>
+                  <!--// .unit -->
+                </div>
+                <!--// .item* -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">혼합-필드 + 버튼</span></h3>
+                <!-- .item* -->
+                <div class="item-row">
+                  <!-- .unit -->
+                  <div class="unit item-row">
+                    <div class="unit">
+                      <!-- .input -->
+                      <div class="input w-px-430">
+                        <input type="text" name="" id="textfield3-1" class="input-data" placeholder="입력해 주세요" value="lakdghjjyuiosjeh35glkdj63hglkja1" readonly />
+                      </div>
+                      <!--// .input -->
+                    </div>
+                    <div class="unit">
+                      <button type="button" class="btn contained option-md"><span>클립보드에 복사</span></button>
+                    </div>
+                  </div>
+                  <!--// .unit -->
+                </div>
+                <!--// .item* -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">혼합-필드 + 버튼 + 버튼</span></h3>
+                <!-- .item* -->
+                <div class="item-row">
+                  <!-- .unit -->
+                  <div class="unit item-row">
+                    <!-- .unit -->
+                    <div class="unit">
+                      <!-- .input -->
+                      <div class="input w-px-430">
+                        <input type="text" name="" id="textfield1-5-2" class="input-data" placeholder="입력해 주세요" value="" title="" />
+                      </div>
+                      <!--// .input -->
+                    </div>
+                    <div class="unit">
+                      <button type="button" class="btn contained option-sm"><span>추가</span></button>
+                      <button type="button" class="btn outlined option-sm"><span>제거</span></button>
+                    </div>
+                  </div>
+                  <!--// .unit -->
+                </div>
+                <!--// .item* -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 텍스트 필드 -->
+
+            <!-- .section - 컴포넌트 - 셀렉트박스 -->
+            <section class="section" id="form-selectBox">
+              <h2 class="title-h2"><span class="txt">@셀렉트박스</span></h2>
+              <!-- .note* -->
+              <div class="note space-mb-xxs">
+                <ul class="note-list">
+                  <li>📌<code>placeholder</code> 사용 시 해당 <code>option</code>에 <code>disabled, selected</code> 속성 지정.</li>
+                  <li>📌<code>&lt;select aria-label=""&gt;</code> 또는 <code>&lt;select aria-labelledby=""&gt;</code> 둘 중 하나는 반드시 포함되어야 함.</li>
+                  <li>📌셀렉트박스의 <code>&lt;label&gt;</code>이 1:1로 매칭될 경우 <code>&lt;label id=""&gt;</code> 값과 <code>&lt;select aria-labelledby=""&gt;</code> 값 동일하게 지정.</li>
+                  <li>📌셀렉트박스의 <code>&lt;label&gt;</code>이 없을 경우 <code>&lt;select aria-label=""&gt;</code>에 대체 텍스트 작성.</li>
+                </ul>
+              </div>
+              <!--// .note* -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">기본</span></h3>
+                <!-- .select -->
+                <div class="select">
+                  <select name="" id="selectA" class="select-data" aria-label="옵션제목A" aria-hidden="true" tabindex="-1">
+                    <option value="" disabled selected>옵션을 선택해 주세요</option>
+                    <option value="">넓이가변</option>
+                    <option value="">옵션길이만큼</option>
+                    <option value="">자동세팅됨</option>
+                  </select>
+                </div>
+                <!--// .select -->
+                <!-- .select -->
+                <div class="select w-fix-md">
+                  <select name="" id="selectB" class="select-data is-error" aria-label="옵션제목B" aria-hidden="true" tabindex="-1">
+                    <option value="" disabled>옵션22을 선택해 주세요</option>
+                    <option value="" selected>is-error</option>
+                    <option value="">옵션222</option>
+                  </select>
+                </div>
+                <!--// .select -->
+                <!-- .select -->
+                <div class="select w-fix-md">
+                  <select name="" id="selectD" class="select-data" aria-label="옵션제목D" aria-hidden="true" tabindex="-1" disabled>
+                    <option value="" disabled>옵션을 선택해 주세요2.</option>
+                    <option value="">옵션21</option>
+                    <option value="">옵션22</option>
+                    <option value="" selected>Disabled</option>
+                  </select>
+                </div>
+                <!--// .select -->
+                <!-- .select -->
+                <div class="select w-fix-md">
+                  <select name="" id="selectJ" class="select-data is-readonly" aria-label="옵션제목J" aria-hidden="true" tabindex="-1">
+                    <option value="" disabled>옵션을 선택해 주세요2.</option>
+                    <option value="">옵션21</option>
+                    <option value="">옵션22</option>
+                    <option value="" selected>Readonly</option>
+                  </select>
+                </div>
+                <!--// .select -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">미니형</span></h3>
+                <!-- .select -->
+                <div class="select option-sm">
+                  <!-- @set: option-sm -->
+                  <select name="" id="selectK" class="select-data" aria-label="옵션제목A" aria-hidden="true" tabindex="-1">
+                    <option value="" disabled selected>옵션을 선택해 주세요</option>
+                    <option value="">넓이가변</option>
+                    <option value="">옵션길이만큼</option>
+                    <option value="">자동세팅됨</option>
+                  </select>
+                </div>
+                <!--// .select -->
+                <!-- .select -->
+                <div class="select option-sm w-fix-md">
+                  <select name="" id="selectL" class="select-data is-error" aria-label="옵션제목B" aria-hidden="true" tabindex="-1">
+                    <option value="" disabled>옵션22을 선택해 주세요</option>
+                    <option value="" selected>is-error</option>
+                    <option value="">옵션222</option>
+                  </select>
+                </div>
+                <!--// .select -->
+                <!-- .select -->
+                <div class="select option-sm w-fix-md">
+                  <select name="" id="selectM" class="select-data" aria-label="옵션제목D" aria-hidden="true" tabindex="-1" disabled>
+                    <option value="" disabled>옵션을 선택해 주세요2.</option>
+                    <option value="">옵션21</option>
+                    <option value="">옵션22</option>
+                    <option value="" selected>Disabled</option>
+                  </select>
+                </div>
+                <!--// .select -->
+                <!-- .select -->
+                <div class="select option-sm w-fix-md">
+                  <select name="" id="selectN" class="select-data is-readonly" aria-label="옵션제목J" aria-hidden="true" tabindex="-1">
+                    <option value="" disabled>옵션을 선택해 주세요2.</option>
+                    <option value="">옵션21</option>
+                    <option value="">옵션22</option>
+                    <option value="" selected>Readonly</option>
+                  </select>
+                </div>
+                <!--// .select -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">텍스트형</span></h3>
+                <!-- .select -->
+                <div class="select option-txt">
+                  <!-- @set: option-txt -->
+                  <select name="" id="selectO" class="select-data" aria-label="옵션제목A" aria-hidden="true" tabindex="-1">
+                    <option value="">김신한</option>
+                    <option value="">홍길동</option>
+                  </select>
+                </div>
+                <!--// .select -->
+                <!-- .select -->
+                <div class="select option-txt w-fix-md">
+                  <select name="" id="selectP" class="select-data is-error" aria-label="옵션제목B" aria-hidden="true" tabindex="-1">
+                    <option value="" selected disabled>선택해 주세요</option>
+                    <option value="">is-error</option>
+                    <option value="">옵션222</option>
+                  </select>
+                </div>
+                <!--// .select -->
+                <!-- .select -->
+                <div class="select option-txt w-fix-md">
+                  <select name="" id="selectQ" class="select-data" aria-label="옵션제목D" aria-hidden="true" tabindex="-1" disabled>
+                    <option value="" disabled>옵션을 선택해 주세요2.</option>
+                    <option value="">옵션21</option>
+                    <option value="">옵션22</option>
+                    <option value="" selected>Disabled</option>
+                  </select>
+                </div>
+                <!--// .select -->
+                <!-- .select -->
+                <div class="select option-txt w-fix-md">
+                  <select name="" id="selectR" class="select-data is-readonly" aria-label="옵션제목J" aria-hidden="true" tabindex="-1">
+                    <option value="" disabled>옵션을 선택해 주세요2.</option>
+                    <option value="">옵션21</option>
+                    <option value="">옵션22</option>
+                    <option value="" selected>Readonly</option>
+                  </select>
+                </div>
+                <!--// .select -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">텍스트 혼합</span></h3>
+                <!-- .select -->
+                <label class="txt-subject" for="selectE" id="selectETitle">항목명 :</label>
+                <div class="select">
+                  <select name="" id="selectE" class="select-data" aria-labelledby="selectETitle" aria-hidden="true" tabindex="-1">
+                    <option value="selectE1">옵션1</option>
+                    <option value="selectE2">옵션2</option>
+                    <option value="selectE3">옵션3</option>
+                    <option value="selectE4">옵션4</option>
+                    <option value="selectE5" selected>옵션5</option>
+                    <option value="selectE6">옵션6</option>
+                  </select>
+                </div>
+                <!--// .select -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 셀렉트박스 -->
+
+            <!-- .section - 컴포넌트 - 텍스트에어리어 -->
+            <section class="section" id="form-textarea">
+              <h2 class="title-h2"><span class="txt">@텍스트에어리어</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <!-- .textarea -->
+                <div class="textarea w-fix-md">
+                  <div class="textarea-count">
+                    <span><em class="count-char">0</em> / <span class="count-max">20</span>Byte</span>
+                  </div>
+                  <textarea name="" id="textarea1" class="textarea-data" maxlength="20" placeholder="입력해 주세요"></textarea>
+                </div>
+                <!--// .textarea -->
+                <!-- .textarea -->
+                <div class="textarea w-fix-md">
+                  <div class="textarea-count">
+                    <span><em class="count-char">0</em> / <span class="count-max">100</span>Byte</span>
+                  </div>
+                  <textarea name="" id="textarea2" class="textarea-data is-error" maxlength="100" placeholder="입력해 주세요">내용 입력 중 + %</textarea>
+                </div>
+                <!--// .textarea -->
+                <!-- .textarea -->
+                <div class="textarea w-fix-md">
+                  <div class="textarea-count">
+                    <span><em class="count-char">0</em> / <span class="count-max">100</span>Byte</span>
+                  </div>
+                  <textarea name="" id="textarea3" class="textarea-data" maxlength="100" placeholder="입력해 주세요" disabled>Disabled</textarea>
+                </div>
+                <!--// .textarea -->
+                <!-- .textarea -->
+                <div class="textarea w-fix-md">
+                  <div class="textarea-count">
+                    <span><em class="count-char">0</em> / <span class="count-max">100</span>Byte</span>
+                  </div>
+                  <textarea name="" id="textarea4" class="textarea-data code-date" maxlength="100" placeholder="입력해 주세요">CODE</textarea>
+                </div>
+                <!--// .textarea -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <!-- .form -->
+                <div class="form">
+                  <div class="form-wrap">
+                    <!-- .form-list -->
+                    <ul class="form-list">
+                      <li class="form-item">
+                        <div class="form-name">
+                          <label for="textfield1">항목명</label><strong class="must"><span class="sr-only">필수입력</span></strong>
+                        </div>
+                        <div class="form-value">
+                          <!-- .textarea -->
+                          <div class="textarea w-100">
+                            <div class="textarea-count">
+                              <span><em class="count-char">0</em> / <span class="count-max">100</span>Byte</span>
+                            </div>
+                            <textarea name="" id="textarea5" class="textarea-data" maxlength="100" placeholder="입력해 주세요"></textarea>
+                          </div>
+                          <!--// .textarea -->
+                        </div>
+                      </li>
+                    </ul>
+                    <!--// .form-list -->
+                  </div>
+                </div>
+                <!--// .form -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 텍스트에어리어 -->
+
+            <!-- .section - 컴포넌트 - 파일첨부 -->
+            <section class="section" id="form-attachfile">
+              <h2 class="title-h2"><span class="txt">@파일첨부</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">첨부 전(첨부 후 스크립트 자동 세팅)</span></h3>
+                <!-- .file -->
+                <div class="file">
+                  <label for="fileItem1" class="file-label" aria-hidden="false" tabindex="0">
+                    <input type="file" name="" id="fileItem1" class="file-data" tabindex="-1" />
+                    <div class="file-btn"><span class="txt">찾아보기</span></div>
+                  </label>
+                  <div class="file-name" aria-hidden="true">
+                    <span class="txt">파일명.txt</span>
+                    <button type="button" class="btn-delete" tabindex="-1"><span class="sr-only">첨부파일 삭제</span></button>
+                    <button type="button" class="btn-download"><span class="sr-only">첨부파일 다운로드</span></button>
+                  </div>
+                </div>
+                <!--// .file -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">첨부 후</span></h3>
+                <!-- .file -->
+                <div class="file has-value">
+                  <label for="fileItem2" class="file-label" aria-hidden="true" tabindex="-1">
+                    <input type="file" name="" id="fileItem2" class="file-data" value="첨부파일" tabindex="-1" />
+                    <div class="file-btn"><span class="txt">찾아보기</span></div>
+                  </label>
+                  <div class="file-name" aria-hidden="false">
+                    <span class="txt">파일명.txt</span>
+                    <button type="button" class="btn-delete" tabindex="0"><span class="sr-only">첨부파일 삭제</span></button>
+                    <button type="button" class="btn-download"><span class="sr-only">첨부파일 다운로드</span></button>
+                  </div>
+                </div>
+                <!--// .file -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">폼 예시</span></h3>
+                <!-- .form -->
+                <div class="form">
+                  <div class="form-wrap">
+                    <!-- .form-list -->
+                    <ul class="form-list">
+                      <li class="form-item">
+                        <div class="form-name"><strong>첨부파일</strong></div>
+                        <div class="form-value">
+                          <!-- .file -->
+                          <div class="file">
+                            <label for="fileItem3" class="file-label" aria-hidden="false" tabindex="0">
+                              <input type="file" name="" id="fileItem3" class="file-data" tabindex="-1" />
+                              <div class="file-btn"><span class="txt">첨부하기</span></div>
+                            </label>
+                            <div class="file-name" aria-hidden="true">
+                              <span class="txt">파일명.txt</span>
+                              <button type="button" class="btn-delete" tabindex="-1"><span class="sr-only">첨부파일 삭제</span></button>
+                            </div>
+                          </div>
+                          <!--// .file -->
+                          <div class="data-helper option-caption" role="tooltip">
+                            <span class="helper-txt">파일첨부는 최대 1개까지 pdf, doc, xls, hwp 파일, 이미지(gif, jpg)가 가능합니다.</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!--// .form-list -->
+                  </div>
+                </div>
+                <!--// .form -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 파일첨부 -->
+
+            <!-- .section - 컴포넌트 - 라디오버튼 -->
+            <section class="section" id="form-radioButton">
+              <h2 class="title-h2"><span class="txt">@라디오버튼</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">다중</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .radio* -->
+                  <fieldset class="radio-group">
+                    <label for="radioA1" class="radio-item">
+                      <input type="radio" name="radioA" id="radioA1" class="control" checked />
+                      <span class="label">옵션A1</span>
+                    </label>
+                    <label for="radioA2" class="radio-item">
+                      <input type="radio" name="radioA" id="radioA2" class="control" />
+                      <span class="label">옵션A2</span>
+                    </label>
+                    <label for="radioA5" class="radio-item is-error">
+                      <input type="radio" name="radioA" id="radioA5" class="control" />
+                      <span class="label">옵션A5</span>
+                    </label>
+                    <label for="radioA3" class="radio-item">
+                      <input type="radio" name="radioA" id="radioA3" class="control" disabled />
+                      <span class="label">옵션A3</span>
+                    </label>
+                    <label for="radioA4" class="radio-item">
+                      <input type="radio" name="radioA1" id="radioA4" class="control" checked disabled />
+                      <span class="label">옵션A3</span>
+                    </label>
+                  </fieldset>
+                  <!--// .radio* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">텍스트 혼합</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .radio* -->
+                  <fieldset class="radio-group">
+                    <span class="txt-subject">항목명 :</span>
+                    <label for="radioC1" class="radio-item">
+                      <input type="radio" name="radioC" id="radioC1" class="control" />
+                      <span class="label">옵션C1</span>
+                    </label>
+                  </fieldset>
+                  <!--// .radio* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">단일</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .radio* -->
+                  <label for="radioD1" class="radio-item">
+                    <input type="radio" name="radioD" id="radioD1" class="control" />
+                    <span class="label">옵션D1</span>
+                  </label>
+                  <!--// .radio* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 라디오버튼 -->
+
+            <!-- .section - 컴포넌트 - 체크박스 -->
+            <section class="section" id="form-checkBox">
+              <h2 class="title-h2"><span class="txt">@체크박스</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">다중</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .checkbox* -->
+                  <fieldset class="checkbox-group">
+                    <label for="checkA1" class="checkbox-item">
+                      <input type="checkbox" name="" id="checkA1" class="control" checked />
+                      <span class="label">선택A1</span>
+                    </label>
+                    <label for="checkA2" class="checkbox-item">
+                      <input type="checkbox" name="" id="checkA2" class="control" />
+                      <span class="label">선택A2</span>
+                    </label>
+                    <label for="checkA3" class="checkbox-item">
+                      <input type="checkbox" name="" id="checkA3" class="control" disabled />
+                      <span class="label">선택A3</span>
+                    </label>
+                    <label for="checkA4" class="checkbox-item">
+                      <input type="checkbox" name="" id="checkA4" class="control" checked disabled />
+                      <span class="label">선택A4</span>
+                    </label>
+                  </fieldset>
+                  <!--// .checkbox* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">텍스트 혼합</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .checkbox* -->
+                  <fieldset class="checkbox-group">
+                    <span class="txt-subject">항목명 :</span>
+                    <label for="checkC1" class="checkbox-item">
+                      <input type="checkbox" name="checkC" id="checkC1" class="control" />
+                      <span class="label">옵션C1</span>
+                    </label>
+                  </fieldset>
+                  <!--// .checkbox* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">단일</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .checkbox* -->
+                  <label for="checkD1" class="checkbox-item">
+                    <input type="checkbox" name="checkD" id="checkD1" class="control" />
+                    <span class="label">옵션D1</span>
+                  </label>
+                  <!--// .checkbox* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">정보동의 (.option-agree)</span></h3>
+                <!-- .box -->
+                <div class="box option-line">
+                  <!-- .checkbox* -->
+                  <fieldset class="checkbox-group">
+                    <label for="checkH1" class="checkbox-item option-agree"
+                      ><!-- @set: option-agree -->
+                      <input type="checkbox" name="" id="checkH1" class="control" checked />
+                      <span class="label">선택H1</span>
+                    </label>
+                    <label for="checkH2" class="checkbox-item option-agree">
+                      <input type="checkbox" name="" id="checkH2" class="control" />
+                      <span class="label">선택H2</span>
+                    </label>
+                    <label for="checkH3" class="checkbox-item option-agree">
+                      <input type="checkbox" name="" id="checkH3" class="control" disabled />
+                      <span class="label">선택H3</span>
+                    </label>
+                    <label for="checkH4" class="checkbox-item option-agree">
+                      <input type="checkbox" name="" id="checkH4" class="control" checked disabled />
+                      <span class="label">선택H3</span>
+                    </label>
+                  </fieldset>
+                  <!--// .checkbox* -->
+                </div>
+                <!--// .box -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 체크박스 -->
+
+            <!-- .section - 컴포넌트 - 칩 -->
+            <section class="section" id="form-chip">
+              <h2 class="title-h2"><span class="txt">@칩</span></h2>
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">선택 데이터</span></h3>
+                <!-- .chip* -->
+                <div class="chip-group">
+                  <span class="chip-data">
+                    <span class="txt">선택값</span>
+                    <button type="button" class="delete">
+                      <span class="icon"></span>
+                      <span class="sr-only">삭제</span>
+                    </button>
+                  </span>
+                  <span class="chip-data">
+                    <span class="txt">선택값</span>
+                    <button type="button" class="delete">
+                      <span class="icon"></span>
+                      <span class="sr-only">삭제</span>
+                    </button>
+                  </span>
+                </div>
+                <!--// .chip* -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 칩 -->
+
+            <!-- .section - 컴포넌트 - 스위치 -->
+            <section class="section" id="form-switch">
+              <h2 class="title-h2"><span class="txt">@스위치</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">기본</span></h3>
+                <!-- .switch* -->
+                <label for="switchA1" class="switch-item">
+                  <input type="checkbox" name="" id="switchA1" class="control" />
+                  <span class="label">선택</span>
+                </label>
+                <!--// .switch* -->
+                <!-- .switch* -->
+                <label for="switchB1" class="switch-item">
+                  <span class="label">비활성화</span>
+                  <input type="checkbox" name="" id="switchB1" class="control" disabled />
+                </label>
+                <!--// .switch* -->
+                <!-- .switch* -->
+                <label for="switchC1" class="switch-item">
+                  <span class="label">체크된 비활성화</span>
+                  <input type="checkbox" name="" id="switchC1" class="control" checked disabled />
+                </label>
+                <!--// .switch* -->
+              </div>
+              <!--// .group -->
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">항목명 변경</span></h3>
+                <!-- .switch* -->
+                <label for="switchD1" class="switch-item include">
+                  <input type="checkbox" name="" id="switchD1" class="control" />
+                  <span class="label"></span>
+                </label>
+                <!--// .switch* -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 스위치 -->
+
+            <!-- .section - 컴포넌트 - 예시 -->
+            <section class="section" id="component-example">
+              <h2 class="title-h2"><span class="txt">@예시</span></h2>
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">테이블 전체 구조</span></h3>
+                <!-- .data -->
+                <div class="data">
+                  <!-- .list-head -->
+                  <div class="list-head">
+                    <h3 class="list-title">목록 타이틀 <span class="txt">보조문구</span></h3>
+                    <div class="list-info">
+                      <span>행 선택 시 고객정보 상세페이지로 이동합니다.</span>
+                    </div>
+                  </div>
+                  <!--// .list-head -->
+                  <div class="data-body option-row">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>고객정보 표</strong>
+                        <!-- 표내용순서 -->
+                        <span>이름, 생년월일, 휴대폰번호 정보</span>
+                      </caption>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th>김신한</th>
+                          <td>90.01.01</td>
+                          <td>010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <th>김신한</th>
+                          <td>90.01.01</td>
+                          <td rowspan="2">010-****-1234</td>
+                        </tr>
+                        <tr>
+                          <th>김신한</th>
+                          <td class="line">90.01.01</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- .note* -->
+                  <p class="note-info">
+                    <span>찾는 직업이 없는 경우, 가장 비슷한 직업으로 선택해주세요. 상담 시 직군에 맞는 직업으로 변경해드립니다. 찾는 직업이 없는 경우, 가장 비슷한 직업으로 선택해주세요. 상담 시 직군에 맞는 직업으로 변경해드립니다.</span>
+                  </p>
+                  <!--// .note* -->
+                  <!-- .list-foot -->
+                  <div class="list-foot">
+                    <!-- .list-paging -->
+                    <div class="list-paging">
+                      <a href="javascript:;" class="btn-list-prev"><span class="sr-only">이전 페이지</span></a>
+                      <span class="page-current">
+                        <strong>1</strong>
+                        <a href="javascript:;">2</a>
+                        <a href="javascript:;">3</a>
+                        <a href="javascript:;">4</a>
+                        <a href="javascript:;">5</a>
+                        <a href="javascript:;">6</a>
+                        <a href="javascript:;">7</a>
+                        <a href="javascript:;">8</a>
+                        <a href="javascript:;">9</a>
+                        <a href="javascript:;">10</a>
+                      </span>
+                      <a href="javascript:;" class="btn-list-next"><span class="sr-only">다음 페이지</span></a>
+                    </div>
+                    <!--// .list-paging -->
+                  </div>
+                  <!--// .list-foot -->
+                </div>
+                <!--// .data -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 컴포넌트 - 예시 -->
+
+            <!-- .section - 레이아웃 - 타이틀영역 -->
+            <section class="section" id="layout-top-title">
+              <h2 class="title-h2"><span class="txt">@타이틀영역</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">본문 메인 타이틀</span></h3>
+                <!-- .note* -->
+                <div class="note">
+                  <ul class="note-list depth-root">
+                    <li>📌타이틀 메인<code>(.title-main)</code>과 API<code>(.option-als)</code>은 Front는 (.front-bg), Admin은 (.admin-bg)를 추가합니다.</li>
+                  </ul>
+                </div>
+                <!--// .note* -->
+
+                <!-- .title* -->
+                <h2 class="title-main"><span class="txt">타이틀 메인 영역</span></h2>
+                <!--// .title* -->
+
+                <!-- .title* -->
+                <h2 class="title-main option-noline"><span class="txt">타이틀 메인 영역</span></h2>
+                <!--// .title* -->
+
+                <!-- .title* -->
+                <h2 class="title-main option-als front-bg"><span class="txt">Front / 타이틀 메인 비주얼배경 영역</span></h2>
+                <!--// .title* -->
+
+                <!-- .title* -->
+                <h2 class="title-main option-als admin-bg"><span class="txt">Admin / 타이틀 메인 비주얼배경 영역</span></h2>
+                <!--// .title* -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">@ 본문 메인 제목 영역</span></h3>
+                <!-- .step -->
+                <div class="form option-regist">
+                  <!-- .list-head -->
+                  <div class="list-head">
+                    <h3 class="list-title">
+                      <span class="txt">폼 타이틀</span>
+                    </h3>
+                  </div>
+                  <!--// .list-head -->
+                  <div class="form-wrap">
+                    <!-- .form-list -->
+                    <ul class="form-list">
+                      <li class="form-item">
+                        <div class="unit">
+                          <div class="form-name">
+                            <strong><label for="textfieldEX1-1">LABEL</label></strong>
+                            <strong class="must"><span class="sr-only">필수입력</span></strong>
+                          </div>
+                          <div class="form-value">
+                            <!-- .input -->
+                            <div class="input w-100">
+                              <input type="text" name="" id="textfieldEX1-1" class="input-data" maxlength="30" placeholder="입력해 주세요" value="" />
+                            </div>
+                            <!--// .input -->
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!--// .form-list -->
+                  </div>
+                </div>
+                <!--// .step -->
+              </div>
+              <!--// .group -->
+
+              <!-- .group -->
+              <div class="group">
+                <h3 class="title-h3"><span class="txt">@ 테이블 제목 영역</span></h3>
+                <!-- .data -->
+                <div class="data">
+                  <!-- .list-head -->
+                  <div class="list-head">
+                    <h3 class="list-title">
+                      <span class="txt">테이블 제목</span>
+                    </h3>
+                  </div>
+                  <!--// .list-head -->
+                  <div class="data-body">
+                    <table class="data-list">
+                      <caption class="sr-only">
+                        <!-- 표제목 -->
+                        <strong>테이블 목록</strong>
+                        <!-- 표내용순서 -->
+                        <span>테이블헤드1, 테이블헤드2, 테이블헤드3 설명</span>
+                      </caption>
+                      <colgroup>
+                        <col style="width: 33.333%" />
+                        <col style="width: 33.333%" />
+                        <col style="width: 33.333%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">테이블헤드1</th>
+                          <th scope="col">테이블헤드2</th>
+                          <th scope="col">테이블헤드3</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>테이블1영역</td>
+                          <td>테이블2영역</td>
+                          <td>테이블3영역</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--// .data -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 레이아웃 - 타이틀영역 -->
+
+            <!-- .section - 레이아웃 - 결과화면 -->
+            <section class="section" id="layout-result">
+              <h2 class="title-h2"><span class="txt">@결과화면</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <!-- .section -->
+                <section class="section option-result">
+                  <!-- .title* -->
+                  <h2 class="title-h2 result-title">
+                    <span class="result-icon result-backimg complete"></span>
+                    <span class="txt">완료타이틀</span>
+                  </h2>
+                  <!--// .title* -->
+
+                  <!-- .title* -->
+                  <h2 class="title-h2 result-title">
+                    <span class="result-icon result-backimg caution"></span>
+                    <span class="txt">정보타이틀</span>
+                    <p class="desc">정보문구</p>
+                  </h2>
+                  <!--// .title* -->
+
+                  <!-- .group -->
+                  <div class="group">
+                    <!-- .title* -->
+                    <h2 class="title-h2 result-title">
+                      <span class="result-icon result-backimg error"></span>
+                      <span class="txt">경고타이틀</span>
+                      <p class="desc">경고문구</p>
+                    </h2>
+                    <!--// .title* -->
+                  </div>
+                  <!--// .group -->
+                </section>
+                <!--// .section -->
+
+                <!-- .note* -->
+                <div class="note space-mb-xxs">
+                  <ul class="note-list depth-root">
+                    <li>📌<code>.title-h2</code>에 <code>.result-title</code> 클래스 추가하여 사용 (화면 중간에 들어갈 경우 예외)</li>
+                    <li>📌<code>.result-title</code>는 기본 상단 여백을 포함</li>
+                    <li>📌<code>result-icon result-backimg</code>에 값 추가 (완료 : <code>complete</code>, 정보 : <code>caution</code>, 경고 : <code>error</code>)</li>
+                  </ul>
+                </div>
+                <!--// .note* -->
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 레이아웃 - 결과화면 -->
+
+            <!-- .section - 팝업 - 모달 -->
+            <section class="section" id="popup-A">
+              <h2 class="title-h2"><span class="txt">@공지팝업 타입A</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <a href="../../html/frt/cmm/cmm/FRTCMMCMM_P01.html" target="_blank" class="btn-menu-link"><span>새창으로 보기</span></a>
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 팝업 - 모달 -->
+
+            <!-- .section - 팝업 - 하루 열지 않음 -->
+            <section class="section" id="popup-B">
+              <h2 class="title-h2"><span class="txt">@공지팝업 타입B (하루열지않음 포함)</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <a href="../../html/frt/cmm/cmm/FRTCMMCMM_P02.html" target="_blank" class="btn-menu-link"><span>새창으로 보기</span></a>
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 팝업 - 하루 열지 않음 -->
+
+            <!-- .section - 로딩 -->
+            <section class="section" id="etc-loading">
+              <h2 class="title-h2"><span class="txt">@로딩</span></h2>
+              <!-- .group -->
+              <div class="group">
+                <a href="../../html/frt/com/com/loading.html" target="_blank" class="btn-menu-link"><span>새창으로 보기</span></a>
+              </div>
+              <!--// .group -->
+            </section>
+            <!--// .section - 로딩 -->
+          </article>
+          <!--// #content -->
+        </main>
+        <!--// #main -->
+
+        <!-- #footer -->
+        <footer id="footer"></footer>
+        <!--// #footer -->
+      </div>
+      <!--// #page -->
+
+      <!-- #popup -->
+      <div id="popup">
+        <!-- .select-popup -->
+        <!-- <div class="select-popup" id="selectPopup" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="selectTitle">
+			<div class="select-content">
+				<h2 class="select-title" id="selectTitle"><span>팝업 타이틀</span></h2>
+				<ul class="options" id="xxxOption" role="listbox" aria-labelledby="selectTitle">
+					<li class="item is-placeholder" role="option" aria-selected="true" aria-hidden="true" tabindex="-1">옵션을 선택해 주세요</li>
+					<li class="item" role="option" aria-selected="false" tabindex="0">넓이가변</li>
+					<li class="item" role="option" aria-selected="false" tabindex="0">옵션길이만큼</li>
+					<li class="item" role="option" aria-selected="false" tabindex="0">자동세팅됨</li>
+				</ul>
+				<button type="button" class="btn-popup-close">
+					<span class="icon"></span>
+					<span class="sr-only">팝업 닫기</span>
+				</button>
+			</div>
+		</div> -->
+        <!--// .select-popup -->
+
+        <!-- [D]개발영역 분기점 확인 필요 : 시작 -->
+        <!-- .popup-wrap -->
+        <div class="popup-wrap option-bottom-sheet" id="popupDataSelect" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popupDataSelectTitle">
+          <!-- .popup-inner -->
+          <div class="popup-inner fn-select-wrap" tabindex="0" data-focus-on="true">
+            <!-- .popup-head -->
+            <div class="popup-head">
+              <h2 class="popup-title" id="popupDataSelectTitle"><span>제목</span></h2>
+            </div>
+            <!--// .popup-head -->
+            <!-- .popup-content -->
+            <div class="popup-content">
+              <!-- .section -->
+              <section class="section">
+                <!-- .group -->
+                <div class="group">
+                  <!-- .card -->
+                  <div class="card">
+                    <!-- .card-list -->
+                    <ul class="card-list option-single">
+                      <li class="card-item fn-select-item">
+                        <label for="cardAA1" class="card-select">
+                          <input type="radio" name="cardAA" id="cardAA1" class="control sr-only fn-select-input" data-select-value="valueA1" /><!-- [D]DB에 저장되는 값 (data-select-value="") -->
+                          <div class="label">
+                            <h4 class="card-title">
+                              <strong class="key"><em class="fn-select-title">제목1</em></strong
+                              ><!-- [D]화면에 출력되는 값 (fn-select-title="") -->
+                            </h4>
+                            <div class="card-main">
+                              <span class="txt">설명문구1</span>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+                      <li class="card-item fn-select-item">
+                        <label for="cardAA2" class="card-select">
+                          <input type="radio" name="cardAA" id="cardAA2" class="control sr-only fn-select-input" data-select-value="valueA2" />
+                          <div class="label">
+                            <h4 class="card-title">
+                              <strong class="key"><em class="fn-select-title">제목2</em></strong>
+                            </h4>
+                            <div class="card-main">
+                              <span class="txt">설명문구2</span>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+                    </ul>
+                    <!-- .card-list -->
+                  </div>
+                  <!-- .card -->
+                </div>
+                <!--// .group -->
+              </section>
+              <!--// .section -->
+            </div>
+            <!--// .popup-content -->
+            <!-- .popup-foot -->
+            <div class="popup-foot">
+              <!-- .btn-group* -->
+              <div class="btn-group">
+                <button type="button" class="btn primary fn-select-confirm fn-popup-close" data-popup-id="#popupDataSelect" disabled><span>선택완료</span></button>
+              </div>
+              <!--// .btn-group* -->
+            </div>
+            <!--// .popup-foot -->
+            <!-- .btn-popup-close -->
+            <button type="button" class="btn-popup-close fn-popup-close" data-popup-id="#popupDataSelect">
+              <span class="sr-only">팝업 닫기</span>
+            </button>
+            <!--// .btn-popup-close -->
+          </div>
+          <!--// .popup-inner -->
+        </div>
+        <!--// .popup-wrap -->
+        <!--// [D]개발영역 분기점 확인 필요 : 끝 -->
+
+        <!-- .calendar-popup -->
+        <div class="calendar-popup" id="calendarPopup" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="calendarTitle">
+          <!-- .calendar-content -->
+          <div class="calendar-content">
+            <!-- .calendar-title -->
+            <h2 class="calendar-title" id="calendarTitle"><span></span></h2>
+            <!--// .calendar-title -->
+            <!-- .calendar -->
+            <div class="calendar">
+              <div class="calendar-wrap-day">
+                <button class="btn-prev"><span class="sr-only">이전달</span></button>
+                <button class="btn-next"><span class="sr-only">다음달</span></button>
+                <div class="calendar-group">
+                  <div class="calendar-head">
+                    <div class="select in-calendar">
+                      <select name="" id="calendar1" class="select-data fn-year" aria-label="년" aria-hidden="true" tabindex="-1">
+                        <option value="2023" selected>2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                      </select>
+                    </div>
+                    <div class="select in-calendar">
+                      <select name="" id="calendar2" class="select-data fn-month" aria-label="월" aria-hidden="true" tabindex="-1">
+                        <option value="04" selected>04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="calendar-body">
+                    <div class="week">
+                      <span class="day">일</span>
+                      <span class="day">월</span>
+                      <span class="day">화</span>
+                      <span class="day">수</span>
+                      <span class="day">목</span>
+                      <span class="day">금</span>
+                      <span class="day">토</span>
+                    </div>
+                    <div class="day-group">
+                      <button class="day prev">26</button>
+                      <button class="day prev">27</button>
+                      <button class="day prev">28</button>
+                      <button class="day prev">29</button>
+                      <button class="day prev">30</button>
+                      <button class="day prev">31</button>
+                      <button class="day">1</button>
+                      <button class="day">2</button>
+                      <button class="day">3</button>
+                      <button class="day">4</button>
+                      <button class="day today">5</button>
+                      <button class="day">6</button>
+                      <button class="day is-active">7</button>
+                      <button class="day">8</button>
+                      <button class="day">9</button>
+                      <button class="day">10</button>
+                      <button class="day holiday">11</button>
+                      <button class="day">12</button>
+                      <button class="day">13</button>
+                      <button class="day">14</button>
+                      <button class="day">15</button>
+                      <button class="day">16</button>
+                      <button class="day">17</button>
+                      <button class="day is-start">18</button>
+                      <button class="day">19</button>
+                      <button class="day">20</button>
+                      <button class="day">21</button>
+                      <button class="day">22</button>
+                      <button class="day is-end">23</button>
+                      <button class="day">24</button>
+                      <button class="day">25</button>
+                      <button class="day">26</button>
+                      <button class="day">27</button>
+                      <button class="day">28</button>
+                      <button class="day">29</button>
+                      <button class="day">30</button>
+                      <button class="day next">1</button>
+                      <button class="day next">2</button>
+                      <button class="day next">3</button>
+                      <button class="day next">4</button>
+                      <button class="day next">5</button>
+                      <button class="day next">6</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calendar-wrap-month" style="display: none">
+                <button class="btn-prev"><span class="sr-only">이전년</span></button>
+                <button class="btn-next"><span class="sr-only">다음년</span></button>
+                <div class="calendar-group">
+                  <div class="calendar-head">
+                    <div class="select in-calendar">
+                      <select name="" id="calendar1" class="select-data fn-year" aria-label="년" aria-hidden="true" tabindex="-1">
+                        <option value="2023" selected>2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="calendar-body">
+                    <div class="month-group">
+                      <button class="month">1</button>
+                      <button class="month">2</button>
+                      <button class="month is-start">3</button>
+                      <button class="month">4</button>
+                      <button class="month today">5</button>
+                      <button class="month is-end">6</button>
+                      <button class="month is-active">7</button>
+                      <button class="month">8</button>
+                      <button class="month">9</button>
+                      <button class="month">10</button>
+                      <button class="month next">11</button>
+                      <button class="month next">12</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--// .calendar -->
+            <!-- .btn-popup-close -->
+            <button type="button" class="btn-popup-close">
+              <span class="sr-only">팝업 닫기</span>
+            </button>
+            <!--// .btn-popup-close -->
+          </div>
+          <!--// .calendar-content -->
+        </div>
+        <!--// .calendar-popup -->
+      </div>
+      <!--// #popup -->
+    </div>
+    <!--// #wrap -->
+    <script src="../../js/com/jquery-3.7.0.min.js"></script>
+    <script src="../../js/com/lottie_light.min.js"></script>
+    <script src="../../js/com/local_pub.js"></script>
+    <!-- [D]산출물 확인용으로 서버에 배포 금지 -->
+    <script src="../../js/com/common_pub.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      /* 열 이동 없이 선택만 할 경우 함수 호출(태블릿), .data-body.option-fixed.rounded */
+      commUiFnDataSelect.set('#dataTableTablet');
+
+      /* 열 이동 + 선택 함수 호출(모바일), .data-body.option-fixed.option-move.rounded */
+      commUiFnDataMove.set('#dataTableMobile');
+
+      /* 가이드용임시!! */
+      $(function () {
+        $('#element-scrollBar, #layout-breadcrumb, #element-tag').hide();
+      });
+    </script>
+  </body>
+</html>
