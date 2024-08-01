@@ -212,6 +212,43 @@ const commUiFocusInputText = {
 }
 commUiFocusInputText.init();
 
+
+if ('visualViewport' in window) {
+  const VIEWPORT_VS_CLIENT_HEIGHT_RATIO = 0.75;
+  window.visualViewport.addEventListener('resize', function (event) {
+    if (
+      (event.target.height * event.target.scale) / window.screen.height <
+      VIEWPORT_VS_CLIENT_HEIGHT_RATIO
+    )
+      console.log('keyboard is shown');
+    else console.log('keyboard is hidden');
+  });
+}
+
+const inputField = document.getElementById('inputField');
+const statusDiv = document.getElementById('status');
+let initialHeight = window.innerHeight;
+
+function checkKeyboard() {
+	if (window.innerHeight < initialHeight) {
+		statusDiv.textContent = 'Keyboard is open!!!';
+	} else {
+		statusDiv.textContent = 'Keyboard is closed!!!';
+	}
+}
+
+// Check keyboard status on window resize
+window.addEventListener('resize', checkKeyboard);
+
+// Additional event listeners for focus and blur events
+inputField.addEventListener('focus', () => {
+	setTimeout(checkKeyboard, 50); // Delay to ensure resize event has been processed
+});
+
+inputField.addEventListener('blur', () => {
+	setTimeout(checkKeyboard, 50);
+});
+
 </script>
 </body>
 </html>
