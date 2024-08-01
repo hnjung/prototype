@@ -208,7 +208,7 @@ const commUiFocusInputText = {
 
 		document.querySelector('#text1 > em').innerHTML = nowScrollTop;
 		document.querySelector('#text2 > em').innerHTML = (nowScrollTop + element.getBoundingClientRect().top) - (document.querySelector('#header').scrollHeight * 2);
-		document.querySelector('#text3 > em').innerHTML = windowHeight;
+		document.querySelector('#text3 > em').innerHTML = window.innerHeight;
 	}
 }
 commUiFocusInputText.init();
@@ -238,15 +238,17 @@ function checkKeyboard() {
 }
 
 // Check keyboard status on window resize
-window.addEventListener('resize', checkKeyboard);
+window.addEventListener('resize', () => {
+	setTimeout(checkKeyboard, 100); // Delay to ensure resize event has been processed
+});
 
 // Additional event listeners for focus and blur events
 inputField.addEventListener('focus', () => {
-	setTimeout(checkKeyboard, 50); // Delay to ensure resize event has been processed
+	setTimeout(checkKeyboard, 100); // Delay to ensure resize event has been processed
 });
 
 inputField.addEventListener('blur', () => {
-	setTimeout(checkKeyboard, 50);
+	setTimeout(checkKeyboard, 100);
 });
 
 </script>
