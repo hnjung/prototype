@@ -148,7 +148,7 @@
 
 				<!-- .btn -->
 				<div class="btn-group option-main">
-					<button type="button" class="btn primary"><span>와다음</span></button>
+					<button type="button" class="btn primary"><span>와ㅋ다음</span></button>
 				</div>
 				<!--// .btn -->
 
@@ -204,7 +204,7 @@ const commUiFocusInputText = {
 		if (elementPosY > windowHeight / 2) {
 			// commUiVar.element.page.scrollTop = (nowScrollTop + element.getBoundingClientRect().top) - (document.querySelector('#header').scrollHeight * 2);
 		}
-		element.scrollIntoView({ behavior: 'smooth' });
+		element.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
 		document.querySelector('#text1 > em').innerHTML = nowScrollTop;
 		document.querySelector('#text2 > em').innerHTML = (nowScrollTop + element.getBoundingClientRect().top) - (document.querySelector('#header').scrollHeight * 2);
