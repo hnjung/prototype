@@ -195,6 +195,7 @@ const commUiFocusInputText = {
 		});
 	},
 	focus : (_event) => {
+		commUiVar.element.page = document.querySelector('html');
 		const element = _event.target;
 		const elementPosY = Math.ceil(element.getBoundingClientRect().top + element.getBoundingClientRect().height);
 		const nowScrollTop = commUiVar.element.page.scrollTop;
