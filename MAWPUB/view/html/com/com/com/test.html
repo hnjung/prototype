@@ -148,7 +148,7 @@
 
 				<!-- .btn -->
 				<div class="btn-group option-main">
-					<button type="button" class="btn primary"><span>다음</span></button>
+					<button type="button" class="btn primary"><span>와다음</span></button>
 				</div>
 				<!--// .btn -->
 
@@ -196,7 +196,6 @@ const commUiFocusInputText = {
 		});
 	},
 	focus : (_event) => {
-		commUiVar.element.page = document.querySelector('html');
 		const element = _event.target;
 		const elementPosY = Math.ceil(element.getBoundingClientRect().top + element.getBoundingClientRect().height);
 		const nowScrollTop = commUiVar.element.page.scrollTop;
@@ -205,6 +204,7 @@ const commUiFocusInputText = {
 		if (elementPosY > windowHeight / 2) {
 			// commUiVar.element.page.scrollTop = (nowScrollTop + element.getBoundingClientRect().top) - (document.querySelector('#header').scrollHeight * 2);
 		}
+		element.scrollIntoView({ behavior: 'smooth' });
 
 		document.querySelector('#text1 > em').innerHTML = nowScrollTop;
 		document.querySelector('#text2 > em').innerHTML = (nowScrollTop + element.getBoundingClientRect().top) - (document.querySelector('#header').scrollHeight * 2);
@@ -215,15 +215,15 @@ commUiFocusInputText.init();
 
 
 if ('visualViewport' in window) {
-  const VIEWPORT_VS_CLIENT_HEIGHT_RATIO = 0.75;
-  window.visualViewport.addEventListener('resize', function (event) {
-    if (
-      (event.target.height * event.target.scale) / window.screen.height <
-      VIEWPORT_VS_CLIENT_HEIGHT_RATIO
-    )
-	document.querySelector('#text4 > em').innerHTML = 'keyboard is shown';
-    else document.querySelector('#text4 > em').innerHTML = 'keyboard is hidden';
-  });
+	const VIEWPORT_VS_CLIENT_HEIGHT_RATIO = 0.75;
+	window.visualViewport.addEventListener('resize', function (event) {
+		if (
+			(event.target.height * event.target.scale) / window.screen.height <
+			VIEWPORT_VS_CLIENT_HEIGHT_RATIO
+		)
+		document.querySelector('#text4 > em').innerHTML = 'keyboard is shown';
+		else document.querySelector('#text4 > em').innerHTML = 'keyboard is hidden';
+	});
 }
 
 const inputField = document.getElementById('formItem2');
