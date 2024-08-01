@@ -201,7 +201,7 @@ const commUiFocusInputText = {
 		const windowHeight = window.innerHeight;
 
 		if (elementPosY > windowHeight / 2) {
-			commUiVar.element.page.scrollTop = (nowScrollTop + element.getBoundingClientRect().top) - (document.querySelector('#header').scrollHeight * 2);
+			// commUiVar.element.page.scrollTop = (nowScrollTop + element.getBoundingClientRect().top) - (document.querySelector('#header').scrollHeight * 2);
 		}
 
 		document.querySelector('#text1 > em').innerHTML = nowScrollTop;
