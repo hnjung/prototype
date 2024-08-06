@@ -151,7 +151,7 @@
 
 				<!-- .btn -->
 				<div class="btn-group option-main">
-					<button type="button" class="btn primary"><span>와ㅋ22다음</span></button>
+					<button type="button" class="btn primary"><span>와ㅋ33다음</span></button>
 				</div>
 				<!--// .btn -->
 
@@ -207,14 +207,16 @@ const commUiFocusInputText = {
 		if (elementPosY > windowHeight / 2) {
 			// commUiVar.element.page.scrollTop = (nowScrollTop + element.getBoundingClientRect().top) - (document.querySelector('#header').scrollHeight * 2);
 		}
-		element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		setTimeout(() => {
+			element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}, 1000);
 
 		document.querySelector('#text1 > em').innerHTML = nowScrollTop;
 		document.querySelector('#text2 > em').innerHTML = (nowScrollTop + element.getBoundingClientRect().top) - (document.querySelector('#header').scrollHeight * 2);
 		document.querySelector('#text3 > em').innerHTML = window.innerHeight;
 	}
 }
-
+commUiFocusInputText.init();
 
 
 if ('visualViewport' in window) {
@@ -222,9 +224,9 @@ if ('visualViewport' in window) {
 	window.visualViewport.addEventListener('resize', function (event) {
 		if ( (event.target.height * event.target.scale) / window.screen.height < VIEWPORT_VS_CLIENT_HEIGHT_RATIO ) {
 			document.querySelector('#text4 > em').innerHTML = 'SHOW!:' + event.target.height + ', ' + event.target.scale;
-			setTimeout(() => {
-				commUiFocusInputText.init();
-			}, 1000);
+			/* setTimeout(() => {
+				
+			}, 1000); */
 		} else {
 			document.querySelector('#text4 > em').innerHTML = 'HIDE!:' + event.target.height + ', ' + event.target.scale;
 		}
