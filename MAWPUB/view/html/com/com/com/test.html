@@ -19,6 +19,7 @@
 			height: 0;
 			transition: height 0.5s linear;
 		}
+		#wrap {overflow: auto;}
 	</style>
 </head>
 <body>
@@ -158,7 +159,7 @@
 
 				<!-- .btn -->
 				<div class="btn-group option-main">
-					<button type="button" class="btn primary"><span>와ㅋ8다음</span></button>
+					<button type="button" class="btn primary"><span>와10다음</span></button>
 				</div>
 				<!--// .btn -->
 
@@ -257,20 +258,20 @@ function handleVisualViewportResize(event) {
     triggerKeyboardOpen(event.currentTarget.height);
 }
 
-// make-scrollale 객체 추가
+// make-scrollable 객체 추가
 function appendScrollElement() {
     const scrollElement = document.createElement('div');
-    scrollElement.setAttribute("id", "make-scrollale");
+    scrollElement.setAttribute("id", "make-scrollable");
     document.querySelector('#wrap').appendChild(scrollElement);
 }
 
 function onFocus() {
-    document.querySelector("#make-scrollale").style.height = "calc(100% + 1px)";
+    document.querySelector("#make-scrollable").style.height = "calc(100% + 1px)";
     document.querySelector('#wrap').style.overflow = "hidden";
 }
 
 function onFocusOut() {
-    document.querySelector("#make-scrollale").style.height = "0";
+    document.querySelector("#make-scrollable").style.height = "0";
     document.querySelector('#wrap').style.overflow = "";
 }
 
@@ -286,13 +287,10 @@ function triggerKeyboardOpen() {
 }
 
 function scrollToActiveElement() {
-    // document.activeElement parent id contain wrap
-    if (document.activeElement.parentElement.id.includes('wrap')) {
-        document.activeElement.parentElement.scrollIntoView(true);
-    }
-    else {
-        document.activeElement.scrollIntoView(true);
-    }
+    var viewScrollHeight = document.querySelector('#wrap').scrollHeight;
+    var offset =  viewScrollHeight - window.visualViewport.height ;
+
+    document.querySelector('#wrap').scrollTo(0, offset);
 }
 
 </script>
