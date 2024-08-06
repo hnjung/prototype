@@ -151,7 +151,7 @@
 
 				<!-- .btn -->
 				<div class="btn-group option-main">
-					<button type="button" class="btn primary"><span>와ㅋ다음</span></button>
+					<button type="button" class="btn primary"><span>와ㅋ22다음</span></button>
 				</div>
 				<!--// .btn -->
 
@@ -221,12 +221,12 @@ if ('visualViewport' in window) {
 	const VIEWPORT_VS_CLIENT_HEIGHT_RATIO = 0.75;
 	window.visualViewport.addEventListener('resize', function (event) {
 		if ( (event.target.height * event.target.scale) / window.screen.height < VIEWPORT_VS_CLIENT_HEIGHT_RATIO ) {
-			document.querySelector('#text4 > em').innerHTML = 'SHOW!:' + event.target.height, event.target.scale;
+			document.querySelector('#text4 > em').innerHTML = 'SHOW!:' + event.target.height + ', ' + event.target.scale;
 			setTimeout(() => {
 				commUiFocusInputText.init();
 			}, 1000);
 		} else {
-			document.querySelector('#text4 > em').innerHTML = 'HIDE!:' + event.target.height, event.target.scale;
+			document.querySelector('#text4 > em').innerHTML = 'HIDE!:' + event.target.height + ', ' + event.target.scale;
 		}
 	});
 }
