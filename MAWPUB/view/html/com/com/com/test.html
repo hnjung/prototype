@@ -151,7 +151,7 @@
 
 				<!-- .btn -->
 				<div class="btn-group option-main">
-					<button type="button" class="btn primary"><span>와ㅋ55다음</span></button>
+					<button type="button" class="btn primary"><span>와ㅋ66다음</span></button>
 				</div>
 				<!--// .btn -->
 
@@ -209,14 +209,14 @@ const commUiFocusInputText = {
 		}
 		setTimeout(() => {
 			element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-		}, 10);
+		}, 100);
 
 		document.querySelector('#text1 > em').innerHTML = nowScrollTop;
 		document.querySelector('#text2 > em').innerHTML = (nowScrollTop + element.getBoundingClientRect().top) - (document.querySelector('#header').scrollHeight * 2);
 		document.querySelector('#text3 > em').innerHTML = `window.innerHeight=${window.innerHeight}, document=${document.documentElement.clientHeight}, visualviewport=${window.visualViewport.height}`;
 	}
 }
-/* commUiFocusInputText.init(); */
+commUiFocusInputText.init();
 
 
 if ('visualViewport' in window) {
