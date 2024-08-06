@@ -152,7 +152,7 @@
 body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, legend, ul, ol, li, p, input, select, textarea, table, th, td {margin: 0; padding: 0;}
 html {-webkit-text-size-adjust: none; -webkit-tap-highlight-color: transparent; background-color: var(--color-light); font-size: 62.5%;}
 body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font-family: 'Pretendard', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; line-height: 1.5; font-size: var(--font-md); font-weight: var(--font-regular); color: var(--color-txt-body);}
-/* html, body {overflow: hidden; height: 100%;} */
+html, body {overflow: hidden; height: 100%;}
 button, input, select, textarea {max-width: 100%; font: inherit; box-shadow: none; background-color: transparent;}
 button, [type=button], [type=reset], [type=submit] {-webkit-appearance: button; appearance: button;}
 canvas, img, picture, svg, video {display: block; max-width: 100%; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-use-select: none; user-select: none;}
