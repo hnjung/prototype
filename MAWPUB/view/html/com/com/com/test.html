@@ -221,12 +221,12 @@ if ('visualViewport' in window) {
 	const VIEWPORT_VS_CLIENT_HEIGHT_RATIO = 0.75;
 	window.visualViewport.addEventListener('resize', function (event) {
 		if ( (event.target.height * event.target.scale) / window.screen.height < VIEWPORT_VS_CLIENT_HEIGHT_RATIO ) {
-			document.querySelector('#text4 > em').innerHTML = 'keyboard is shown';
+			document.querySelector('#text4 > em').innerHTML = 'SHOW!:' + event.target.height, event.target.scale;
 			setTimeout(() => {
 				commUiFocusInputText.init();
 			}, 1000);
 		} else {
-			document.querySelector('#text4 > em').innerHTML = 'keyboard is hidden';	
+			document.querySelector('#text4 > em').innerHTML = 'HIDE!:' + event.target.height, event.target.scale;
 		}
 	});
 }
