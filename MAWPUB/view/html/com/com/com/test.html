@@ -10,6 +10,9 @@
 	<link rel="stylesheet" href="../../../../css/com/swiper-bundle.min.css">
 	<link rel="stylesheet" href="../../../../css/com/content.css">
 	<link rel="stylesheet" href="../../../../css/com/page.css">
+	<style>
+		input[type="text"], textarea { scroll-margin-top: 100px; }
+	</style>
 </head>
 <body>
 <!-- #wrap -->
@@ -211,45 +214,22 @@ const commUiFocusInputText = {
 		document.querySelector('#text3 > em').innerHTML = window.innerHeight;
 	}
 }
-commUiFocusInputText.init();
+
 
 
 if ('visualViewport' in window) {
 	const VIEWPORT_VS_CLIENT_HEIGHT_RATIO = 0.75;
 	window.visualViewport.addEventListener('resize', function (event) {
-		if (
-			(event.target.height * event.target.scale) / window.screen.height <
-			VIEWPORT_VS_CLIENT_HEIGHT_RATIO
-		)
-		document.querySelector('#text4 > em').innerHTML = 'keyboard is shown';
-		else document.querySelector('#text4 > em').innerHTML = 'keyboard is hidden';
+		if ( (event.target.height * event.target.scale) / window.screen.height < VIEWPORT_VS_CLIENT_HEIGHT_RATIO ) {
+			document.querySelector('#text4 > em').innerHTML = 'keyboard is shown';
+			setTimeout(() => {
+				commUiFocusInputText.init();
+			}, 1000);
+		} else {
+			document.querySelector('#text4 > em').innerHTML = 'keyboard is hidden';	
+		}
 	});
 }
-
-const inputField = document.getElementById('formItem2');
-let initialHeight = window.innerHeight;
-
-function checkKeyboard() {
-	if (window.innerHeight < initialHeight) {
-		document.querySelector('#text4 > span').innerHTML = 'Keyboard is open!!!';
-	} else {
-		document.querySelector('#text4 > span').innerHTML = 'Keyboard is closed!!!';
-	}
-}
-
-// Check keyboard status on window resize
-window.addEventListener('resize', () => {
-	setTimeout(checkKeyboard, 100); // Delay to ensure resize event has been processed
-});
-
-// Additional event listeners for focus and blur events
-inputField.addEventListener('focus', () => {
-	setTimeout(checkKeyboard, 100); // Delay to ensure resize event has been processed
-});
-
-inputField.addEventListener('blur', () => {
-	setTimeout(checkKeyboard, 100);
-});
 
 </script>
 </body>
