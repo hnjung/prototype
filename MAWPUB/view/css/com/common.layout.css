@@ -13,17 +13,17 @@
 }
 
 /* 전체레이아웃 */
-#wrap {min-width: 320px; /* height: 100%; overflow: hidden; */}
-#page {position: relative; z-index: 0; width: 100%; /* height: 100%; overflow: auto; */} /* [P]IOS 스크롤바가 일부 요소(z-index값이 있는)에 숨겨지는 이슈 z-index:0 추가 */
-#header {position: sticky; z-index: 11; top: 0; height: var(--header-height); background-color: var(--color-primary); box-sizing: content-box;}
-/* #main {height: 100%;} */
-#header ~ #main {/* height: calc(100% - var(--header-height)); */ padding-top: 0;}
-#content {position: relative; /* height: 100%; */}
+#wrap {min-width: 320px; height: 100%; overflow: hidden;}
+#page {position: relative; z-index: 0; width: 100%; height: 100%; overflow: auto;} /* [P]IOS 스크롤바가 일부 요소(z-index값이 있는)에 숨겨지는 이슈 z-index:0 추가 */
+#header {position: sticky; z-index: 11; top: 0; height: var(--header-height); background-color: var(--color-light); box-sizing: content-box;}
+#main {height: 100%;}
+#header ~ #main {height: calc(100% - var(--header-height)); padding-top: 0;}
+#content {position: relative; height: 100%;}
 #footer {}
 
-/* [data-page-main="true"] #main {height: auto;}
+[data-page-main="true"] #main {height: auto;}
 [data-page-main="true"] #header ~ #main {height: auto;}
-[data-page-main="true"] #content {height: auto;} */
+[data-page-main="true"] #content {height: auto;}
 
 .section {padding: var(--space-lg) var(--space-body) var(--space-xxl);}
 .section + .section {padding-top: 0;}
