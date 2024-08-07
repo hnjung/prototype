@@ -289,22 +289,58 @@ const commUiFocusInputText = {
 }
 /* commUiFocusInputText.init(); */
 
-function keypadCheck() {
+function keypadEvent() {
+	let initialHeight = window.innerHeight;
+	/* 뷰포트 리사이징 */
 	if ('visualViewport' in window) {
-		window.visualViewport.addEventListener('resize', function (_event) {
+		window.visualViewport.addEventListener('resize', function(_event) {
 			if ( (_event.target.height * _event.target.scale) / window.screen.height < 0.75 ) {
-				document.querySelector('#text4 > em').innerHTML = 'SHOW!:' + _event.target.height + ', ' + _event.target.scale + ', ' + window.screen.height;
-				/* setTimeout(() => {
-					
-				}, 1000); */
+				document.querySelector('#text1 > em').innerHTML = 'SHOW1!:' + _event.target.height + ', ' + _event.target.scale + ', ' + window.screen.height;
 			} else {
-				document.querySelector('#text4 > em').innerHTML = 'HIDE!:' + _event.target.height + ', ' + _event.target.scale + ', ' + window.screen.height;
+				document.querySelector('#text1 > em').innerHTML = 'HIDE1!:' + _event.target.height + ', ' + _event.target.scale + ', ' + window.screen.height;
 			}
 		});
+	} else {
+		window.addEventListener('resize', function() {
+			setTimeout(function() {
+				if (window.innerHeight < initialHeight) {
+					document.querySelector('#text2 > em').innerHTML = 'SHOW2!:' + window.innerHeight + ', ' + initialHeight;
+				} else {
+					document.querySelector('#text2 > em').innerHTML = 'HIDE2!:' + window.innerHeight + ', ' + initialHeight;
+				}
+			}, 100);
+		});
 	}
+
+	/* 텍스트필드 포커스 */
+	const inputText = document.querySelectorAll('input[type="text"], textarea');
+	inputText.forEach(function(_this) {
+		if (!_this.readOnly && !_this.disabled) {
+			_this.addEventListener('focus', function() {
+				setTimeout(function() {
+					if (window.innerHeight < initialHeight) {
+						document.querySelector('#text3 > em').innerHTML = 'SHOW3!:' + window.innerHeight + ', ' + initialHeight;
+					} else {
+						document.querySelector('#text3 > em').innerHTML = 'HIDE3!:' + window.innerHeight + ', ' + initialHeight;
+					}
+				}, 100);
+			});
+			_this.addEventListener('blur', function() {
+				setTimeout(function() {
+					if (window.innerHeight < initialHeight) {
+						document.querySelector('#text4 > em').innerHTML = 'SHOW4!:' + window.innerHeight + ', ' + initialHeight;
+					} else {
+						document.querySelector('#text4 > em').innerHTML = 'HIDE4!:' + window.innerHeight + ', ' + initialHeight;
+					}
+				}, 100);
+			});
+		}
+	});
 }
+
+/* 화면 로딩 시 함수 호출 */
 window.addEventListener('load', function (event) {
-	keypadCheck();
+	keypadEvent();
 });
 
 
