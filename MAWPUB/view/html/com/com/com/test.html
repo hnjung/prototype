@@ -317,22 +317,10 @@ function keypadEvent() {
 	inputText.forEach(function(_this) {
 		if (!_this.readOnly && !_this.disabled) {
 			_this.addEventListener('focus', function() {
-				setTimeout(function() {
-					if (window.innerHeight < initialHeight) {
-						document.querySelector('#text3 > em').innerHTML = 'SHOW3!:' + window.innerHeight + ', ' + initialHeight;
-					} else {
-						document.querySelector('#text3 > em').innerHTML = 'HIDE3!:' + window.innerHeight + ', ' + initialHeight;
-					}
-				}, 100);
+				document.querySelector('#text4 > em').innerHTML = 'SHOW4!:' + window.innerHeight + ', ' + initialHeight;
 			});
 			_this.addEventListener('blur', function() {
-				setTimeout(function() {
-					if (window.innerHeight < initialHeight) {
-						document.querySelector('#text4 > em').innerHTML = 'SHOW4!:' + window.innerHeight + ', ' + initialHeight;
-					} else {
-						document.querySelector('#text4 > em').innerHTML = 'HIDE4!:' + window.innerHeight + ', ' + initialHeight;
-					}
-				}, 100);
+				document.querySelector('#text4 > em').innerHTML = 'HIDE4!:' + window.innerHeight + ', ' + initialHeight;
 			});
 		}
 	});
