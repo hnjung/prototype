@@ -85,7 +85,7 @@
 											<!-- .segment* -->
 											<fieldset class="segment-group">
 												<label for="formItem1a" class="segment-item">
-													<input type="radio" name="formItem1" id="formItem1a" class="control">
+													<input type="radio" name="formItem1" id="formItem1a" class="control" aria-hidden="true">
 													<span class="label"><em class="txt">남</em></span>
 												</label>
 												<label for="formItem1b" class="segment-item">
@@ -101,7 +101,7 @@
 										<div class="form-value">
 											<!-- .input -->
 											<div class="input w-100">
-												<input type="text" name="" id="formItem2" class="input-data" placeholder="예: 19910101"> <!-- 2024-03-22 : placeholder 수정 -->
+												<input type="text" name="" id="formItem2" class="input-data" placeholder="예: 19910101" aria-hidden="true"> <!-- 2024-03-22 : placeholder 수정 -->
 											</div>
 											<!--// .input -->
 										</div>
@@ -130,7 +130,7 @@
 
 				<!-- .btn -->
 				<div class="btn-group option-main">
-					<button type="button" class="btn primary"><span>5다음</span></button>
+					<button type="button" class="btn primary" id="btnNxt"><span>5다음</span></button>
 				</div>
 				<!--// .btn -->
 
@@ -296,8 +296,14 @@ function keypadEvent() {
 		window.visualViewport.addEventListener('resize', function(_event) {
 			if ( (_event.target.height * _event.target.scale) / window.screen.height < 0.75 ) {
 				document.querySelector('#text1 > em').innerHTML = 'SHOW1!:' + _event.target.height + ', ' + _event.target.scale + ', ' + window.screen.height;
+				document.querySelector('#btnNxt > span').innerHTML = '다음S';
+				document.querySelector('#btnNxt').closest('.btn-group').setAttribute('style', 'position: relative;');
+				document.querySelector('#btnNxt').closest('#content').querySelector('.section.has-space').setAttribute('style', 'padding-bottom: 2.4rem;');
 			} else {
 				document.querySelector('#text1 > em').innerHTML = 'HIDE1!:' + _event.target.height + ', ' + _event.target.scale + ', ' + window.screen.height;
+				document.querySelector('#btnNxt > span').innerHTML = '다음H';
+				document.querySelector('#btnNxt').closest('.btn-group').setAttribute('style', '');
+				document.querySelector('#btnNxt').closest('#content').querySelector('.section.has-space').setAttribute('style', '');
 			}
 		});
 	} else {
@@ -305,8 +311,14 @@ function keypadEvent() {
 			setTimeout(function() {
 				if (window.innerHeight < initialHeight) {
 					document.querySelector('#text2 > em').innerHTML = 'SHOW2!:' + window.innerHeight + ', ' + initialHeight;
+					document.querySelector('#btnNxt > span').innerHTML = '다음S';
+					document.querySelector('#btnNxt').closest('.btn-group').setAttribute('style', 'position: relative;');
+					document.querySelector('#btnNxt').closest('#content').querySelector('.section.has-space').setAttribute('style', 'padding-bottom: 2.4rem;');
 				} else {
 					document.querySelector('#text2 > em').innerHTML = 'HIDE2!:' + window.innerHeight + ', ' + initialHeight;
+					document.querySelector('#btnNxt > span').innerHTML = '다음H';
+					document.querySelector('#btnNxt').closest('.btn-group').setAttribute('style', '');
+					document.querySelector('#btnNxt').closest('#content').querySelector('.section.has-space').setAttribute('style', '');
 				}
 			}, 100);
 		});
@@ -318,9 +330,15 @@ function keypadEvent() {
 		if (!_this.readOnly && !_this.disabled) {
 			_this.addEventListener('focus', function() {
 				document.querySelector('#text4 > em').innerHTML = 'SHOW4!:' + window.innerHeight + ', ' + initialHeight;
+				document.querySelector('#btnNxt > span').innerHTML = '다음S';
+				document.querySelector('#btnNxt').closest('.btn-group').setAttribute('style', 'position: relative;');
+				document.querySelector('#btnNxt').closest('#content').querySelector('.section.has-space').setAttribute('style', 'padding-bottom: 2.4rem;');
 			});
 			_this.addEventListener('blur', function() {
 				document.querySelector('#text4 > em').innerHTML = 'HIDE4!:' + window.innerHeight + ', ' + initialHeight;
+				document.querySelector('#btnNxt > span').innerHTML = '다음H';
+				document.querySelector('#btnNxt').closest('.btn-group').setAttribute('style', '');
+				document.querySelector('#btnNxt').closest('#content').querySelector('.section.has-space').setAttribute('style', '');
 			});
 		}
 	});
