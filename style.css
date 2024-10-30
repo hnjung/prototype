@@ -1,37 +1,64 @@
 @charset "utf-8";
 @font-face {
-	font-family: 'Pretendard Variable';
-	font-weight: 45 920;
+	font-family: 'Pretendard';
+	font-weight: 300;
 	font-style: normal;
-	font-display: swap;
-	src: 
-		url('../css/com/font/PretendardVariable.woff2') format('woff2-variations'),
-		url('../css/com/font/PretendardVariable.ttf') format('truetype');
+	font-display: block;
+	src: url('./CSSPUB/view/css/com/font/Pretendard-Light.subset.woff2') format('woff2'),
+		url('./CSSPUB/view/css/com/font/Pretendard-Light.subset.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+	src: url('./CSSPUB/view/css/com/font/Pretendard-Regular.subset.woff2') format('woff2'),
+		url('./CSSPUB/view/css/com/font/Pretendard-Regular.subset.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-style: normal;
+	font-display: block;
+	src: url('./CSSPUB/view/css/com/font/Pretendard-Medium.subset.woff2') format('woff2'),
+		url('./CSSPUB/view/css/com/font/Pretendard-Medium.subset.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-style: normal;
+	font-display: block;
+	src: url('./CSSPUB/view/css/com/font/Pretendard-SemiBold.subset.woff2') format('woff2'),
+		url('./CSSPUB/view/css/com/font/Pretendard-SemiBold.subset.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-style: normal;
+	font-display: block;
+	src: url('./CSSPUB/view/css/com/font/Pretendard-Bold.subset.woff2') format('woff2'),
+		url('./CSSPUB/view/css/com/font/Pretendard-Bold.subset.woff') format('woff');
 }
 
 /* reset */
 *, :before, :after {box-sizing: border-box;}
 html, body, div, span, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, cite, code, del, em, img, strike, strong, sub, sup, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, option, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, time, mark, audio, video {margin: 0; padding: 0; border: 0; vertical-align: baseline;}
 html {-webkit-text-size-adjust: none; -webkit-tap-highlight-color: transparent;}
-body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; font-weight: 400;}
+body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font-family: 'Pretendard', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; font-weight: 400;}
 a {background-color: transparent; text-decoration: none; outline: none;}
 a:hover, a:focus, a:active, a:visited {text-decoration: none;}
 img {border-style: none;}
 
 html, body {height: 100%;}
 .door {height: 100%; text-align: center;}
-/* .door:before {content: ''; display: inline-block; height: 100%; vertical-align: middle;} */
-.task {display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; height: 100%; text-align: left;}
+.task {display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 100px; height: 100%; text-align: left;}
 .task * {line-height: 1.4; color: #000;}
-.task > div {margin: 0 30px;}
 .task a {position: relative;}
 .task a:after {content: ''; position: absolute; bottom: 3px; left: 0; right: 0; height: 1px; background-color: #000;}
-.task h1 {display: block; margin-bottom: 20px; text-align: right; line-height: 1.2; font-size: 72px; font-weight: 600; }
+.task h1 {display: block; margin-bottom: 20px; text-align: right; line-height: 1.2; font-size: 72px; font-weight: 600;}
 .task h1 > span {display: block; font-size: 18px;}
 .task strong {padding-right: 12px; font-size: 20px; font-weight: 600;}
 .task a {font-size: 20px; font-weight: 600;}
 .task > div > div {display: block; text-align: right; margin-bottom: 8px;}
-/* .SHEZ-CSS {margin-left: 200px;} */
-/* .SHEZ-CSS h1 {text-indent: -50px;} */
 .blank {opacity: 0;}
 .ready {opacity: .4;}
