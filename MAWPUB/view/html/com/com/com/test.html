@@ -61,6 +61,22 @@
 			<!-- #content -->
 			<article id="content">
 
+				<script>
+					function isKakaoInAppBrowser() {
+					const ua = navigator.userAgent.toLowerCase();
+					return ua.includes('kakaotalk');
+					}
+
+					if (isKakaoInAppBrowser()) {
+					console.log('카카오 인앱브라우저에서 열렸군. 인간, 준비해라.');
+					} else {
+					console.log('일반 브라우저다. 평온하네.');
+					}
+
+					window.alert('브라우저체크:', navigator.userAgent.toLowerCase()());
+					window.alert('브라우저체크:', isKakaoInAppBrowser());
+				</script>
+
 				<a href="../../../../image/com/DownloadTest.pdf">파일다운로드(A링크만 있는 경우)</a>
 				<a download href="../../../../image/com/DownloadTest.pdf">파일다운로드(download속성 있는 경우)</a>
 
