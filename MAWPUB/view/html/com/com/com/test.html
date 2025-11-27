@@ -73,10 +73,14 @@
 					console.log('일반 브라우저다. 평온하네.');
 					}
 
-					window.alert('브라우저체크:', navigator.userAgent.toLowerCase()());
-					window.alert('브라우저체크:', isKakaoInAppBrowser());
+					console.log('브라우저체크로그', navigator.userAgent, isKakaoInAppBrowser());
 				</script>
-				<button onclick="isKakaoInAppBrowser();">버튼클릭시브라우저체크</button>
+				<button id="testeset"><span>버튼클릭시브라우저체크</span></button>
+
+
+				<script>
+					document.querySelector('#testeset > span').innerHTML = `브라우저 체크: ${navigator.userAgent}`;
+				</script>
 
 				<a href="../../../../image/com/DownloadTest.pdf">파일다운로드(A링크만 있는 경우)</a>
 				<a download href="../../../../image/com/DownloadTest.pdf">파일다운로드(download속성 있는 경우)</a>
