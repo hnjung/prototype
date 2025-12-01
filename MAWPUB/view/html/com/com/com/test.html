@@ -78,13 +78,23 @@
 				<button id="testeset"><span>버튼클릭시브라우저체크</span></button>
 
 
+
+				<a href="../../../../image/com/DownloadTest.pdf" target="_blank" rel="noopener noreferrer">파일다운로드(A링크-noopener noreferrer)</a><br>
+				<a href="javascript:;" id="testButton2">파일다운로드(windowopen)</a><br>
+				<a href="javascript:;" id="testButton3">파일다운로드(kakaotalk://)</a><br>
 				<script>
 					document.querySelector('#testeset > span').innerHTML = `브라우저 체크: ${navigator.userAgent}`;
+
+					document.querySelector('#testButton2').addEventListener('click', function() {
+						var target_url = '../../../../image/com/DownloadTest.pdf';
+						window.open(target_url, '_blank');
+					});
+					document.querySelector('#testButton3').addEventListener('click', function() {
+						var target_url = '../../../../image/com/DownloadTest.pdf';
+						location.href = 'kakaotalk://web/openExternal?url='+encodeURIComponent(target_url);
+					});
 				</script>
-
-				<a href="../../../../image/com/DownloadTest.pdf">파일다운로드(A링크만 있는 경우)</a>
-				<a download href="../../../../image/com/DownloadTest.pdf">파일다운로드(download속성 있는 경우)</a>
-
+				
 				<!-- [D]개발영역 시작 -->
 				<!-- .section -->
 				<section class="section">
